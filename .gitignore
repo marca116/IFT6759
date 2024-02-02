@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 
 current_convo_debug/
+old/
+results/
