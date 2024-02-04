@@ -7,7 +7,7 @@ from datetime import datetime
 print("Extract entities and activities from a conversation")
 
 prompt_config = read_json('prompts_entities.json')
-convo_history = read_json('test_message_history/blade_runner_user_entity.json')
+convo_history = read_json('test_message_history/blade_runner_user_entity_long.json')
 convo_history_final = []
 
 # Add specification of which is the user msg and which is the history
