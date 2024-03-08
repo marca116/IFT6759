@@ -1,5 +1,0 @@
-{
-    "model": "gpt-3.5-turbo-1106",
-    "max_response_length": 1000,
-    "timeout": 10
-}

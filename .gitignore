@@ -159,6 +159,13 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-current_convo_debug/
+bak/
+covered_entities_wiki_articles/
+kg_construction/current_convo_debug
+kg_construction/results
 old/
-results/
+original_dataset/
+create_list_answers_entities_with_missing_wiki_article_+_counts/
+vital_articles_2018-02-26/
+created_entity_subgraph/
+create_dataset/_intermediary_files/
