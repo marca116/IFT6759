@@ -19,4 +19,4 @@ Note : Couldn't use the answers included in this dataset since they are out of d
 
 8_get_wiki_entities_labels_and_url.py: Go through each wikidata entity id from train_answer_all_entities.txt and use wikidata query api to query the label and it's wikipedia article title and url, if it exists. Add all this info to answer_entities_labels_and_url.csv.
 
-9_add_solved_answer_to_all_questions.py : Go through all the questions in train_cleaned_only_questions_with_answers, replacing every wikidata entity id in every answer with it's corresponding label from answer_entities_labels_and_url.csv. Include the result in a new properyty to the question called 'solved_answer'.
+9_add_solved_answer_to_all_questions.py : Go through all the questions in train_cleaned_only_questions_with_answers.json, replacing every wikidata entity id in every answer with it's corresponding label from answer_entities_labels_and_url.csv. Include the result in a new property to the question called 'solved_answer'. Save to train_lcquad2_final.json.
