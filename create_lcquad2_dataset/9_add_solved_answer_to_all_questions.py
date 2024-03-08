@@ -60,5 +60,5 @@ print(f"Removed questions: {len(removed_questions)}")
 print(f"Remaining questions: {len(data)}")
     
 # Save to train_final_all_with_solved_answers.json
-with open('train_lcquad2_final.json', 'w', encoding='utf-8') as outfile:
+with open('train_lcquad2_with_solved_answers.json', 'w', encoding='utf-8') as outfile:
     json.dump(data, outfile, indent=4)
