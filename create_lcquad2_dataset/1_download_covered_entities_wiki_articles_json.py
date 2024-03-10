@@ -2,10 +2,14 @@ import requests
 import os
 import json
 import time
+import csv
 from urllib.parse import unquote
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 skip_existing = True
-output_dir = 'covered_entities_wiki_articles' 
+output_dir = 'vital_articles_wiki_extract' 
+articles_filename = 'q9_q10'
+
 wiki_main_url = "https://en.wikipedia.org/w/api.php"
 
 if not os.path.exists(output_dir):
@@ -46,16 +50,6 @@ def download_article_json(entity_id, wiki_title, wiki_url):
             page = pages[page_id]
             title = page.get('title')
 
-            # get the wikidata id
-            # index = wiki_titles_group.index(original_title)
-
-            # if index == -1:
-            #     print(f"Failed to find entity id for {title}")
-            #     continue
-
-            # wikidata_id = entity_ids_group[index]
-            # wikipedia_url = wiki_urls_group[index]
-
             new_entity_obj = {
                 "title": title
             }
@@ -82,29 +76,58 @@ def download_article_json(entity_id, wiki_title, wiki_url):
     else:
         print(f"Failed to download {wiki_title}")
 
+# Download the given vital article's extract
+def process_article(vital_article):
+    entity_id = vital_article[0]
+    wiki_title = unquote(vital_article[1].strip())
+    wiki_url = vital_article[2].strip()
+
+    # Skip if url missing (some quad9 and 10 questions)
+    if wiki_title == "":
+        print(f"Skipping {entity_id} as it has no url")
+        return
+
+    # Skip if already exists
+    if skip_existing:
+        filename = get_filename(wiki_url, entity_id)
+
+        if os.path.exists(os.path.join(output_dir, f'{filename}.json')):
+            print(f"Skipping {filename} as it already exists")
+            return
+
+    for i in range(5):
+        try:
+            download_article_json(entity_id, wiki_title, wiki_url)
+            return
+        except Exception as e:
+            print(f"Error running query: {e}")
+            time.sleep(60)
+    
+vital_articles = []
+
+with open(articles_filename + '.csv', 'r', encoding='utf-8') as f:
+    reader = csv.reader(f, delimiter=';')
+    for row in reader:
+        vital_articles.append(row)
+
+# Process the data in batches
+batch_size = 4
 start_time = time.time()
 
-with open('lcquad_entities_url.txt', 'r', encoding='utf-8') as file:
-    lines = file.readlines() 
-    #total_entities = len(lines) 
-    entity_ids = []
-    wiki_titles = []
-    wiki_urls = []
+# sepparate the data in groups of 3
+batches = [vital_articles[i:i + batch_size] for i in range(0, len(vital_articles), batch_size)]
 
-    for x, line in enumerate(lines, start=1):
-        split_line = line.strip().split(";")
+for i, batch in enumerate(batches):
 
-        entity_id = split_line[0]
-        wiki_title = unquote(split_line[1].strip())
-        wiki_url = split_line[2].strip()
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(process_article, article) for article in batch]
 
-        # Skip if already exists
-        if skip_existing:
-            filename = get_filename(wiki_url, entity_id)
+        for future in as_completed(futures):
+            try:
+                future.result()
+            except Exception as e:
+                print(f"Error occurred in sub-thread: {e}")
+    
+    print(f"Processed {i + 1}/{len(batches)} article batches")
 
-            if os.path.exists(os.path.join(output_dir, f'{filename}.json')):
-                print(f"Skipping {filename} as it already exists")
-                continue
-
-        download_article_json(entity_id, wiki_title, wiki_url)
-        print(f"Processed {x}/{len(lines)} articles")
+print(f"Total time: {time.time() - start_time} seconds")

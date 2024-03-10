@@ -4,6 +4,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import os
 
+input_file = "train_cleaned_no_missing_entities.json"
+output_file = "train_cleaned_with_answers.json"
+
 output_dir = 'questions_with_answers_json' 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
@@ -22,14 +25,13 @@ def run_query(query):
     headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/sparql-results+json"}
     try:
         response = requests.get(endpoint_url, headers=headers, params={'query': query})
-        response.raise_for_status()  # Raises an exception for 4XX or 5XX status codes
+        response.raise_for_status()  
         data = response.json()
 
         answers = []
 
         if data.get("boolean") is not None:
             answers.append(data['boolean'])
-            #print(f"Boolean result: {data['boolean']}")
         else:
             for binding in data['results']['bindings']:
                 for answer_name in binding:
@@ -72,18 +74,14 @@ def process_question(question):
     return question
 
 # Load JSON data
-with open('train_cleaned.json', 'r', encoding='utf-8') as file:
+with open(input_file, 'r', encoding='utf-8') as file:
     data = json.load(file)
 
-# for question in data:
-#     answers = run_query(question['sparql_wikidata'])
-#     question['answer'] = answers
-
 # Process the data in batches
-batch_size = 3
+batch_size = 4
 start_time = time.time()
 
-# sepparate the data in gorups of 3
+# sepparate the data in groups of 3
 batches = [data[i:i + batch_size] for i in range(0, len(data), batch_size)]
 total_processed = 0
 
@@ -95,7 +93,7 @@ for i, batch in enumerate(batches):
         for i, future in enumerate(as_completed(future_to_question)):
             question = future_to_question[future]
             try:
-                future.result()  # Updates the question in-place
+                future.result() 
             except Exception as exc:
                 print(f"Question {question['uid']} generated an exception: {exc}")
     
@@ -103,7 +101,7 @@ for i, batch in enumerate(batches):
     print(f"Processed {total_processed}/{len(data)} questions")
 
 # Save the modified data back to a file
-with open('train_cleaned_with_answers.json', 'w', encoding='utf-8') as outfile:
+with open(output_file, 'w', encoding='utf-8') as outfile:
     json.dump(data, outfile, indent=4)
 
 print(f"Update complete in", time.time() - start_time, "seconds")

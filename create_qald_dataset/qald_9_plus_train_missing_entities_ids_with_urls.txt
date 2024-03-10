@@ -1,0 +1,80 @@
+Q177397;Area 51;https://en.wikipedia.org/wiki/Area_51
+Q192990;Guy Ritchie;https://en.wikipedia.org/wiki/Guy_Ritchie
+Q155644;Uzi;https://en.wikipedia.org/wiki/Uzi
+Q178871;Apollo 14;https://en.wikipedia.org/wiki/Apollo_14
+Q1163227;The Pillars of the Earth;https://en.wikipedia.org/wiki/The_Pillars_of_the_Earth
+Q272059;Atlanta Falcons;https://en.wikipedia.org/wiki/Atlanta_Falcons
+Q186924;Hillel Slovak;https://en.wikipedia.org/wiki/Hillel_Slovak
+Q476028;Football club (association football);https://en.wikipedia.org/wiki/Football_club_(association_football)
+Q72792;Hal Roach;https://en.wikipedia.org/wiki/Hal_Roach
+Q3665646;Basketball player;https://en.wikipedia.org/wiki/Basketball_player
+Q1010;Maribor;https://en.wikipedia.org/wiki/Maribor
+Q473984;President of Pakistan;https://en.wikipedia.org/wiki/President_of_Pakistan
+Q15075508;;
+Q1318118;Last Christmas;https://en.wikipedia.org/wiki/Last_Christmas
+Q208569;Studio album;https://en.wikipedia.org/wiki/Studio_album
+Q482994;Album;https://en.wikipedia.org/wiki/Album
+Q207329;Soyuz programme;https://en.wikipedia.org/wiki/Soyuz_programme
+Q1401522;Public holidays in Sweden;https://en.wikipedia.org/wiki/Public_holidays_in_Sweden
+Q215380;Band (rock and pop);https://en.wikipedia.org/wiki/Band_(rock_and_pop)
+Q180825;FIFA Men's World Ranking;https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+Q593644;Chemist;https://en.wikipedia.org/wiki/Chemist
+Q51803;Chewbacca;https://en.wikipedia.org/wiki/Chewbacca
+Q17155032;Software categories;https://en.wikipedia.org/wiki/Software_categories
+Q189709;Star Alliance;https://en.wikipedia.org/wiki/Star_Alliance
+Q11679;The Hunger Games;https://en.wikipedia.org/wiki/The_Hunger_Games
+Q59150527;Elvis Presley albums discography;https://en.wikipedia.org/wiki/Elvis_Presley_albums_discography
+Q166262;Batman Begins;https://en.wikipedia.org/wiki/Batman_Begins
+Q844587;Prime Minister of Spain;https://en.wikipedia.org/wiki/Prime_Minister_of_Spain
+Q33999;Actor;https://en.wikipedia.org/wiki/Actor
+Q82955;Politician;https://en.wikipedia.org/wiki/Politician
+Q67479626;;
+Q861690;West African CFA franc;https://en.wikipedia.org/wiki/West_African_CFA_franc
+Q43185970;;
+Q61702557;Moon of Jupiter;https://en.wikipedia.org/wiki/Moon_of_Jupiter
+Q5274359;The Sopranos (season 1);https://en.wikipedia.org/wiki/The_Sopranos_(season_1)
+Q2367132;Battlestar Galactica (1978 TV series);https://en.wikipedia.org/wiki/Battlestar_Galactica_(1978_TV_series)
+Q237072;Battlestar Galactica (2004 TV series);https://en.wikipedia.org/wiki/Battlestar_Galactica_(2004_TV_series)
+Q2085488;Agent Smith;https://en.wikipedia.org/wiki/Agent_Smith
+Q3781399;Pro-Europeanism;https://en.wikipedia.org/wiki/Pro-Europeanism
+Q380;Meta Platforms;https://en.wikipedia.org/wiki/Meta_Platforms
+Q983650;Fort Knox;https://en.wikipedia.org/wiki/Fort_Knox
+Q130736;Nanga Parbat;https://en.wikipedia.org/wiki/Nanga_Parbat
+Q13432985;B-side;https://en.wikipedia.org/wiki/B-side
+Q55375123;King of Rome;https://en.wikipedia.org/wiki/King_of_Rome
+Q131734;Brewery;https://en.wikipedia.org/wiki/Brewery
+Q1471987;Vatican Media;https://en.wikipedia.org/wiki/Vatican_Media
+Q1480118;Yeti Airlines;https://en.wikipedia.org/wiki/Yeti_Airlines
+Q656071;Carrot cake;https://en.wikipedia.org/wiki/Carrot_cake
+Q22575092;;
+Q106458883;;
+Q465;DBpedia;https://en.wikipedia.org/wiki/DBpedia
+Q58226;Düsseldorf Airport;https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport
+Q200686;French Fifth Republic;https://en.wikipedia.org/wiki/French_Fifth_Republic
+Q18810062;Monarch of England;https://en.wikipedia.org/wiki/Monarch_of_England
+Q18574233;;
+Q194188;Spaceport;https://en.wikipedia.org/wiki/Spaceport
+Q41085;Sungkyunkwan University;https://en.wikipedia.org/wiki/Sungkyunkwan_University
+Q241665;Rachel Stevens;https://en.wikipedia.org/wiki/Rachel_Stevens
+Q8038;GIMP;https://en.wikipedia.org/wiki/GIMP
+Q875538;Public university;https://en.wikipedia.org/wiki/Public_university
+Q58483083;;
+Q208008;Cocoa bean;https://en.wikipedia.org/wiki/Cocoa_bean
+Q11696;President of the United States;https://en.wikipedia.org/wiki/President_of_the_United_States
+Q11699;Vice President of the United States;https://en.wikipedia.org/wiki/Vice_President_of_the_United_States
+Q1501505;Miffy;https://en.wikipedia.org/wiki/Miffy
+Q170645;2018 FIFA World Cup;https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+Q928726;GMT Games;https://en.wikipedia.org/wiki/GMT_Games
+Q1207989;Yokohama Marine Tower;https://en.wikipedia.org/wiki/Yokohama_Marine_Tower
+Q10841764;;
+Q1481540;Velvet Goldmine;https://en.wikipedia.org/wiki/Velvet_Goldmine
+Q7725310;;
+Q25173;Titanic;https://en.wikipedia.org/wiki/Titanic
+Q38104;Nobel Prize in Physics;https://en.wikipedia.org/wiki/Nobel_Prize_in_Physics
+Q15149663;Mexican state;https://en.wikipedia.org/wiki/Mexican_state
+Q35637;Nobel Peace Prize;https://en.wikipedia.org/wiki/Nobel_Peace_Prize
+Q368577;Harold and Maude;https://en.wikipedia.org/wiki/Harold_and_Maude
+Q426173;Proinsulin;https://en.wikipedia.org/wiki/Proinsulin
+Q949779;Melbourne, Florida;https://en.wikipedia.org/wiki/Melbourne,_Florida
+Q3235867;The Three Dancers;https://en.wikipedia.org/wiki/The_Three_Dancers
+Q3411252;Pyramid G1-a;https://en.wikipedia.org/wiki/Pyramid_G1-a

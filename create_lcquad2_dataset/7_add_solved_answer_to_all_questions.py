@@ -2,12 +2,15 @@ import json
 import os
 import csv
 
-with open('train_cleaned_only_questions_with_answers.json', 'r', encoding='utf-8') as file:
+input_questions_filename = 'train_cleaned_only_questions_with_answers.json'
+input_answers_filename = 'answer_entities_labels_and_url.csv'
+
+with open(input_questions_filename, 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 answer_entities_labels = []
 
-with open('answer_entities_labels_and_url.csv', 'r', encoding='utf-8') as f:
+with open(input_answers_filename, 'r', encoding='utf-8') as f:
     reader = csv.reader(f, delimiter=';')
     for row in reader:
         entity_id, entity_label, title, wiki_url = row

@@ -1,0 +1,220 @@
+Q625657;Australian Defence Force;https://en.wikipedia.org/wiki/Australian_Defence_Force
+Q16521;Taxon;https://en.wikipedia.org/wiki/Taxon
+Q645883;Military operation;https://en.wikipedia.org/wiki/Military_operation
+Q4463198;Triss Merigold;https://en.wikipedia.org/wiki/Triss_Merigold
+Q11835640;The Witcher;https://en.wikipedia.org/wiki/The_Witcher
+Q4205826;Yennefer of Vengerberg;https://en.wikipedia.org/wiki/Yennefer_of_Vengerberg
+Q10891456;;
+Q16003532;;
+Q696071;Hunter × Hunter;https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter
+Q69071;Münchenbuchsee;https://en.wikipedia.org/wiki/M%C3%BCnchenbuchsee
+Q81230;Siemens;https://en.wikipedia.org/wiki/Siemens
+Q2926117;Brooke Raboutou;https://en.wikipedia.org/wiki/Brooke_Raboutou
+Q87192979;Colin Duffy (climber);https://en.wikipedia.org/wiki/Colin_Duffy_(climber)
+Q9826;High school;https://en.wikipedia.org/wiki/High_school
+Q3208174;Don't Starve;https://en.wikipedia.org/wiki/Don%27t_Starve
+Q5014725;PlayStation 4;https://en.wikipedia.org/wiki/PlayStation_4
+Q1048744;General Secretary of the Communist Party of the Soviet Union;https://en.wikipedia.org/wiki/General_Secretary_of_the_Communist_Party_of_the_Soviet_Union
+Q218295;President of Russia;https://en.wikipedia.org/wiki/President_of_Russia
+Q181278;2020 Summer Olympics;https://en.wikipedia.org/wiki/2020_Summer_Olympics
+Q37922;Nobel Prize in Literature;https://en.wikipedia.org/wiki/Nobel_Prize_in_Literature
+Q58815001;Red Notice (film);https://en.wikipedia.org/wiki/Red_Notice_(film)
+Q2745616;Rawson Marshall Thurber;https://en.wikipedia.org/wiki/Rawson_Marshall_Thurber
+Q108886259;;
+Q155810;AVUS;https://en.wikipedia.org/wiki/AVUS
+Q158895;Helloween;https://en.wikipedia.org/wiki/Helloween
+Q3846;Minden;https://en.wikipedia.org/wiki/Minden
+Q1774251;IFSC Climbing World Cup;https://en.wikipedia.org/wiki/IFSC_Climbing_World_Cup
+Q406039;Gold medal;https://en.wikipedia.org/wiki/Gold_medal
+Q66432;Udo Bölts;https://en.wikipedia.org/wiki/Udo_B%C3%B6lts
+Q6581097;Male gender;https://en.wikipedia.org/wiki/Male_gender
+Q4186;Harz;https://en.wikipedia.org/wiki/Harz
+Q644371;International airport;https://en.wikipedia.org/wiki/International_airport
+Q482994;Album;https://en.wikipedia.org/wiki/Album
+Q208569;Studio album;https://en.wikipedia.org/wiki/Studio_album
+Q28171280;;
+Q1465181;NBA All-Defensive Team;https://en.wikipedia.org/wiki/NBA_All-Defensive_Team
+Q674359;All-NBA Team;https://en.wikipedia.org/wiki/All-NBA_Team
+Q7725634;;
+Q20640708;Sarah J. Maas;https://en.wikipedia.org/wiki/Sarah_J._Maas
+Q4963691;Brian Evenson;https://en.wikipedia.org/wiki/Brian_Evenson
+Q228899;Linda McCartney;https://en.wikipedia.org/wiki/Linda_McCartney
+Q79226802;;
+Q1144286;Pearl River Delta;https://en.wikipedia.org/wiki/Pearl_River_Delta
+Q13196750;Left (direction);https://en.wikipedia.org/wiki/Left_(direction)
+Q30170627;;
+Q92582;Ghost in the Shell (manga);https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(manga)
+Q18384454;;
+Q3739104;;
+Q6581072;Female (gender);https://en.wikipedia.org/wiki/Female_(gender)
+Q13442814;Scholarly article;https://en.wikipedia.org/wiki/Scholarly_article
+Q24901201;ImageNet;https://en.wikipedia.org/wiki/ImageNet
+Q388659;Scream (franchise);https://en.wikipedia.org/wiki/Scream_(franchise)
+Q3305213;Painting (object);https://en.wikipedia.org/wiki/Painting_(object)
+Q545129;Mensch ärgere Dich nicht;https://en.wikipedia.org/wiki/Mensch_%C3%A4rgere_Dich_nicht
+Q1760309;Pitch class;https://en.wikipedia.org/wiki/Pitch_class
+Q25379;Play (theatre);https://en.wikipedia.org/wiki/Play_(theatre)
+Q154797;Bundestag;https://en.wikipedia.org/wiki/Bundestag
+Q99654400;;
+Q2133344;;
+Q44585;Nobel Prize in Chemistry;https://en.wikipedia.org/wiki/Nobel_Prize_in_Chemistry
+Q30603704;Pose (TV series);https://en.wikipedia.org/wiki/Pose_(TV_series)
+Q130003;Ski resort;https://en.wikipedia.org/wiki/Ski_resort
+Q1621261;Venom (character);https://en.wikipedia.org/wiki/Venom_(character)
+Q110719;Oskar Lafontaine;https://en.wikipedia.org/wiki/Oskar_Lafontaine
+Q18130478;;
+Q152778;Die Brücke;https://en.wikipedia.org/wiki/Die_Br%C3%BCcke
+Q174199;Common bottlenose dolphin;https://en.wikipedia.org/wiki/Common_bottlenose_dolphin
+Q18032040;TNFAIP1;https://en.wikipedia.org/wiki/TNFAIP1
+Q194285;Nebula Award;https://en.wikipedia.org/wiki/Nebula_Award
+Q242643;Naomi Novik;https://en.wikipedia.org/wiki/Naomi_Novik
+Q188914;Hugo Award;https://en.wikipedia.org/wiki/Hugo_Award
+Q623561;Dr Pepper;https://en.wikipedia.org/wiki/Dr_Pepper
+Q219655;Carey Mulligan;https://en.wikipedia.org/wiki/Carey_Mulligan
+Q92580;Ghost in the Shell;https://en.wikipedia.org/wiki/Ghost_in_the_Shell
+Q68061;Cage the Elephant;https://en.wikipedia.org/wiki/Cage_the_Elephant
+Q608350;Veltins Brewery;https://en.wikipedia.org/wiki/Veltins_Brewery
+Q1769361;List of countries with IKEA stores;https://en.wikipedia.org/wiki/List_of_countries_with_IKEA_stores
+Q1771942;United Fruit Company;https://en.wikipedia.org/wiki/United_Fruit_Company
+Q3233785;Egg decorating in Slavic culture;https://en.wikipedia.org/wiki/Egg_decorating_in_Slavic_culture
+Q98138090;;
+Q1128775;Vogue (Madonna song);https://en.wikipedia.org/wiki/Vogue_(Madonna_song)
+Q338553;The Visitors (ABBA album);https://en.wikipedia.org/wiki/The_Visitors_(ABBA_album)
+Q98476957;The Vanishing Half;https://en.wikipedia.org/wiki/The_Vanishing_Half
+Q388973;After Eight;https://en.wikipedia.org/wiki/After_Eight
+Q157062;Unilever;https://en.wikipedia.org/wiki/Unilever
+Q1549591;;
+Q1213562;Adaptation (arts);https://en.wikipedia.org/wiki/Adaptation_(arts)
+Q17152495;Prime version;https://en.wikipedia.org/wiki/Prime_version
+Q143276;Samurai Champloo;https://en.wikipedia.org/wiki/Samurai_Champloo
+Q11567495;;
+Q11885;Axl Rose;https://en.wikipedia.org/wiki/Axl_Rose
+Q1650;Weser;https://en.wikipedia.org/wiki/Weser
+Q6228;Höxter (district);https://en.wikipedia.org/wiki/H%C3%B6xter_(district)
+Q6224;Paderborn (district);https://en.wikipedia.org/wiki/Paderborn_(district)
+Q7858;Nordhausen (district);https://en.wikipedia.org/wiki/Nordhausen_(district)
+Q38104;Nobel Prize in Physics;https://en.wikipedia.org/wiki/Nobel_Prize_in_Physics
+Q17985761;;
+Q268218;Emperor of China;https://en.wikipedia.org/wiki/Emperor_of_China
+Q71719;Hollywood Walk of Fame;https://en.wikipedia.org/wiki/Hollywood_Walk_of_Fame
+Q70209136;Hunter × Hunter (2011 TV series);https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter_(2011_TV_series)
+Q59152282;;
+Q3044693;Silent Generation;https://en.wikipedia.org/wiki/Silent_Generation
+Q28378282;;
+Q858851;Linux Foundation;https://en.wikipedia.org/wiki/Linux_Foundation
+Q951002;Funny Games (2007 film);https://en.wikipedia.org/wiki/Funny_Games_(2007_film)
+Q696928;Funny Games (1997 film);https://en.wikipedia.org/wiki/Funny_Games_(1997_film)
+Q19793459;;
+Q3665646;Basketball player;https://en.wikipedia.org/wiki/Basketball_player
+Q10800557;Film actor;https://en.wikipedia.org/wiki/Film_actor
+Q16954319;Darkside (band);https://en.wikipedia.org/wiki/Darkside_(band)
+Q1006079;;
+Q11862829;Academic discipline;https://en.wikipedia.org/wiki/Academic_discipline
+Q22092344;;
+Q1608064;Voting Rights Act of 1965;https://en.wikipedia.org/wiki/Voting_Rights_Act_of_1965
+Q48160;Flag of Germany;https://en.wikipedia.org/wiki/Flag_of_Germany
+Q322170;Suffragette;https://en.wikipedia.org/wiki/Suffragette
+Q1190554;;
+Q213849;ATI Technologies;https://en.wikipedia.org/wiki/ATI_Technologies
+Q271723;Alea iacta est;https://en.wikipedia.org/wiki/Alea_iacta_est
+Q599644;Ox (zodiac);https://en.wikipedia.org/wiki/Ox_(zodiac)
+Q30748112;;
+Q315296;Erlangen program;https://en.wikipedia.org/wiki/Erlangen_program
+Q848490;Roland Corporation;https://en.wikipedia.org/wiki/Roland_Corporation
+Q1027807;Port of Rotterdam;https://en.wikipedia.org/wiki/Port_of_Rotterdam
+Q16003605;;
+Q15360275;;
+Q11419997;Your Lie in April;https://en.wikipedia.org/wiki/Your_Lie_in_April
+Q677273;Piranha Bytes;https://en.wikipedia.org/wiki/Piranha_Bytes
+Q5398426;Television series;https://en.wikipedia.org/wiki/Television_series
+Q2833;Freiburg im Breisgau;https://en.wikipedia.org/wiki/Freiburg_im_Breisgau
+Q653941;Ray-Ban;https://en.wikipedia.org/wiki/Ray-Ban
+Q55706505;;
+Q263478;Musical note;https://en.wikipedia.org/wiki/Musical_note
+Q24514682;Dead by Daylight;https://en.wikipedia.org/wiki/Dead_by_Daylight
+Q842256;Musical film;https://en.wikipedia.org/wiki/Musical_film
+Q19798744;The OA;https://en.wikipedia.org/wiki/The_OA
+Q755830;Atif Aslam;https://en.wikipedia.org/wiki/Atif_Aslam
+Q167685;Janus;https://en.wikipedia.org/wiki/Janus
+Q177329;Frodo Baggins;https://en.wikipedia.org/wiki/Frodo_Baggins
+Q74359;Hobbit;https://en.wikipedia.org/wiki/Hobbit
+Q636399;Smoke on the Water;https://en.wikipedia.org/wiki/Smoke_on_the_Water
+Q23001951;Riverdale (American TV series);https://en.wikipedia.org/wiki/Riverdale_(American_TV_series)
+Q551416;Hambach Festival;https://en.wikipedia.org/wiki/Hambach_Festival
+Q1420480;Ironman World Championship;https://en.wikipedia.org/wiki/Ironman_World_Championship
+Q191067;Article (publishing);https://en.wikipedia.org/wiki/Article_(publishing)
+Q6557482;Liquid state machine;https://en.wikipedia.org/wiki/Liquid_state_machine
+Q703237;Echo Music Prize;https://en.wikipedia.org/wiki/Echo_Music_Prize
+Q7861093;Typhoon (American band);https://en.wikipedia.org/wiki/Typhoon_(American_band)
+Q27706;Hamburg Airport;https://en.wikipedia.org/wiki/Hamburg_Airport
+Q693956;Hamburg S-Bahn;https://en.wikipedia.org/wiki/Hamburg_S-Bahn
+Q800176;Birdland (Hamburg jazz club);https://en.wikipedia.org/wiki/Birdland_(Hamburg_jazz_club)
+Q1545259;Howl (poem);https://en.wikipedia.org/wiki/Howl_(poem)
+Q1514848;University of Saskatchewan;https://en.wikipedia.org/wiki/University_of_Saskatchewan
+Q152267;White Fang;https://en.wikipedia.org/wiki/White_Fang
+Q46577569;Nutri-Score;https://en.wikipedia.org/wiki/Nutri-Score
+Q103618;Academy Award for Best Actress;https://en.wikipedia.org/wiki/Academy_Award_for_Best_Actress
+Q26707663;Lisa (rapper);https://en.wikipedia.org/wiki/Lisa_(rapper)
+Q54555985;Khruangbin;https://en.wikipedia.org/wiki/Khruangbin
+Q19347291;Deadpool (film);https://en.wikipedia.org/wiki/Deadpool_(film)
+Q38685497;Free Guy;https://en.wikipedia.org/wiki/Free_Guy
+Q11696;President of the United States;https://en.wikipedia.org/wiki/President_of_the_United_States
+Q968159;Art movement;https://en.wikipedia.org/wiki/Art_movement
+Q478214;Tesla, Inc.;https://en.wikipedia.org/wiki/Tesla,_Inc.
+Q1067089;Throat singing;https://en.wikipedia.org/wiki/Throat_singing
+Q1115291;Thonburi Kingdom;https://en.wikipedia.org/wiki/Thonburi_Kingdom
+Q169604;Three Flavours Cornetto;https://en.wikipedia.org/wiki/Three_Flavours_Cornetto
+Q2945433;Four Policemen;https://en.wikipedia.org/wiki/Four_Policemen
+Q13393265;;
+Q27020041;Season (sports);https://en.wikipedia.org/wiki/Season_(sports)
+Q294647;Mads Mikkelsen;https://en.wikipedia.org/wiki/Mads_Mikkelsen
+Q69303989;Another Round;https://en.wikipedia.org/wiki/Another_Round
+Q828282;Fijación Oral, Vol. 1;https://en.wikipedia.org/wiki/Fijaci%C3%B3n_Oral,_Vol._1
+Q134556;Single (music);https://en.wikipedia.org/wiki/Single_(music)
+Q105543609;;
+Q2292830;Rangers of the North;https://en.wikipedia.org/wiki/Rangers_of_the_North
+Q11397897;;
+Q2035494;Half-elven;https://en.wikipedia.org/wiki/Half-elven
+Q46569648;2020 UEFA Champions League final;https://en.wikipedia.org/wiki/2020_UEFA_Champions_League_final
+Q533822;WordNet;https://en.wikipedia.org/wiki/WordNet
+Q63246568;Portrait of a Lady on Fire;https://en.wikipedia.org/wiki/Portrait_of_a_Lady_on_Fire
+Q523286;Hambach Castle;https://en.wikipedia.org/wiki/Hambach_Castle
+Q28091065;Anne with an E;https://en.wikipedia.org/wiki/Anne_with_an_E
+Q44649835;;
+Q117035;Der Blaue Reiter;https://en.wikipedia.org/wiki/Der_Blaue_Reiter
+Q479361;;
+Q27863945;Convenience Store Woman;https://en.wikipedia.org/wiki/Convenience_Store_Woman
+Q937857;Association football player;https://en.wikipedia.org/wiki/Association_football_player
+Q1211977;Dinosaurs (TV series);https://en.wikipedia.org/wiki/Dinosaurs_(TV_series)
+Q131524;Entrepreneur;https://en.wikipedia.org/wiki/Entrepreneur
+Q48817408;Queer Eye (2018 TV series);https://en.wikipedia.org/wiki/Queer_Eye_(2018_TV_series)
+Q2357719;Smite (video game);https://en.wikipedia.org/wiki/Smite_(video_game)
+Q130736;Nanga Parbat;https://en.wikipedia.org/wiki/Nanga_Parbat
+Q343616;Paul Dano;https://en.wikipedia.org/wiki/Paul_Dano
+Q378427;Literary award;https://en.wikipedia.org/wiki/Literary_award
+Q30588383;List of Tiny Desk Concerts;https://en.wikipedia.org/wiki/List_of_Tiny_Desk_Concerts
+Q2394280;Boo-Boo Bear;https://en.wikipedia.org/wiki/Boo-Boo_Bear
+Q16889037;Unbreakable Kimmy Schmidt;https://en.wikipedia.org/wiki/Unbreakable_Kimmy_Schmidt
+Q55621114;Llamas with Hats;https://en.wikipedia.org/wiki/Llamas_with_Hats
+Q2518973;Pinhead (Hellraiser);https://en.wikipedia.org/wiki/Pinhead_(Hellraiser)
+Q3521239;The Hellbound Heart;https://en.wikipedia.org/wiki/The_Hellbound_Heart
+Q462333;Clara Westhoff;https://en.wikipedia.org/wiki/Clara_Westhoff
+Q51885404;(G)I-dle;https://en.wikipedia.org/wiki/(G)I-dle
+Q932289;Congo Basin;https://en.wikipedia.org/wiki/Congo_Basin
+Q20718;Samsung Electronics;https://en.wikipedia.org/wiki/Samsung_Electronics
+Q9673;Lewis Hamilton;https://en.wikipedia.org/wiki/Lewis_Hamilton
+Q673;;
+Q2905359;Black Diamond Equipment;https://en.wikipedia.org/wiki/Black_Diamond_Equipment
+Q3821214;La Sportiva;https://en.wikipedia.org/wiki/La_Sportiva
+Q1057918;Bellatrix Lestrange;https://en.wikipedia.org/wiki/Bellatrix_Lestrange
+Q713701;Sirius Black;https://en.wikipedia.org/wiki/Sirius_Black
+Q7933;Neumayer Station III;https://en.wikipedia.org/wiki/Neumayer_Station_III
+Q195351;Günther Messner;https://en.wikipedia.org/wiki/G%C3%BCnther_Messner
+Q163173;Running Wild (band);https://en.wikipedia.org/wiki/Running_Wild_(band)
+Q676899;Italy national football team;https://en.wikipedia.org/wiki/Italy_national_football_team
+Q1717891;Sender Bielstein;https://en.wikipedia.org/wiki/Sender_Bielstein
+Q923;Alexander;https://en.wikipedia.org/wiki/Alexander
+Q15840785;;
+Q327818;Kandahar (ski course);https://en.wikipedia.org/wiki/Kandahar_(ski_course)
+Q673223;Elbphilharmonie;https://en.wikipedia.org/wiki/Elbphilharmonie
+Q506040;Granny Smith;https://en.wikipedia.org/wiki/Granny_Smith

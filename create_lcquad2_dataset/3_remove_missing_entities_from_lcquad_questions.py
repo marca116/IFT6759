@@ -1,36 +1,63 @@
 import json
+import csv
+import re
 
-with open('train_with_simplified_query.json', 'r', encoding='utf-8') as file:
+input_questions_file = 'train_with_simplified_query.json'
+input_vital_articles_entities_file = 'vital_articles_entities_2019_q9_q10.csv'
+
+removed_questions_file = 'train_removed_missing_question_entities.json'
+output_file = 'train_cleaned_no_missing_entities.json'
+
+with open(input_questions_file, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-with open('lcquad_missing_entities.txt', 'r') as file:
-    missing_entities = file.read().splitlines()
+vital_articles_entities = []
 
-removed_questions_count = []
+with open(input_vital_articles_entities_file, 'r', encoding='utf-8') as f:
+    reader = csv.reader(f, delimiter=';')
+    for row in reader:
+        vital_articles_entities.append(row)
+
 remaining_questions = questions.copy()
 removed_questions_final = []
 
-# remove matching questions
-for entity in missing_entities:
-    removed_count = 0
-    questions_to_remove = []
+unique_missing_entity_all = []
 
-    for question in remaining_questions:
-        if entity + " " in question['sparql_wikidata']: # Need to add a space after, otherwise will also remove any entity with an id that contains it (ex : Q67, Q677, etc.)
-            #print("Removed:", question['question'])
-            questions_to_remove.append(question)
-            removed_count += 1
+for question_index, question in enumerate(questions):
+    # Finding all matches of the regex in the SPARQL query
+    entity_ids = re.findall(r"wd:Q\d+", question['sparql_wikidata'])
+    entity_ids_cleaned = [match.split(":")[1] for match in entity_ids]
 
-    for question in questions_to_remove:
-        remaining_questions.remove(question)
+    # remove the wd: part
+    entities = list(set(entity_ids_cleaned))
+
+    removed_an_entity = False
+
+    for entity in entities:
+        # Find the entity's index in vital_articles_entities
+        vital_entity_index = next((i for i, x in enumerate(vital_articles_entities) if x[0] == entity), None)
+        vital_entity_id = vital_articles_entities[vital_entity_index][0] if vital_entity_index is not None else None
+
+        if vital_entity_id is None:
+            if entity not in unique_missing_entity_all:
+                unique_missing_entity_all.append(entity)
+
+            removed_an_entity = True
+
+    if removed_an_entity:
         removed_questions_final.append(question)
 
-    if removed_count > 0:
-        removed_questions_count.append((entity, removed_count))
-        print(f"Total questions removed for {entity}: {removed_count}")
+    if question_index % 100 == 0:
+        print(f"Processed {question_index}/{len(questions)} questions")
 
-# objects removed
+for question in removed_questions_final:
+    remaining_questions.remove(question)
+
+# questions removed
 print(f"Total questions removed: {len(questions) - len(remaining_questions)}")
+
+# unique_missing_entity_ids
+print(f"Total unique missing entities: {len(unique_missing_entity_all)}")
 
 # Count the nb of questions per templates (template_id) for the remaining questions
 remaining_templates_count = {}
@@ -71,15 +98,9 @@ with open('count_removed_vs_all_questions_templates_ratio.json', 'w', encoding='
     json.dump(templates_ratio, outfile, indent=4)
 
 # Save removed questions
-with open('train_removed.json', 'w', encoding='utf-8') as outfile:
+with open(removed_questions_file, 'w', encoding='utf-8') as outfile:
     json.dump(removed_questions_final, outfile, indent=4)
 
-# Sort the removed_questions_count list and save it
-removed_questions_count.sort(key=lambda x: x[1], reverse=True)
-with open('removed_lcquad_questions_count.txt', 'w') as outfile:
-    for item in removed_questions_count:
-        outfile.write(f"{item[0]}: {item[1]}\n")
-
 # Save cleaned questions
-with open('train_cleaned.json', 'w', encoding='utf-8') as outfile:
+with open(output_file, 'w', encoding='utf-8') as outfile:
     json.dump(remaining_questions, outfile, indent=4)

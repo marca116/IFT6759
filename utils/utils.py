@@ -1,7 +1,7 @@
 import requests
 
 def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
-    url = "https://www.wikidata.org/w/api.php"
+    wiki_api_url = "https://www.wikidata.org/w/api.php"
     params = {
         'action': 'wbgetentities',
         "format": "json",
@@ -13,7 +13,7 @@ def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
     if not allow_fallback_language:
         params['languages'] = "en"
 
-    response = requests.get(url, params=params)
+    response = requests.get(wiki_api_url, params=params)
     if response.status_code == 200:
         json_obj = response.json()
 
@@ -74,3 +74,47 @@ def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
         return results
     else:
         print(f"Failed to download {entity_id}")
+
+def get_wikidata_entity_from_wikipedia(titles):
+    wiki_api_url = "https://en.wikipedia.org/w/api.php"
+    params = {
+        'action': 'query',
+        'prop': 'pageprops|info',
+        'inprop': 'url',
+        'ppprop': 'wikibase_item',
+        'titles': titles, 
+        'redirects': 1,
+        'format': 'json'
+    }
+
+    response = requests.get(wiki_api_url, params=params)
+    if response.status_code == 200:
+        json_obj = response.json()
+
+        if json_obj.get('query') is None or json_obj['query'].get('pages') is None:
+            print(f"Failed to download {titles}, no page found.")
+            return None
+        
+        query = json_obj['query']
+        pages = query['pages']
+        #redirects = query.get('redirects')
+
+        results = []
+
+        # Go through each property
+        for page_id in pages:
+            page = pages[page_id]
+            title = page.get('title')
+            url = page.get('fullurl')
+            if page.get('pageprops') is None or page['pageprops'].get('wikibase_item') is None:
+                print(f"Failed to download {title}, no wikibase_item found.")
+                with open('missing_wikibase_items.txt', 'a') as f:
+                    f.write(title + '\n')
+            else:
+                entity_id = page['pageprops']['wikibase_item']
+                results.append((entity_id, title, url))
+
+        return results
+
+    else:
+        print(f"Failed to download {titles}")
