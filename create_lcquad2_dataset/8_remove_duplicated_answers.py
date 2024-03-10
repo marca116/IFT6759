@@ -23,6 +23,12 @@ for question in data:
     question['answer'] = answers
     question['solved_answer'] = solved_answers
 
+    # del paraphrased_question
+    del question['paraphrased_question']
+
+    # Convert template_id to string
+    question['template_id'] = str(question['template_id'])
+
     processed_question_nb += 1
     if processed_question_nb % 100 == 0:
         print(f"Processed {processed_question_nb}/{len(data)} questions")
