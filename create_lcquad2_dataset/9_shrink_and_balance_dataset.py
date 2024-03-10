@@ -17,6 +17,7 @@ with open(input_file_lcquad2_final) as file:
 # Convert template_id to string
 for item in train_data:
     item['template_id'] = str(item['template_id'])
+
 for item in lcquad_data:
     item['template_id'] = str(item['template_id'])
 
