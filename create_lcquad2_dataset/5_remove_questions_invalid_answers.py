@@ -7,6 +7,7 @@ questions_with_no_answers = []
 questions_with_too_many_answers = []
 questions_with_paraphrased_questions_too_long = []
 questions_with_nmqt_questions_same_as_question = []
+questions_with_invalid_text_in_answers = []
 
 questions_with_answers = []
 
@@ -26,6 +27,10 @@ for question in data:
     elif "{" in question["question"] and "}" in question["question"]:
         print(f"NNQT question same as question for {question['uid']}: {question['question']}")
         questions_with_nmqt_questions_same_as_question.append(question)
+    # Questions with answers that contains "http://commons.wikimedia.org/wiki/Special" if isinstance(answer, str)
+    elif any("http://commons.wikimedia.org/wiki/Special" in answer for answer in question['answer'] if isinstance(answer, str)):
+        print(f"Invalid text in answers for {question['uid']}: {question['question']}")
+        questions_with_invalid_text_in_answers.append(question)
     else:
         questions_with_answers.append(question)
 
@@ -33,6 +38,7 @@ print(f"Questions with no answers: {len(questions_with_no_answers)}")
 print(f"Questions with too many answers: {len(questions_with_too_many_answers)}")
 print(f"Questions with paraphrased questions too long: {len(questions_with_paraphrased_questions_too_long)}")
 print(f"Questions with NNQT questions same as question: {len(questions_with_nmqt_questions_same_as_question)}")
+print(f"Questions with invalid text in answers: {len(questions_with_invalid_text_in_answers)}")
 
 print(f"Questions with valid answers: {len(questions_with_answers)}")
 

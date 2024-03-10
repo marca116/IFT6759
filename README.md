@@ -40,6 +40,8 @@ Note : Couldn't use the answers included in this dataset since they are out of d
 
 8_remove_duplicated_answers.py : Go through all the questions in train_lcquad2_with_solved_answers, and remove all answers that are duplicated (happens the Sparql asks for 2 parts to the answer, the first part is duplicated for each second part). Do the same for both answer and solved_answer. Save to train_lcquad2_final.json.
 
+9_shrink_and_balance_dataset.py : Shrink train_lcquad2_final.json down to a more managable size (ex:  1.4k), while keeping the same template ratio as the original dataset (train.json). 
+
 # Final
 
 The final versions of all datasets is in the "datasets" folder.
