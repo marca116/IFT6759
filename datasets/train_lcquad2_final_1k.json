@@ -18448,34 +18448,6 @@
         ]
     },
     {
-        "NNQT_question": "What is {birth city} of {has kid} of {Louis IX of France} ?",
-        "uid": 15655,
-        "subgraph": "left-subgraph",
-        "template_index": 14,
-        "question": "What is the birthplace of the son of Louis IX of France?",
-        "sparql_wikidata": "SELECT ?answer WHERE { wd:Q346 wdt:P40 ?X . ?X wdt:P19 ?answer}",
-        "sparql_dbpedia18": "SELECT ?answer WHERE { ?statement1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://wikidata.dbpedia.org/resource/Q346> . ?statement1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.wikidata.org/entity/P40>. ?statement1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> ?X . ?statement2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> ?X. ?statement2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.wikidata.org/entity/P19> . ?statement2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> ?answer . }",
-        "template": "C RCD xD . xD RDE ?E",
-        "answer": [
-            "http://www.wikidata.org/entity/Q457",
-            "http://www.wikidata.org/.well-known/genid/4b8798117719b5ef13b36ccf3d277265",
-            "http://www.wikidata.org/entity/Q180294",
-            "http://www.wikidata.org/entity/Q189383",
-            "http://www.wikidata.org/entity/Q757398",
-            "http://www.wikidata.org/.well-known/genid/f439e7cdda08c7cd8ed588812c57ab7e"
-        ],
-        "template_id": "5",
-        "simplified_query": "SELECT ?q WHERE { resource:Louis_IX_of_France property:child ?i . ?i property:place_of_birth ?q }",
-        "solved_answer": [
-            "Poissy",
-            "http://www.wikidata.org/.well-known/genid/4b8798117719b5ef13b36ccf3d277265",
-            "Jaffa",
-            "Damietta",
-            "Atlit",
-            "http://www.wikidata.org/.well-known/genid/f439e7cdda08c7cd8ed588812c57ab7e"
-        ]
-    },
-    {
         "NNQT_question": "What is {scholarly field for} of {scholarly field for} of {Leonhard Euler} ?",
         "uid": 14652,
         "subgraph": "left-subgraph",
@@ -24965,24 +24937,6 @@
         "simplified_query": "SELECT ?n WHERE { ?s property:academic_major resource:Latin . ?s property:educated_at ?n . resource:Christopher_Wren property:educated_at ?s }",
         "solved_answer": [
             "Wadham College"
-        ]
-    },
-    {
-        "NNQT_question": "What is {date of death} of {Leonardo Bonacci} that is {earliest date} is {1240-0-0} ?",
-        "uid": 7990,
-        "subgraph": "statement_property",
-        "template_index": 4435,
-        "question": "What was Leonardo Bonacci's date of death in the year 1240?",
-        "sparql_wikidata": "SELECT ?obj WHERE { wd:Q8763 p:P570 ?s . ?s ps:P570 ?obj . ?s pq:P1319 ?x filter(contains(YEAR(?x),'1240')) }",
-        "sparql_dbpedia18": "select distinct ?obj  where {\n?statement <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://wikidata.dbpedia.org/resource/Q8763> .\n?statement <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.wikidata.org/entity/P570> .\n?statement <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> ?obj .\n?statement <http://www.wikidata.org/entity/P1319> <1240-0-0>\n} \n",
-        "template": "(E pred F) prop ?value",
-        "answer": [
-            "http://www.wikidata.org/.well-known/genid/1b03a0c3628870ce7e08ff38e1786d3c"
-        ],
-        "template_id": "statement_property_2",
-        "simplified_query": "SELECT ?w WHERE { ?e property:earliest_date ?j . ?e property:date_of_death ?w . FILTER ( CONTAINS ( YEAR ( ?j ) , '1240' ) ) . resource:Fibonacci property:date_of_death ?e }",
-        "solved_answer": [
-            "http://www.wikidata.org/.well-known/genid/1b03a0c3628870ce7e08ff38e1786d3c"
         ]
     },
     {

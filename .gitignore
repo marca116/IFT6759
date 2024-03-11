@@ -170,3 +170,5 @@ vital_articles_2018-02-26/
 created_entity_subgraph/
 create_lcquad2_dataset/*/
 */_intermediary_files/
+*/current_convo_debug/
+*/oai_config.json

@@ -1,7 +1,7 @@
 # IFT6759
 
 # Vital articles wikipedia extracts
-https://drive.google.com/file/d/1mQJd1qGx-7nXNeA81qOvNBY5nfilqeCp/view
+https://drive.google.com/file/d/1ddp1dq3zzKZ-qhBqGHTvNBT2fItHko0p/view
 
 # Create list of vital articles
 

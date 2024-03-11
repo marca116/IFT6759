@@ -28,7 +28,7 @@ for question in data:
         print(f"NNQT question same as question for {question['uid']}: {question['question']}")
         questions_with_nmqt_questions_same_as_question.append(question)
     # Questions with answers that contains "http://commons.wikimedia.org/wiki/Special" if isinstance(answer, str)
-    elif any("http://commons.wikimedia.org/wiki/Special" in answer for answer in question['answer'] if isinstance(answer, str)):
+    elif any("http://commons.wikimedia.org/wiki/Special" in answer or "http://www.wikidata.org/.well-known/" in answer for answer in question['answer'] if isinstance(answer, str)):
         print(f"Invalid text in answers for {question['uid']}: {question['question']}")
         questions_with_invalid_text_in_answers.append(question)
     else:
