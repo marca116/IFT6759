@@ -9,7 +9,7 @@ import sys
 sys.path.insert(0, "../utils")
 from utils import get_wikidata_entities_info
 
-dataset_name = 'qald_10_test' # qald_9_plus_train_wikidata and qald_10_test
+dataset_name = 'qald_9_plus_train_wikidata' # qald_9_plus_train_wikidata and qald_10_test
 formatted_dataset = f'{dataset_name}_formatted_and_cleaned.json'
 unique_entities_and_url_filename = f'{dataset_name}_answers_unique_entities_and_url.csv'
 solved_answers_dataset = f'{dataset_name}_with_solved_answers.json'
@@ -45,25 +45,25 @@ for q_index, question in enumerate(data):
         results = get_wikidata_entities_info(entity_ids_group, allow_fallback_language=True) # Fallback to whatever language is available if label missing
 
         for result in results:
-            entity_id, entity_label, title, wiki_url = result
-            question["solved_answer"].append(entity_label)
+            entity_id, entity_labels, title, wiki_url = result
+            question["solved_answer"].append(entity_labels)
 
             # if entityid not already in the unique_entities_and_url list, add the result tuple to it
             if entity_id not in [x[0] for x in unique_entities_and_url]:
-                unique_entities_and_url.append((entity_id, entity_label, title, wiki_url))
+                unique_entities_and_url.append((entity_id, entity_labels, title, wiki_url))
 
     # add non-entity answers to solved_answer at the end
     for non_entity_answer in non_entity_answers:
         question["solved_answer"].append(non_entity_answer)
 
-    print(f"Processed {q_index+1}/{len(data)} questions")
+    print(f"Processed {q_index+1}/{len(data)} question")
 
 # save unique_entities_and_url
 for result in unique_entities_and_url:
-    entity_id, entity_label, title, wiki_url = result
+    entity_id, entity_labels, title, wiki_url = result
     with open(unique_entities_and_url_filename, 'a', encoding='utf-8', newline='') as f:
         writer = csv.writer(f, delimiter=';')
-        writer.writerow([entity_id, entity_label, title, wiki_url])
+        writer.writerow([entity_id, entity_labels[0] if len(entity_labels) > 0 else "", title, wiki_url])
 
 # Save to solved_answers_dataset
 with open(solved_answers_dataset, 'w', encoding='utf-8') as outfile:

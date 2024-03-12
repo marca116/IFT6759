@@ -1,7 +1,7 @@
 import json
 
 remove_long_answers = False # False for qald_9_train, True for qald_10_test
-dataset_name = "qald_10_test" # qald_9_plus_train_wikidata and qald_10_test
+dataset_name = "qald_9_plus_train_wikidata" # qald_9_plus_train_wikidata and qald_10_test
 
 original_dataset = f'{dataset_name}.json'
 formatted_dataset = f'{dataset_name}_formatted_and_cleaned.json'
@@ -28,7 +28,6 @@ for question in data['questions']:
         "template": "", 
         "answer": [],
         "template_id": "",
-        "paraphrased_question": "", 
         "simplified_query": "", 
         "solved_answer": [] 
     }

@@ -5,7 +5,7 @@ def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
     params = {
         'action': 'wbgetentities',
         "format": "json",
-        'props': 'labels|sitelinks/urls',
+        'props': 'labels|aliases|sitelinks/urls',
         'ids': entity_ids,
         'sitefilter': 'enwiki'
     }
@@ -39,7 +39,7 @@ def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
                 else:
                     print(f"Failed to download {entity_id} redirected to {redirects['to']}")
                 
-            entity_label = ""
+            entity_labels = []
             label_language_obj = None
 
             if entity.get("labels") is not None:
@@ -47,15 +47,22 @@ def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
 
             # Default to first available language if no language is set
             if entity.get("labels") is not None and label_language_obj is None and allow_fallback_language:
-                label_language_obj = list(entity["labels"].values())[0]
-                print(f"En language label missing for entity {entity_id}l, using language '{label_language_obj['language']}' instead.")
+                label_language_objs = list(entity["labels"].values())
+                if len(label_language_objs) > 0:
+                    label_language_obj = label_language_objs[0]
+                    print(f"En language label missing for entity {entity_id}, using language '{label_language_obj['language']}' instead.")
 
             if label_language_obj is None:
                 print(f"Failed to download {entity_id} missing label.")
                 with open('answer_entities_missing_label.txt', 'a') as f:
                     f.write(entity_id + '\n')
             else:
-                entity_label = label_language_obj["value"] 
+                entity_labels.append(label_language_obj["value"])
+
+            if entity.get("aliases") is not None and entity["aliases"].get("en") is not None:
+                # Add all eng aliases
+                for alias in entity["aliases"]["en"]:
+                    entity_labels.append(alias["value"])
 
             title = ""
             wiki_url = ""
@@ -69,7 +76,7 @@ def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
                 title = link_en["title"]
                 wiki_url = link_en["url"]
 
-            results.append((entity_id, entity_label, title, wiki_url))
+            results.append((entity_id, entity_labels, title, wiki_url))
 
         return results
     else:
@@ -118,3 +125,20 @@ def get_wikidata_entity_from_wikipedia(titles):
 
     else:
         print(f"Failed to download {titles}")
+
+# Case insensitive comparison
+def case_insensitive_equals(a, b):
+    if isinstance(a, str) and isinstance(b, str):
+        return a.lower() == b.lower()
+    else:
+        return a == b
+    
+# If both item and element are strings, compare them case-insensitively
+def case_insensitive_elem_in_list(element, lst):
+    for item in lst:
+        if isinstance(element, str) and isinstance(item, str):
+            if element.lower() == item.lower():
+                return True
+        elif element == item:
+            return True
+    return False

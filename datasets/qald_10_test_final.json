@@ -12,10 +12,12 @@
             "http://www.wikidata.org/entity/Q42299"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Bernhard Riemann"
+            [
+                "Bernhard Riemann",
+                "Georg Friedrich Bernhard Riemann"
+            ]
         ]
     },
     {
@@ -31,10 +33,13 @@
             "http://www.wikidata.org/entity/Q93208"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "emu"
+            [
+                "emu",
+                "Dromaius novaehollandiae",
+                "Emu"
+            ]
         ]
     },
     {
@@ -50,10 +55,13 @@
             "http://www.wikidata.org/entity/Q4205826"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Yennefer of Vengerberg"
+            [
+                "Yennefer of Vengerberg",
+                "Yen",
+                "Yenna"
+            ]
         ]
     },
     {
@@ -69,10 +77,14 @@
             "http://www.wikidata.org/entity/Q1739008"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Ma Huateng"
+            [
+                "Ma Huateng",
+                "Pony Ma",
+                "M\u01ce Hu\u00e0t\u00e9ng",
+                "Pony Ma Huateng"
+            ]
         ]
     },
     {
@@ -88,10 +100,16 @@
             "http://www.wikidata.org/entity/Q18225473"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Yu Yu Hakusho"
+            [
+                "Yu Yu Hakusho",
+                "YuYu Hakusho",
+                "Yuu\u2606Yuu\u2606Hakusho",
+                "Ghost Fighters",
+                "Yuu Yuu Hakusho",
+                "Y\u016b Y\u016b Hakusho"
+            ]
         ]
     },
     {
@@ -110,13 +128,41 @@
             "http://www.wikidata.org/entity/Q819468"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "New York Stock Exchange",
-            "Frankfurt Stock Exchange",
-            "Swiss Stock Exchange",
-            "Xetra"
+            [
+                "New York Stock Exchange",
+                "NYSE",
+                "Big Board",
+                "The New York Stock Exchange",
+                "NY Stock Exchange",
+                "N. Y. Stock Exchange",
+                "N.Y. Stock Exchange",
+                "XNYS"
+            ],
+            [
+                "Frankfurt Stock Exchange",
+                "FWB",
+                "Frankfurter B\u00f6rse",
+                "Frankfurter Wertpapierb\u00f6rse",
+                "FRA Stock Exchange",
+                "BOERSE FRANKFURT - REGULIERTER MARKT",
+                "FRAA"
+            ],
+            [
+                "Swiss Stock Exchange",
+                "SWX Swiss Exchange",
+                "SIX",
+                "SIX SWISS EXCHANGE AG",
+                "XSWX"
+            ],
+            [
+                "Xetra",
+                "XETRA",
+                "Deutsche B\u00f6rse XETRA",
+                "Deutsche Boerse Xetra",
+                "XETR"
+            ]
         ]
     },
     {
@@ -134,12 +180,20 @@
             "http://www.wikidata.org/entity/Q4080260"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Time of Contempt",
-            "The Last Wish",
-            "The Tower of the Swallow"
+            [
+                "Time of Contempt",
+                "The Time of Contempt"
+            ],
+            [
+                "The Last Wish"
+            ],
+            [
+                "The Tower of the Swallow",
+                "The Swallow's Tower",
+                "The Tower of Swallows"
+            ]
         ]
     },
     {
@@ -155,7 +209,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -174,7 +227,6 @@
             "+100"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+100"
@@ -193,10 +245,17 @@
             "http://www.wikidata.org/entity/Q749884"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Kyoto City University of Arts"
+            [
+                "Kyoto City University of Arts",
+                "Kyoto Univ. of Arts",
+                "Ky\u014dtogeidai",
+                "Kyoto Geidai",
+                "Kyogei",
+                "Kyoto University of Arts",
+                "KCUA"
+            ]
         ]
     },
     {
@@ -212,10 +271,12 @@
             "http://www.wikidata.org/entity/Q14705485"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Eastside High School"
+            [
+                "Eastside High School",
+                "EHS"
+            ]
         ]
     },
     {
@@ -231,10 +292,20 @@
             "http://www.wikidata.org/entity/Q3757"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Java"
+            [
+                "Java",
+                "Pulau Jawa",
+                "Jawa Island",
+                "Java Island",
+                "Pulau Java",
+                "Jawa",
+                "Java island",
+                "Java, Indonesia",
+                "Giava",
+                "\u042f\u0432\u0430"
+            ]
         ]
     },
     {
@@ -250,7 +321,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -269,7 +339,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -288,7 +357,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -307,7 +375,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -326,7 +393,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -345,7 +411,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -364,7 +429,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -383,7 +447,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -402,7 +465,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -421,7 +483,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -440,7 +501,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -459,7 +519,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -478,7 +537,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -497,10 +555,9 @@
             "http://www.wikidata.org/entity/L30607"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            ""
+            []
         ]
     },
     {
@@ -516,10 +573,29 @@
             "http://www.wikidata.org/entity/Q145"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "United Kingdom"
+            [
+                "United Kingdom",
+                "\ud83c\uddec\ud83c\udde7",
+                "UK",
+                "United Kingdom of Great Britain and Northern Ireland",
+                "U.K.",
+                "GBR",
+                "GB",
+                "U. K.",
+                "U K",
+                "G.B.",
+                "G. B.",
+                "G B",
+                "Great Britain",
+                "G.B.R.",
+                "G B R",
+                "Britain",
+                "Great Britain and Northern Ireland",
+                "The United Kingdom of Great Britain and Northern Ireland",
+                "The UK"
+            ]
         ]
     },
     {
@@ -535,10 +611,29 @@
             "http://www.wikidata.org/entity/Q145"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "United Kingdom"
+            [
+                "United Kingdom",
+                "\ud83c\uddec\ud83c\udde7",
+                "UK",
+                "United Kingdom of Great Britain and Northern Ireland",
+                "U.K.",
+                "GBR",
+                "GB",
+                "U. K.",
+                "U K",
+                "G.B.",
+                "G. B.",
+                "G B",
+                "Great Britain",
+                "G.B.R.",
+                "G B R",
+                "Britain",
+                "Great Britain and Northern Ireland",
+                "The United Kingdom of Great Britain and Northern Ireland",
+                "The UK"
+            ]
         ]
     },
     {
@@ -554,7 +649,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -573,7 +667,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -592,7 +685,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -611,7 +703,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -630,7 +721,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -649,7 +739,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -668,7 +757,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -687,7 +775,6 @@
             "5"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "5"
@@ -706,10 +793,15 @@
             "http://www.wikidata.org/entity/Q10737"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "suicide"
+            [
+                "suicide",
+                "self-murder",
+                "killed by self",
+                "self-killing",
+                "killing oneself"
+            ]
         ]
     },
     {
@@ -725,10 +817,16 @@
             "http://www.wikidata.org/entity/Q837171"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "financial services"
+            [
+                "financial services",
+                "finance industry",
+                "FS industry",
+                "Financial activities",
+                "Financial service",
+                "FinServ"
+            ]
         ]
     },
     {
@@ -744,7 +842,6 @@
             "Amerika Birle\u015fik Devletleri"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "Amerika Birle\u015fik Devletleri"
@@ -763,7 +860,6 @@
             "+157"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+157"
@@ -782,7 +878,6 @@
             "\u54c8\u8328\u5c71"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "\u54c8\u8328\u5c71"
@@ -801,7 +896,6 @@
             "1"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1"
@@ -820,7 +914,6 @@
             "28"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "28"
@@ -839,7 +932,6 @@
             "18"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "18"
@@ -858,7 +950,6 @@
             "7"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "7"
@@ -877,7 +968,6 @@
             "26"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "26"
@@ -896,7 +986,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -915,7 +1004,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -934,7 +1022,6 @@
             "125"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "125"
@@ -953,7 +1040,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -972,7 +1058,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -991,7 +1076,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1010,7 +1094,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1029,7 +1112,6 @@
             "12"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "12"
@@ -1048,7 +1130,6 @@
             "3"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "3"
@@ -1067,7 +1148,6 @@
             "79"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "79"
@@ -1086,7 +1166,6 @@
             "2"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "2"
@@ -1105,7 +1184,6 @@
             "1"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1"
@@ -1124,7 +1202,6 @@
             "189"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "189"
@@ -1143,7 +1220,6 @@
             "12"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "12"
@@ -1162,7 +1238,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1181,7 +1256,6 @@
             "5"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "5"
@@ -1200,7 +1274,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1219,7 +1292,6 @@
             "5"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "5"
@@ -1238,7 +1310,6 @@
             "11"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "11"
@@ -1257,7 +1328,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1276,7 +1346,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1295,7 +1364,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1314,7 +1382,6 @@
             "8"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "8"
@@ -1333,7 +1400,6 @@
             "+111892"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+111892"
@@ -1352,7 +1418,6 @@
             "3"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "3"
@@ -1371,7 +1436,6 @@
             "1"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1"
@@ -1390,7 +1454,6 @@
             "6"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "6"
@@ -1409,7 +1472,6 @@
             "12"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "12"
@@ -1428,7 +1490,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1447,7 +1508,6 @@
             "5"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "5"
@@ -1466,7 +1526,6 @@
             "8"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "8"
@@ -1485,7 +1544,6 @@
             "31"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "31"
@@ -1504,7 +1562,6 @@
             "17"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "17"
@@ -1523,7 +1580,6 @@
             "13"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "13"
@@ -1542,7 +1598,6 @@
             "21"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "21"
@@ -1561,7 +1616,6 @@
             "42"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "42"
@@ -1580,7 +1634,6 @@
             "13"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "13"
@@ -1599,7 +1652,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1618,7 +1670,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1637,7 +1688,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1656,7 +1706,6 @@
             "1"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1"
@@ -1675,7 +1724,6 @@
             "663"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "663"
@@ -1694,7 +1742,6 @@
             "+6"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+6"
@@ -1713,7 +1760,6 @@
             "1"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1"
@@ -1732,7 +1778,6 @@
             "+45000000"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+45000000"
@@ -1751,7 +1796,6 @@
             "117"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "117"
@@ -1770,7 +1814,6 @@
             "15481363"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "15481363"
@@ -1789,7 +1832,6 @@
             "21"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "21"
@@ -1808,7 +1850,6 @@
             "1"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1"
@@ -1827,7 +1868,6 @@
             "3"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "3"
@@ -1846,7 +1886,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -1865,7 +1904,6 @@
             "4"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "4"
@@ -1884,7 +1922,6 @@
             "5"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "5"
@@ -1903,7 +1940,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -1922,7 +1958,6 @@
             "359"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "359"
@@ -1941,7 +1976,6 @@
             "+3"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+3"
@@ -1960,7 +1994,6 @@
             "+709"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+709"
@@ -1979,7 +2012,6 @@
             "3"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "3"
@@ -1998,7 +2030,6 @@
             "215"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "215"
@@ -2017,7 +2048,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -2036,7 +2066,6 @@
             "1"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1"
@@ -2055,7 +2084,6 @@
             "8"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "8"
@@ -2074,7 +2102,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2093,7 +2120,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -2112,7 +2138,6 @@
             "2"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "2"
@@ -2131,7 +2156,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -2150,7 +2174,6 @@
             "4"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "4"
@@ -2169,7 +2192,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -2188,10 +2210,16 @@
             "http://www.wikidata.org/entity/Q174199"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "common bottlenose dolphin"
+            [
+                "common bottlenose dolphin",
+                "bottlenose dolphin",
+                "Atlantic bottlenose dolphin",
+                "Tursiops truncatus",
+                "Bottlenose dolphin",
+                "Bottle-Nosed Dolphin"
+            ]
         ]
     },
     {
@@ -2207,10 +2235,12 @@
             "http://www.wikidata.org/entity/Q7187"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "gene"
+            [
+                "gene",
+                "genes"
+            ]
         ]
     },
     {
@@ -2226,7 +2256,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -2245,7 +2274,6 @@
             "2"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "2"
@@ -2264,7 +2292,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -2283,7 +2310,6 @@
             "30"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "30"
@@ -2302,7 +2328,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2321,7 +2346,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2340,7 +2364,6 @@
             "1"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1"
@@ -2359,10 +2382,22 @@
             "http://www.wikidata.org/entity/Q217096"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Naruhito"
+            [
+                "Naruhito",
+                "Emperor Naruhito",
+                "Naruhito, Emperor of Japan",
+                "Japanese Emperor Naruhito",
+                "Naruhito, Prince Hiro",
+                "Prince Hiro",
+                "Hiro-no-miya",
+                "Naruhito, Crown Prince Hiro of Japan",
+                "Crown Prince Hiro of Japan",
+                "Crown Prince Naruhito of Japan",
+                "Naruhito, Crown Prince of Japan",
+                "Prince Naruhito"
+            ]
         ]
     },
     {
@@ -2378,7 +2413,6 @@
             "3"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "3"
@@ -2397,10 +2431,13 @@
             "http://www.wikidata.org/entity/Q1198"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "North Rhine-Westphalia"
+            [
+                "North Rhine-Westphalia",
+                "Nordrhein-Westfalen",
+                "NRW"
+            ]
         ]
     },
     {
@@ -2416,10 +2453,12 @@
             "http://www.wikidata.org/entity/Q753529"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Yankee Stadium"
+            [
+                "Yankee Stadium",
+                "New Yankee Stadium"
+            ]
         ]
     },
     {
@@ -2440,15 +2479,72 @@
             "http://www.wikidata.org/entity/Q889"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "People's Republic of China",
-            "India",
-            "Myanmar",
-            "Nepal",
-            "Pakistan",
-            "Afghanistan"
+            [
+                "People's Republic of China",
+                "Red China",
+                "PR China",
+                "Communist China",
+                "Mainland China",
+                "China PR",
+                "CHN",
+                "RPC",
+                "PRC",
+                "CN",
+                "\ud83c\udde8\ud83c\uddf3",
+                "cn",
+                "China",
+                "The PRC",
+                "china",
+                "Q148"
+            ],
+            [
+                "India",
+                "Republic of India",
+                "Bharat",
+                "Bharatvarsh",
+                "Hindustan",
+                "IN",
+                "IND",
+                "\ud83c\uddee\ud83c\uddf3",
+                "Bharata",
+                "Hindoostan",
+                "Indostan",
+                "Bharat Ganarajya"
+            ],
+            [
+                "Myanmar",
+                "Burma",
+                "Republic of the Union of Myanmar",
+                "\ud83c\uddf2\ud83c\uddf2",
+                "Union of Burma",
+                "MM",
+                "BUR",
+                "MYA"
+            ],
+            [
+                "Nepal",
+                "Federal Democratic Republic of Nepal",
+                "NEP",
+                "\ud83c\uddf3\ud83c\uddf5",
+                "NP",
+                "NPL"
+            ],
+            [
+                "Pakistan",
+                "Islamic Republic of Pakistan",
+                "Republic of Pakistan",
+                "\ud83c\uddf5\ud83c\uddf0",
+                "pk",
+                "PAK"
+            ],
+            [
+                "Afghanistan",
+                "\ud83c\udde6\ud83c\uddeb",
+                "AFG",
+                "af"
+            ]
         ]
     },
     {
@@ -2464,7 +2560,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2483,7 +2578,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -2502,10 +2596,45 @@
             "http://www.wikidata.org/entity/Q30"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "United States of America"
+            [
+                "United States of America",
+                "United States",
+                "the States",
+                "the United States of America",
+                "US of America",
+                "USA",
+                "U.S.A.",
+                "America",
+                "the US",
+                "the U.S.",
+                "the US of A",
+                "U.S. of America",
+                "the US of America",
+                "US",
+                "the USA",
+                "U.S.",
+                "the U.S.A.",
+                "the U.S. of A",
+                "US of A",
+                "the U.S. of America",
+                "U. S.",
+                "U. S. A.",
+                "the United States",
+                "Merica",
+                "ISO 3166-1:US",
+                "America (United States)",
+                "UNITED STATES",
+                "America (USA)",
+                "America (country)",
+                "The U.S.",
+                "UN/LOCODE:US",
+                "The US of A",
+                "The Us",
+                "The Usa",
+                "Us."
+            ]
         ]
     },
     {
@@ -2521,7 +2650,6 @@
             "15"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "15"
@@ -2540,10 +2668,17 @@
             "http://www.wikidata.org/entity/Q40"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Austria"
+            [
+                "Austria",
+                "Republic of Austria",
+                "\u00d6sterreich",
+                "Republik \u00d6sterreich",
+                "AT",
+                "AUT",
+                "\ud83c\udde6\ud83c\uddf9"
+            ]
         ]
     },
     {
@@ -2559,10 +2694,18 @@
             "http://www.wikidata.org/entity/Q34"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Sweden"
+            [
+                "Sweden",
+                "Kingdom of Sweden",
+                "\ud83c\uddf8\ud83c\uddea",
+                "SE",
+                "se",
+                "SWE",
+                "Sverige",
+                "Konungariket Sverige"
+            ]
         ]
     },
     {
@@ -2578,10 +2721,12 @@
             "http://www.wikidata.org/entity/Q1112128"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "vogue"
+            [
+                "vogue",
+                "voguing"
+            ]
         ]
     },
     {
@@ -2597,7 +2742,6 @@
             "ja"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "ja"
@@ -2616,7 +2760,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2635,7 +2778,6 @@
             "71"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "71"
@@ -2654,7 +2796,6 @@
             "1981"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1981"
@@ -2673,7 +2814,6 @@
             "1990"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1990"
@@ -2692,7 +2832,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2711,7 +2850,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -2730,7 +2868,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -2749,7 +2886,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -2768,7 +2904,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2787,10 +2922,16 @@
             "http://www.wikidata.org/entity/Q104640197"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "prime version"
+            [
+                "prime version",
+                "original version",
+                "original",
+                "master copy",
+                "artwork original version",
+                "original work"
+            ]
         ]
     },
     {
@@ -2806,7 +2947,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2825,7 +2965,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -2844,7 +2983,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2863,7 +3001,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2882,7 +3019,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2901,7 +3037,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -2920,7 +3055,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -2939,7 +3073,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2958,7 +3091,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2977,7 +3109,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -2996,7 +3127,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -3015,7 +3145,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -3034,7 +3163,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -3053,7 +3181,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -3072,7 +3199,6 @@
             "130"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "130"
@@ -3091,7 +3217,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -3110,7 +3235,6 @@
             "7"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "7"
@@ -3129,10 +3253,12 @@
             "http://www.wikidata.org/entity/Q18761823"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "The Greens"
+            [
+                "The Greens",
+                "Green Party"
+            ]
         ]
     },
     {
@@ -3148,7 +3274,6 @@
             "1960"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1960"
@@ -3168,11 +3293,17 @@
             "http://www.wikidata.org/entity/Q1630304"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Crunchyroll",
-            "Hulu"
+            [
+                "Crunchyroll",
+                "Crunchyroll, Inc.",
+                "crunchyroll.com"
+            ],
+            [
+                "Hulu",
+                "hulu.com"
+            ]
         ]
     },
     {
@@ -3188,7 +3319,6 @@
             "77"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "77"
@@ -3207,7 +3337,6 @@
             "1975"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1975"
@@ -3226,7 +3355,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -3245,7 +3373,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -3264,7 +3391,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -3287,14 +3413,33 @@
             "http://www.wikidata.org/entity/Q98042831"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Dwayne Johnson",
-            "Gal Gadot",
-            "Ryan Reynolds",
-            "Chris Diamantopoulos",
-            "Ritu Arya"
+            [
+                "Dwayne Johnson",
+                "Flex Kavana",
+                "Dwayne Douglas Johnson",
+                "Rocky Maivia",
+                "The Rock",
+                "Dwayne The Rock Johnson",
+                "Dwayne \"The Rock\" Johnson"
+            ],
+            [
+                "Gal Gadot",
+                "Gal Gadot-Varsano"
+            ],
+            [
+                "Ryan Reynolds",
+                "Ryan Rodney Reynolds",
+                "Golfian"
+            ],
+            [
+                "Chris Diamantopoulos",
+                "Christopher Diamantopoulos"
+            ],
+            [
+                "Ritu Arya"
+            ]
         ]
     },
     {
@@ -3310,10 +3455,11 @@
             "http://www.wikidata.org/entity/Q221115"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Jay"
+            [
+                "Jay"
+            ]
         ]
     },
     {
@@ -3338,19 +3484,95 @@
             "http://www.wikidata.org/entity/Q403"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Germany",
-            "Ukraine",
-            "Slovakia",
-            "Moldova",
-            "Romania",
-            "Bulgaria",
-            "Croatia",
-            "Hungary",
-            "Austria",
-            "Serbia"
+            [
+                "Germany",
+                "Federal Republic of Germany",
+                "Deutschland",
+                "GER",
+                "BR Deutschland",
+                "DE",
+                "BRD",
+                "Bundesrepublik Deutschland",
+                "de",
+                "GFR"
+            ],
+            [
+                "Ukraine",
+                "UA",
+                "UKR",
+                "Ukrainia",
+                "\ud83c\uddfa\ud83c\udde6",
+                "Ukr.",
+                "Ukraina",
+                "the Ukraine",
+                "Ukra\u00efna"
+            ],
+            [
+                "Slovakia",
+                "Slovak Republic",
+                "sk",
+                "\ud83c\uddf8\ud83c\uddf0",
+                "SVK",
+                "Slovakia (Slovak Republic)"
+            ],
+            [
+                "Moldova",
+                "Republic of Moldova",
+                "Moldavia",
+                "Republica Moldova",
+                "\ud83c\uddf2\ud83c\udde9",
+                "MDA",
+                "MD"
+            ],
+            [
+                "Romania",
+                "Roumania",
+                "Rumania",
+                "Rom\u00e2nia",
+                "ro",
+                "\ud83c\uddf7\ud83c\uddf4"
+            ],
+            [
+                "Bulgaria",
+                "BGR",
+                "BUL",
+                "Republic of Bulgaria",
+                "bg",
+                "\ud83c\udde7\ud83c\uddec"
+            ],
+            [
+                "Croatia",
+                "Republic of Croatia",
+                "HR",
+                "HRV",
+                "CRO",
+                "RH"
+            ],
+            [
+                "Hungary",
+                "hu",
+                "\ud83c\udded\ud83c\uddfa",
+                "HUN"
+            ],
+            [
+                "Austria",
+                "Republic of Austria",
+                "\u00d6sterreich",
+                "Republik \u00d6sterreich",
+                "AT",
+                "AUT",
+                "\ud83c\udde6\ud83c\uddf9"
+            ],
+            [
+                "Serbia",
+                "Republic of Serbia",
+                "Republika Srbija",
+                "Srbija",
+                "SRB",
+                "RS"
+            ]
         ]
     },
     {
@@ -3366,10 +3588,13 @@
             "http://www.wikidata.org/entity/Q81900"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Teuthida"
+            [
+                "Teuthida",
+                "squid",
+                "squids"
+            ]
         ]
     },
     {
@@ -3385,7 +3610,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -3404,7 +3628,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -3423,7 +3646,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -3442,10 +3664,13 @@
             "http://www.wikidata.org/entity/Q14382"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "beta"
+            [
+                "beta",
+                "\u03b2",
+                "\u0392"
+            ]
         ]
     },
     {
@@ -3461,7 +3686,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -3480,7 +3704,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -3499,7 +3722,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -3518,7 +3740,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -3538,11 +3759,17 @@
             "http://www.wikidata.org/entity/Q61741521"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Better Call Saul",
-            "El Camino: A Breaking Bad Movie"
+            [
+                "Better Call Saul",
+                "BCS"
+            ],
+            [
+                "El Camino: A Breaking Bad Movie",
+                "El Camino",
+                "Breaking Bad Movie"
+            ]
         ]
     },
     {
@@ -3558,10 +3785,12 @@
             "http://www.wikidata.org/entity/Q1265"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Colorado River"
+            [
+                "Colorado River",
+                "Rio Colorado"
+            ]
         ]
     },
     {
@@ -3577,10 +3806,13 @@
             "http://www.wikidata.org/entity/Q1898510"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "exhumation"
+            [
+                "exhumation",
+                "disinterment",
+                "Exhumation"
+            ]
         ]
     },
     {
@@ -3596,10 +3828,11 @@
             "http://www.wikidata.org/entity/Q30542760"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "13th German Bundestag"
+            [
+                "13th German Bundestag"
+            ]
         ]
     },
     {
@@ -3622,7 +3855,6 @@
             "Interlinguistik"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "Soziolinguistik",
@@ -3649,11 +3881,15 @@
             "http://www.wikidata.org/entity/Q3052772"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Frank-Walter Steinmeier",
-            "Emmanuel Macron"
+            [
+                "Frank-Walter Steinmeier"
+            ],
+            [
+                "Emmanuel Macron",
+                "Emmanuel Jean-Michel Fr\u00e9d\u00e9ric Macron"
+            ]
         ]
     },
     {
@@ -3679,20 +3915,66 @@
             "http://www.wikidata.org/entity/Q639669"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "singer",
-            "screenwriter",
-            "actor",
-            "composer",
-            "pianist",
-            "singer-songwriter",
-            "poet",
-            "guitarist",
-            "photographer",
-            "recording artist",
-            "musician"
+            [
+                "singer",
+                "vocalist",
+                "songstress",
+                "\ud83e\uddd1\u200d\ud83c\udfa4",
+                "songster"
+            ],
+            [
+                "screenwriter",
+                "scenarist",
+                "writer",
+                "screen writer",
+                "script writer",
+                "scriptwriter",
+                "screenplay writer"
+            ],
+            [
+                "actor",
+                "actress",
+                "actors",
+                "actresses"
+            ],
+            [
+                "composer",
+                "music composer"
+            ],
+            [
+                "pianist"
+            ],
+            [
+                "singer-songwriter",
+                "singer songwriter",
+                "singer/songwriter"
+            ],
+            [
+                "poet",
+                "poetess",
+                "bard",
+                "poetry writer",
+                "poetry author"
+            ],
+            [
+                "guitarist",
+                "guitar player",
+                "guitarists"
+            ],
+            [
+                "photographer",
+                "photog",
+                "photographers"
+            ],
+            [
+                "recording artist"
+            ],
+            [
+                "musician",
+                "musical artist"
+            ]
         ]
     },
     {
@@ -3716,7 +3998,6 @@
             "Star Wars: The Force Awakens"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "Star Wars Episode I: The Phantom Menace",
@@ -3743,10 +4024,12 @@
             "http://www.wikidata.org/entity/Q201358"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "The Flintstones"
+            [
+                "The Flintstones",
+                "Flintstones"
+            ]
         ]
     },
     {
@@ -3764,12 +4047,26 @@
             "http://www.wikidata.org/entity/Q3142"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "gold",
-            "black",
-            "red"
+            [
+                "gold",
+                "golden",
+                "color gold",
+                "colour gold",
+                "gold color",
+                "gold colour",
+                "gold tone",
+                "goldtone"
+            ],
+            [
+                "black",
+                "blackness"
+            ],
+            [
+                "red",
+                "red color"
+            ]
         ]
     },
     {
@@ -3785,10 +4082,14 @@
             "http://www.wikidata.org/entity/Q205204"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "women's suffrage"
+            [
+                "women's suffrage",
+                "woman suffrage",
+                "female suffrage",
+                "woman's right to vote"
+            ]
         ]
     },
     {
@@ -3804,7 +4105,6 @@
             "empress"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "empress"
@@ -3823,10 +4123,22 @@
             "http://www.wikidata.org/entity/Q178275"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "1918-1920 flu pandemic"
+            [
+                "1918-1920 flu pandemic",
+                "The 1918 flu",
+                "1918 flu pandemic spread",
+                "influenza pandemic of 1918\u201319",
+                "influenza pandemic of 1918\u20131919",
+                "Flu Epidemic of 1918",
+                "1918 influenza pandemic",
+                "1918 Spanish flu pandemic",
+                "Spanish flu pandemic",
+                "Spanish flu",
+                "1918 flu pandemic",
+                "Influenza Pandemic, 1918-1919"
+            ]
         ]
     },
     {
@@ -3842,7 +4154,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -3861,10 +4172,14 @@
             "http://www.wikidata.org/entity/Q123509"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "extinction"
+            [
+                "extinction",
+                "species extinction",
+                "extinctions",
+                "species extinctions"
+            ]
         ]
     },
     {
@@ -3882,12 +4197,25 @@
             "http://www.wikidata.org/entity/Q8338"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "voice",
-            "cornet",
-            "trumpet"
+            [
+                "voice",
+                "singing voice",
+                "vocals"
+            ],
+            [
+                "cornet"
+            ],
+            [
+                "trumpet",
+                "natural trumpet",
+                "slide trumpet",
+                "valve trumpet",
+                "Bb trumpet",
+                "B\u266d trumpet",
+                "B-flat trumpet"
+            ]
         ]
     },
     {
@@ -3903,10 +4231,12 @@
             "http://www.wikidata.org/entity/Q4228595"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "stab wound"
+            [
+                "stab wound",
+                "puncture wound"
+            ]
         ]
     },
     {
@@ -3922,10 +4252,13 @@
             "http://www.wikidata.org/entity/Q6581097"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "male"
+            [
+                "male",
+                "m",
+                "\u2642"
+            ]
         ]
     },
     {
@@ -3941,10 +4274,12 @@
             "http://www.wikidata.org/entity/Q179645"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Shinjuku"
+            [
+                "Shinjuku",
+                "Shinjuku-ku"
+            ]
         ]
     },
     {
@@ -3960,10 +4295,11 @@
             "http://www.wikidata.org/entity/Q740762"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Tiger"
+            [
+                "Tiger"
+            ]
         ]
     },
     {
@@ -3979,7 +4315,6 @@
             "0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "0"
@@ -3998,7 +4333,6 @@
             "Point(114.054 22.535)"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "Point(114.054 22.535)"
@@ -4017,10 +4351,12 @@
             "http://www.wikidata.org/entity/Q42240"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "research"
+            [
+                "research",
+                "systematic inquiry"
+            ]
         ]
     },
     {
@@ -4036,7 +4372,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -4055,7 +4390,6 @@
             "+385000"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+385000"
@@ -4074,10 +4408,12 @@
             "http://www.wikidata.org/entity/Q16003532"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "middle school student"
+            [
+                "middle school student",
+                "middle school pupil"
+            ]
         ]
     },
     {
@@ -4093,10 +4429,13 @@
             "http://www.wikidata.org/entity/Q33578"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Igbo"
+            [
+                "Igbo",
+                "ig",
+                "Igbo language"
+            ]
         ]
     },
     {
@@ -4112,10 +4451,12 @@
             "http://www.wikidata.org/entity/Q1983102"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Peter Orlovsky"
+            [
+                "Peter Orlovsky",
+                "Peter Anton Orlovsky"
+            ]
         ]
     },
     {
@@ -4131,10 +4472,12 @@
             "http://www.wikidata.org/entity/Q767456"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Gothic"
+            [
+                "Gothic",
+                "Gothic 1"
+            ]
         ]
     },
     {
@@ -4150,10 +4493,11 @@
             "http://www.wikidata.org/entity/Q49019"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Blackadder"
+            [
+                "Blackadder"
+            ]
         ]
     },
     {
@@ -4169,7 +4513,6 @@
             "Lady Ella"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "Lady Ella"
@@ -4189,11 +4532,21 @@
             "http://www.wikidata.org/entity/Q6625963"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "writer",
-            "novelist"
+            [
+                "writer",
+                "author",
+                "writers",
+                "authors",
+                "penman",
+                "penwoman"
+            ],
+            [
+                "novelist",
+                "novel author",
+                "novel writer"
+            ]
         ]
     },
     {
@@ -4214,15 +4567,36 @@
             "http://www.wikidata.org/entity/Q6168364"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "television actor",
-            "jazz musician",
-            "actor",
-            "pianist",
-            "singer-songwriter",
-            "jazz guitarist"
+            [
+                "television actor",
+                "TV actor",
+                "actor",
+                "television actress",
+                "actress",
+                "TV actress"
+            ],
+            [
+                "jazz musician"
+            ],
+            [
+                "actor",
+                "actress",
+                "actors",
+                "actresses"
+            ],
+            [
+                "pianist"
+            ],
+            [
+                "singer-songwriter",
+                "singer songwriter",
+                "singer/songwriter"
+            ],
+            [
+                "jazz guitarist"
+            ]
         ]
     },
     {
@@ -4239,11 +4613,26 @@
             "http://www.wikidata.org/entity/Q9168"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Arabic",
-            "Persian"
+            [
+                "Arabic",
+                "Arabic language",
+                "Arabian",
+                "Arabian language",
+                "ar"
+            ],
+            [
+                "Persian",
+                "Farsi",
+                "Persian language",
+                "Farsi language",
+                "Iranian language",
+                "fa",
+                "Iranian",
+                "Farsic\u2013Caucasian Tat",
+                "Farsic-Caucasian Tat"
+            ]
         ]
     },
     {
@@ -4259,7 +4648,6 @@
             "+230241"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+230241"
@@ -4278,7 +4666,6 @@
             "Promising Young Woman"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "Promising Young Woman"
@@ -4297,10 +4684,13 @@
             "http://www.wikidata.org/entity/Q217541"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "sunglasses"
+            [
+                "sunglasses",
+                "sun glasses",
+                "dark glasses"
+            ]
         ]
     },
     {
@@ -4316,10 +4706,15 @@
             "http://www.wikidata.org/entity/Q35497"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Ancient Greek"
+            [
+                "Ancient Greek",
+                "Old Greek",
+                "Old Greek language",
+                "Ancient Greek language",
+                "grc"
+            ]
         ]
     },
     {
@@ -4344,19 +4739,68 @@
             "http://www.wikidata.org/entity/Q9083"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Esperanto",
-            "Silesian German",
-            "German",
-            "Silesian",
-            "Kashubian",
-            "Old Prussian",
-            "Polish Sign Language",
-            "Wymysorys",
-            "Polish",
-            "Lithuanian"
+            [
+                "Esperanto",
+                "Esperanto language",
+                "eo",
+                "epo"
+            ],
+            [
+                "Silesian German",
+                "Lower Silesian",
+                "sli"
+            ],
+            [
+                "German",
+                "German language",
+                "de"
+            ],
+            [
+                "Silesian",
+                "Upper Silesian",
+                "Silesian language",
+                "szl",
+                "Silesian dialect"
+            ],
+            [
+                "Kashubian",
+                "Cassubian",
+                "csb",
+                "Kashubian language",
+                "Cassubian language"
+            ],
+            [
+                "Old Prussian",
+                "Prussian",
+                "prg",
+                "Old Prussian language",
+                "Prussian language"
+            ],
+            [
+                "Polish Sign Language"
+            ],
+            [
+                "Wymysorys",
+                "Wilamowicean",
+                "Wilamowicean language",
+                "Wymysorys language",
+                "wym",
+                "Vilamovian",
+                "Vilamovian language"
+            ],
+            [
+                "Polish",
+                "Polish language",
+                "pl",
+                "Polski"
+            ],
+            [
+                "Lithuanian",
+                "Lithuanian language",
+                "lt"
+            ]
         ]
     },
     {
@@ -4372,7 +4816,6 @@
             "53"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "53"
@@ -4391,7 +4834,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -4412,12 +4854,25 @@
             "http://www.wikidata.org/entity/Q843813"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "G",
-            "E",
-            "C"
+            [
+                "G",
+                "sol"
+            ],
+            [
+                "E",
+                "mi",
+                "F-flat",
+                "F\u266d"
+            ],
+            [
+                "C",
+                "B\u266f",
+                "B-sharp",
+                "B#",
+                "do"
+            ]
         ]
     },
     {
@@ -4433,7 +4888,6 @@
             "60"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "60"
@@ -4452,7 +4906,6 @@
             "1335"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1335"
@@ -4471,10 +4924,11 @@
             "http://www.wikidata.org/entity/Q1500702"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Mogollon culture"
+            [
+                "Mogollon culture"
+            ]
         ]
     },
     {
@@ -4490,10 +4944,11 @@
             "http://www.wikidata.org/entity/Q185120"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Vaseline"
+            [
+                "Vaseline"
+            ]
         ]
     },
     {
@@ -4509,7 +4964,6 @@
             "45"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "45"
@@ -4528,10 +4982,12 @@
             "http://www.wikidata.org/entity/Q289380"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Brit Marling"
+            [
+                "Brit Marling",
+                "Brit Heyworth Marling"
+            ]
         ]
     },
     {
@@ -4549,12 +5005,17 @@
             "http://www.wikidata.org/entity/Q93077588"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Jal Pari",
-            "Meri Kahani",
-            "Meri Kahani"
+            [
+                "Jal Pari"
+            ],
+            [
+                "Meri Kahani"
+            ],
+            [
+                "Meri Kahani"
+            ]
         ]
     },
     {
@@ -4570,10 +5031,13 @@
             "http://www.wikidata.org/entity/Q1128240"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "earl"
+            [
+                "earl",
+                "count",
+                "eorl"
+            ]
         ]
     },
     {
@@ -4596,17 +5060,53 @@
             "http://www.wikidata.org/entity/Q777671"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "corridor",
-            "time",
-            "dualism",
-            "doorway",
-            "beginning",
-            "gate",
-            "transition",
-            "sowing"
+            [
+                "corridor",
+                "hallway",
+                "hall",
+                "passage"
+            ],
+            [
+                "time"
+            ],
+            [
+                "dualism",
+                "twoness",
+                "duality"
+            ],
+            [
+                "doorway",
+                "entrance",
+                "exit",
+                "doors",
+                "door"
+            ],
+            [
+                "beginning",
+                "starting point",
+                "go",
+                "initial point",
+                "start",
+                "from",
+                "departure",
+                "start point"
+            ],
+            [
+                "gate",
+                "gateway"
+            ],
+            [
+                "transition",
+                "transmigration",
+                "death"
+            ],
+            [
+                "sowing",
+                "seeding",
+                "sowed"
+            ]
         ]
     },
     {
@@ -4622,10 +5122,13 @@
             "http://www.wikidata.org/entity/Q15007"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Gollum"
+            [
+                "Gollum",
+                "Smeagol",
+                "Sm\u00e9agol"
+            ]
         ]
     },
     {
@@ -4641,10 +5144,11 @@
             "http://www.wikidata.org/entity/Q922648"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "The Town Hall at Auvers"
+            [
+                "The Town Hall at Auvers"
+            ]
         ]
     },
     {
@@ -4660,10 +5164,12 @@
             "http://www.wikidata.org/entity/Q81085137"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Montreux Casino"
+            [
+                "Montreux Casino",
+                "Kursaal"
+            ]
         ]
     },
     {
@@ -4679,7 +5185,6 @@
             "-3600000-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "-3600000-01-01T00:00:00Z"
@@ -4698,7 +5203,6 @@
             "1989"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1989"
@@ -4717,7 +5221,6 @@
             "2017"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "2017"
@@ -4736,7 +5239,6 @@
             "1997-04-05T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1997-04-05T00:00:00Z"
@@ -4755,7 +5257,6 @@
             "1996-06-15T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1996-06-15T00:00:00Z"
@@ -4774,7 +5275,6 @@
             "1900-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1900-01-01T00:00:00Z"
@@ -4793,7 +5293,6 @@
             "1947-08-14T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1947-08-14T00:00:00Z"
@@ -4812,7 +5311,6 @@
             "1273-12-17T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1273-12-17T00:00:00Z"
@@ -4831,7 +5329,6 @@
             "1997-04-25T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1997-04-25T00:00:00Z"
@@ -4850,7 +5347,6 @@
             "1944-11-17T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1944-11-17T00:00:00Z"
@@ -4870,11 +5366,22 @@
             "http://www.wikidata.org/entity/Q214481"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Ludwig B\u00f6rne",
-            "Gustav Koerner"
+            [
+                "Ludwig B\u00f6rne",
+                "Ludwig Borne",
+                "Louis Baruch"
+            ],
+            [
+                "Gustav Koerner",
+                "Gustave Koerner",
+                "Gustavus Koerner",
+                "Gustav Korner",
+                "Gustavus P. Koerner",
+                "Gustav Philipp Koerner",
+                "Gustav K\u00f6rner"
+            ]
         ]
     },
     {
@@ -4890,7 +5397,6 @@
             "2016-12-16T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "2016-12-16T00:00:00Z"
@@ -4909,7 +5415,6 @@
             "+3532"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+3532"
@@ -4928,7 +5433,6 @@
             "1918-11-09T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1918-11-09T00:00:00Z"
@@ -4947,7 +5451,6 @@
             "1945-09-02T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1945-09-02T00:00:00Z"
@@ -4966,7 +5469,6 @@
             "1978-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1978-01-01T00:00:00Z"
@@ -4985,7 +5487,6 @@
             "1968-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1968-01-01T00:00:00Z"
@@ -5004,7 +5505,6 @@
             "2021-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "2021-01-01T00:00:00Z"
@@ -5023,7 +5523,6 @@
             "1248-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1248-01-01T00:00:00Z"
@@ -5053,21 +5552,192 @@
             "http://www.wikidata.org/entity/Q963093"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "naproxen",
-            "aspirin",
-            "ibuprofen",
-            "Diclofenac",
-            "(S)-(\u2212)-colchicine",
-            "sulfinpyrazone",
-            "indomethacin",
-            "allopurinol",
-            "febuxostat",
-            "pegloticase",
-            "probenecid",
-            "sulindac"
+            [
+                "naproxen",
+                "(S)-naproxen",
+                "2-(6-methoxy-2-naphthyl)propionic acid",
+                "(+)-2-(methoxy-2-naphthyl)-propions\u00e4ure",
+                "(+)-(S)-6-methoxy-\u03b1-methyl-2-naphthaleneacetic acid",
+                "(S)-2-(6-methoxy-2-naphthyl)propionic acid",
+                "(S)-(+)-2-(6-methoxy-2-naphthyl)propionic acid",
+                "(S)-6-methoxy-alpha-methyl-2-naphthaleneacetic acid",
+                "(S)-2-(6-methoxy-2-naphthyl)propanoic acid",
+                "(S)-(+)-naproxen",
+                "(+)-(S)-naproxen",
+                "(+)-2-(methoxy-2-naphthyl)-propionic acid",
+                "(+)-naproxen",
+                "(+)-2-(6-methoxy-2-naphthyl)propionic acid",
+                "(+)-(S)-6-methoxy-alpha-methyl-2-naphthaleneacetic acid"
+            ],
+            [
+                "aspirin",
+                "acetylsalicylic acid",
+                "ASA",
+                "o-acetoxybenzoic acid",
+                "o-carboxyphenyl acetate",
+                "salicylic acid acetate",
+                "o-(acetyloxy)benzoic acid",
+                "2-carboxyphenyl acetate",
+                "2-acetoxybenzoic acid",
+                "o-acetylsalicylic acid",
+                "2-acetoxybenzenecarboxylic acid",
+                "acetysalicylic acid"
+            ],
+            [
+                "ibuprofen",
+                "U-18573",
+                "4-isobutylhydratropic acid",
+                "(RS)-ibuprofen",
+                "(4-isobutylphenyl)-alpha-methylacetic acid",
+                "(+-)-p-isobutylhydratropic acid",
+                "(+-)-alpha-methyl-4-(2-methylpropyl)benzeneacetic acid",
+                "(+-)-2-(p-isobutylphenyl)propionic acid",
+                "2-(4-isobutylphenyl)propanoic acid",
+                "(+-)-ibuprofen",
+                "alpha-(p-isobutylphenyl)propionic acid",
+                "alpha-(4-isobutylphenyl)propionic acid",
+                "(\u00b1)-\u03b1-methyl-4-(2-methylpropyl)benzeneacetic acid",
+                "(\u00b1)-2-(p-isobutylphenyl)propionic acid",
+                "(\u00b1)-ibuprofen",
+                "\u03b1-(4-isobutylphenyl)propionic acid",
+                "(\u00b1)-p-isobutylhydratropic acid",
+                "\u03b1-(p-isobutylphenyl)propionic acid",
+                "(4-isobutylphenyl)-\u03b1-methylacetic acid",
+                "p-isobutylhydratropate",
+                "p-isobutyl-2-phenylpropionate",
+                "alpha-(4-isobutylphenyl)propionate",
+                "alpha-p-isobutylphenylpropionate",
+                "p-isobutylhydratropic acid",
+                "alpha-p-isobutylphenylpropionic acid",
+                "p-isobutyl-2-phenylpropionic acid",
+                "ibuprophen"
+            ],
+            [
+                "Diclofenac",
+                "VOL458",
+                "CAT458",
+                "DSG318",
+                "CGP-45840B",
+                "GP-45840",
+                "[2-(2,6-dichloroanilino)phenyl]acetic acid",
+                "2-[(2,6-dichlorophenyl)amino]benzeneacetic acid"
+            ],
+            [
+                "(S)-(\u2212)-colchicine",
+                "N-Acetyltrimethylcolchicinic acid methyl ether",
+                "Benzo(a)heptalen-9(5H)-one",
+                "Colgout",
+                "Colsaloid",
+                "Condylon",
+                "(S)-N-(5,6,7,9-Tetrahydro-1,2,3,10-tetramethoxy-9-oxobenzo[a]heptalen-7-yl)acetamide",
+                "N-(1,2,3,10-Tetramethoxy-9-oxo-5,6,7,9-tetrahydrobenzo[a]heptalen-7-yl)acetamide",
+                "N-(5,6,7,9-Tetrahydro-1,2,3,10-tetramethoxy-9-oxobenzo[a]heptalen-7-yl)acetamide",
+                "Colchicin",
+                "Colchicina",
+                "Colchicinum",
+                "Colchicine"
+            ],
+            [
+                "sulfinpyrazone",
+                "ANR315",
+                "Anturane\u00ae",
+                "Apo-sulfinpyrazone\u00ae",
+                "G 28315",
+                "NSC 75925",
+                "suphinpyrazone",
+                "Sulfoxyphenylpyrazolidine",
+                "4-(2-Benzenesulfinylethyl)-1,2-diphenylpyrazolidine-3,5-dione",
+                "1,2-Diphenyl-4-(2'-phenylsulfinethyl)-3,5-pyrazolidinedione",
+                "1,2-Diphenyl-3,5-dioxo-4-(2-phenylsulfinylethyl)pyrazolidine",
+                "Anturane (TN)",
+                "Sulfinpyrazone"
+            ],
+            [
+                "indomethacin",
+                "Indocid\u00ae",
+                "Indocin\u00ae",
+                "1-(p-chlorobenzoyl)-5-methoxy-2-methylindole-3-acetic acid",
+                "Indometacina",
+                "Indomethacin",
+                "{1-[(4-chlorophenyl)carbonyl]-5-methoxy-2-methyl-1H-indol-3-yl}acetic acid",
+                "Indometacinum",
+                "Aconip",
+                "Indometacine",
+                "Indometacin"
+            ],
+            [
+                "allopurinol",
+                "Aloprim\u00ae",
+                "BW-56-158",
+                "BW-56158",
+                "Zyloprim\u00ae",
+                "AL-100",
+                "4H-Pyrazolo(3,4-d)pyrimidin-4-one",
+                "4-Hydroxypyrazolyl(3,4-d)pyrimidine",
+                "4-Hydroxypyrazolopyrimidine",
+                "4-Hydroxypyrazolo(3,4-d)pyrimidine",
+                "4-Hydroxy-3,4-pyrazolopyrimidine",
+                "4'-Hydroxypyrazolol(3,4-d)pyrimidine",
+                "1,5-Dihydro-4H-pyrazolo(3,4-d)pyrimidine-4-one",
+                "1H,2H,4H-pyrazolo[3,4-d]pyrimidin-4-one",
+                "Alopurinol [INN-Spanish]",
+                "Allopurinolum [INN-Latin]",
+                "Alopurinol",
+                "4-Hydroxy-1H-pyrazolo(3,4-d)pyrimidine",
+                "Allopurinolum",
+                "1H-Pyrazolo(3,4-d)pyrimidin-4-ol",
+                "Allopurinol",
+                "4-HPP",
+                "1,5-Dihydro-4H-pyrazolo(3,4-d)pyrimidin-4-one"
+            ],
+            [
+                "febuxostat",
+                "Adenuric\u00ae",
+                "MX-67",
+                "Tei 6720",
+                "Tei-6720",
+                "TMX 67",
+                "Uloric\u00ae",
+                "F\u00e9buxostat",
+                "Febuxostatum",
+                "Febuxostat",
+                "2-(3-cyano-4-isobutoxyphenyl)-4-methyl- 1,3-thiazole-5-carboxylic acid"
+            ],
+            [
+                "pegloticase",
+                "Puricase",
+                "Krystexxa",
+                "PEG-uricase"
+            ],
+            [
+                "probenecid",
+                "Probalan\u00ae",
+                "p-(Dipropylsulfamoyl)benzoic acid",
+                "4-((Dipropylamino)sulfonyl)benzoic acid",
+                "Probenecid Acid",
+                "Probenecide",
+                "4-(Di-N-propylsulfamoyl)benzoesaeure",
+                "Probenecid",
+                "Probenecida",
+                "Probenecid acid",
+                "P-(Dipropylsulfamoyl)benzoic acid",
+                "4-(N,N-Dipropylsulfamoyl)benzoesaeure",
+                "Probenecidum"
+            ],
+            [
+                "sulindac",
+                "Clinoril\u00ae",
+                "cis-5-Fluoro-2-methyl-1-((p-methylsulfinyl)benzylidene)indene-3-acetic acid",
+                "cis-5-Fluoro-2-methyl-1-((4-(methylsulfinyl)phenyl)methylene)-1H-indene-3-acetic acid",
+                "(Z)-5-Fluoro-2-methyl-1-((p-(methylsulfinyl)phenyl)methylene)-1H-indene-3-acetic acid",
+                "(Z)-5-Fluoro-2-methyl-1-((P-(methylsulfinyl)phenyl)methylene)-1H-indene-3-acetic acid",
+                "cis-5-Fluoro-2-methyl-1-((P-methylsulfinyl)benzylidene)indene-3-acetic acid",
+                "Sulindaco",
+                "Sulindac",
+                "Sulindacum"
+            ]
         ]
     },
     {
@@ -5083,7 +5753,6 @@
             "1983-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1983-01-01T00:00:00Z"
@@ -5102,7 +5771,6 @@
             "2019-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "2019-01-01T00:00:00Z"
@@ -5121,7 +5789,6 @@
             "1901-12-27T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1901-12-27T00:00:00Z"
@@ -5140,7 +5807,6 @@
             "1928-09-28T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1928-09-28T00:00:00Z"
@@ -5159,7 +5825,6 @@
             "1207-09-30T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1207-09-30T00:00:00Z"
@@ -5178,7 +5843,6 @@
             "1800-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1800-01-01T00:00:00Z"
@@ -5197,7 +5861,6 @@
             "2018-04-25T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "2018-04-25T00:00:00Z"
@@ -5216,7 +5879,6 @@
             "2010-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "2010-01-01T00:00:00Z"
@@ -5235,7 +5897,6 @@
             "1911-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1911-01-01T00:00:00Z"
@@ -5254,7 +5915,6 @@
             "1906-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1906-01-01T00:00:00Z"
@@ -5273,7 +5933,6 @@
             "1985-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1985-01-01T00:00:00Z"
@@ -5292,7 +5951,6 @@
             "1955-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1955-01-01T00:00:00Z"
@@ -5311,7 +5969,6 @@
             "1209-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1209-01-01T00:00:00Z"
@@ -5330,7 +5987,6 @@
             "1919-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1919-01-01T00:00:00Z"
@@ -5349,7 +6005,6 @@
             "1907-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1907-01-01T00:00:00Z"
@@ -5368,7 +6023,6 @@
             "1929-02-11T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1929-02-11T00:00:00Z"
@@ -5387,7 +6041,6 @@
             "1899-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1899-01-01T00:00:00Z"
@@ -5406,10 +6059,12 @@
             "http://www.wikidata.org/entity/Q661315"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Coyoac\u00e1n"
+            [
+                "Coyoac\u00e1n",
+                "Coyoacan"
+            ]
         ]
     },
     {
@@ -5425,10 +6080,17 @@
             "http://www.wikidata.org/entity/Q2009"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Yukon"
+            [
+                "Yukon",
+                "Yukon Territory",
+                "the Yukon",
+                "YT",
+                "Territory of the Yukon",
+                "CA-YT",
+                "The Klondike"
+            ]
         ]
     },
     {
@@ -5444,10 +6106,11 @@
             "http://www.wikidata.org/entity/Q523286"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Hambach Castle"
+            [
+                "Hambach Castle"
+            ]
         ]
     },
     {
@@ -5464,11 +6127,23 @@
             "http://www.wikidata.org/entity/Q79734"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "The Shire",
-            "Middle-earth"
+            [
+                "The Shire",
+                "Shire"
+            ],
+            [
+                "Middle-earth",
+                "Middle Earth",
+                "Endor",
+                "Hither Lands",
+                "Great Lands",
+                "Middle-Earth",
+                "Ennor",
+                "Ennorath",
+                "End\u00f3re"
+            ]
         ]
     },
     {
@@ -5484,10 +6159,17 @@
             "http://www.wikidata.org/entity/Q142"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "France"
+            [
+                "France",
+                "fr",
+                "FR",
+                "French Republic",
+                "Republic of France",
+                "FRA",
+                "the Hexagon"
+            ]
         ]
     },
     {
@@ -5503,7 +6185,6 @@
             true
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             true
@@ -5522,10 +6203,13 @@
             "http://www.wikidata.org/entity/Q327510"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Buri Ram"
+            [
+                "Buri Ram",
+                "Buriram",
+                "Burirum"
+            ]
         ]
     },
     {
@@ -5541,10 +6225,11 @@
             "http://www.wikidata.org/entity/Q203942"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Galdh\u00f8piggen"
+            [
+                "Galdh\u00f8piggen"
+            ]
         ]
     },
     {
@@ -5560,10 +6245,14 @@
             "http://www.wikidata.org/entity/Q2222379"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Burton"
+            [
+                "Burton",
+                "Burton, Washington County",
+                "Burton, Texas",
+                "Burton, TX"
+            ]
         ]
     },
     {
@@ -5579,10 +6268,12 @@
             "http://www.wikidata.org/entity/Q944814"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Theatre of Pompey"
+            [
+                "Theatre of Pompey",
+                "Theater of Pompey"
+            ]
         ]
     },
     {
@@ -5598,10 +6289,13 @@
             "http://www.wikidata.org/entity/Q3042"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Offenbach am Main"
+            [
+                "Offenbach am Main",
+                "Offenbach/Main",
+                "Offenbach"
+            ]
         ]
     },
     {
@@ -5617,10 +6311,13 @@
             "http://www.wikidata.org/entity/Q35765"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Osaka"
+            [
+                "Osaka",
+                "Osaka City",
+                "Osaka-shi"
+            ]
         ]
     },
     {
@@ -5636,10 +6333,40 @@
             "http://www.wikidata.org/entity/Q60"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "New York City"
+            [
+                "New York City",
+                "NYC",
+                "the five boroughs",
+                "Big Apple",
+                "City of New York",
+                "NY City",
+                "New York, New York",
+                "New York City, New York",
+                "New York, NY",
+                "New York City, NY",
+                "Caput Mundi",
+                "The City So Nice They Named It Twice",
+                "Capital of the World",
+                "New York",
+                "New York City (NYC)",
+                "New York (city)",
+                "city of New York",
+                "Center of the Universe",
+                "New York City, USA",
+                "N.Y.C.",
+                "UN/LOCODE:USNYC",
+                "New York City, United States of America",
+                "New York, New York, USA",
+                "New York (NY)",
+                "New York, N.Y.",
+                "NY, NY",
+                "N. Y. C.",
+                "New York City, United States",
+                "N. Y., N. Y.",
+                "New York City, New York, United States"
+            ]
         ]
     },
     {
@@ -5655,10 +6382,14 @@
             "http://www.wikidata.org/entity/Q76641"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Felix Klein"
+            [
+                "Felix Klein",
+                "Christian Felix Klein",
+                "F. Klein",
+                "Felix Christian Klein"
+            ]
         ]
     },
     {
@@ -5674,10 +6405,13 @@
             "http://www.wikidata.org/entity/Q192682"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Ryan Reynolds"
+            [
+                "Ryan Reynolds",
+                "Ryan Rodney Reynolds",
+                "Golfian"
+            ]
         ]
     },
     {
@@ -5694,11 +6428,30 @@
             "http://www.wikidata.org/entity/Q207"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "John Quincy Adams",
-            "George W. Bush"
+            [
+                "John Quincy Adams",
+                "John Q. Adams",
+                "President Adams",
+                "John Adams",
+                "J. Q. Adams",
+                "J. Adams",
+                "JQA"
+            ],
+            [
+                "George W. Bush",
+                "George Walker Bush",
+                "Bush Jr.",
+                "Dubya",
+                "GWB",
+                "Bush 43",
+                "President George W. Bush",
+                "George Bush",
+                "President Bush",
+                "Bush",
+                "Bush, George W."
+            ]
         ]
     },
     {
@@ -5714,10 +6467,14 @@
             "http://www.wikidata.org/entity/Q33602"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Giant panda"
+            [
+                "Giant panda",
+                "Ailuropoda melanoleuca",
+                "panda",
+                "panda bear"
+            ]
         ]
     },
     {
@@ -5733,10 +6490,45 @@
             "http://www.wikidata.org/entity/Q38095"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Galapagos Islands"
+            [
+                "Galapagos Islands",
+                "Galapagos",
+                "Inchanted Islands",
+                "Enchanted Islands",
+                "the Galapagos",
+                "the Galapagoses",
+                "Galapagoses",
+                "Insular Region",
+                "Insular Region of Ecuador",
+                "Galapagos Archipelago",
+                "Colon Archipelago",
+                "Colon Islands",
+                "Colons",
+                "Gal\u00e1pagos Islands",
+                "Gal\u00e1pagos Archipelago",
+                "Gal\u00e1pagoses",
+                "Enchanted Isles",
+                "Inchanteds",
+                "Enchanteds",
+                "Ecuador Archipelago",
+                "Archipelago of Ecuador",
+                "Archipelago of the Equator",
+                "Islands of the Equator",
+                "Columbus Islands",
+                "Columbus Archipelago",
+                "Archipelago of Columbus",
+                "Archipelago of Colon",
+                "Las Encantadas",
+                "Bewitched Islands",
+                "Gallapagos Islands",
+                "Gallapagos Isl.",
+                "Isles of Gallapagos",
+                "I. Gallapagos",
+                "Gallapagos",
+                "Gallapagos I."
+            ]
         ]
     },
     {
@@ -5752,10 +6544,13 @@
             "http://www.wikidata.org/entity/Q108908"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Fluxus"
+            [
+                "Fluxus",
+                "Neo-Dada",
+                "Fluxus Collective"
+            ]
         ]
     },
     {
@@ -5771,10 +6566,13 @@
             "http://www.wikidata.org/entity/Q2306"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Pink Floyd"
+            [
+                "Pink Floyd",
+                "The Pink Floyd",
+                "The Pink Floyd Sound"
+            ]
         ]
     },
     {
@@ -5790,10 +6588,16 @@
             "http://www.wikidata.org/entity/Q3002150"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "aircraft crash"
+            [
+                "aircraft crash",
+                "airplane crash",
+                "aircrash",
+                "air crash",
+                "aeroplane crash",
+                "plane crash"
+            ]
         ]
     },
     {
@@ -5810,11 +6614,33 @@
             "http://www.wikidata.org/entity/Q205"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "zero",
-            "infinity"
+            [
+                "zero",
+                "oh",
+                "o",
+                "\u24ff",
+                "\ud83c\udd0b",
+                "\ud83c\udd0c",
+                "\u0e50",
+                "\u09e6",
+                "nought",
+                "additive identity",
+                "nil",
+                "naught",
+                "zilch",
+                "zip",
+                "scratch",
+                "love",
+                "null",
+                "duck",
+                "0"
+            ],
+            [
+                "infinity",
+                "\u221e"
+            ]
         ]
     },
     {
@@ -5835,15 +6661,40 @@
             "http://www.wikidata.org/entity/Q483959"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "SpaceX",
-            "OpenAI",
-            "The Boring Company",
-            "Neuralink",
-            "X.com",
-            "PayPal"
+            [
+                "SpaceX",
+                "Space Exploration Technologies Corporation",
+                "Space Exploration Technologies Corp."
+            ],
+            [
+                "OpenAIcd",
+                "Open AI",
+                "OpenAI Inc.",
+                "OpenAI (United States)"
+            ],
+            [
+                "The Boring Company",
+                "TBC",
+                "Boring Company",
+                "Boring"
+            ],
+            [
+                "Neuralink",
+                "Neuralink Corporation",
+                "Neuralink Corp"
+            ],
+            [
+                "X.com"
+            ],
+            [
+                "PayPal",
+                "PayPal Holdings, Inc.",
+                "Paypal",
+                "paypal.com",
+                "PAYPAL, INC. (San Jose, CA)"
+            ]
         ]
     },
     {
@@ -5859,7 +6710,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -5878,10 +6728,11 @@
             "http://www.wikidata.org/entity/Q667443"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Hughes H-4 Hercules"
+            [
+                "Hughes H-4 Hercules"
+            ]
         ]
     },
     {
@@ -5897,10 +6748,18 @@
             "http://www.wikidata.org/entity/Q258"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "South Africa"
+            [
+                "South Africa",
+                "Republic of South Africa",
+                "RSA",
+                "SA",
+                "za",
+                "\ud83c\uddff\ud83c\udde6",
+                "zaf",
+                "Mzanzi"
+            ]
         ]
     },
     {
@@ -5916,7 +6775,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -5935,10 +6793,16 @@
             "http://www.wikidata.org/entity/Q12152"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "myocardial infarction"
+            [
+                "myocardial infarction",
+                "MI",
+                "infarctus myocardii acutus",
+                "heart attack",
+                "myocardial infarct",
+                "acute myocardial infarction"
+            ]
         ]
     },
     {
@@ -5960,16 +6824,81 @@
             "http://www.wikidata.org/entity/Q47912"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "myocardial infarction",
-            "pneumonia",
-            "tuberculosis",
-            "Crohn's disease",
-            "pulmonary emphysema",
-            "chronic obstructive pulmonary disease",
-            "lung cancer"
+            [
+                "myocardial infarction",
+                "MI",
+                "infarctus myocardii acutus",
+                "heart attack",
+                "myocardial infarct",
+                "acute myocardial infarction"
+            ],
+            [
+                "pneumonia",
+                "acute pneumonia",
+                "lung inflammation",
+                "inflammation of lung tissue",
+                "inflammation of lungs",
+                "Pneumonia"
+            ],
+            [
+                "tuberculosis",
+                "hydrothorax",
+                "Tuberculosis",
+                "TB",
+                "phthisis",
+                "phthisis pulmonalis",
+                "consumption",
+                "phtisis",
+                "\u1ee4kwara nta",
+                "phthosis pulmonalis",
+                "oriri"
+            ],
+            [
+                "Crohn's disease",
+                "regional enteritis",
+                "Crohn disease",
+                "Crohn's disease of colon (disorder)",
+                "Crohn's disease of large bowel",
+                "Granulomatous Colitis",
+                "regional Ileitis",
+                "regional colitis",
+                "regional enteritis of small intestine with large intestine",
+                "regional enteritis of the large bowel",
+                "regional ileocolitis",
+                "Crohn's disease of colon",
+                "Crohn"
+            ],
+            [
+                "pulmonary emphysema",
+                "emphysema"
+            ],
+            [
+                "chronic obstructive pulmonary disease",
+                "COPD",
+                "chronic obstructive airway disease",
+                "chronic obstructive airways disease NOS",
+                "chronic obstructive lung disease",
+                "chronic obstructive airways disease NOS disorder",
+                "chronic obstructive lung disease disorder",
+                "COLD",
+                "COLD (chronic obstructive lung disease)",
+                "Chronic Obstructive Pulmonary Disease, (COPD)",
+                "Pulmonary Disease (COPD), Chronic Obstructive",
+                "Obstructive Pulmonary Disease (COPD), Chronic",
+                "Chronic Obstructive Airways Disease",
+                "Disease (COPD), Chronic Obstructive",
+                "Chronic Obstructive Pulmonary Disease (COPD)",
+                "obstructive lung disease, chronic",
+                "COPD, Chronic Obstructive Pulmonary Disease",
+                "Pulmonary Disease, Chronic Obstructive"
+            ],
+            [
+                "lung cancer",
+                "malignant lung tumor",
+                "malignant neoplasm of lung"
+            ]
         ]
     },
     {
@@ -5985,10 +6914,12 @@
             "http://www.wikidata.org/entity/Q9759"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "blues"
+            [
+                "blues",
+                "blues music"
+            ]
         ]
     },
     {
@@ -6004,10 +6935,13 @@
             "http://www.wikidata.org/entity/Q708"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "lead"
+            [
+                "lead",
+                "Pb",
+                "element 82"
+            ]
         ]
     },
     {
@@ -6023,10 +6957,11 @@
             "http://www.wikidata.org/entity/Q841364"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Ayutthaya Kingdom"
+            [
+                "Ayutthaya Kingdom"
+            ]
         ]
     },
     {
@@ -6042,7 +6977,6 @@
             "6583"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "6583"
@@ -6062,11 +6996,16 @@
             "http://www.wikidata.org/entity/Q848365"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Cubism",
-            "primitivism"
+            [
+                "Cubism",
+                "cubism"
+            ],
+            [
+                "primitivism",
+                "primitive art"
+            ]
         ]
     },
     {
@@ -6084,12 +7023,18 @@
             "http://www.wikidata.org/entity/Q858724"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "The World's End",
-            "Hot Fuzz",
-            "Shaun of the Dead"
+            [
+                "The World's End",
+                "World's End"
+            ],
+            [
+                "Hot Fuzz"
+            ],
+            [
+                "Shaun of the Dead"
+            ]
         ]
     },
     {
@@ -6105,10 +7050,22 @@
             "http://www.wikidata.org/entity/Q362"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "World War II"
+            [
+                "World War II",
+                "WW2",
+                "WWII",
+                "WW 2",
+                "WW II",
+                "World War Two",
+                "2nd World War",
+                "World War 2",
+                "the Second World War",
+                "Second World War",
+                "II World War",
+                "World War 2, 1939-1945"
+            ]
         ]
     },
     {
@@ -6124,10 +7081,15 @@
             "http://www.wikidata.org/entity/Q131371"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Boston Celtics"
+            [
+                "Boston Celtics",
+                "Celtics",
+                "Celts",
+                "C's",
+                "Green and White"
+            ]
         ]
     },
     {
@@ -6144,11 +7106,14 @@
             "http://www.wikidata.org/entity/Q37944813"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Viserion",
-            "Rhaegal"
+            [
+                "Viserion"
+            ],
+            [
+                "Rhaegal"
+            ]
         ]
     },
     {
@@ -6164,10 +7129,13 @@
             "http://www.wikidata.org/entity/Q32303"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "The Hunt"
+            [
+                "The Hunt",
+                "Jagten",
+                "Hunt"
+            ]
         ]
     },
     {
@@ -6181,7 +7149,6 @@
         "template": "",
         "answer": [],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": []
     },
@@ -6198,10 +7165,15 @@
             "http://www.wikidata.org/entity/Q7850"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Chinese"
+            [
+                "Chinese",
+                "Chinese language",
+                "Chinese languages",
+                "zh",
+                "\u4e2d\u6587"
+            ]
         ]
     },
     {
@@ -6428,221 +7400,665 @@
             "http://www.wikidata.org/entity/Q929924"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Gabriela",
-            "On the Mat",
-            "Cher",
-            "Carry On Laughing",
-            "Space: 1999",
-            "Madame Bovary",
-            "Ellery Queen",
-            "Himitsu Sentai Gorenger",
-            "Miyamoto Musashi",
-            "Spin-Off",
-            "The Invisible Man",
-            "Klabb og Babb",
-            "Youngest of the Hamr's Family",
-            "Kamen Rider Stronger",
-            "Switch",
-            "S.W.A.T.",
-            "Survivors",
-            "Wonder Woman",
-            "Barbary Coast",
-            "One Day at a Time",
-            "Junwoo",
-            "Gruntov\u010dani",
-            "Kapelski kresovi",
-            "Quiller",
-            "Eurogang",
-            "A legkisebb ugrif\u00fcles",
-            "Emm wie Meikel",
-            "Gris\u00f9",
-            "Welcome Back, Kotter",
-            "Nonstop Nonsens",
-            "The Jeffersons",
-            "Maya the Honey Bee",
-            "The Ghost Busters",
-            "Eine ganz gew\u00f6hnliche Geschichte",
-            "Berlin \u2013 0:00 bis 24:00",
-            "O Christos xanastavronete",
-            "Baretta",
-            "Vaga za ta\u010dno merenje",
-            "Ben Hall",
-            "Celebrity Squares",
-            "Beat of the City",
-            "The Don Lane Show",
-            "Nightingale's Boys",
-            "The Secret Garden",
-            "Pot of Gold",
-            "Just for Fun",
-            "Sidestreet",
-            "Gyllene \u00e5r",
-            "\uc2e0\ubd80\uc77c\uae30",
-            "Kommissariat 9",
-            "Starsky & Hutch",
-            "Ryan's Hope",
-            "Kidstuff",
-            "Fawlty Towers",
-            "Return to the Planet of the Apes",
-            "Suske en Wiske",
-            "Sie kommen aus Agarthi",
-            "The Great Grape Ape Show",
-            "Floris von Rosemund",
-            "The Tom and Jerry Show",
-            "The Sweeney",
-            "Ein echter Wiener geht nicht unter",
-            "Oorlogswinter",
-            "The Good Life",
-            "Angels",
-            "The Blue Knight",
-            "Spannagl & Sohn",
-            "Piel naranja",
-            "Edward the Seventh",
-            "Sportscene",
-            "Jo Gaillard",
-            "Vumserne og juleforberedelserne",
-            "Chalup\u00e1\u0159i",
-            "Thalassa",
-            "The Victory Garden",
-            "Maxipes Fik",
-            "Doc",
-            "Fay",
-            "Grady",
-            "The Fifth Estate",
-            "Les Compagnons d'Eleusis",
-            "Joe Forrester",
-            "Khan!",
-            "King of Kensington",
-            "The Family Holvak",
-            "When Things Were Rotten",
-            "My Son Reuben",
-            "On the Rocks",
-            "Poldark",
-            "The Legend of Robin Hood",
-            "Rutland Weekend Television",
-            "Sky",
-            "Akumaizer 3",
-            "G-Men '75",
-            "Am dam des",
-            "AM America",
-            "Ballet Shoes",
-            "Beacon Hill",
-            "The Seven Ages of Man",
-            "Scattergood: Friend of All",
-            "The Rise And Fall Of Wellington Boots",
-            "WCW WorldWide",
-            "Blank Check",
-            "Bod",
-            "Cash and Company",
-            "Phyllis",
-            "Close to Home",
-            "Coming Up Rosie",
-            "Corporation",
-            "Czterdziestolatek",
-            "Days of Hope",
-            "Doctor on the Go",
-            "Doctors' Hospital",
-            "Don Adams' Screen Test",
-            "Down Home Country",
-            "Do\u00f1a B\u00e1rbara",
-            "Bronk",
-            "Far Out Space Nuts",
-            "Fraidy Cat",
-            "Valentina",
-            "Get Some In!",
-            "La feria de las vanidades",
-            "Gente joven",
-            "Give-n-Take",
-            "\uc591\ubc18",
-            "Grand Old Country",
-            "Barata de primavera",
-            "Pili, secretaria ideal",
-            "Odbornici",
-            "Direct\u00edsimo",
-            "El milagro de vivir",
-            "Este se\u00f1or de negro",
-            "Hot l Baltimore",
-            "J.J. Juez",
-            "La hora de...",
-            "La se\u00f1orita Elena",
-            "I Didn't Know You Cared",
-            "Lo imperdonable",
-            "Mama",
-            "In Good Company",
-            "Nosotros",
-            "Paloma",
-            "Pobre Clara",
-            "A\u015fk-\u0131 Memnu",
-            "The Bobby Vinton Show",
-            "\ubd80\ubd80",
-            "Jackpot",
-            "Tu rebelde ternura",
-            "Ven conmigo",
-            "Joe and Sons",
-            "Dein gutes Recht",
-            "Kapwa Ko Mahal Ko",
-            "Karen",
-            "Kate McShane",
-            "Keep on Truckin'",
-            "Autoverleih Pistulla",
-            "McCoy",
-            "Medical Story",
-            "Mobile One",
-            "Oil Strike North",
-            "PBA on KBS",
-            "PBS NewsHour",
-            "Pacificanada",
-            "Matt Helm",
-            "The Secret Lives of Waldo Kitty",
-            "Saturday Night Live with Howard Cosell",
-            "Seaside Special",
-            "Shades of Greene",
-            "Shadows",
-            "Shang-a-Lang",
-            "Shannon's Mob",
-            "Sneak Previews",
-            "Some of My Best Friends are Men",
-            "Special Treat",
-            "Spotlight",
-            "The Bob McLean Show",
-            "The Changes",
-            "The Cuckoo Waltz",
-            "The Diamond Head Game",
-            "The Late Late Toy Show",
-            "The Lost Saucer",
-            "The Love School",
-            "The Magnificent Marble Machine",
-            "The Montefuscos",
-            "The Neighbors",
-            "The Oddball Couple",
-            "The Secrets of Isis",
-            "The Stars Look Down",
-            "The Swiss Family Robinson",
-            "The Tribal Eye",
-            "The Undersea Adventures of Captain Nemo",
-            "The Unisexers",
-            "The Venturers",
-            "Three for the Money",
-            "Three for the Road",
-            "Trinity Tales",
-            "Two's Company",
-            "U.S. Farm Report",
-            "Uncle Croc's Block",
-            "Until Tomorrow",
-            "Vegetable Soup",
-            "We'll Get By",
-            "Westwind",
-            "Winner Takes All",
-            "Wollongong the Brave",
-            "Barney Miller",
-            "Thirty Cases of Major Zeman",
-            "Good Morning America",
-            "Beschlossen und verk\u00fcndet",
-            "Der besondere Tag",
-            "Krempoli - Ein Platz f\u00fcr wilde Kinder",
-            "Mi\u015b Uszatek"
+            [
+                "Gabriela"
+            ],
+            [
+                "On the Mat"
+            ],
+            [
+                "Cher"
+            ],
+            [
+                "Carry On Laughing"
+            ],
+            [
+                "Space: 1999",
+                "Space 1999"
+            ],
+            [
+                "Madame Bovary"
+            ],
+            [
+                "Ellery Queen",
+                "fourth Ellery Queen TV program",
+                "4th Ellery Queen TV show"
+            ],
+            [
+                "Himitsu Sentai Gorenger"
+            ],
+            [
+                "Miyamoto Musashi"
+            ],
+            [
+                "Spin-Off"
+            ],
+            [
+                "The Invisible Man"
+            ],
+            [
+                "Klabb og Babb"
+            ],
+            [
+                "Youngest of the Hamr's Family"
+            ],
+            [
+                "Kamen Rider Stronger"
+            ],
+            [
+                "Switch"
+            ],
+            [
+                "S.W.A.T."
+            ],
+            [
+                "Survivors"
+            ],
+            [
+                "Wonder Woman",
+                "The New Adventures of Wonder Woman"
+            ],
+            [
+                "Barbary Coast"
+            ],
+            [
+                "One Day at a Time"
+            ],
+            [
+                "Junwoo"
+            ],
+            [
+                "Gruntov\u010dani"
+            ],
+            [
+                "Kapelski kresovi"
+            ],
+            [
+                "Quiller"
+            ],
+            [
+                "Eurogang"
+            ],
+            [
+                "A legkisebb ugrif\u00fcles"
+            ],
+            [
+                "Emm wie Meikel"
+            ],
+            [
+                "Gris\u00f9",
+                "Grisu"
+            ],
+            [
+                "Welcome Back, Kotter"
+            ],
+            [
+                "Nonstop Nonsens"
+            ],
+            [
+                "The Jeffersons"
+            ],
+            [
+                "Maya the Honey Bee",
+                "Maya the Bee",
+                "Maya"
+            ],
+            [
+                "The Ghost Busters"
+            ],
+            [
+                "Eine ganz gew\u00f6hnliche Geschichte"
+            ],
+            [
+                "Berlin \u2013 0:00 bis 24:00"
+            ],
+            [
+                "O Christos xanastavronete"
+            ],
+            [
+                "Baretta"
+            ],
+            [
+                "Vaga za ta\u010dno merenje"
+            ],
+            [
+                "Ben Hall"
+            ],
+            [
+                "Celebrity Squares"
+            ],
+            [
+                "Beat of the City"
+            ],
+            [
+                "The Don Lane Show"
+            ],
+            [
+                "Nightingale's Boys"
+            ],
+            [
+                "The Secret Garden"
+            ],
+            [
+                "Pot of Gold"
+            ],
+            [
+                "Just for Fun"
+            ],
+            [
+                "Sidestreet"
+            ],
+            [
+                "Gyllene \u00e5r"
+            ],
+            [
+                "\uc2e0\ubd80\uc77c\uae30"
+            ],
+            [
+                "Kommissariat 9",
+                "Kommissariat IX"
+            ],
+            [
+                "Starsky & Hutch",
+                "Starsky",
+                "Starsky and Hutch"
+            ],
+            [
+                "Ryan's Hope"
+            ],
+            [
+                "Kidstuff"
+            ],
+            [
+                "Fawlty Towers"
+            ],
+            [
+                "Return to the Planet of the Apes"
+            ],
+            [
+                "Suske en Wiske"
+            ],
+            [
+                "Sie kommen aus Agarthi"
+            ],
+            [
+                "The Great Grape Ape Show"
+            ],
+            [
+                "Floris von Rosemund"
+            ],
+            [
+                "The Tom and Jerry Show"
+            ],
+            [
+                "The Sweeney"
+            ],
+            [
+                "Ein echter Wiener geht nicht unter"
+            ],
+            [
+                "Oorlogswinter"
+            ],
+            [
+                "The Good Life",
+                "Good Neighbors"
+            ],
+            [
+                "Angels"
+            ],
+            [
+                "The Blue Knight"
+            ],
+            [
+                "Spannagl & Sohn"
+            ],
+            [
+                "Piel naranja"
+            ],
+            [
+                "Edward the Seventh"
+            ],
+            [
+                "Sportscene"
+            ],
+            [
+                "Jo Gaillard"
+            ],
+            [
+                "Vumserne og juleforberedelserne"
+            ],
+            [
+                "Chalup\u00e1\u0159i"
+            ],
+            [
+                "Thalassa"
+            ],
+            [
+                "The Victory Garden",
+                "Crockett's Victory Garden"
+            ],
+            [
+                "Maxipes Fik"
+            ],
+            [
+                "Doc"
+            ],
+            [
+                "Fay"
+            ],
+            [
+                "Grady"
+            ],
+            [
+                "The Fifth Estate"
+            ],
+            [
+                "Les Compagnons d'Eleusis"
+            ],
+            [
+                "Joe Forrester"
+            ],
+            [
+                "Khan!"
+            ],
+            [
+                "King of Kensington"
+            ],
+            [
+                "The Family Holvak"
+            ],
+            [
+                "When Things Were Rotten"
+            ],
+            [
+                "My Son Reuben"
+            ],
+            [
+                "On the Rocks"
+            ],
+            [
+                "Poldark"
+            ],
+            [
+                "The Legend of Robin Hood"
+            ],
+            [
+                "Rutland Weekend Television"
+            ],
+            [
+                "Sky"
+            ],
+            [
+                "Akumaizer 3"
+            ],
+            [
+                "G-Men '75"
+            ],
+            [
+                "Am dam des",
+                "Am Dam Des"
+            ],
+            [
+                "AM America"
+            ],
+            [
+                "Ballet Shoes"
+            ],
+            [
+                "Beacon Hill"
+            ],
+            [
+                "The Seven Ages of Man"
+            ],
+            [
+                "Scattergood: Friend of All"
+            ],
+            [
+                "The Rise And Fall Of Wellington Boots"
+            ],
+            [
+                "WCW WorldWide"
+            ],
+            [
+                "Blank Check"
+            ],
+            [
+                "Bod"
+            ],
+            [
+                "Cash and Company"
+            ],
+            [
+                "Phyllis"
+            ],
+            [
+                "Close to Home"
+            ],
+            [
+                "Coming Up Rosie"
+            ],
+            [
+                "Corporation"
+            ],
+            [
+                "Czterdziestolatek"
+            ],
+            [
+                "Days of Hope"
+            ],
+            [
+                "Doctor on the Go"
+            ],
+            [
+                "Doctors' Hospital"
+            ],
+            [
+                "Don Adams' Screen Test"
+            ],
+            [
+                "Down Home Country"
+            ],
+            [
+                "Do\u00f1a B\u00e1rbara"
+            ],
+            [
+                "Bronk"
+            ],
+            [
+                "Far Out Space Nuts"
+            ],
+            [
+                "Fraidy Cat"
+            ],
+            [
+                "Valentina"
+            ],
+            [
+                "Get Some In!"
+            ],
+            [
+                "La feria de las vanidades"
+            ],
+            [
+                "Gente joven"
+            ],
+            [
+                "Give-n-Take"
+            ],
+            [
+                "\uc591\ubc18"
+            ],
+            [
+                "Grand Old Country"
+            ],
+            [
+                "Barata de primavera"
+            ],
+            [
+                "Pili, secretaria ideal"
+            ],
+            [
+                "Odbornici"
+            ],
+            [
+                "Direct\u00edsimo"
+            ],
+            [
+                "El milagro de vivir"
+            ],
+            [
+                "Este se\u00f1or de negro"
+            ],
+            [
+                "Hot l Baltimore"
+            ],
+            [
+                "J.J. Juez"
+            ],
+            [
+                "La hora de..."
+            ],
+            [
+                "La se\u00f1orita Elena"
+            ],
+            [
+                "I Didn't Know You Cared"
+            ],
+            [
+                "Lo imperdonable"
+            ],
+            [
+                "Mama"
+            ],
+            [
+                "In Good Company"
+            ],
+            [
+                "Nosotros"
+            ],
+            [
+                "Paloma"
+            ],
+            [
+                "Pobre Clara"
+            ],
+            [
+                "A\u015fk-\u0131 Memnu"
+            ],
+            [
+                "The Bobby Vinton Show"
+            ],
+            [
+                "\ubd80\ubd80"
+            ],
+            [
+                "Jackpot"
+            ],
+            [
+                "Tu rebelde ternura"
+            ],
+            [
+                "Ven conmigo"
+            ],
+            [
+                "Joe and Sons"
+            ],
+            [
+                "Dein gutes Recht"
+            ],
+            [
+                "Kapwa Ko Mahal Ko"
+            ],
+            [
+                "Karen"
+            ],
+            [
+                "Kate McShane"
+            ],
+            [
+                "Keep on Truckin'"
+            ],
+            [
+                "Autoverleih Pistulla"
+            ],
+            [
+                "McCoy"
+            ],
+            [
+                "Medical Story"
+            ],
+            [
+                "Mobile One"
+            ],
+            [
+                "Oil Strike North"
+            ],
+            [
+                "PBA on KBS"
+            ],
+            [
+                "PBS NewsHour"
+            ],
+            [
+                "Pacificanada"
+            ],
+            [
+                "Matt Helm"
+            ],
+            [
+                "The Secret Lives of Waldo Kitty",
+                "The New Adventures of Waldo Kitty",
+                "The Adventures of Waldo Kitty"
+            ],
+            [
+                "Saturday Night Live with Howard Cosell"
+            ],
+            [
+                "Seaside Special"
+            ],
+            [
+                "Shades of Greene"
+            ],
+            [
+                "Shadows"
+            ],
+            [
+                "Shang-a-Lang"
+            ],
+            [
+                "Shannon's Mob"
+            ],
+            [
+                "Sneak Previews"
+            ],
+            [
+                "Some of My Best Friends are Men"
+            ],
+            [
+                "Special Treat"
+            ],
+            [
+                "Spotlight"
+            ],
+            [
+                "The Bob McLean Show"
+            ],
+            [
+                "The Changes"
+            ],
+            [
+                "The Cuckoo Waltz"
+            ],
+            [
+                "The Diamond Head Game"
+            ],
+            [
+                "The Late Late Toy Show",
+                "Late Late Toy Show",
+                "The Toy Show",
+                "Toy Show"
+            ],
+            [
+                "The Lost Saucer"
+            ],
+            [
+                "The Love School"
+            ],
+            [
+                "The Magnificent Marble Machine"
+            ],
+            [
+                "The Montefuscos"
+            ],
+            [
+                "The Neighbors"
+            ],
+            [
+                "The Oddball Couple"
+            ],
+            [
+                "The Secrets of Isis",
+                "Isis"
+            ],
+            [
+                "The Stars Look Down"
+            ],
+            [
+                "The Swiss Family Robinson",
+                "Swiss Family Robinson"
+            ],
+            [
+                "The Tribal Eye"
+            ],
+            [
+                "The Undersea Adventures of Captain Nemo"
+            ],
+            [
+                "The Unisexers"
+            ],
+            [
+                "The Venturers"
+            ],
+            [
+                "Three for the Money"
+            ],
+            [
+                "Three for the Road"
+            ],
+            [
+                "Trinity Tales"
+            ],
+            [
+                "Two's Company"
+            ],
+            [
+                "U.S. Farm Report"
+            ],
+            [
+                "Uncle Croc's Block"
+            ],
+            [
+                "Until Tomorrow"
+            ],
+            [
+                "Vegetable Soup"
+            ],
+            [
+                "We'll Get By"
+            ],
+            [
+                "Westwind"
+            ],
+            [
+                "Winner Takes All"
+            ],
+            [
+                "Wollongong the Brave"
+            ],
+            [
+                "Barney Miller"
+            ],
+            [
+                "Thirty Cases of Major Zeman"
+            ],
+            [
+                "Good Morning America",
+                "GMA"
+            ],
+            [
+                "Beschlossen und verk\u00fcndet"
+            ],
+            [
+                "Der besondere Tag"
+            ],
+            [
+                "Krempoli - Ein Platz f\u00fcr wilde Kinder"
+            ],
+            [
+                "Mi\u015b Uszatek"
+            ]
         ]
     },
     {
@@ -6662,14 +8078,25 @@
             "http://www.wikidata.org/entity/Q576798"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "La Tortura",
-            "Las de la Intuici\u00f3n",
-            "La pared",
-            "No",
-            "D\u00eda de Enero"
+            [
+                "La Tortura"
+            ],
+            [
+                "Las de la Intuici\u00f3n",
+                "Las de la Intuicion"
+            ],
+            [
+                "La pared"
+            ],
+            [
+                "No"
+            ],
+            [
+                "D\u00eda de Enero",
+                "Dia de Enero"
+            ]
         ]
     },
     {
@@ -6685,10 +8112,11 @@
             "http://www.wikidata.org/entity/Q40415"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Impressionism"
+            [
+                "Impressionism"
+            ]
         ]
     },
     {
@@ -6704,10 +8132,22 @@
             "http://www.wikidata.org/entity/Q1408"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "New Jersey"
+            [
+                "New Jersey",
+                "Garden State",
+                "Jersey",
+                "NJ",
+                "New Jersey, United States",
+                "State of New Jersey",
+                "N.J.",
+                "US-NJ",
+                "the State of New Jersey",
+                "the Garden State",
+                "Iersey",
+                "New Iersey"
+            ]
         ]
     },
     {
@@ -6723,10 +8163,16 @@
             "http://www.wikidata.org/entity/Q180322"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Aragorn"
+            [
+                "Aragorn",
+                "Strider",
+                "Aragorn II",
+                "Elessar",
+                "Thorongil",
+                "Telcontar"
+            ]
         ]
     },
     {
@@ -6743,11 +8189,35 @@
             "http://www.wikidata.org/entity/Q483020"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "FC Bayern Munich",
-            "Paris Saint-Germain F.C."
+            [
+                "FC Bayern Munich",
+                "Bayern Munich",
+                "Bayern Muenchen",
+                "Bayern Munchen",
+                "FC Bayern Muenchen",
+                "FC Bayern Munchen",
+                "Bayern",
+                "Bayern M\u00fcnchen",
+                "FC Bayern M\u00fcnchen",
+                "FCBM",
+                "Munich",
+                "FCBM 1900",
+                "FCB Munich",
+                "Bayern of Munich",
+                "F.C. Bayern Munich"
+            ],
+            [
+                "Paris Saint-Germain F.C.",
+                "Paris Saint-Germain Football Club",
+                "Paris Saint-Germain FC",
+                "Paris Saint-Germain",
+                "PSG",
+                "PSGFC",
+                "Paris",
+                "Paris SG"
+            ]
         ]
     },
     {
@@ -6766,13 +8236,31 @@
             "http://www.wikidata.org/entity/Q222738"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "University of Phoenix",
-            "University of Buenos Aires",
-            "Cairo University",
-            "National Autonomous University of Mexico"
+            [
+                "University of Phoenix",
+                "UOPX"
+            ],
+            [
+                "University of Buenos Aires",
+                "Universidad de Buenos Aires"
+            ],
+            [
+                "Cairo University",
+                "Fuad I University",
+                "King Fuad I University",
+                "Egyptian University",
+                "University of Cairo",
+                "CU",
+                "cu.edu.eg"
+            ],
+            [
+                "National Autonomous University of Mexico",
+                "UNAM",
+                "Universidad Nacional Aut\u00f3noma de M\u00e9xico",
+                "unam.mx"
+            ]
         ]
     },
     {
@@ -6788,10 +8276,17 @@
             "http://www.wikidata.org/entity/Q34433"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "University of Oxford"
+            [
+                "University of Oxford",
+                "Oxford University",
+                "Oxon.",
+                "Oxf",
+                "Universitas Oxoniensis",
+                "Oxford",
+                "Univ. of Oxford"
+            ]
         ]
     },
     {
@@ -6807,10 +8302,11 @@
             "http://www.wikidata.org/entity/Q4558744"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Christiane Fellbaum"
+            [
+                "Christiane Fellbaum"
+            ]
         ]
     },
     {
@@ -6830,14 +8326,26 @@
             "http://www.wikidata.org/entity/Q65468168"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Valeria Golino",
-            "Ad\u00e8le Haenel",
-            "No\u00e9mie Merlant",
-            "Armande Boulanger",
-            "Lu\u00e0na Bajrami"
+            [
+                "Valeria Golino",
+                "Val\u00e9ria Golino"
+            ],
+            [
+                "Ad\u00e8le Haenel",
+                "Adele Haenel"
+            ],
+            [
+                "No\u00e9mie Merlant",
+                "Noemie Merlant"
+            ],
+            [
+                "Armande Boulanger"
+            ],
+            [
+                "Lu\u00e0na Bajrami"
+            ]
         ]
     },
     {
@@ -6853,7 +8361,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -6872,10 +8379,15 @@
             "http://www.wikidata.org/entity/Q7251"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Alan Turing"
+            [
+                "Alan Turing",
+                "Alan M. Turing",
+                "Alan Mathieson Turing",
+                "Turing",
+                "Alan Mathison Turing"
+            ]
         ]
     },
     {
@@ -6891,7 +8403,6 @@
             "1100-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "1100-01-01T00:00:00Z"
@@ -6910,10 +8421,12 @@
             "http://www.wikidata.org/entity/Q1333099"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Sigizmund Levanevsky"
+            [
+                "Sigizmund Levanevsky",
+                "Sigizmund Aleksandrovich Levanevsky"
+            ]
         ]
     },
     {
@@ -6929,10 +8442,12 @@
             "http://www.wikidata.org/entity/Q449163"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Niki Caro"
+            [
+                "Niki Caro",
+                "Nikola Jean Caro"
+            ]
         ]
     },
     {
@@ -6950,10 +8465,14 @@
             "Kevin Swersky"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Richard S. Zemel",
+            [
+                "Richard S. Zemel",
+                "Richard Zemel",
+                "R.S. Zemel",
+                "Richard Stanley Zemel"
+            ],
             "Jake Snell",
             "Kevin Swersky"
         ]
@@ -6978,17 +8497,103 @@
             "http://www.wikidata.org/entity/Q61064"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Alexej von Jawlensky",
-            "Lyonel Feininger",
-            "Albert Bloch",
-            "August Macke",
-            "Franz Marc",
-            "Gabriele M\u00fcnter",
-            "Marianne von Werefkin",
-            "Wassily Kandinsky"
+            [
+                "Alexej von Jawlensky",
+                "a. jawlenski",
+                "alexis von jawlensky",
+                "a. v. jawlensky",
+                "Aleksey Yavlensky",
+                "a. jawlensky",
+                "Alexej Jawlensky",
+                "Aleksei Von Javlensky",
+                "Alexei von Jawlensky",
+                "Aleksej Jawlensky",
+                "Alexis Jawlensky",
+                "Alexej von",
+                "Alex von Jawlensky",
+                "Jawlensky",
+                "Alexis",
+                "Alexej Von Jawlensky",
+                "Alexei Jawlensky",
+                "Aleksei Von Jawlensky",
+                "Alexej von Iavlenski",
+                "Aleksey Georgevich Yavlensky",
+                "Alexey Jawlensky",
+                "andre jawlensky",
+                "Alexej Georgewitsch von Jawlensky"
+            ],
+            [
+                "Lyonel Feininger",
+                "Lyonel Charles Adrian Feininger",
+                "Lyonel Charles Feininger",
+                "L\u00e9onell Charles Feininger",
+                "Charles L\u00e9onell Feininger",
+                "Charles Leonell Feininger",
+                "Leonell Charles Feininger",
+                "lionel feininger",
+                "l. feininger",
+                "Feininger",
+                "Papileo"
+            ],
+            [
+                "Albert Bloch",
+                "Albert-Bloch"
+            ],
+            [
+                "August Macke",
+                "August Robert Ludwig Macke"
+            ],
+            [
+                "Franz Marc",
+                "Franz Moriz Wilhelm Marc",
+                "Franz Moritz Wilhelm Marc",
+                "Marc"
+            ],
+            [
+                "Gabriele M\u00fcnter",
+                "Gabrielle Munter",
+                "Gabriel M\u00fcnter",
+                "Gabriele Munter",
+                "Gabrielle M\u00fcnter"
+            ],
+            [
+                "Marianne von Werefkin",
+                "Marianna Vladimirovna Werefkin",
+                "Marianne Werefkin",
+                "Marianne Von Werefkin",
+                "Marianna Vladimirovna Werefkina",
+                "Marianna Vladimirovna Verevkina",
+                "Marianne Von Werefkina",
+                "M. v. Werefkin",
+                "Marianna Wladimirowna Werewkina"
+            ],
+            [
+                "Wassily Kandinsky",
+                "Wassily Wassiljewitsch Kandinsky",
+                "Vasili Vasilevich Kandinsky",
+                "Vasilii Vasilevich Kandinskii",
+                "Vasily Vasil'yevich Kandinsky",
+                "Vasilij Kandinski",
+                "Vasilij Vasil'evic Kandinskij",
+                "Vasily Kandinsky",
+                "Vasilij Kandinskij",
+                "Vasily. Kandinsky",
+                "Vasilij Vasil'evi\u010d Kandinskij",
+                "Wassili Kandinsky",
+                "Wassily Wassilyevich Kandinsky",
+                "Vasili Vasileevich Kandinsky",
+                "Vasil\u012di Vasil\u02b9evich Kandinsk\u012di",
+                "Vasilij Vasilijevitch Kandynski",
+                "Wassily Kandinski",
+                "Basile W. Kandinsky",
+                "Wahsili Kang-ting-ssu-chi",
+                "Vassily Kandinsky",
+                "Kandinsky",
+                "w. kandinsky",
+                "Vasili Vasil'evich Kandinski"
+            ]
         ]
     },
     {
@@ -7006,12 +8611,33 @@
             "http://www.wikidata.org/entity/Q71425"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Fritz Mackensen",
-            "Hans am Ende",
-            "Otto Modersohn"
+            [
+                "Fritz Mackensen",
+                "Heinrich Friedrich Karl Mackensen",
+                "Fritz. Mackensen",
+                "mackensen",
+                "f. mackensen",
+                "fritz mackensen"
+            ],
+            [
+                "Hans am Ende",
+                "Hans An Ende",
+                "Hans Am Ende",
+                "Hans an Ende",
+                "h. am ende",
+                "hans am ende"
+            ],
+            [
+                "Otto Modersohn",
+                "Friedrich Wilhelm Otto Modersohn",
+                "Friedrich Wilhelm Heinrich Otto Modersohn",
+                "Friedrich Wilhel Heinrich Otto Modersohn",
+                "prof. o. modersohn",
+                "o. modersohn",
+                "otto modersohn"
+            ]
         ]
     },
     {
@@ -7027,10 +8653,11 @@
             "http://www.wikidata.org/entity/Q11523472"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Sayaka Murata"
+            [
+                "Sayaka Murata"
+            ]
         ]
     },
     {
@@ -7046,10 +8673,16 @@
             "http://www.wikidata.org/entity/Q615"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Lionel Messi"
+            [
+                "Lionel Messi",
+                "Lionel Andres Messi",
+                "Messi",
+                "Lionel Andr\u00e9s Messi Cuccittini",
+                "Lionel Andr\u00e9s Messi",
+                "Leo Messi"
+            ]
         ]
     },
     {
@@ -7065,10 +8698,12 @@
             "http://www.wikidata.org/entity/Q3308269"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Michael Jacobs"
+            [
+                "Michael Jacobs",
+                "Michael Joseph Jacobs"
+            ]
         ]
     },
     {
@@ -7084,10 +8719,13 @@
             "http://www.wikidata.org/entity/Q16019"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Wolfgang Sch\u00e4uble"
+            [
+                "Wolfgang Sch\u00e4uble",
+                "Wolfgang Schaeuble",
+                "Wolfgang Schauble"
+            ]
         ]
     },
     {
@@ -7103,10 +8741,11 @@
             "http://www.wikidata.org/entity/Q1395375"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Petr Kellner"
+            [
+                "Petr Kellner"
+            ]
         ]
     },
     {
@@ -7122,10 +8761,12 @@
             "http://www.wikidata.org/entity/Q44870529"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Karamo Brown"
+            [
+                "Karamo Brown",
+                "Karamo Karega Brown"
+            ]
         ]
     },
     {
@@ -7141,10 +8782,13 @@
             "http://www.wikidata.org/entity/Q5750244"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Hi-Rez Studios"
+            [
+                "Hi-Rez Studios",
+                "Hi Rez",
+                "Hi-Rez"
+            ]
         ]
     },
     {
@@ -7160,10 +8804,14 @@
             "http://www.wikidata.org/entity/Q76641"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Felix Klein"
+            [
+                "Felix Klein",
+                "Christian Felix Klein",
+                "F. Klein",
+                "Felix Christian Klein"
+            ]
         ]
     },
     {
@@ -7179,10 +8827,16 @@
             "http://www.wikidata.org/entity/Q843"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Pakistan"
+            [
+                "Pakistan",
+                "Islamic Republic of Pakistan",
+                "Republic of Pakistan",
+                "\ud83c\uddf5\ud83c\uddf0",
+                "pk",
+                "PAK"
+            ]
         ]
     },
     {
@@ -7199,11 +8853,16 @@
             "http://www.wikidata.org/entity/Q683785"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Howard Kazanjian",
-            "Rick McCallum"
+            [
+                "Howard Kazanjian"
+            ],
+            [
+                "Rick McCallum",
+                "Richard \"Rick\" McCallum",
+                "Richard McCallum"
+            ]
         ]
     },
     {
@@ -7219,10 +8878,12 @@
             "http://www.wikidata.org/entity/Q343616"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Paul Dano"
+            [
+                "Paul Dano",
+                "Paul Franklin Dano"
+            ]
         ]
     },
     {
@@ -7238,10 +8899,12 @@
             "http://www.wikidata.org/entity/Q37922"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Nobel Prize in Literature"
+            [
+                "Nobel Prize in Literature",
+                "Nobel Literature Prize"
+            ]
         ]
     },
     {
@@ -7257,7 +8920,6 @@
             "https://www.npr.org/series/tiny-desk-concerts/"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "https://www.npr.org/series/tiny-desk-concerts/"
@@ -7276,10 +8938,14 @@
             "http://www.wikidata.org/entity/Q263324"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "William Hanna"
+            [
+                "William Hanna",
+                "William Denby Hanna",
+                "William Denby \"Bill\" Hanna",
+                "Bill Hanna"
+            ]
         ]
     },
     {
@@ -7296,11 +8962,17 @@
             "http://www.wikidata.org/entity/Q7342763"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Tina Fey",
-            "Robert Carlock"
+            [
+                "Tina Fey",
+                "Elizabeth Stamatina \"Tina\" Fey",
+                "Elizabeth Stamatina Fey"
+            ],
+            [
+                "Robert Carlock",
+                "Robert Morgan Carlock"
+            ]
         ]
     },
     {
@@ -7316,10 +8988,12 @@
             "http://www.wikidata.org/entity/Q57807804"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Jason Steele"
+            [
+                "Jason Steele",
+                "FilmCow"
+            ]
         ]
     },
     {
@@ -7335,10 +9009,11 @@
             "http://www.wikidata.org/entity/Q322845"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Ikutaro Kakehashi"
+            [
+                "Ikutaro Kakehashi"
+            ]
         ]
     },
     {
@@ -7354,10 +9029,12 @@
             "http://www.wikidata.org/entity/Q705531"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Doug Bradley"
+            [
+                "Doug Bradley",
+                "Douglas William Bradley"
+            ]
         ]
     },
     {
@@ -7374,11 +9051,14 @@
             "http://www.wikidata.org/entity/Q2303035"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Phaenarete",
-            "Sophroniscus"
+            [
+                "Phaenarete"
+            ],
+            [
+                "Sophroniscus"
+            ]
         ]
     },
     {
@@ -7394,10 +9074,17 @@
             "http://www.wikidata.org/entity/Q273034"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Lucy Maud Montgomery"
+            [
+                "Lucy Maud Montgomery",
+                "Lucy Maude Montgomery",
+                "L. M. Montgomery",
+                "LM Montgomery",
+                "L.M. Montgomery",
+                "L. M. Montgomery.",
+                "Lucy Maud Macdonald"
+            ]
         ]
     },
     {
@@ -7413,10 +9100,12 @@
             "http://www.wikidata.org/entity/Q6711"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Allen Ginsberg"
+            [
+                "Allen Ginsberg",
+                "Irwin Allen Ginsberg"
+            ]
         ]
     },
     {
@@ -7432,10 +9121,11 @@
             "http://www.wikidata.org/entity/Q298761"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Clive Barker"
+            [
+                "Clive Barker"
+            ]
         ]
     },
     {
@@ -7451,10 +9141,22 @@
             "http://www.wikidata.org/entity/Q76483"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Rainer Maria Rilke"
+            [
+                "Rainer Maria Rilke",
+                "Ren\u00e9 Karl Wilhelm Johann Josef Maria Rilke",
+                "Ren\u00e9 Maria C\u00e4sar Rilke",
+                "Rainer Karl Wilhelm Johann Josef Maria Rilke",
+                "Li-erh-k\u02bbo",
+                "Rainer Maria Rielke",
+                "Ren\u00e9 Rilke",
+                "Rainer Mariyah Ril\u1e33eh",
+                "Rain\u014f Maria Rilk\u02bbe",
+                "Reiner Marie Rilke",
+                "Rene Karl Wilhelm Johann Josef Maria Rilke",
+                "Rene Rilke"
+            ]
         ]
     },
     {
@@ -7470,10 +9172,11 @@
             "http://www.wikidata.org/entity/Q6972617"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "National Festival of Community Theatre"
+            [
+                "National Festival of Community Theatre"
+            ]
         ]
     },
     {
@@ -7489,7 +9192,6 @@
             "-7000-01-01T00:00:00Z"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "-7000-01-01T00:00:00Z"
@@ -7508,10 +9210,12 @@
             "http://www.wikidata.org/entity/Q1644"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Elbe"
+            [
+                "Elbe",
+                "Labe"
+            ]
         ]
     },
     {
@@ -7527,10 +9231,11 @@
             "http://www.wikidata.org/entity/Q173626"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Pac-Man"
+            [
+                "Pac-Man"
+            ]
         ]
     },
     {
@@ -7546,10 +9251,14 @@
             "http://www.wikidata.org/entity/Q55287305"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Shuhua"
+            [
+                "Shuhua",
+                "Yeh Shu-Hua",
+                "Yeh Shuhua",
+                "Yeh Shu-hua"
+            ]
         ]
     },
     {
@@ -7565,10 +9274,14 @@
             "http://www.wikidata.org/entity/Q11571"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Cristiano Ronaldo"
+            [
+                "Cristiano Ronaldo",
+                "Cristiano Ronaldo dos Santos Aveiro",
+                "CR7",
+                "Ronaldo"
+            ]
         ]
     },
     {
@@ -7584,10 +9297,13 @@
             "http://www.wikidata.org/entity/Q151510"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Heidelberg University"
+            [
+                "Heidelberg University",
+                "Ruprecht-Karls-Universit\u00e4t Heidelberg",
+                "University of Heidelberg"
+            ]
         ]
     },
     {
@@ -7603,10 +9319,18 @@
             "http://www.wikidata.org/entity/Q177567"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Amazon rainforest"
+            [
+                "Amazon rainforest",
+                "Amazonas",
+                "Amazonian rainforest",
+                "Amazon rain forest",
+                "Amazonian rain forest",
+                "Amazon forest",
+                "Amazonia",
+                "Brazilian Amazon"
+            ]
         ]
     },
     {
@@ -7622,10 +9346,19 @@
             "http://www.wikidata.org/entity/Q20718"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Samsung Electronics"
+            [
+                "Samsung Electronics",
+                "Samsung Electronics Co., Ltd",
+                "Samsung Electric Industries",
+                "Samsung Electronics Co.",
+                "Samsung Electronics Ltd",
+                "Samsung",
+                "S\u039bMSUNG",
+                "Samsung Electronics Co., Ltd.",
+                "Samsung Electronics Co., Ltd. (Suwon-si)"
+            ]
         ]
     },
     {
@@ -7641,10 +9374,17 @@
             "http://www.wikidata.org/entity/Q41187"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Sony Group"
+            [
+                "Sony Group",
+                "Sony Corporation",
+                "Tokyo Tsushin Kogyo K.K.",
+                "Totsuko",
+                "Tokyo Telecommunications Engineering Corporation",
+                "Sony Corporation (Tokyo)",
+                "Sony Corp."
+            ]
         ]
     },
     {
@@ -7660,10 +9400,14 @@
             "http://www.wikidata.org/entity/Q11571"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Cristiano Ronaldo"
+            [
+                "Cristiano Ronaldo",
+                "Cristiano Ronaldo dos Santos Aveiro",
+                "CR7",
+                "Ronaldo"
+            ]
         ]
     },
     {
@@ -7679,10 +9423,16 @@
             "http://www.wikidata.org/entity/Q25369"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Kobe Bryant"
+            [
+                "Kobe Bryant",
+                "Kobe Bean Bryant",
+                "Black Mamba",
+                "KB24",
+                "Kobe",
+                "Kobe B. Bryant"
+            ]
         ]
     },
     {
@@ -7698,7 +9448,6 @@
             false
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             false
@@ -7717,10 +9466,14 @@
             "http://www.wikidata.org/entity/Q9673"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Lewis Hamilton"
+            [
+                "Lewis Hamilton",
+                "Lewis Carl Davidson Hamilton",
+                "Hamilton",
+                "Sir Lewis Carl Davidson Hamilton"
+            ]
         ]
     },
     {
@@ -7736,10 +9489,15 @@
             "http://www.wikidata.org/entity/Q727"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Amsterdam"
+            [
+                "Amsterdam",
+                "Mokum",
+                "Amsterdam, NL",
+                "Amsterdam, Netherlands",
+                "A'dam"
+            ]
         ]
     },
     {
@@ -7755,7 +9513,6 @@
             "4"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "4"
@@ -7774,7 +9531,6 @@
             "32"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "32"
@@ -7793,10 +9549,11 @@
             "http://www.wikidata.org/entity/Q3821214"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "La Sportiva"
+            [
+                "La Sportiva"
+            ]
         ]
     },
     {
@@ -7812,10 +9569,29 @@
             "http://www.wikidata.org/entity/Q6583"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Sahara"
+            [
+                "Sahara",
+                "a\u1e63-\u1e62a\u1e25r\u0101\u02be al-Kubr\u0101",
+                "The Sahara",
+                "Sahara Desert",
+                "as-Sahra",
+                "al-Sahara",
+                "al-Sahra",
+                "as-Sahra al-Kubra",
+                "Zara",
+                "Zaara",
+                "Zahara",
+                "Desert",
+                "Desart",
+                "the Desert",
+                "the Desart",
+                "Great Desert",
+                "the Great Desert",
+                "Saara",
+                "Saharra"
+            ]
         ]
     },
     {
@@ -7831,10 +9607,11 @@
             "http://www.wikidata.org/entity/Q1057918"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Bellatrix Lestrange"
+            [
+                "Bellatrix Lestrange"
+            ]
         ]
     },
     {
@@ -7850,7 +9627,6 @@
             "+208610"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+208610"
@@ -7869,7 +9645,6 @@
             "\u6797\u5ee3\u5b88"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "\u6797\u5ee3\u5b88"
@@ -7888,10 +9663,11 @@
             "http://www.wikidata.org/entity/Q716945"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Ly Thai To"
+            [
+                "Ly Thai To"
+            ]
         ]
     },
     {
@@ -7907,10 +9683,11 @@
             "http://www.wikidata.org/entity/Q101405"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Antje Boetius"
+            [
+                "Antje Boetius"
+            ]
         ]
     },
     {
@@ -7926,7 +9703,6 @@
             "+8126"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+8126"
@@ -7945,10 +9721,14 @@
             "http://www.wikidata.org/entity/Q1055"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Hamburg"
+            [
+                "Hamburg",
+                "Free and Hanseatic City of Hamburg",
+                "Hamburg, Germany",
+                "Hamburg, Freie und Hansestadt"
+            ]
         ]
     },
     {
@@ -7964,7 +9744,6 @@
             "4"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "4"
@@ -7983,7 +9762,6 @@
             "+242.86"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+242.86"
@@ -8002,7 +9780,6 @@
             "+0"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "+0"
@@ -8021,7 +9798,6 @@
             "3"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "3"
@@ -8040,7 +9816,6 @@
             "4"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "4"
@@ -8059,7 +9834,6 @@
             "Point(8.82183 51.90588)"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
             "Point(8.82183 51.90588)"
@@ -8078,10 +9852,40 @@
             "http://www.wikidata.org/entity/Q84"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "London"
+            [
+                "London",
+                "London, UK",
+                "London, United Kingdom",
+                "London, England",
+                "London UK",
+                "London U.K.",
+                "Greater London",
+                "Londinium",
+                "Lo\u00f1",
+                "Lundenwic",
+                "Londinio",
+                "Londini",
+                "Londiniensium",
+                "Augusta",
+                "Trinovantum",
+                "Kaerlud",
+                "Karelundein",
+                "Lunden",
+                "Big Smoke",
+                "the Big Smoke",
+                "Lundenburh",
+                "Lundenburgh",
+                "Llyn Dain",
+                "Llan Dian",
+                "Londinion",
+                "Loniniensi",
+                "Lon.",
+                "Lo\u00f1.",
+                "Lond.",
+                "LDN"
+            ]
         ]
     },
     {
@@ -8097,10 +9901,20 @@
             "http://www.wikidata.org/entity/Q183"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Germany"
+            [
+                "Germany",
+                "Federal Republic of Germany",
+                "Deutschland",
+                "GER",
+                "BR Deutschland",
+                "DE",
+                "BRD",
+                "Bundesrepublik Deutschland",
+                "de",
+                "GFR"
+            ]
         ]
     },
     {
@@ -8117,11 +9931,17 @@
             "http://www.wikidata.org/entity/Q3174960"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Jacques Herzog",
-            "Pierre de Meuron"
+            [
+                "Jacques Herzog",
+                "Jaques Herzog"
+            ],
+            [
+                "Pierre de Meuron",
+                "Pierre DeMeuron",
+                "Pierre de Menron"
+            ]
         ]
     },
     {
@@ -8138,11 +9958,58 @@
             "http://www.wikidata.org/entity/Q30"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Denmark",
-            "United States of America"
+            [
+                "Denmark",
+                "DK",
+                "Danmark",
+                "DNK",
+                "DEK",
+                "dk",
+                "\ud83c\udde9\ud83c\uddf0",
+                "DEN",
+                "TAN",
+                "Denmark proper",
+                "metropolitan Denmark"
+            ],
+            [
+                "United States of America",
+                "United States",
+                "the States",
+                "the United States of America",
+                "US of America",
+                "USA",
+                "U.S.A.",
+                "America",
+                "the US",
+                "the U.S.",
+                "the US of A",
+                "U.S. of America",
+                "the US of America",
+                "US",
+                "the USA",
+                "U.S.",
+                "the U.S.A.",
+                "the U.S. of A",
+                "US of A",
+                "the U.S. of America",
+                "U. S.",
+                "U. S. A.",
+                "the United States",
+                "Merica",
+                "ISO 3166-1:US",
+                "America (United States)",
+                "UNITED STATES",
+                "America (USA)",
+                "America (country)",
+                "The U.S.",
+                "UN/LOCODE:US",
+                "The US of A",
+                "The Us",
+                "The Usa",
+                "Us."
+            ]
         ]
     },
     {
@@ -8158,10 +10025,25 @@
             "http://www.wikidata.org/entity/Q408"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "Australia"
+            [
+                "Australia",
+                "Commonwealth of Australia",
+                "AU",
+                "AUS",
+                "au",
+                "\ud83c\udde6\ud83c\uddfa",
+                "Straya",
+                "Aussieland",
+                "Oz",
+                "Stralia",
+                "New Holland",
+                "New Hollandia",
+                "Nova Hollandia",
+                "Down Under",
+                "Stria"
+            ]
         ]
     },
     {
@@ -8177,10 +10059,11 @@
             "http://www.wikidata.org/entity/Q43338"
         ],
         "template_id": "",
-        "paraphrased_question": "",
         "simplified_query": "",
         "solved_answer": [
-            "basalt"
+            [
+                "basalt"
+            ]
         ]
     }
 ]
