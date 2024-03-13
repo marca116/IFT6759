@@ -1,4 +1,6 @@
 import requests
+import json
+import os
 
 def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
     wiki_api_url = "https://www.wikidata.org/w/api.php"
@@ -125,6 +127,107 @@ def get_wikidata_entity_from_wikipedia(titles):
 
     else:
         print(f"Failed to download {titles}")
+
+def get_filename(wikipedia_url, wikidata_id = None):
+    return wikipedia_url.strip().split('/')[-1].replace('*', '#STAR#') + ("_" + wikidata_id if wikidata_id else "")
+
+def download_article_json(wiki_title, wiki_url, output_dir, entity_id = None):
+    wiki_main_url = "https://en.wikipedia.org/w/api.php"
+
+    params = {
+        'action': 'query',
+        'prop': 'extracts',
+        'titles': wiki_title, # Max limit = 1 for extracts
+        'explaintext': 1,
+        'redirects': 1,
+        'format': 'json'
+    }
+
+    response = requests.get(wiki_main_url, params=params)
+    wiki_main_url
+
+    if response.status_code == 200:
+        json_obj = response.json()
+
+        if json_obj.get('query') is None or json_obj['query'].get('pages') is None:
+            print(f"Failed to download {wiki_title}, no page found.")
+            return None
+        
+        query = json_obj['query']
+        pages = query['pages']
+        redirects = query.get('redirects')
+
+        # Should always have only 1 page
+        if len(pages) > 1:
+            print(f"Failed to download {wiki_title}, multiple pages found.")
+            return None
+
+        # Go through each property
+        for page_id in pages:
+            page = pages[page_id]
+            title = page.get('title')
+
+            new_entity_obj = {
+                "title": title
+            }
+
+            # If was redirected, need to get what the original title was
+            if redirects is not None:
+                for redirect in redirects:
+                    if redirect.get("to") == title:
+                        print(f"Redirected from {title} to {redirect['to']}")
+                        new_entity_obj["redirected_from"] = redirect['from']
+
+            # Set the properties
+            new_entity_obj["pageid"] = page.get('pageid')
+            new_entity_obj["ns"] = page.get('ns')
+            new_entity_obj["wikidata_id"] = entity_id
+            new_entity_obj["wikipedia_url"] = wiki_url
+            new_entity_obj["extract"] = page.get('extract')
+
+            file_name = get_filename(wiki_url, entity_id)
+
+            with open(os.path.join(output_dir, f'{file_name}.json'), 'w', encoding='utf-8') as file:
+                json.dump(new_entity_obj, file, ensure_ascii=False, indent=4)
+
+    else:
+        print(f"Failed to download {wiki_title}")
+
+# Function to run a SPARQL query against Wikidata
+def run_sparql_query(query, flatten_answers = True):
+    endpoint_url = "https://query.wikidata.org/bigdata/namespace/wdq/sparql" # alt : https://query.wikidata.org/sparql
+    headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/sparql-results+json"}
+    try:
+        response = requests.get(endpoint_url, headers=headers, params={'query': query})
+        response.raise_for_status()  
+        data = response.json()
+
+        answers = []
+
+        if data.get("boolean") is not None:
+            answers.append(data['boolean'])
+        else:
+            for binding in data['results']['bindings']:
+                # Add all the answer objects properties individually to the list of answer when flattening
+                if flatten_answers:
+                    for answer_name in binding:
+                        answer = binding[answer_name]
+                        
+                        if answer is not None and answer.get('value') is not None:
+                            answers.append(answer['value'])
+                        else:
+                            print(f"Unknown binding: {binding}")
+                else:
+                    answer = {}
+                    for key in binding:
+                        answer[key] = binding[key]['value']
+                    answers.append(answer)
+                
+        return answers
+    
+    except Exception as e:
+        print(f"Error running query: {e}")
+        return []
 
 # Case insensitive comparison
 def case_insensitive_equals(a, b):

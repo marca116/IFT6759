@@ -3,6 +3,10 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import os
+import sys
+
+sys.path.insert(0, "../utils")
+from utils import run_sparql_query
 
 input_file = "train_cleaned_no_missing_entities.json"
 output_file = "train_cleaned_with_answers.json"
@@ -19,33 +23,6 @@ output_dir_errors_path_exists = 'questions_with_answers_json_errors_path_exists'
 if not os.path.exists(output_dir_errors_path_exists):
     os.makedirs(output_dir_errors_path_exists)
 
-# Function to run a SPARQL query against Wikidata
-def run_query(query):
-    endpoint_url = "https://query.wikidata.org/sparql"
-    headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/sparql-results+json"}
-    try:
-        response = requests.get(endpoint_url, headers=headers, params={'query': query})
-        response.raise_for_status()  
-        data = response.json()
-
-        answers = []
-
-        if data.get("boolean") is not None:
-            answers.append(data['boolean'])
-        else:
-            for binding in data['results']['bindings']:
-                for answer_name in binding:
-                    answer = binding[answer_name]
-                    
-                    if answer is not None and answer.get('value') is not None:
-                        answers.append(answer['value'])
-                    else:
-                        print(f"Unknown binding: {binding}")
-        return answers
-    except Exception as e:
-        print(f"Error running query: {e}")
-        return []
-
 def save_question_to_file(question, folder_path):
     filename = question['uid']
 
@@ -61,7 +38,7 @@ def process_question(question):
     # retry after 1 min if fails
     for i in range(5):
         try:
-            answers = run_query(question['sparql_wikidata'])
+            answers = run_sparql_query(question['sparql_wikidata'])
             question['answer'] = answers
             save_question_to_file(question, output_dir)
             return question

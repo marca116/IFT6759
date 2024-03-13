@@ -34,8 +34,8 @@ def process_question(question):
 
     extracted_json = extract_json_from_response("vanilla_kgqa", result["content"])
 
-    reason = extracted_json["reason"]
-    gpt_answers = extracted_json["answers"]
+    reason = extracted_json.get("reason", "")
+    gpt_answers = extracted_json.get("answers", [])
 
     # Check if any of the gpt answers has parenthesis and remove them
     if any("(" in answer for answer in gpt_answers):
@@ -43,6 +43,9 @@ def process_question(question):
 
     # Use regex to remove all parenthesis and their content
     gpt_answers = [re.sub(r'\([^)]*\)', '', answer).strip() for answer in gpt_answers]
+
+    # Remove empty answers
+    gpt_answers = [answer for answer in gpt_answers if answer != ""]
 
     # Validate the answer
     correct_answers = []
@@ -90,9 +93,14 @@ def process_question(question):
             false_positives.append(gpt_answer)
 
     # Calc F1 Score
-    precision = len(correct_answers) / len(gpt_answers) if len(gpt_answers) > 0 else 0
-    recall = len(correct_answers) / len(question["solved_answer"]) if len(question["solved_answer"]) > 0 else 0
-    f1 = 2 * (precision * recall) / (precision + recall) if precision + recall > 0 else 0
+            
+    # Special case f1 score when the correct gold answer is an empty list (as explained in the Qald10 paper)
+    if len(question["solved_answer"]) == 0:
+        precision = recall = f1 = 1 if len(gpt_answers) == 0 else 0
+    else:
+        precision = len(correct_answers) / len(gpt_answers) if len(gpt_answers) > 0 else 0
+        recall = len(correct_answers) / len(question["solved_answer"]) if len(question["solved_answer"]) > 0 else 0
+        f1 = 2 * (precision * recall) / (precision + recall) if precision + recall > 0 else 0
 
     solved_question = {
         "uid": question["uid"],
@@ -129,7 +137,7 @@ for i, batch in enumerate(batches):
             except Exception as e:
                 print(f"Error occurred in sub-thread: {e}")
     
-    print(f"Processed {i + 1}/{len(batches)} question batches")
+    print(f"Processed {i + 1}/{len(batches)} batches")
 
 # Sort solved questions by uid
 solved_questions.sort(key=lambda x: x["uid"])

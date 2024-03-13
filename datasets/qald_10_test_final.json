@@ -122,24 +122,14 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q13677",
             "http://www.wikidata.org/entity/Q151139",
             "http://www.wikidata.org/entity/Q661834",
-            "http://www.wikidata.org/entity/Q819468"
+            "http://www.wikidata.org/entity/Q819468",
+            "http://www.wikidata.org/entity/Q13677"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            [
-                "New York Stock Exchange",
-                "NYSE",
-                "Big Board",
-                "The New York Stock Exchange",
-                "NY Stock Exchange",
-                "N. Y. Stock Exchange",
-                "N.Y. Stock Exchange",
-                "XNYS"
-            ],
             [
                 "Frankfurt Stock Exchange",
                 "FWB",
@@ -162,6 +152,16 @@
                 "Deutsche B\u00f6rse XETRA",
                 "Deutsche Boerse Xetra",
                 "XETR"
+            ],
+            [
+                "New York Stock Exchange",
+                "NYSE",
+                "Big Board",
+                "The New York Stock Exchange",
+                "NY Stock Exchange",
+                "N. Y. Stock Exchange",
+                "N.Y. Stock Exchange",
+                "XNYS"
             ]
         ]
     },
@@ -224,12 +224,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+100"
+            "99.9839"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+100"
+            "99.9839"
         ]
     },
     {
@@ -336,12 +336,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "2"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "2"
         ]
     },
     {
@@ -354,12 +354,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "3"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "3"
         ]
     },
     {
@@ -462,12 +462,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -516,12 +516,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "0.82122905027932960894"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "0.82122905027932960894"
         ]
     },
     {
@@ -534,12 +534,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -551,14 +551,10 @@
         "sparql_wikidata": "PREFIX bd: <http://www.bigdata.com/rdf#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX geo: <http://www.opengis.net/ont/geosparql#> PREFIX p: <http://www.wikidata.org/prop/> PREFIX pq: <http://www.wikidata.org/prop/qualifier/> PREFIX ps: <http://www.wikidata.org/prop/statement/> PREFIX psn: <http://www.wikidata.org/prop/statement/value-normalized/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wds: <http://www.wikidata.org/entity/statement/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wdv: <http://www.wikidata.org/value/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT ?result WHERE {?result wikibase:lexicalCategory wd:Q24905; dct:language/wdt:P218 'tr'; wikibase:lemma ?lemma. FILTER(regex(?lemma, \"u\u015f$\"))}",
         "sparql_dbpedia18": "",
         "template": "",
-        "answer": [
-            "http://www.wikidata.org/entity/L30607"
-        ],
+        "answer": [],
         "template_id": "",
         "simplified_query": "",
-        "solved_answer": [
-            []
-        ]
+        "solved_answer": []
     },
     {
         "NNQT_question": "From which country are the beagles originally from?",
@@ -700,12 +696,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -838,14 +834,10 @@
         "sparql_wikidata": "PREFIX bd: <http://www.bigdata.com/rdf#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX geo: <http://www.opengis.net/ont/geosparql#> PREFIX p: <http://www.wikidata.org/prop/> PREFIX pq: <http://www.wikidata.org/prop/qualifier/> PREFIX ps: <http://www.wikidata.org/prop/statement/> PREFIX psn: <http://www.wikidata.org/prop/statement/value-normalized/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wds: <http://www.wikidata.org/entity/statement/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wdv: <http://www.wikidata.org/value/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT ?result WHERE {wd:Q30 wdt:P1448 ?result FILTER(langMatches(lang(?result),\"tr\"))}",
         "sparql_dbpedia18": "",
         "template": "",
-        "answer": [
-            "Amerika Birle\u015fik Devletleri"
-        ],
+        "answer": [],
         "template_id": "",
         "simplified_query": "",
-        "solved_answer": [
-            "Amerika Birle\u015fik Devletleri"
-        ]
+        "solved_answer": []
     },
     {
         "NNQT_question": "How high is the Cologne Cathedral ?",
@@ -857,12 +849,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+157"
+            "157"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+157"
+            "157"
         ]
     },
     {
@@ -893,12 +885,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "1"
+            "0"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "1"
+            "0"
         ]
     },
     {
@@ -911,12 +903,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "28"
+            "53"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "28"
+            "53"
         ]
     },
     {
@@ -929,12 +921,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "18"
+            "38"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "18"
+            "38"
         ]
     },
     {
@@ -947,12 +939,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "7"
+            "10"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "7"
+            "10"
         ]
     },
     {
@@ -965,12 +957,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "26"
+            "33"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "26"
+            "33"
         ]
     },
     {
@@ -983,12 +975,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "9"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "9"
         ]
     },
     {
@@ -1001,12 +993,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "4"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "4"
         ]
     },
     {
@@ -1019,12 +1011,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "125"
+            "226"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "125"
+            "226"
         ]
     },
     {
@@ -1037,12 +1029,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "2"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "2"
         ]
     },
     {
@@ -1073,12 +1065,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "4"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "4"
         ]
     },
     {
@@ -1091,12 +1083,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "4"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "4"
         ]
     },
     {
@@ -1145,12 +1137,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "79"
+            "95"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "79"
+            "95"
         ]
     },
     {
@@ -1181,12 +1173,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "1"
+            "13"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "1"
+            "13"
         ]
     },
     {
@@ -1199,12 +1191,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "189"
+            "37"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "189"
+            "37"
         ]
     },
     {
@@ -1235,12 +1227,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "132"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "132"
         ]
     },
     {
@@ -1271,12 +1263,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "5"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "5"
         ]
     },
     {
@@ -1307,12 +1299,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "11"
+            "12"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "11"
+            "12"
         ]
     },
     {
@@ -1325,12 +1317,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "3"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "3"
         ]
     },
     {
@@ -1361,12 +1353,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "2"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "2"
         ]
     },
     {
@@ -1379,12 +1371,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "8"
+            "25"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "8"
+            "25"
         ]
     },
     {
@@ -1397,12 +1389,46 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+111892"
+            "68030",
+            "86490",
+            "101810",
+            "29403",
+            "30583",
+            "37011",
+            "37594",
+            "43375",
+            "50065",
+            "52082",
+            "93983",
+            "98113",
+            "100331",
+            "103961",
+            "105782",
+            "105795",
+            "112746",
+            "115403"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+111892"
+            "68030",
+            "86490",
+            "101810",
+            "29403",
+            "30583",
+            "37011",
+            "37594",
+            "43375",
+            "50065",
+            "52082",
+            "93983",
+            "98113",
+            "100331",
+            "103961",
+            "105782",
+            "105795",
+            "112746",
+            "115403"
         ]
     },
     {
@@ -1433,12 +1459,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "1"
+            "442"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "1"
+            "442"
         ]
     },
     {
@@ -1451,12 +1477,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "6"
+            "5"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "6"
+            "5"
         ]
     },
     {
@@ -1505,12 +1531,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "5"
+            "6"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "5"
+            "6"
         ]
     },
     {
@@ -1541,12 +1567,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "31"
+            "32"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "31"
+            "32"
         ]
     },
     {
@@ -1559,12 +1585,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "17"
+            "18"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "17"
+            "18"
         ]
     },
     {
@@ -1595,12 +1621,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "21"
+            "24"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "21"
+            "24"
         ]
     },
     {
@@ -1613,12 +1639,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "42"
+            "62"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "42"
+            "62"
         ]
     },
     {
@@ -1631,12 +1657,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "13"
+            "12"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "13"
+            "12"
         ]
     },
     {
@@ -1649,12 +1675,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "2"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "2"
         ]
     },
     {
@@ -1667,12 +1693,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "3"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "3"
         ]
     },
     {
@@ -1685,12 +1711,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "2"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "2"
         ]
     },
     {
@@ -1721,12 +1747,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "663"
+            "743"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "663"
+            "743"
         ]
     },
     {
@@ -1739,12 +1765,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+6"
+            "8"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+6"
+            "8"
         ]
     },
     {
@@ -1775,12 +1801,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+45000000"
+            "55000000"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+45000000"
+            "55000000"
         ]
     },
     {
@@ -1793,12 +1819,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "117"
+            "120"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "117"
+            "120"
         ]
     },
     {
@@ -1811,12 +1837,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "15481363"
+            "15881599"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "15481363"
+            "15881599"
         ]
     },
     {
@@ -1847,12 +1873,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "1"
+            "0"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "1"
+            "0"
         ]
     },
     {
@@ -1883,12 +1909,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "9"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "9"
         ]
     },
     {
@@ -1955,12 +1981,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "359"
+            "362"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "359"
+            "362"
         ]
     },
     {
@@ -1973,12 +1999,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+3"
+            "3"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+3"
+            "3"
         ]
     },
     {
@@ -1991,12 +2017,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+709"
+            "736"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+709"
+            "736"
         ]
     },
     {
@@ -2027,12 +2053,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "215"
+            "254"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "215"
+            "254"
         ]
     },
     {
@@ -2045,12 +2071,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "1"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "1"
         ]
     },
     {
@@ -2063,12 +2089,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "1"
+            "0"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "1"
+            "0"
         ]
     },
     {
@@ -2081,12 +2107,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "8"
+            "68"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "8"
+            "68"
         ]
     },
     {
@@ -2117,12 +2143,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "4"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "4"
         ]
     },
     {
@@ -2153,12 +2179,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "8"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "8"
         ]
     },
     {
@@ -2171,12 +2197,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "4"
+            "3"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "4"
+            "3"
         ]
     },
     {
@@ -2253,12 +2279,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "1"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "1"
         ]
     },
     {
@@ -2289,12 +2315,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "1"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "1"
         ]
     },
     {
@@ -2307,12 +2333,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "30"
+            "31"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "30"
+            "31"
         ]
     },
     {
@@ -2410,12 +2436,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "3"
+            "2"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "3"
+            "2"
         ]
     },
     {
@@ -2471,34 +2497,17 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q148",
             "http://www.wikidata.org/entity/Q668",
             "http://www.wikidata.org/entity/Q836",
             "http://www.wikidata.org/entity/Q837",
             "http://www.wikidata.org/entity/Q843",
-            "http://www.wikidata.org/entity/Q889"
+            "http://www.wikidata.org/entity/Q889",
+            "http://www.wikidata.org/entity/Q917",
+            "http://www.wikidata.org/entity/Q148"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            [
-                "People's Republic of China",
-                "Red China",
-                "PR China",
-                "Communist China",
-                "Mainland China",
-                "China PR",
-                "CHN",
-                "RPC",
-                "PRC",
-                "CN",
-                "\ud83c\udde8\ud83c\uddf3",
-                "cn",
-                "China",
-                "The PRC",
-                "china",
-                "Q148"
-            ],
             [
                 "India",
                 "Republic of India",
@@ -2544,6 +2553,31 @@
                 "\ud83c\udde6\ud83c\uddeb",
                 "AFG",
                 "af"
+            ],
+            [
+                "Bhutan",
+                "Kingdom of Bhutan",
+                "bt",
+                "BHU",
+                "\ud83c\udde7\ud83c\uddf9"
+            ],
+            [
+                "People's Republic of China",
+                "Red China",
+                "PR China",
+                "Communist China",
+                "Mainland China",
+                "China PR",
+                "CHN",
+                "RPC",
+                "PRC",
+                "CN",
+                "\ud83c\udde8\ud83c\uddf3",
+                "cn",
+                "China",
+                "The PRC",
+                "china",
+                "Q148"
             ]
         ]
     },
@@ -2557,12 +2591,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -2575,12 +2609,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "55"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "55"
         ]
     },
     {
@@ -2623,17 +2657,7 @@
                 "U. S. A.",
                 "the United States",
                 "Merica",
-                "ISO 3166-1:US",
-                "America (United States)",
-                "UNITED STATES",
-                "America (USA)",
-                "America (country)",
-                "The U.S.",
-                "UN/LOCODE:US",
-                "The US of A",
-                "The Us",
-                "The Usa",
-                "Us."
+                "America (United States)"
             ]
         ]
     },
@@ -2647,12 +2671,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "15"
+            "14"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "15"
+            "14"
         ]
     },
     {
@@ -2739,12 +2763,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "ja"
+            "en"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "ja"
+            "en"
         ]
     },
     {
@@ -2775,12 +2799,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "71"
+            "75"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "71"
+            "75"
         ]
     },
     {
@@ -2901,12 +2925,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -2918,21 +2942,10 @@
         "sparql_wikidata": "PREFIX bd: <http://www.bigdata.com/rdf#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX geo: <http://www.opengis.net/ont/geosparql#> PREFIX p: <http://www.wikidata.org/prop/> PREFIX pq: <http://www.wikidata.org/prop/qualifier/> PREFIX ps: <http://www.wikidata.org/prop/statement/> PREFIX psn: <http://www.wikidata.org/prop/statement/value-normalized/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wds: <http://www.wikidata.org/entity/statement/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wdv: <http://www.wikidata.org/value/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT ?result WHERE {wd:Q143276 wdt:P31/wdt:P279* ?result FILTER(?result IN (wd:Q104640197, wd:Q1213562))}",
         "sparql_dbpedia18": "",
         "template": "",
-        "answer": [
-            "http://www.wikidata.org/entity/Q104640197"
-        ],
+        "answer": [],
         "template_id": "",
         "simplified_query": "",
-        "solved_answer": [
-            [
-                "prime version",
-                "original version",
-                "original",
-                "master copy",
-                "artwork original version",
-                "original work"
-            ]
-        ]
+        "solved_answer": []
     },
     {
         "NNQT_question": "Was the first female chancellor in Germany ever married?",
@@ -2944,12 +2957,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -2980,12 +2993,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -3034,12 +3047,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            true
+            false
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            true
+            false
         ]
     },
     {
@@ -3178,12 +3191,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "86"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "86"
         ]
     },
     {
@@ -3196,12 +3209,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "130"
+            "77"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "130"
+            "77"
         ]
     },
     {
@@ -3214,12 +3227,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "4"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "4"
         ]
     },
     {
@@ -3232,12 +3245,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "7"
+            "5"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "7"
+            "5"
         ]
     },
     {
@@ -3289,12 +3302,17 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
+            "http://www.wikidata.org/entity/Q907311",
             "http://www.wikidata.org/entity/Q1142035",
             "http://www.wikidata.org/entity/Q1630304"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "Netflix",
+                "Netflix.com"
+            ],
             [
                 "Crunchyroll",
                 "Crunchyroll, Inc.",
@@ -3315,14 +3333,10 @@
         "sparql_wikidata": "PREFIX bd: <http://www.bigdata.com/rdf#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX geo: <http://www.opengis.net/ont/geosparql#> PREFIX p: <http://www.wikidata.org/prop/> PREFIX pq: <http://www.wikidata.org/prop/qualifier/> PREFIX ps: <http://www.wikidata.org/prop/statement/> PREFIX psn: <http://www.wikidata.org/prop/statement/value-normalized/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wds: <http://www.wikidata.org/entity/statement/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wdv: <http://www.wikidata.org/value/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT DISTINCT ?result WHERE{wd:Q3044693 wdt:P582 ?time. BIND(YEAR(NOW()) - YEAR(?time) AS ?result) }",
         "sparql_dbpedia18": "",
         "template": "",
-        "answer": [
-            "77"
-        ],
+        "answer": [],
         "template_id": "",
         "simplified_query": "",
-        "solved_answer": [
-            "77"
-        ]
+        "solved_answer": []
     },
     {
         "NNQT_question": "In what year did the district of H\u00f6xter come into existence?",
@@ -3352,12 +3366,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -3406,24 +3420,17 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q10738",
             "http://www.wikidata.org/entity/Q185654",
             "http://www.wikidata.org/entity/Q192682",
             "http://www.wikidata.org/entity/Q311980",
-            "http://www.wikidata.org/entity/Q98042831"
+            "http://www.wikidata.org/entity/Q1723645",
+            "http://www.wikidata.org/entity/Q16238788",
+            "http://www.wikidata.org/entity/Q98042831",
+            "http://www.wikidata.org/entity/Q10738"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            [
-                "Dwayne Johnson",
-                "Flex Kavana",
-                "Dwayne Douglas Johnson",
-                "Rocky Maivia",
-                "The Rock",
-                "Dwayne The Rock Johnson",
-                "Dwayne \"The Rock\" Johnson"
-            ],
             [
                 "Gal Gadot",
                 "Gal Gadot-Varsano"
@@ -3438,7 +3445,22 @@
                 "Christopher Diamantopoulos"
             ],
             [
+                "Vincenzo Amato"
+            ],
+            [
+                "Pascal Petardi"
+            ],
+            [
                 "Ritu Arya"
+            ],
+            [
+                "Dwayne Johnson",
+                "Flex Kavana",
+                "Dwayne Douglas Johnson",
+                "Rocky Maivia",
+                "The Rock",
+                "Dwayne The Rock Johnson",
+                "Dwayne \"The Rock\" Johnson"
             ]
         ]
     },
@@ -3472,20 +3494,43 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q183",
-            "http://www.wikidata.org/entity/Q212",
-            "http://www.wikidata.org/entity/Q214",
-            "http://www.wikidata.org/entity/Q217",
-            "http://www.wikidata.org/entity/Q218",
-            "http://www.wikidata.org/entity/Q219",
-            "http://www.wikidata.org/entity/Q224",
+            "http://www.wikidata.org/entity/Q403",
             "http://www.wikidata.org/entity/Q28",
             "http://www.wikidata.org/entity/Q40",
-            "http://www.wikidata.org/entity/Q403"
+            "http://www.wikidata.org/entity/Q183",
+            "http://www.wikidata.org/entity/Q214",
+            "http://www.wikidata.org/entity/Q212",
+            "http://www.wikidata.org/entity/Q218",
+            "http://www.wikidata.org/entity/Q219",
+            "http://www.wikidata.org/entity/Q217",
+            "http://www.wikidata.org/entity/Q224"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "Serbia",
+                "Republic of Serbia",
+                "Republika Srbija",
+                "Srbija",
+                "SRB",
+                "RS"
+            ],
+            [
+                "Hungary",
+                "hu",
+                "\ud83c\udded\ud83c\uddfa",
+                "HUN"
+            ],
+            [
+                "Austria",
+                "Republic of Austria",
+                "\u00d6sterreich",
+                "Republik \u00d6sterreich",
+                "AT",
+                "AUT",
+                "\ud83c\udde6\ud83c\uddf9"
+            ],
             [
                 "Germany",
                 "Federal Republic of Germany",
@@ -3499,6 +3544,14 @@
                 "GFR"
             ],
             [
+                "Slovakia",
+                "Slovak Republic",
+                "sk",
+                "\ud83c\uddf8\ud83c\uddf0",
+                "SVK",
+                "Slovakia (Slovak Republic)"
+            ],
+            [
                 "Ukraine",
                 "UA",
                 "UKR",
@@ -3508,23 +3561,6 @@
                 "Ukraina",
                 "the Ukraine",
                 "Ukra\u00efna"
-            ],
-            [
-                "Slovakia",
-                "Slovak Republic",
-                "sk",
-                "\ud83c\uddf8\ud83c\uddf0",
-                "SVK",
-                "Slovakia (Slovak Republic)"
-            ],
-            [
-                "Moldova",
-                "Republic of Moldova",
-                "Moldavia",
-                "Republica Moldova",
-                "\ud83c\uddf2\ud83c\udde9",
-                "MDA",
-                "MD"
             ],
             [
                 "Romania",
@@ -3543,35 +3579,21 @@
                 "\ud83c\udde7\ud83c\uddec"
             ],
             [
+                "Moldova",
+                "Republic of Moldova",
+                "Moldavia",
+                "Republica Moldova",
+                "\ud83c\uddf2\ud83c\udde9",
+                "MDA",
+                "MD"
+            ],
+            [
                 "Croatia",
                 "Republic of Croatia",
                 "HR",
                 "HRV",
                 "CRO",
                 "RH"
-            ],
-            [
-                "Hungary",
-                "hu",
-                "\ud83c\udded\ud83c\uddfa",
-                "HUN"
-            ],
-            [
-                "Austria",
-                "Republic of Austria",
-                "\u00d6sterreich",
-                "Republik \u00d6sterreich",
-                "AT",
-                "AUT",
-                "\ud83c\udde6\ud83c\uddf9"
-            ],
-            [
-                "Serbia",
-                "Republic of Serbia",
-                "Republika Srbija",
-                "Srbija",
-                "SRB",
-                "RS"
             ]
         ]
     },
@@ -3701,12 +3723,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -3845,26 +3867,32 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "Soziolinguistik",
-            "Soziolinguistik",
-            "Patholinguistik",
             "Genderlinguistik",
+            "Soziolinguistik",
+            "Soziolinguistik",
             "Rechtslinguistik",
+            "Computerlinguistik",
+            "Computerlinguistik",
             "Ethnolinguistik",
+            "Interlinguistik",
             "Ethnolinguistik",
-            "Interlinguistik"
+            "Politolinguistik",
+            "Patholinguistik"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "Soziolinguistik",
-            "Soziolinguistik",
-            "Patholinguistik",
             "Genderlinguistik",
+            "Soziolinguistik",
+            "Soziolinguistik",
             "Rechtslinguistik",
+            "Computerlinguistik",
+            "Computerlinguistik",
             "Ethnolinguistik",
+            "Interlinguistik",
             "Ethnolinguistik",
-            "Interlinguistik"
+            "Politolinguistik",
+            "Patholinguistik"
         ]
     },
     {
@@ -3903,16 +3931,15 @@
         "template": "",
         "answer": [
             "http://www.wikidata.org/entity/Q177220",
-            "http://www.wikidata.org/entity/Q28389",
-            "http://www.wikidata.org/entity/Q33999",
-            "http://www.wikidata.org/entity/Q36834",
             "http://www.wikidata.org/entity/Q486748",
             "http://www.wikidata.org/entity/Q488205",
-            "http://www.wikidata.org/entity/Q49757",
             "http://www.wikidata.org/entity/Q855091",
-            "http://www.wikidata.org/entity/Q33231",
             "http://www.wikidata.org/entity/Q55960555",
-            "http://www.wikidata.org/entity/Q639669"
+            "http://www.wikidata.org/entity/Q28389",
+            "http://www.wikidata.org/entity/Q33231",
+            "http://www.wikidata.org/entity/Q33999",
+            "http://www.wikidata.org/entity/Q36834",
+            "http://www.wikidata.org/entity/Q49757"
         ],
         "template_id": "",
         "simplified_query": "",
@@ -3925,6 +3952,22 @@
                 "songster"
             ],
             [
+                "pianist"
+            ],
+            [
+                "singer-songwriter",
+                "singer songwriter",
+                "singer/songwriter"
+            ],
+            [
+                "guitarist",
+                "guitar player",
+                "guitarists"
+            ],
+            [
+                "recording artist"
+            ],
+            [
                 "screenwriter",
                 "scenarist",
                 "writer",
@@ -3932,6 +3975,11 @@
                 "script writer",
                 "scriptwriter",
                 "screenplay writer"
+            ],
+            [
+                "photographer",
+                "photog",
+                "photographers"
             ],
             [
                 "actor",
@@ -3944,36 +3992,11 @@
                 "music composer"
             ],
             [
-                "pianist"
-            ],
-            [
-                "singer-songwriter",
-                "singer songwriter",
-                "singer/songwriter"
-            ],
-            [
                 "poet",
                 "poetess",
                 "bard",
                 "poetry writer",
                 "poetry author"
-            ],
-            [
-                "guitarist",
-                "guitar player",
-                "guitarists"
-            ],
-            [
-                "photographer",
-                "photog",
-                "photographers"
-            ],
-            [
-                "recording artist"
-            ],
-            [
-                "musician",
-                "musical artist"
             ]
         ]
     },
@@ -3987,28 +4010,28 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "Star Wars Episode I: The Phantom Menace",
             "Star Wars",
-            "Star Wars: Episode II \u2013 Attack of the Clones",
-            "Star Wars: Episode V \u2013 The Empire Strikes Back",
             "Star Wars Episode VI: Return of the Jedi",
-            "Star Wars: The Last Jedi",
+            "Star Wars Episode I: The Phantom Menace",
+            "Star Wars: Episode II \u2013 Attack of the Clones",
             "Star Wars: The Rise of Skywalker",
+            "Star Wars: The Force Awakens",
+            "Star Wars: The Last Jedi",
             "Star Wars Episode III: Revenge of the Sith",
-            "Star Wars: The Force Awakens"
+            "Star Wars: Episode V \u2013 The Empire Strikes Back"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "Star Wars Episode I: The Phantom Menace",
             "Star Wars",
-            "Star Wars: Episode II \u2013 Attack of the Clones",
-            "Star Wars: Episode V \u2013 The Empire Strikes Back",
             "Star Wars Episode VI: Return of the Jedi",
-            "Star Wars: The Last Jedi",
+            "Star Wars Episode I: The Phantom Menace",
+            "Star Wars: Episode II \u2013 Attack of the Clones",
             "Star Wars: The Rise of Skywalker",
+            "Star Wars: The Force Awakens",
+            "Star Wars: The Last Jedi",
             "Star Wars Episode III: Revenge of the Sith",
-            "Star Wars: The Force Awakens"
+            "Star Wars: Episode V \u2013 The Empire Strikes Back"
         ]
     },
     {
@@ -4043,8 +4066,8 @@
         "template": "",
         "answer": [
             "http://www.wikidata.org/entity/Q208045",
-            "http://www.wikidata.org/entity/Q23445",
-            "http://www.wikidata.org/entity/Q3142"
+            "http://www.wikidata.org/entity/Q3142",
+            "http://www.wikidata.org/entity/Q23445"
         ],
         "template_id": "",
         "simplified_query": "",
@@ -4060,12 +4083,12 @@
                 "goldtone"
             ],
             [
-                "black",
-                "blackness"
-            ],
-            [
                 "red",
                 "red color"
+            ],
+            [
+                "black",
+                "blackness"
             ]
         ]
     },
@@ -4119,27 +4142,10 @@
         "sparql_wikidata": "PREFIX bd: <http://www.bigdata.com/rdf#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX geo: <http://www.opengis.net/ont/geosparql#> PREFIX p: <http://www.wikidata.org/prop/> PREFIX pq: <http://www.wikidata.org/prop/qualifier/> PREFIX ps: <http://www.wikidata.org/prop/statement/> PREFIX psn: <http://www.wikidata.org/prop/statement/value-normalized/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wds: <http://www.wikidata.org/entity/statement/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wdv: <http://www.wikidata.org/value/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT DISTINCT ?result WHERE {?result wdt:P1120 ?num; wdt:P580 ?st; wdt:P582 ?et. FILTER((EXISTS{?result wdt:P31/wdt:P279* wd:Q1190554}) &&(YEAR(?st) >= 1910) && (YEAR(?et) <= 1920))}ORDER BY DESC(?num) LIMIT 1",
         "sparql_dbpedia18": "",
         "template": "",
-        "answer": [
-            "http://www.wikidata.org/entity/Q178275"
-        ],
+        "answer": [],
         "template_id": "",
         "simplified_query": "",
-        "solved_answer": [
-            [
-                "1918-1920 flu pandemic",
-                "The 1918 flu",
-                "1918 flu pandemic spread",
-                "influenza pandemic of 1918\u201319",
-                "influenza pandemic of 1918\u20131919",
-                "Flu Epidemic of 1918",
-                "1918 influenza pandemic",
-                "1918 Spanish flu pandemic",
-                "Spanish flu pandemic",
-                "Spanish flu",
-                "1918 flu pandemic",
-                "Influenza Pandemic, 1918-1919"
-            ]
-        ]
+        "solved_answer": []
     },
     {
         "NNQT_question": "Does the ATI Company still exist?",
@@ -4168,19 +4174,10 @@
         "sparql_wikidata": "PREFIX bd: <http://www.bigdata.com/rdf#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX geo: <http://www.opengis.net/ont/geosparql#> PREFIX p: <http://www.wikidata.org/prop/> PREFIX pq: <http://www.wikidata.org/prop/qualifier/> PREFIX ps: <http://www.wikidata.org/prop/statement/> PREFIX psn: <http://www.wikidata.org/prop/statement/value-normalized/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wds: <http://www.wikidata.org/entity/statement/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wdv: <http://www.wikidata.org/value/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT DISTINCT ?result WHERE {wd:Q430 wdt:P793 ?result}",
         "sparql_dbpedia18": "",
         "template": "",
-        "answer": [
-            "http://www.wikidata.org/entity/Q123509"
-        ],
+        "answer": [],
         "template_id": "",
         "simplified_query": "",
-        "solved_answer": [
-            [
-                "extinction",
-                "species extinction",
-                "extinctions",
-                "species extinctions"
-            ]
-        ]
+        "solved_answer": []
     },
     {
         "NNQT_question": "What instruments did Louis Armstrong play?",
@@ -4192,20 +4189,20 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q17172850",
             "http://www.wikidata.org/entity/Q202027",
+            "http://www.wikidata.org/entity/Q17172850",
             "http://www.wikidata.org/entity/Q8338"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
+                "cornet"
+            ],
+            [
                 "voice",
                 "singing voice",
                 "vocals"
-            ],
-            [
-                "cornet"
             ],
             [
                 "trumpet",
@@ -4228,14 +4225,19 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q4228595"
+            "http://www.wikidata.org/entity/Q166019"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "stab wound",
-                "puncture wound"
+                "bleeding",
+                "hemorrage",
+                "hemorrhaging",
+                "hemorrhage",
+                "loss of blood",
+                "blood loss",
+                "excessive blood loss"
             ]
         ]
     },
@@ -4312,12 +4314,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "0"
+            "1109183000000"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "0"
+            "1109183000000"
         ]
     },
     {
@@ -4387,12 +4389,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+385000"
+            "385000"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+385000"
+            "385000"
         ]
     },
     {
@@ -4469,14 +4471,14 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q767456"
+            "http://www.wikidata.org/entity/Q1456987"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "Gothic",
-                "Gothic 1"
+                "Gothic II",
+                "Gothic 2"
             ]
         ]
     },
@@ -4528,12 +4530,28 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q36180",
-            "http://www.wikidata.org/entity/Q6625963"
+            "http://www.wikidata.org/entity/Q998550",
+            "http://www.wikidata.org/entity/Q6625963",
+            "http://www.wikidata.org/entity/Q9170932",
+            "http://www.wikidata.org/entity/Q36180"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "bookseller",
+                "book dealer",
+                "bookman",
+                "book seller"
+            ],
+            [
+                "novelist",
+                "novel author",
+                "novel writer"
+            ],
+            [
+                "Bibliotherapist"
+            ],
             [
                 "writer",
                 "author",
@@ -4541,11 +4559,6 @@
                 "authors",
                 "penman",
                 "penwoman"
-            ],
-            [
-                "novelist",
-                "novel author",
-                "novel writer"
             ]
         ]
     },
@@ -4559,16 +4572,27 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q10798782",
-            "http://www.wikidata.org/entity/Q15981151",
-            "http://www.wikidata.org/entity/Q33999",
             "http://www.wikidata.org/entity/Q486748",
             "http://www.wikidata.org/entity/Q488205",
-            "http://www.wikidata.org/entity/Q6168364"
+            "http://www.wikidata.org/entity/Q6168364",
+            "http://www.wikidata.org/entity/Q10798782",
+            "http://www.wikidata.org/entity/Q15981151",
+            "http://www.wikidata.org/entity/Q33999"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "pianist"
+            ],
+            [
+                "singer-songwriter",
+                "singer songwriter",
+                "singer/songwriter"
+            ],
+            [
+                "jazz guitarist"
+            ],
             [
                 "television actor",
                 "TV actor",
@@ -4585,17 +4609,6 @@
                 "actress",
                 "actors",
                 "actresses"
-            ],
-            [
-                "pianist"
-            ],
-            [
-                "singer-songwriter",
-                "singer songwriter",
-                "singer/songwriter"
-            ],
-            [
-                "jazz guitarist"
             ]
         ]
     },
@@ -4609,19 +4622,11 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q13955",
             "http://www.wikidata.org/entity/Q9168"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            [
-                "Arabic",
-                "Arabic language",
-                "Arabian",
-                "Arabian language",
-                "ar"
-            ],
             [
                 "Persian",
                 "Farsi",
@@ -4645,12 +4650,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+230241"
+            "236140"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+230241"
+            "236140"
         ]
     },
     {
@@ -4727,35 +4732,38 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q143",
             "http://www.wikidata.org/entity/Q152965",
-            "http://www.wikidata.org/entity/Q188",
+            "http://www.wikidata.org/entity/Q3915194",
+            "http://www.wikidata.org/entity/Q809",
+            "http://www.wikidata.org/entity/Q9083",
             "http://www.wikidata.org/entity/Q30319",
+            "http://www.wikidata.org/entity/Q143",
+            "http://www.wikidata.org/entity/Q188",
             "http://www.wikidata.org/entity/Q33690",
             "http://www.wikidata.org/entity/Q35501",
-            "http://www.wikidata.org/entity/Q3915194",
-            "http://www.wikidata.org/entity/Q56485",
-            "http://www.wikidata.org/entity/Q809",
-            "http://www.wikidata.org/entity/Q9083"
+            "http://www.wikidata.org/entity/Q56485"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            [
-                "Esperanto",
-                "Esperanto language",
-                "eo",
-                "epo"
-            ],
             [
                 "Silesian German",
                 "Lower Silesian",
                 "sli"
             ],
             [
-                "German",
-                "German language",
-                "de"
+                "Polish Sign Language"
+            ],
+            [
+                "Polish",
+                "Polish language",
+                "pl",
+                "Polski"
+            ],
+            [
+                "Lithuanian",
+                "Lithuanian language",
+                "lt"
             ],
             [
                 "Silesian",
@@ -4763,6 +4771,17 @@
                 "Silesian language",
                 "szl",
                 "Silesian dialect"
+            ],
+            [
+                "Esperanto",
+                "Esperanto language",
+                "eo",
+                "epo"
+            ],
+            [
+                "German",
+                "German language",
+                "de"
             ],
             [
                 "Kashubian",
@@ -4779,9 +4798,6 @@
                 "Prussian language"
             ],
             [
-                "Polish Sign Language"
-            ],
-            [
                 "Wymysorys",
                 "Wilamowicean",
                 "Wilamowicean language",
@@ -4789,17 +4805,6 @@
                 "wym",
                 "Vilamovian",
                 "Vilamovian language"
-            ],
-            [
-                "Polish",
-                "Polish language",
-                "pl",
-                "Polski"
-            ],
-            [
-                "Lithuanian",
-                "Lithuanian language",
-                "lt"
             ]
         ]
     },
@@ -4813,12 +4818,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "53"
+            "58"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "53"
+            "58"
         ]
     },
     {
@@ -4831,12 +4836,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -4849,13 +4854,20 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
+            "http://www.wikidata.org/entity/Q843813",
             "http://www.wikidata.org/entity/Q1440231",
-            "http://www.wikidata.org/entity/Q1622022",
-            "http://www.wikidata.org/entity/Q843813"
+            "http://www.wikidata.org/entity/Q1622022"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "C",
+                "B\u266f",
+                "B-sharp",
+                "B#",
+                "do"
+            ],
             [
                 "G",
                 "sol"
@@ -4865,13 +4877,6 @@
                 "mi",
                 "F-flat",
                 "F\u266d"
-            ],
-            [
-                "C",
-                "B\u266f",
-                "B-sharp",
-                "B#",
-                "do"
             ]
         ]
     },
@@ -4885,12 +4890,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "60"
+            "71"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "60"
+            "71"
         ]
     },
     {
@@ -4903,12 +4908,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "1335"
+            "4844"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "1335"
+            "4844"
         ]
     },
     {
@@ -4921,11 +4926,15 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
+            "http://www.wikidata.org/entity/Q752688",
             "http://www.wikidata.org/entity/Q1500702"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "Chachapoya culture"
+            ],
             [
                 "Mogollon culture"
             ]
@@ -4961,12 +4970,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "45"
+            "60"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "45"
+            "60"
         ]
     },
     {
@@ -5002,7 +5011,7 @@
         "answer": [
             "http://www.wikidata.org/entity/Q6125801",
             "http://www.wikidata.org/entity/Q6819157",
-            "http://www.wikidata.org/entity/Q93077588"
+            "http://www.wikidata.org/entity/Q14016"
         ],
         "template_id": "",
         "simplified_query": "",
@@ -5014,7 +5023,7 @@
                 "Meri Kahani"
             ],
             [
-                "Meri Kahani"
+                "Doorie"
             ]
         ]
     },
@@ -5028,15 +5037,14 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q1128240"
+            "http://www.wikidata.org/entity/Q5177051"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "earl",
-                "count",
-                "eorl"
+                "countess",
+                "comtesse"
             ]
         ]
     },
@@ -5050,38 +5058,22 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q1135449",
-            "http://www.wikidata.org/entity/Q11471",
             "http://www.wikidata.org/entity/Q167312",
-            "http://www.wikidata.org/entity/Q21263223",
             "http://www.wikidata.org/entity/Q529711",
-            "http://www.wikidata.org/entity/Q53060",
+            "http://www.wikidata.org/entity/Q777671",
+            "http://www.wikidata.org/entity/Q1135449",
+            "http://www.wikidata.org/entity/Q21263223",
             "http://www.wikidata.org/entity/Q59627780",
-            "http://www.wikidata.org/entity/Q777671"
+            "http://www.wikidata.org/entity/Q11471",
+            "http://www.wikidata.org/entity/Q53060"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "corridor",
-                "hallway",
-                "hall",
-                "passage"
-            ],
-            [
-                "time"
-            ],
-            [
                 "dualism",
                 "twoness",
                 "duality"
-            ],
-            [
-                "doorway",
-                "entrance",
-                "exit",
-                "doors",
-                "door"
             ],
             [
                 "beginning",
@@ -5094,8 +5086,22 @@
                 "start point"
             ],
             [
-                "gate",
-                "gateway"
+                "sowing",
+                "seeding",
+                "sowed"
+            ],
+            [
+                "corridor",
+                "hallway",
+                "hall",
+                "passage"
+            ],
+            [
+                "doorway",
+                "entrance",
+                "exit",
+                "doors",
+                "door"
             ],
             [
                 "transition",
@@ -5103,9 +5109,11 @@
                 "death"
             ],
             [
-                "sowing",
-                "seeding",
-                "sowed"
+                "time"
+            ],
+            [
+                "gate",
+                "gateway"
             ]
         ]
     },
@@ -5141,13 +5149,13 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q922648"
+            "http://www.wikidata.org/entity/Q18689440"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "The Town Hall at Auvers"
+                "Sunflowers"
             ]
         ]
     },
@@ -5412,12 +5420,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+3532"
+            "3532"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+3532"
+            "3532"
         ]
     },
     {
@@ -5502,12 +5510,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "2021-01-01T00:00:00Z"
+            "2021-11-12T00:00:00Z"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "2021-01-01T00:00:00Z"
+            "2021-11-12T00:00:00Z"
         ]
     },
     {
@@ -5538,53 +5546,23 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q1215575",
-            "http://www.wikidata.org/entity/Q18216",
             "http://www.wikidata.org/entity/Q186969",
             "http://www.wikidata.org/entity/Q244408",
             "http://www.wikidata.org/entity/Q326224",
-            "http://www.wikidata.org/entity/Q3790542",
             "http://www.wikidata.org/entity/Q409231",
             "http://www.wikidata.org/entity/Q412486",
             "http://www.wikidata.org/entity/Q417296",
-            "http://www.wikidata.org/entity/Q7160794",
+            "http://www.wikidata.org/entity/Q474191",
             "http://www.wikidata.org/entity/Q900898",
-            "http://www.wikidata.org/entity/Q963093"
+            "http://www.wikidata.org/entity/Q963093",
+            "http://www.wikidata.org/entity/Q1215575",
+            "http://www.wikidata.org/entity/Q3790542",
+            "http://www.wikidata.org/entity/Q7160794",
+            "http://www.wikidata.org/entity/Q18216"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            [
-                "naproxen",
-                "(S)-naproxen",
-                "2-(6-methoxy-2-naphthyl)propionic acid",
-                "(+)-2-(methoxy-2-naphthyl)-propions\u00e4ure",
-                "(+)-(S)-6-methoxy-\u03b1-methyl-2-naphthaleneacetic acid",
-                "(S)-2-(6-methoxy-2-naphthyl)propionic acid",
-                "(S)-(+)-2-(6-methoxy-2-naphthyl)propionic acid",
-                "(S)-6-methoxy-alpha-methyl-2-naphthaleneacetic acid",
-                "(S)-2-(6-methoxy-2-naphthyl)propanoic acid",
-                "(S)-(+)-naproxen",
-                "(+)-(S)-naproxen",
-                "(+)-2-(methoxy-2-naphthyl)-propionic acid",
-                "(+)-naproxen",
-                "(+)-2-(6-methoxy-2-naphthyl)propionic acid",
-                "(+)-(S)-6-methoxy-alpha-methyl-2-naphthaleneacetic acid"
-            ],
-            [
-                "aspirin",
-                "acetylsalicylic acid",
-                "ASA",
-                "o-acetoxybenzoic acid",
-                "o-carboxyphenyl acetate",
-                "salicylic acid acetate",
-                "o-(acetyloxy)benzoic acid",
-                "2-carboxyphenyl acetate",
-                "2-acetoxybenzoic acid",
-                "o-acetylsalicylic acid",
-                "2-acetoxybenzenecarboxylic acid",
-                "acetysalicylic acid"
-            ],
             [
                 "ibuprofen",
                 "U-18573",
@@ -5640,21 +5618,6 @@
                 "Colchicine"
             ],
             [
-                "sulfinpyrazone",
-                "ANR315",
-                "Anturane\u00ae",
-                "Apo-sulfinpyrazone\u00ae",
-                "G 28315",
-                "NSC 75925",
-                "suphinpyrazone",
-                "Sulfoxyphenylpyrazolidine",
-                "4-(2-Benzenesulfinylethyl)-1,2-diphenylpyrazolidine-3,5-dione",
-                "1,2-Diphenyl-4-(2'-phenylsulfinethyl)-3,5-pyrazolidinedione",
-                "1,2-Diphenyl-3,5-dioxo-4-(2-phenylsulfinylethyl)pyrazolidine",
-                "Anturane (TN)",
-                "Sulfinpyrazone"
-            ],
-            [
                 "indomethacin",
                 "Indocid\u00ae",
                 "Indocin\u00ae",
@@ -5706,10 +5669,7 @@
                 "2-(3-cyano-4-isobutoxyphenyl)-4-methyl- 1,3-thiazole-5-carboxylic acid"
             ],
             [
-                "pegloticase",
-                "Puricase",
-                "Krystexxa",
-                "PEG-uricase"
+                "diet"
             ],
             [
                 "probenecid",
@@ -5737,6 +5697,58 @@
                 "Sulindaco",
                 "Sulindac",
                 "Sulindacum"
+            ],
+            [
+                "naproxen",
+                "(S)-naproxen",
+                "2-(6-methoxy-2-naphthyl)propionic acid",
+                "(+)-2-(methoxy-2-naphthyl)-propions\u00e4ure",
+                "(+)-(S)-6-methoxy-\u03b1-methyl-2-naphthaleneacetic acid",
+                "(S)-2-(6-methoxy-2-naphthyl)propionic acid",
+                "(S)-(+)-2-(6-methoxy-2-naphthyl)propionic acid",
+                "(S)-6-methoxy-alpha-methyl-2-naphthaleneacetic acid",
+                "(S)-2-(6-methoxy-2-naphthyl)propanoic acid",
+                "(S)-(+)-naproxen",
+                "(+)-(S)-naproxen",
+                "(+)-2-(methoxy-2-naphthyl)-propionic acid",
+                "(+)-naproxen",
+                "(+)-2-(6-methoxy-2-naphthyl)propionic acid",
+                "(+)-(S)-6-methoxy-alpha-methyl-2-naphthaleneacetic acid"
+            ],
+            [
+                "sulfinpyrazone",
+                "ANR315",
+                "Anturane\u00ae",
+                "Apo-sulfinpyrazone\u00ae",
+                "G 28315",
+                "NSC 75925",
+                "suphinpyrazone",
+                "Sulfoxyphenylpyrazolidine",
+                "4-(2-Benzenesulfinylethyl)-1,2-diphenylpyrazolidine-3,5-dione",
+                "1,2-Diphenyl-4-(2'-phenylsulfinethyl)-3,5-pyrazolidinedione",
+                "1,2-Diphenyl-3,5-dioxo-4-(2-phenylsulfinylethyl)pyrazolidine",
+                "Anturane (TN)",
+                "Sulfinpyrazone"
+            ],
+            [
+                "pegloticase",
+                "Puricase",
+                "Krystexxa",
+                "PEG-uricase"
+            ],
+            [
+                "aspirin",
+                "acetylsalicylic acid",
+                "ASA",
+                "o-acetoxybenzoic acid",
+                "o-carboxyphenyl acetate",
+                "salicylic acid acetate",
+                "o-(acetyloxy)benzoic acid",
+                "2-carboxyphenyl acetate",
+                "2-acetoxybenzoic acid",
+                "o-acetylsalicylic acid",
+                "2-acetoxybenzenecarboxylic acid",
+                "acetysalicylic acid"
             ]
         ]
     },
@@ -5768,12 +5780,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "2019-01-01T00:00:00Z"
+            "2007-08-01T00:00:00Z"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "2019-01-01T00:00:00Z"
+            "2007-08-01T00:00:00Z"
         ]
     },
     {
@@ -6077,7 +6089,8 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q2009"
+            "http://www.wikidata.org/entity/Q2009",
+            "http://www.wikidata.org/entity/Q16"
         ],
         "template_id": "",
         "simplified_query": "",
@@ -6090,6 +6103,16 @@
                 "Territory of the Yukon",
                 "CA-YT",
                 "The Klondike"
+            ],
+            [
+                "Canada",
+                "CAN",
+                "CA",
+                "Dominion of Canada",
+                "ISO 3166-1:CA",
+                "\u1472\u14c7\u1455",
+                "Commonwealth of Canada",
+                "Canada (country)"
             ]
         ]
     },
@@ -6123,16 +6146,16 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
+            "http://www.wikidata.org/entity/Q79734",
+            "http://www.wikidata.org/entity/Q202886",
+            "http://www.wikidata.org/entity/Q213586",
             "http://www.wikidata.org/entity/Q218728",
-            "http://www.wikidata.org/entity/Q79734"
+            "http://www.wikidata.org/entity/Q220110",
+            "http://www.wikidata.org/entity/Q308659"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            [
-                "The Shire",
-                "Shire"
-            ],
             [
                 "Middle-earth",
                 "Middle Earth",
@@ -6143,6 +6166,28 @@
                 "Ennor",
                 "Ennorath",
                 "End\u00f3re"
+            ],
+            [
+                "Mordor",
+                "Narg\u00fbn",
+                "Black Land",
+                "Land of Shadow"
+            ],
+            [
+                "Gondor"
+            ],
+            [
+                "The Shire",
+                "Shire"
+            ],
+            [
+                "Rohan",
+                "Riddermark"
+            ],
+            [
+                "Lothl\u00f3rien",
+                "L\u00f3rien",
+                "L\u00f3rinand"
             ]
         ]
     },
@@ -6653,26 +6698,24 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q193701",
-            "http://www.wikidata.org/entity/Q21708200",
+            "http://www.wikidata.org/entity/Q483959",
             "http://www.wikidata.org/entity/Q28874479",
-            "http://www.wikidata.org/entity/Q29043471",
-            "http://www.wikidata.org/entity/Q30686532",
-            "http://www.wikidata.org/entity/Q483959"
+            "http://www.wikidata.org/entity/Q115815194",
+            "http://www.wikidata.org/entity/Q117617480",
+            "http://www.wikidata.org/entity/Q117705742",
+            "http://www.wikidata.org/entity/Q120599684",
+            "http://www.wikidata.org/entity/Q193701",
+            "http://www.wikidata.org/entity/Q30686532"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "SpaceX",
-                "Space Exploration Technologies Corporation",
-                "Space Exploration Technologies Corp."
-            ],
-            [
-                "OpenAIcd",
-                "Open AI",
-                "OpenAI Inc.",
-                "OpenAI (United States)"
+                "PayPal",
+                "PayPal Holdings, Inc.",
+                "Paypal",
+                "paypal.com",
+                "PAYPAL, INC. (San Jose, CA)"
             ],
             [
                 "The Boring Company",
@@ -6681,19 +6724,27 @@
                 "Boring"
             ],
             [
-                "Neuralink",
-                "Neuralink Corporation",
-                "Neuralink Corp"
+                "Thud",
+                "Thud!"
+            ],
+            [
+                "X Corp.",
+                "X"
+            ],
+            [
+                "X Holdings Corp."
+            ],
+            [
+                "xAI",
+                "X.AI Corp."
+            ],
+            [
+                "SpaceX",
+                "Space Exploration Technologies Corporation",
+                "Space Exploration Technologies Corp."
             ],
             [
                 "X.com"
-            ],
-            [
-                "PayPal",
-                "PayPal Holdings, Inc.",
-                "Paypal",
-                "paypal.com",
-                "PAYPAL, INC. (San Jose, CA)"
             ]
         ]
     },
@@ -6707,12 +6758,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -6815,17 +6866,32 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
+            "http://www.wikidata.org/entity/Q1472",
             "http://www.wikidata.org/entity/Q12152",
             "http://www.wikidata.org/entity/Q12192",
             "http://www.wikidata.org/entity/Q12204",
-            "http://www.wikidata.org/entity/Q1472",
-            "http://www.wikidata.org/entity/Q188605",
+            "http://www.wikidata.org/entity/Q47912",
             "http://www.wikidata.org/entity/Q199804",
-            "http://www.wikidata.org/entity/Q47912"
+            "http://www.wikidata.org/entity/Q188605"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "Crohn's disease",
+                "regional enteritis",
+                "Crohn disease",
+                "Crohn's disease of colon (disorder)",
+                "Crohn's disease of large bowel",
+                "Granulomatous Colitis",
+                "regional Ileitis",
+                "regional colitis",
+                "regional enteritis of small intestine with large intestine",
+                "regional enteritis of the large bowel",
+                "regional ileocolitis",
+                "Crohn's disease of colon",
+                "Crohn"
+            ],
             [
                 "myocardial infarction",
                 "MI",
@@ -6856,23 +6922,9 @@
                 "oriri"
             ],
             [
-                "Crohn's disease",
-                "regional enteritis",
-                "Crohn disease",
-                "Crohn's disease of colon (disorder)",
-                "Crohn's disease of large bowel",
-                "Granulomatous Colitis",
-                "regional Ileitis",
-                "regional colitis",
-                "regional enteritis of small intestine with large intestine",
-                "regional enteritis of the large bowel",
-                "regional ileocolitis",
-                "Crohn's disease of colon",
-                "Crohn"
-            ],
-            [
-                "pulmonary emphysema",
-                "emphysema"
+                "lung cancer",
+                "malignant lung tumor",
+                "malignant neoplasm of lung"
             ],
             [
                 "chronic obstructive pulmonary disease",
@@ -6895,9 +6947,8 @@
                 "Pulmonary Disease, Chronic Obstructive"
             ],
             [
-                "lung cancer",
-                "malignant lung tumor",
-                "malignant neoplasm of lung"
+                "pulmonary emphysema",
+                "emphysema"
             ]
         ]
     },
@@ -6974,12 +7025,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "6583"
+            "6910"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "6583"
+            "6910"
         ]
     },
     {
@@ -6992,19 +7043,19 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q42934",
-            "http://www.wikidata.org/entity/Q848365"
+            "http://www.wikidata.org/entity/Q848365",
+            "http://www.wikidata.org/entity/Q42934"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "Cubism",
-                "cubism"
-            ],
-            [
                 "primitivism",
                 "primitive art"
+            ],
+            [
+                "Cubism",
+                "cubism"
             ]
         ]
     },
@@ -7078,11 +7129,22 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
+            "http://www.wikidata.org/entity/Q121783",
             "http://www.wikidata.org/entity/Q131371"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "Los Angeles Lakers",
+                "Minneapolis Lakers",
+                "LA Lakers",
+                "L.A. Lakers",
+                "Purple and Gold",
+                "The Lake Show",
+                "Minneapolis Lakers (basketbalov\u00fd t\u00fdm)",
+                "Lakers"
+            ],
             [
                 "Boston Celtics",
                 "Celtics",
@@ -7147,10 +7209,18 @@
         "sparql_wikidata": "PREFIX bd: <http://www.bigdata.com/rdf#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX geo: <http://www.opengis.net/ont/geosparql#> PREFIX p: <http://www.wikidata.org/prop/> PREFIX pq: <http://www.wikidata.org/prop/qualifier/> PREFIX ps: <http://www.wikidata.org/prop/statement/> PREFIX psn: <http://www.wikidata.org/prop/statement/value-normalized/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wds: <http://www.wikidata.org/entity/statement/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wdv: <http://www.wikidata.org/value/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT DISTINCT ?pyr WHERE {?pyr wdt:P31/wdt:P279* wd:Q12516; p:P2048/psn:P2048/wikibase:quantityAmount ?h; wdt:P17 wd:Q79 } ORDER BY DESC(?h) LIMIT 1",
         "sparql_dbpedia18": "",
         "template": "",
-        "answer": [],
+        "answer": [
+            "http://www.wikidata.org/entity/Q37200"
+        ],
         "template_id": "",
         "simplified_query": "",
-        "solved_answer": []
+        "solved_answer": [
+            [
+                "Great Pyramid of Giza",
+                "Pyramid of Cheops",
+                "Pyramid of Khufu"
+            ]
+        ]
     },
     {
         "NNQT_question": "What is the offical language of Taipei?",
@@ -7186,230 +7256,300 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q10287918",
-            "http://www.wikidata.org/entity/Q10340891",
-            "http://www.wikidata.org/entity/Q10381261",
+            "http://www.wikidata.org/entity/Q196226",
+            "http://www.wikidata.org/entity/Q212731",
+            "http://www.wikidata.org/entity/Q128251",
+            "http://www.wikidata.org/entity/Q153227",
+            "http://www.wikidata.org/entity/Q167494",
+            "http://www.wikidata.org/entity/Q257679",
+            "http://www.wikidata.org/entity/Q269356",
+            "http://www.wikidata.org/entity/Q872205",
+            "http://www.wikidata.org/entity/Q929924",
+            "http://www.wikidata.org/entity/Q726481",
+            "http://www.wikidata.org/entity/Q728122",
+            "http://www.wikidata.org/entity/Q323960",
+            "http://www.wikidata.org/entity/Q808487",
+            "http://www.wikidata.org/entity/Q451560",
             "http://www.wikidata.org/entity/Q1045360",
             "http://www.wikidata.org/entity/Q1045743",
-            "http://www.wikidata.org/entity/Q105686573",
+            "http://www.wikidata.org/entity/Q1054760",
+            "http://www.wikidata.org/entity/Q823282",
+            "http://www.wikidata.org/entity/Q825946",
+            "http://www.wikidata.org/entity/Q829585",
+            "http://www.wikidata.org/entity/Q1311583",
             "http://www.wikidata.org/entity/Q1083354",
+            "http://www.wikidata.org/entity/Q1337950",
             "http://www.wikidata.org/entity/Q1140154",
-            "http://www.wikidata.org/entity/Q11454867",
+            "http://www.wikidata.org/entity/Q1970206",
+            "http://www.wikidata.org/entity/Q1421950",
             "http://www.wikidata.org/entity/Q1186342",
+            "http://www.wikidata.org/entity/Q510881",
+            "http://www.wikidata.org/entity/Q2534217",
+            "http://www.wikidata.org/entity/Q1460554",
+            "http://www.wikidata.org/entity/Q1497818",
             "http://www.wikidata.org/entity/Q1197705",
-            "http://www.wikidata.org/entity/Q11981082",
-            "http://www.wikidata.org/entity/Q12040593",
             "http://www.wikidata.org/entity/Q1204069",
+            "http://www.wikidata.org/entity/Q533786",
+            "http://www.wikidata.org/entity/Q1569468",
+            "http://www.wikidata.org/entity/Q2044753",
             "http://www.wikidata.org/entity/Q1217808",
             "http://www.wikidata.org/entity/Q1218802",
             "http://www.wikidata.org/entity/Q1226179",
+            "http://www.wikidata.org/entity/Q2921728",
             "http://www.wikidata.org/entity/Q1247495",
             "http://www.wikidata.org/entity/Q1248550",
             "http://www.wikidata.org/entity/Q1248669",
-            "http://www.wikidata.org/entity/Q12615223",
-            "http://www.wikidata.org/entity/Q12631891",
-            "http://www.wikidata.org/entity/Q12752569",
-            "http://www.wikidata.org/entity/Q128251",
-            "http://www.wikidata.org/entity/Q1311583",
-            "http://www.wikidata.org/entity/Q13363348",
-            "http://www.wikidata.org/entity/Q1337950",
-            "http://www.wikidata.org/entity/Q1362417",
-            "http://www.wikidata.org/entity/Q1421950",
-            "http://www.wikidata.org/entity/Q1497818",
-            "http://www.wikidata.org/entity/Q153227",
-            "http://www.wikidata.org/entity/Q1564651",
-            "http://www.wikidata.org/entity/Q1569468",
-            "http://www.wikidata.org/entity/Q15807551",
-            "http://www.wikidata.org/entity/Q15856867",
-            "http://www.wikidata.org/entity/Q16327533",
-            "http://www.wikidata.org/entity/Q167494",
-            "http://www.wikidata.org/entity/Q16761042",
-            "http://www.wikidata.org/entity/Q16840214",
-            "http://www.wikidata.org/entity/Q16858605",
-            "http://www.wikidata.org/entity/Q16947642",
-            "http://www.wikidata.org/entity/Q16954471",
-            "http://www.wikidata.org/entity/Q16999031",
-            "http://www.wikidata.org/entity/Q17020192",
-            "http://www.wikidata.org/entity/Q17023150",
-            "http://www.wikidata.org/entity/Q17108266",
-            "http://www.wikidata.org/entity/Q17112046",
-            "http://www.wikidata.org/entity/Q18290333",
-            "http://www.wikidata.org/entity/Q18566932",
-            "http://www.wikidata.org/entity/Q18612969",
-            "http://www.wikidata.org/entity/Q196226",
-            "http://www.wikidata.org/entity/Q1970206",
-            "http://www.wikidata.org/entity/Q19879553",
-            "http://www.wikidata.org/entity/Q212731",
-            "http://www.wikidata.org/entity/Q2134905",
-            "http://www.wikidata.org/entity/Q2219021",
-            "http://www.wikidata.org/entity/Q2282096",
-            "http://www.wikidata.org/entity/Q2333540",
-            "http://www.wikidata.org/entity/Q2534217",
-            "http://www.wikidata.org/entity/Q2570867",
-            "http://www.wikidata.org/entity/Q257679",
-            "http://www.wikidata.org/entity/Q269356",
             "http://www.wikidata.org/entity/Q2782548",
             "http://www.wikidata.org/entity/Q2789136",
             "http://www.wikidata.org/entity/Q2849529",
             "http://www.wikidata.org/entity/Q2849711",
-            "http://www.wikidata.org/entity/Q28498763",
-            "http://www.wikidata.org/entity/Q2883242",
             "http://www.wikidata.org/entity/Q3048737",
-            "http://www.wikidata.org/entity/Q3089342",
-            "http://www.wikidata.org/entity/Q3179395",
-            "http://www.wikidata.org/entity/Q32656642",
+            "http://www.wikidata.org/entity/Q2219021",
             "http://www.wikidata.org/entity/Q3490095",
             "http://www.wikidata.org/entity/Q3519442",
+            "http://www.wikidata.org/entity/Q2873402",
+            "http://www.wikidata.org/entity/Q2883242",
+            "http://www.wikidata.org/entity/Q3089342",
+            "http://www.wikidata.org/entity/Q2282096",
             "http://www.wikidata.org/entity/Q3523222",
-            "http://www.wikidata.org/entity/Q3562452",
+            "http://www.wikidata.org/entity/Q3829045",
+            "http://www.wikidata.org/entity/Q3179395",
+            "http://www.wikidata.org/entity/Q3571115",
+            "http://www.wikidata.org/entity/Q3868902",
+            "http://www.wikidata.org/entity/Q3882384",
+            "http://www.wikidata.org/entity/Q3204992",
+            "http://www.wikidata.org/entity/Q3205053",
+            "http://www.wikidata.org/entity/Q3907215",
+            "http://www.wikidata.org/entity/Q3916065",
+            "http://www.wikidata.org/entity/Q3929290",
+            "http://www.wikidata.org/entity/Q3942996",
+            "http://www.wikidata.org/entity/Q3962617",
             "http://www.wikidata.org/entity/Q3712420",
+            "http://www.wikidata.org/entity/Q3388497",
+            "http://www.wikidata.org/entity/Q4768920",
+            "http://www.wikidata.org/entity/Q4788867",
             "http://www.wikidata.org/entity/Q3740518",
             "http://www.wikidata.org/entity/Q3774164",
+            "http://www.wikidata.org/entity/Q4652766",
             "http://www.wikidata.org/entity/Q3788617",
             "http://www.wikidata.org/entity/Q3790633",
+            "http://www.wikidata.org/entity/Q4851650",
+            "http://www.wikidata.org/entity/Q3442071",
             "http://www.wikidata.org/entity/Q3808654",
             "http://www.wikidata.org/entity/Q3814951",
             "http://www.wikidata.org/entity/Q3815436",
             "http://www.wikidata.org/entity/Q3822241",
-            "http://www.wikidata.org/entity/Q3829045",
-            "http://www.wikidata.org/entity/Q3868902",
-            "http://www.wikidata.org/entity/Q3882384",
-            "http://www.wikidata.org/entity/Q3907215",
-            "http://www.wikidata.org/entity/Q3916065",
-            "http://www.wikidata.org/entity/Q3942996",
-            "http://www.wikidata.org/entity/Q3962617",
-            "http://www.wikidata.org/entity/Q4185836",
-            "http://www.wikidata.org/entity/Q4263094",
-            "http://www.wikidata.org/entity/Q451560",
-            "http://www.wikidata.org/entity/Q4652766",
-            "http://www.wikidata.org/entity/Q4851650",
             "http://www.wikidata.org/entity/Q4875950",
-            "http://www.wikidata.org/entity/Q48771581",
-            "http://www.wikidata.org/entity/Q48816574",
-            "http://www.wikidata.org/entity/Q48816793",
-            "http://www.wikidata.org/entity/Q4923560",
-            "http://www.wikidata.org/entity/Q4925125",
-            "http://www.wikidata.org/entity/Q4936364",
-            "http://www.wikidata.org/entity/Q5048670",
-            "http://www.wikidata.org/entity/Q510881",
-            "http://www.wikidata.org/entity/Q5135264",
-            "http://www.wikidata.org/entity/Q5151964",
-            "http://www.wikidata.org/entity/Q5172515",
-            "http://www.wikidata.org/entity/Q5202185",
+            "http://www.wikidata.org/entity/Q4680477",
+            "http://www.wikidata.org/entity/Q4185836",
             "http://www.wikidata.org/entity/Q5243374",
+            "http://www.wikidata.org/entity/Q4263094",
+            "http://www.wikidata.org/entity/Q5039455",
+            "http://www.wikidata.org/entity/Q5048670",
+            "http://www.wikidata.org/entity/Q4905635",
+            "http://www.wikidata.org/entity/Q4764831",
             "http://www.wikidata.org/entity/Q5287529",
             "http://www.wikidata.org/entity/Q5287537",
             "http://www.wikidata.org/entity/Q5292137",
             "http://www.wikidata.org/entity/Q5302833",
+            "http://www.wikidata.org/entity/Q4923560",
+            "http://www.wikidata.org/entity/Q4925125",
+            "http://www.wikidata.org/entity/Q4925185",
+            "http://www.wikidata.org/entity/Q4936364",
             "http://www.wikidata.org/entity/Q5303839",
-            "http://www.wikidata.org/entity/Q533786",
-            "http://www.wikidata.org/entity/Q5434599",
+            "http://www.wikidata.org/entity/Q5719282",
             "http://www.wikidata.org/entity/Q5477767",
             "http://www.wikidata.org/entity/Q5482917",
+            "http://www.wikidata.org/entity/Q5135264",
+            "http://www.wikidata.org/entity/Q5966990",
+            "http://www.wikidata.org/entity/Q5151964",
+            "http://www.wikidata.org/entity/Q5172515",
             "http://www.wikidata.org/entity/Q5554167",
+            "http://www.wikidata.org/entity/Q5793242",
+            "http://www.wikidata.org/entity/Q5968126",
+            "http://www.wikidata.org/entity/Q5202185",
+            "http://www.wikidata.org/entity/Q5976780",
+            "http://www.wikidata.org/entity/Q5978002",
+            "http://www.wikidata.org/entity/Q5808148",
             "http://www.wikidata.org/entity/Q5559678",
             "http://www.wikidata.org/entity/Q5559943",
             "http://www.wikidata.org/entity/Q5565598",
-            "http://www.wikidata.org/entity/Q55737464",
+            "http://www.wikidata.org/entity/Q5434599",
+            "http://www.wikidata.org/entity/Q6009571",
             "http://www.wikidata.org/entity/Q5594840",
-            "http://www.wikidata.org/entity/Q5719282",
-            "http://www.wikidata.org/entity/Q5793242",
-            "http://www.wikidata.org/entity/Q58074257",
-            "http://www.wikidata.org/entity/Q5808148",
             "http://www.wikidata.org/entity/Q5825743",
             "http://www.wikidata.org/entity/Q5848991",
-            "http://www.wikidata.org/entity/Q5910757",
-            "http://www.wikidata.org/entity/Q5923845",
-            "http://www.wikidata.org/entity/Q5966990",
-            "http://www.wikidata.org/entity/Q5968126",
-            "http://www.wikidata.org/entity/Q5976780",
-            "http://www.wikidata.org/entity/Q5978002",
-            "http://www.wikidata.org/entity/Q5990839",
-            "http://www.wikidata.org/entity/Q6009571",
+            "http://www.wikidata.org/entity/Q6153615",
+            "http://www.wikidata.org/entity/Q6160141",
+            "http://www.wikidata.org/entity/Q6578229",
+            "http://www.wikidata.org/entity/Q6585607",
+            "http://www.wikidata.org/entity/Q6592776",
+            "http://www.wikidata.org/entity/Q6213135",
             "http://www.wikidata.org/entity/Q6045430",
             "http://www.wikidata.org/entity/Q6059124",
             "http://www.wikidata.org/entity/Q6081105",
+            "http://www.wikidata.org/entity/Q5910757",
+            "http://www.wikidata.org/entity/Q5917736",
+            "http://www.wikidata.org/entity/Q5923845",
+            "http://www.wikidata.org/entity/Q6886930",
             "http://www.wikidata.org/entity/Q6087395",
-            "http://www.wikidata.org/entity/Q60996299",
-            "http://www.wikidata.org/entity/Q61092983",
             "http://www.wikidata.org/entity/Q6116811",
-            "http://www.wikidata.org/entity/Q6153615",
-            "http://www.wikidata.org/entity/Q6160141",
-            "http://www.wikidata.org/entity/Q6213135",
-            "http://www.wikidata.org/entity/Q63196761",
             "http://www.wikidata.org/entity/Q6367411",
             "http://www.wikidata.org/entity/Q6369456",
             "http://www.wikidata.org/entity/Q6375651",
             "http://www.wikidata.org/entity/Q6383147",
-            "http://www.wikidata.org/entity/Q65059573",
-            "http://www.wikidata.org/entity/Q6800627",
-            "http://www.wikidata.org/entity/Q6806431",
-            "http://www.wikidata.org/entity/Q6886930",
-            "http://www.wikidata.org/entity/Q7081362",
-            "http://www.wikidata.org/entity/Q7118400",
-            "http://www.wikidata.org/entity/Q7118447",
             "http://www.wikidata.org/entity/Q7122810",
-            "http://www.wikidata.org/entity/Q726481",
-            "http://www.wikidata.org/entity/Q728122",
+            "http://www.wikidata.org/entity/Q6942502",
             "http://www.wikidata.org/entity/Q7426714",
             "http://www.wikidata.org/entity/Q7441852",
             "http://www.wikidata.org/entity/Q7460324",
             "http://www.wikidata.org/entity/Q7460778",
             "http://www.wikidata.org/entity/Q7488349",
             "http://www.wikidata.org/entity/Q7488806",
+            "http://www.wikidata.org/entity/Q6791237",
+            "http://www.wikidata.org/entity/Q6800627",
+            "http://www.wikidata.org/entity/Q6806431",
             "http://www.wikidata.org/entity/Q7547458",
+            "http://www.wikidata.org/entity/Q7081362",
+            "http://www.wikidata.org/entity/Q7118400",
             "http://www.wikidata.org/entity/Q7559509",
             "http://www.wikidata.org/entity/Q7574757",
             "http://www.wikidata.org/entity/Q7580063",
-            "http://www.wikidata.org/entity/Q7718952",
-            "http://www.wikidata.org/entity/Q7722093",
-            "http://www.wikidata.org/entity/Q7728365",
-            "http://www.wikidata.org/entity/Q7730075",
             "http://www.wikidata.org/entity/Q7746303",
+            "http://www.wikidata.org/entity/Q7797962",
+            "http://www.wikidata.org/entity/Q7797961",
+            "http://www.wikidata.org/entity/Q7641427",
             "http://www.wikidata.org/entity/Q7748722",
             "http://www.wikidata.org/entity/Q7748953",
             "http://www.wikidata.org/entity/Q7749580",
             "http://www.wikidata.org/entity/Q7752107",
-            "http://www.wikidata.org/entity/Q7753387",
-            "http://www.wikidata.org/entity/Q7754694",
-            "http://www.wikidata.org/entity/Q7763189",
-            "http://www.wikidata.org/entity/Q7766343",
-            "http://www.wikidata.org/entity/Q7767711",
-            "http://www.wikidata.org/entity/Q7770177",
-            "http://www.wikidata.org/entity/Q7771391",
-            "http://www.wikidata.org/entity/Q7771564",
-            "http://www.wikidata.org/entity/Q7772182",
-            "http://www.wikidata.org/entity/Q7797961",
-            "http://www.wikidata.org/entity/Q7797962",
+            "http://www.wikidata.org/entity/Q8025607",
+            "http://www.wikidata.org/entity/Q8026165",
+            "http://www.wikidata.org/entity/Q8030378",
             "http://www.wikidata.org/entity/Q7842983",
+            "http://www.wikidata.org/entity/Q7718948",
+            "http://www.wikidata.org/entity/Q7718952",
+            "http://www.wikidata.org/entity/Q7722093",
+            "http://www.wikidata.org/entity/Q7753387",
+            "http://www.wikidata.org/entity/Q7728365",
             "http://www.wikidata.org/entity/Q7858649",
             "http://www.wikidata.org/entity/Q7863176",
+            "http://www.wikidata.org/entity/Q10287918",
+            "http://www.wikidata.org/entity/Q10340891",
+            "http://www.wikidata.org/entity/Q7730075",
+            "http://www.wikidata.org/entity/Q7763189",
             "http://www.wikidata.org/entity/Q7882715",
             "http://www.wikidata.org/entity/Q7897659",
             "http://www.wikidata.org/entity/Q7918336",
+            "http://www.wikidata.org/entity/Q7766343",
+            "http://www.wikidata.org/entity/Q7767711",
+            "http://www.wikidata.org/entity/Q7770177",
+            "http://www.wikidata.org/entity/Q10381261",
+            "http://www.wikidata.org/entity/Q7771391",
+            "http://www.wikidata.org/entity/Q7771564",
+            "http://www.wikidata.org/entity/Q7772182",
             "http://www.wikidata.org/entity/Q7977056",
             "http://www.wikidata.org/entity/Q7989825",
-            "http://www.wikidata.org/entity/Q8025607",
-            "http://www.wikidata.org/entity/Q8030378",
-            "http://www.wikidata.org/entity/Q808487",
-            "http://www.wikidata.org/entity/Q823282",
-            "http://www.wikidata.org/entity/Q825946",
-            "http://www.wikidata.org/entity/Q829585",
+            "http://www.wikidata.org/entity/Q11262150",
+            "http://www.wikidata.org/entity/Q11960576",
+            "http://www.wikidata.org/entity/Q11454867",
+            "http://www.wikidata.org/entity/Q11549095",
+            "http://www.wikidata.org/entity/Q12039076",
+            "http://www.wikidata.org/entity/Q12040593",
+            "http://www.wikidata.org/entity/Q12054887",
+            "http://www.wikidata.org/entity/Q11706294",
+            "http://www.wikidata.org/entity/Q12615223",
+            "http://www.wikidata.org/entity/Q16858605",
+            "http://www.wikidata.org/entity/Q15807551",
+            "http://www.wikidata.org/entity/Q15856867",
+            "http://www.wikidata.org/entity/Q12631891",
+            "http://www.wikidata.org/entity/Q12752569",
+            "http://www.wikidata.org/entity/Q16947642",
+            "http://www.wikidata.org/entity/Q16327533",
+            "http://www.wikidata.org/entity/Q16954471",
+            "http://www.wikidata.org/entity/Q16999031",
+            "http://www.wikidata.org/entity/Q17020192",
+            "http://www.wikidata.org/entity/Q17023150",
+            "http://www.wikidata.org/entity/Q16761042",
+            "http://www.wikidata.org/entity/Q16840214",
+            "http://www.wikidata.org/entity/Q18290333",
+            "http://www.wikidata.org/entity/Q17108266",
+            "http://www.wikidata.org/entity/Q19372584",
+            "http://www.wikidata.org/entity/Q19381183",
+            "http://www.wikidata.org/entity/Q19389664",
+            "http://www.wikidata.org/entity/Q19879553",
+            "http://www.wikidata.org/entity/Q17112046",
+            "http://www.wikidata.org/entity/Q18566932",
+            "http://www.wikidata.org/entity/Q18612969",
+            "http://www.wikidata.org/entity/Q23770934",
+            "http://www.wikidata.org/entity/Q22021752",
+            "http://www.wikidata.org/entity/Q28319174",
+            "http://www.wikidata.org/entity/Q28498763",
+            "http://www.wikidata.org/entity/Q30513105",
+            "http://www.wikidata.org/entity/Q32656642",
+            "http://www.wikidata.org/entity/Q55737464",
+            "http://www.wikidata.org/entity/Q48771581",
+            "http://www.wikidata.org/entity/Q48816574",
+            "http://www.wikidata.org/entity/Q48816793",
+            "http://www.wikidata.org/entity/Q60996299",
+            "http://www.wikidata.org/entity/Q58074257",
+            "http://www.wikidata.org/entity/Q61092983",
+            "http://www.wikidata.org/entity/Q65059573",
             "http://www.wikidata.org/entity/Q86210547",
-            "http://www.wikidata.org/entity/Q872205",
-            "http://www.wikidata.org/entity/Q929924"
+            "http://www.wikidata.org/entity/Q63196761",
+            "http://www.wikidata.org/entity/Q105686573",
+            "http://www.wikidata.org/entity/Q113129493",
+            "http://www.wikidata.org/entity/Q108186633"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "Gabriela"
+                "Starsky & Hutch",
+                "Starsky",
+                "Starsky and Hutch"
             ],
             [
-                "On the Mat"
+                "Fawlty Towers"
             ],
             [
-                "Cher"
+                "Quiller"
+            ],
+            [
+                "The Jeffersons"
+            ],
+            [
+                "Baretta"
+            ],
+            [
+                "The Sweeney"
+            ],
+            [
+                "Ein echter Wiener geht nicht unter"
+            ],
+            [
+                "Krempoli - Ein Platz f\u00fcr wilde Kinder"
+            ],
+            [
+                "Mi\u015b Uszatek"
+            ],
+            [
+                "Matt Helm"
+            ],
+            [
+                "The Secret Lives of Waldo Kitty",
+                "The New Adventures of Waldo Kitty",
+                "The Adventures of Waldo Kitty"
+            ],
+            [
+                "Michel aus L\u00f6nneberga"
+            ],
+            [
+                "Barney Miller"
+            ],
+            [
+                "Am dam des",
+                "Am Dam Des"
             ],
             [
                 "Carry On Laughing"
@@ -7419,7 +7559,21 @@
                 "Space 1999"
             ],
             [
-                "Madame Bovary"
+                "Super Sentai",
+                "Super Sentai Series"
+            ],
+            [
+                "Thirty Cases of Major Zeman"
+            ],
+            [
+                "Good Morning America",
+                "GMA"
+            ],
+            [
+                "Beschlossen und verk\u00fcndet"
+            ],
+            [
+                "Eurogang"
             ],
             [
                 "Ellery Queen",
@@ -7427,25 +7581,46 @@
                 "4th Ellery Queen TV show"
             ],
             [
+                "Emm wie Meikel"
+            ],
+            [
                 "Himitsu Sentai Gorenger"
             ],
             [
-                "Miyamoto Musashi"
+                "Ryan's Hope"
+            ],
+            [
+                "Welcome Back, Kotter"
             ],
             [
                 "Spin-Off"
             ],
             [
+                "Phyllis"
+            ],
+            [
+                "Floris von Rosemund"
+            ],
+            [
+                "Viv\u00e1t, Benyovszky!"
+            ],
+            [
+                "Nonstop Nonsens"
+            ],
+            [
                 "The Invisible Man"
             ],
             [
-                "Klabb og Babb"
-            ],
-            [
-                "Youngest of the Hamr's Family"
-            ],
-            [
                 "Kamen Rider Stronger"
+            ],
+            [
+                "Bronk"
+            ],
+            [
+                "The Ghost Busters"
+            ],
+            [
+                "PS"
             ],
             [
                 "Switch"
@@ -7457,6 +7632,9 @@
                 "Survivors"
             ],
             [
+                "Boule and Bill"
+            ],
+            [
                 "Wonder Woman",
                 "The New Adventures of Wonder Woman"
             ],
@@ -7465,138 +7643,6 @@
             ],
             [
                 "One Day at a Time"
-            ],
-            [
-                "Junwoo"
-            ],
-            [
-                "Gruntov\u010dani"
-            ],
-            [
-                "Kapelski kresovi"
-            ],
-            [
-                "Quiller"
-            ],
-            [
-                "Eurogang"
-            ],
-            [
-                "A legkisebb ugrif\u00fcles"
-            ],
-            [
-                "Emm wie Meikel"
-            ],
-            [
-                "Gris\u00f9",
-                "Grisu"
-            ],
-            [
-                "Welcome Back, Kotter"
-            ],
-            [
-                "Nonstop Nonsens"
-            ],
-            [
-                "The Jeffersons"
-            ],
-            [
-                "Maya the Honey Bee",
-                "Maya the Bee",
-                "Maya"
-            ],
-            [
-                "The Ghost Busters"
-            ],
-            [
-                "Eine ganz gew\u00f6hnliche Geschichte"
-            ],
-            [
-                "Berlin \u2013 0:00 bis 24:00"
-            ],
-            [
-                "O Christos xanastavronete"
-            ],
-            [
-                "Baretta"
-            ],
-            [
-                "Vaga za ta\u010dno merenje"
-            ],
-            [
-                "Ben Hall"
-            ],
-            [
-                "Celebrity Squares"
-            ],
-            [
-                "Beat of the City"
-            ],
-            [
-                "The Don Lane Show"
-            ],
-            [
-                "Nightingale's Boys"
-            ],
-            [
-                "The Secret Garden"
-            ],
-            [
-                "Pot of Gold"
-            ],
-            [
-                "Just for Fun"
-            ],
-            [
-                "Sidestreet"
-            ],
-            [
-                "Gyllene \u00e5r"
-            ],
-            [
-                "\uc2e0\ubd80\uc77c\uae30"
-            ],
-            [
-                "Kommissariat 9",
-                "Kommissariat IX"
-            ],
-            [
-                "Starsky & Hutch",
-                "Starsky",
-                "Starsky and Hutch"
-            ],
-            [
-                "Ryan's Hope"
-            ],
-            [
-                "Kidstuff"
-            ],
-            [
-                "Fawlty Towers"
-            ],
-            [
-                "Return to the Planet of the Apes"
-            ],
-            [
-                "Suske en Wiske"
-            ],
-            [
-                "Sie kommen aus Agarthi"
-            ],
-            [
-                "The Great Grape Ape Show"
-            ],
-            [
-                "Floris von Rosemund"
-            ],
-            [
-                "The Tom and Jerry Show"
-            ],
-            [
-                "The Sweeney"
-            ],
-            [
-                "Ein echter Wiener geht nicht unter"
             ],
             [
                 "Oorlogswinter"
@@ -7612,22 +7658,10 @@
                 "The Blue Knight"
             ],
             [
-                "Spannagl & Sohn"
-            ],
-            [
-                "Piel naranja"
-            ],
-            [
                 "Edward the Seventh"
             ],
             [
-                "Sportscene"
-            ],
-            [
-                "Jo Gaillard"
-            ],
-            [
-                "Vumserne og juleforberedelserne"
+                "Suske en Wiske"
             ],
             [
                 "Chalup\u00e1\u0159i"
@@ -7636,14 +7670,68 @@
                 "Thalassa"
             ],
             [
+                "Avec le temps"
+            ],
+            [
+                "Piel naranja"
+            ],
+            [
+                "Sportscene"
+            ],
+            [
+                "Sie kommen aus Agarthi"
+            ],
+            [
                 "The Victory Garden",
                 "Crockett's Victory Garden"
             ],
             [
-                "Maxipes Fik"
+                "When Things Were Rotten"
+            ],
+            [
+                "Jo Gaillard"
+            ],
+            [
+                "Y'a pas de probl\u00e8me"
+            ],
+            [
+                "My Son Reuben"
+            ],
+            [
+                "On the Rocks"
+            ],
+            [
+                "L'inspecteur m\u00e8ne l'enqu\u00eate"
+            ],
+            [
+                "L'\u00c2ge en fleur"
+            ],
+            [
+                "Poldark"
+            ],
+            [
+                "The Legend of Robin Hood"
+            ],
+            [
+                "Raffles"
+            ],
+            [
+                "Rutland Weekend Television"
+            ],
+            [
+                "Sky"
             ],
             [
                 "Doc"
+            ],
+            [
+                "Pilotes de courses"
+            ],
+            [
+                "Anne of Avonlea"
+            ],
+            [
+                "Arena"
             ],
             [
                 "Fay"
@@ -7652,10 +7740,19 @@
                 "Grady"
             ],
             [
+                "AM America"
+            ],
+            [
                 "The Fifth Estate"
             ],
             [
                 "Les Compagnons d'Eleusis"
+            ],
+            [
+                "Ballet Shoes"
+            ],
+            [
+                "Rosa"
             ],
             [
                 "Joe Forrester"
@@ -7670,83 +7767,31 @@
                 "The Family Holvak"
             ],
             [
-                "When Things Were Rotten"
+                "Beacon Hill"
             ],
             [
-                "My Son Reuben"
-            ],
-            [
-                "On the Rocks"
-            ],
-            [
-                "Poldark"
-            ],
-            [
-                "The Legend of Robin Hood"
-            ],
-            [
-                "Rutland Weekend Television"
-            ],
-            [
-                "Sky"
+                "Adams of Eagle Lake"
             ],
             [
                 "Akumaizer 3"
             ],
             [
+                "Days of Hope"
+            ],
+            [
                 "G-Men '75"
             ],
             [
-                "Am dam des",
-                "Am Dam Des"
-            ],
-            [
-                "AM America"
-            ],
-            [
-                "Ballet Shoes"
-            ],
-            [
-                "Beacon Hill"
-            ],
-            [
-                "The Seven Ages of Man"
-            ],
-            [
-                "Scattergood: Friend of All"
-            ],
-            [
-                "The Rise And Fall Of Wellington Boots"
-            ],
-            [
-                "WCW WorldWide"
-            ],
-            [
-                "Blank Check"
-            ],
-            [
-                "Bod"
+                "Caribe"
             ],
             [
                 "Cash and Company"
             ],
             [
-                "Phyllis"
+                "Big Eddie"
             ],
             [
-                "Close to Home"
-            ],
-            [
-                "Coming Up Rosie"
-            ],
-            [
-                "Corporation"
-            ],
-            [
-                "Czterdziestolatek"
-            ],
-            [
-                "Days of Hope"
+                "Animal Kwackers"
             ],
             [
                 "Doctor on the Go"
@@ -7761,13 +7806,22 @@
                 "Down Home Country"
             ],
             [
+                "WCW WorldWide"
+            ],
+            [
+                "Blank Check"
+            ],
+            [
+                "Blankety Blanks"
+            ],
+            [
+                "Bod"
+            ],
+            [
                 "Do\u00f1a B\u00e1rbara"
             ],
             [
-                "Bronk"
-            ],
-            [
-                "Far Out Space Nuts"
+                "Barata de primavera"
             ],
             [
                 "Fraidy Cat"
@@ -7776,7 +7830,37 @@
                 "Valentina"
             ],
             [
+                "Close to Home"
+            ],
+            [
+                "La hora de..."
+            ],
+            [
+                "Coming Up Rosie"
+            ],
+            [
+                "Corporation"
+            ],
+            [
                 "Get Some In!"
+            ],
+            [
+                "Pili, secretaria ideal"
+            ],
+            [
+                "La se\u00f1orita Elena"
+            ],
+            [
+                "Czterdziestolatek"
+            ],
+            [
+                "I Didn't Know You Cared"
+            ],
+            [
+                "Lo imperdonable"
+            ],
+            [
+                "Direct\u00edsimo"
             ],
             [
                 "La feria de las vanidades"
@@ -7788,22 +7872,13 @@
                 "Give-n-Take"
             ],
             [
-                "\uc591\ubc18"
+                "Far Out Space Nuts"
+            ],
+            [
+                "In Good Company"
             ],
             [
                 "Grand Old Country"
-            ],
-            [
-                "Barata de primavera"
-            ],
-            [
-                "Pili, secretaria ideal"
-            ],
-            [
-                "Odbornici"
-            ],
-            [
-                "Direct\u00edsimo"
             ],
             [
                 "El milagro de vivir"
@@ -7812,28 +7887,22 @@
                 "Este se\u00f1or de negro"
             ],
             [
-                "Hot l Baltimore"
+                "Tu rebelde ternura"
             ],
             [
-                "J.J. Juez"
+                "Ven conmigo"
             ],
             [
-                "La hora de..."
+                "\u05e8\u05d0\u05e9 \u05db\u05e8\u05d5\u05d1"
             ],
             [
-                "La se\u00f1orita Elena"
+                "\u05d8\u05dc\u05e4\u05dc\u05d0"
             ],
             [
-                "I Didn't Know You Cared"
+                "\u05d2\u05dd \u05d0\u05e0\u05d5 \u05e9\u05d5\u05e4\u05d8\u05d9\u05dd"
             ],
             [
-                "Lo imperdonable"
-            ],
-            [
-                "Mama"
-            ],
-            [
-                "In Good Company"
+                "Joe and Sons"
             ],
             [
                 "Nosotros"
@@ -7845,28 +7914,22 @@
                 "Pobre Clara"
             ],
             [
+                "Hot l Baltimore"
+            ],
+            [
+                "How Green Was My Valley"
+            ],
+            [
+                "J.J. Juez"
+            ],
+            [
+                "Mobile One"
+            ],
+            [
                 "A\u015fk-\u0131 Memnu"
             ],
             [
-                "The Bobby Vinton Show"
-            ],
-            [
-                "\ubd80\ubd80"
-            ],
-            [
                 "Jackpot"
-            ],
-            [
-                "Tu rebelde ternura"
-            ],
-            [
-                "Ven conmigo"
-            ],
-            [
-                "Joe and Sons"
-            ],
-            [
-                "Dein gutes Recht"
             ],
             [
                 "Kapwa Ko Mahal Ko"
@@ -7881,36 +7944,10 @@
                 "Keep on Truckin'"
             ],
             [
-                "Autoverleih Pistulla"
-            ],
-            [
-                "McCoy"
-            ],
-            [
-                "Medical Story"
-            ],
-            [
-                "Mobile One"
-            ],
-            [
-                "Oil Strike North"
-            ],
-            [
-                "PBA on KBS"
-            ],
-            [
-                "PBS NewsHour"
-            ],
-            [
                 "Pacificanada"
             ],
             [
-                "Matt Helm"
-            ],
-            [
-                "The Secret Lives of Waldo Kitty",
-                "The New Adventures of Waldo Kitty",
-                "The Adventures of Waldo Kitty"
+                "Musical Chairs"
             ],
             [
                 "Saturday Night Live with Howard Cosell"
@@ -7931,7 +7968,22 @@
                 "Shannon's Mob"
             ],
             [
+                "\u05d6\u05d4 \u05d4\u05e1\u05d5\u05d3 \u05e9\u05dc\u05d9"
+            ],
+            [
+                "McCoy"
+            ],
+            [
+                "Medical Story"
+            ],
+            [
                 "Sneak Previews"
+            ],
+            [
+                "Oil Strike North"
+            ],
+            [
+                "PBA on KBS"
             ],
             [
                 "Some of My Best Friends are Men"
@@ -7943,22 +7995,19 @@
                 "Spotlight"
             ],
             [
-                "The Bob McLean Show"
-            ],
-            [
-                "The Changes"
-            ],
-            [
-                "The Cuckoo Waltz"
-            ],
-            [
-                "The Diamond Head Game"
-            ],
-            [
                 "The Late Late Toy Show",
                 "Late Late Toy Show",
                 "The Toy Show",
                 "Toy Show"
+            ],
+            [
+                "Three for the Road"
+            ],
+            [
+                "Three for the Money"
+            ],
+            [
+                "Sunshine"
             ],
             [
                 "The Lost Saucer"
@@ -7973,14 +8022,59 @@
                 "The Montefuscos"
             ],
             [
+                "Winner Takes All"
+            ],
+            [
+                "Wintario"
+            ],
+            [
+                "Wollongong the Brave"
+            ],
+            [
+                "Trinity Tales"
+            ],
+            [
+                "The Bob Crane Show"
+            ],
+            [
+                "The Bob McLean Show"
+            ],
+            [
+                "The Changes"
+            ],
+            [
                 "The Neighbors"
             ],
             [
-                "The Oddball Couple"
+                "The Cuckoo Waltz"
+            ],
+            [
+                "Two's Company"
+            ],
+            [
+                "U.S. Farm Report"
+            ],
+            [
+                "Gabriela"
+            ],
+            [
+                "On the Mat"
+            ],
+            [
+                "The Diamond Head Game"
             ],
             [
                 "The Secrets of Isis",
                 "Isis"
+            ],
+            [
+                "Uncle Croc's Block"
+            ],
+            [
+                "Until Tomorrow"
+            ],
+            [
+                "Vegetable Soup"
             ],
             [
                 "The Stars Look Down"
@@ -7993,6 +8087,9 @@
                 "The Tribal Eye"
             ],
             [
+                "Cher"
+            ],
+            [
                 "The Undersea Adventures of Captain Nemo"
             ],
             [
@@ -8002,62 +8099,161 @@
                 "The Venturers"
             ],
             [
-                "Three for the Money"
-            ],
-            [
-                "Three for the Road"
-            ],
-            [
-                "Trinity Tales"
-            ],
-            [
-                "Two's Company"
-            ],
-            [
-                "U.S. Farm Report"
-            ],
-            [
-                "Uncle Croc's Block"
-            ],
-            [
-                "Until Tomorrow"
-            ],
-            [
-                "Vegetable Soup"
-            ],
-            [
                 "We'll Get By"
             ],
             [
                 "Westwind"
             ],
             [
-                "Winner Takes All"
+                "\u304a\u306f\u3088\u3046\u3055\u3093"
             ],
             [
-                "Wollongong the Brave"
+                "Benoni & Rosa"
             ],
             [
-                "Barney Miller"
+                "Miyamoto Musashi"
             ],
             [
-                "Thirty Cases of Major Zeman"
+                "Mizuiro no Toki"
             ],
             [
-                "Good Morning America",
-                "GMA"
+                "My z konce sveta"
             ],
             [
-                "Beschlossen und verk\u00fcndet"
+                "Youngest of the Hamr's Family"
+            ],
+            [
+                "Slov\u00e1cko sa nes\u00fad\u00ed"
+            ],
+            [
+                "Byl jednou jeden d\u016fm"
+            ],
+            [
+                "Junwoo"
+            ],
+            [
+                "Celebrity Squares"
+            ],
+            [
+                "Eine ganz gew\u00f6hnliche Geschichte"
+            ],
+            [
+                "Berlin \u2013 0:00 bis 24:00"
+            ],
+            [
+                "Gruntov\u010dani"
+            ],
+            [
+                "Kapelski kresovi"
+            ],
+            [
+                "Beat of the City"
+            ],
+            [
+                "O Christos xanastavronete"
+            ],
+            [
+                "The Don Lane Show"
+            ],
+            [
+                "Nightingale's Boys"
+            ],
+            [
+                "The Secret Garden"
+            ],
+            [
+                "Pot of Gold"
+            ],
+            [
+                "Vaga za ta\u010dno merenje"
+            ],
+            [
+                "Ben Hall"
+            ],
+            [
+                "Gyllene \u00e5r"
+            ],
+            [
+                "Just for Fun"
+            ],
+            [
+                "Du og jeg og kaktusen"
+            ],
+            [
+                "Mathis"
+            ],
+            [
+                "Sommeren p\u00e5 Mirabell\u00f8ya"
+            ],
+            [
+                "Kidstuff"
+            ],
+            [
+                "Sidestreet"
+            ],
+            [
+                "\uc2e0\ubd80\uc77c\uae30"
+            ],
+            [
+                "Kommissariat 9",
+                "Kommissariat IX"
+            ],
+            [
+                "Mamma"
+            ],
+            [
+                "Archer"
+            ],
+            [
+                "Bitte keine Polizei"
+            ],
+            [
+                "Spannagl & Sohn"
+            ],
+            [
+                "Sam and the River"
+            ],
+            [
+                "Vumserne og juleforberedelserne"
+            ],
+            [
+                "\uc591\ubc18"
+            ],
+            [
+                "The Seven Ages of Man"
+            ],
+            [
+                "Scattergood: Friend of All"
+            ],
+            [
+                "The Rise And Fall Of Wellington Boots"
+            ],
+            [
+                "The Bobby Vinton Show"
+            ],
+            [
+                "Odbornici"
+            ],
+            [
+                "\ubd80\ubd80"
+            ],
+            [
+                "Autoverleih Pistulla"
             ],
             [
                 "Der besondere Tag"
             ],
             [
-                "Krempoli - Ein Platz f\u00fcr wilde Kinder"
+                "Dein gutes Recht"
             ],
             [
-                "Mi\u015b Uszatek"
+                "Madame Bovary"
+            ],
+            [
+                "Ut\u00e1nam, sr\u00e1cok!"
+            ],
+            [
+                "Utonilo je sonce"
             ]
         ]
     },
@@ -8071,15 +8267,22 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
+            "http://www.wikidata.org/entity/Q576798",
             "http://www.wikidata.org/entity/Q1784211",
             "http://www.wikidata.org/entity/Q2265331",
             "http://www.wikidata.org/entity/Q2713486",
             "http://www.wikidata.org/entity/Q3040253",
-            "http://www.wikidata.org/entity/Q576798"
+            "http://www.wikidata.org/entity/Q3045530",
+            "http://www.wikidata.org/entity/Q9051589",
+            "http://www.wikidata.org/entity/Q62063330"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "D\u00eda de Enero",
+                "Dia de Enero"
+            ],
             [
                 "La Tortura"
             ],
@@ -8094,8 +8297,14 @@
                 "No"
             ],
             [
-                "D\u00eda de Enero",
-                "Dia de Enero"
+                "D\u00eda Especial",
+                "Dia Especial"
+            ],
+            [
+                "Obtener un s\u00ed"
+            ],
+            [
+                "D\u00eda de Enero"
             ]
         ]
     },
@@ -8185,12 +8394,22 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q15789",
-            "http://www.wikidata.org/entity/Q483020"
+            "http://www.wikidata.org/entity/Q483020",
+            "http://www.wikidata.org/entity/Q15789"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "Paris Saint-Germain F.C.",
+                "Paris Saint-Germain Football Club",
+                "Paris Saint-Germain FC",
+                "Paris Saint-Germain",
+                "PSG",
+                "PSGFC",
+                "Paris",
+                "Paris SG"
+            ],
             [
                 "FC Bayern Munich",
                 "Bayern Munich",
@@ -8207,16 +8426,6 @@
                 "FCB Munich",
                 "Bayern of Munich",
                 "F.C. Bayern Munich"
-            ],
-            [
-                "Paris Saint-Germain F.C.",
-                "Paris Saint-Germain Football Club",
-                "Paris Saint-Germain FC",
-                "Paris Saint-Germain",
-                "PSG",
-                "PSGFC",
-                "Paris",
-                "Paris SG"
             ]
         ]
     },
@@ -8230,22 +8439,15 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q1889100",
-            "http://www.wikidata.org/entity/Q194223",
             "http://www.wikidata.org/entity/Q194445",
-            "http://www.wikidata.org/entity/Q222738"
+            "http://www.wikidata.org/entity/Q222738",
+            "http://www.wikidata.org/entity/Q2723670",
+            "http://www.wikidata.org/entity/Q1889100",
+            "http://www.wikidata.org/entity/Q3694529"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            [
-                "University of Phoenix",
-                "UOPX"
-            ],
-            [
-                "University of Buenos Aires",
-                "Universidad de Buenos Aires"
-            ],
             [
                 "Cairo University",
                 "Fuad I University",
@@ -8260,6 +8462,20 @@
                 "UNAM",
                 "Universidad Nacional Aut\u00f3noma de M\u00e9xico",
                 "unam.mx"
+            ],
+            [
+                "Ain Shams University",
+                "ASU",
+                "asu.edu.eg"
+            ],
+            [
+                "University of Phoenix",
+                "UOPX"
+            ],
+            [
+                "Allama Iqbal Open University",
+                "AIOU",
+                "Allama iqbal open university"
             ]
         ]
     },
@@ -8320,10 +8536,11 @@
         "template": "",
         "answer": [
             "http://www.wikidata.org/entity/Q230710",
-            "http://www.wikidata.org/entity/Q31353",
             "http://www.wikidata.org/entity/Q3345735",
             "http://www.wikidata.org/entity/Q65043586",
-            "http://www.wikidata.org/entity/Q65468168"
+            "http://www.wikidata.org/entity/Q65468168",
+            "http://www.wikidata.org/entity/Q77807501",
+            "http://www.wikidata.org/entity/Q31353"
         ],
         "template_id": "",
         "simplified_query": "",
@@ -8331,10 +8548,6 @@
             [
                 "Valeria Golino",
                 "Val\u00e9ria Golino"
-            ],
-            [
-                "Ad\u00e8le Haenel",
-                "Adele Haenel"
             ],
             [
                 "No\u00e9mie Merlant",
@@ -8345,6 +8558,13 @@
             ],
             [
                 "Lu\u00e0na Bajrami"
+            ],
+            [
+                "Christel Baras"
+            ],
+            [
+                "Ad\u00e8le Haenel",
+                "Adele Haenel"
             ]
         ]
     },
@@ -8490,10 +8710,11 @@
             "http://www.wikidata.org/entity/Q156426",
             "http://www.wikidata.org/entity/Q158255",
             "http://www.wikidata.org/entity/Q321462",
-            "http://www.wikidata.org/entity/Q33981",
-            "http://www.wikidata.org/entity/Q44054",
             "http://www.wikidata.org/entity/Q463978",
             "http://www.wikidata.org/entity/Q464016",
+            "http://www.wikidata.org/entity/Q33981",
+            "http://www.wikidata.org/entity/Q44007",
+            "http://www.wikidata.org/entity/Q44054",
             "http://www.wikidata.org/entity/Q61064"
         ],
         "template_id": "",
@@ -8542,16 +8763,6 @@
                 "Albert-Bloch"
             ],
             [
-                "August Macke",
-                "August Robert Ludwig Macke"
-            ],
-            [
-                "Franz Marc",
-                "Franz Moriz Wilhelm Marc",
-                "Franz Moritz Wilhelm Marc",
-                "Marc"
-            ],
-            [
                 "Gabriele M\u00fcnter",
                 "Gabrielle Munter",
                 "Gabriel M\u00fcnter",
@@ -8568,6 +8779,21 @@
                 "Marianne Von Werefkina",
                 "M. v. Werefkin",
                 "Marianna Wladimirowna Werewkina"
+            ],
+            [
+                "August Macke",
+                "August Robert Ludwig Macke"
+            ],
+            [
+                "Paul Klee",
+                "p. klee",
+                "Klee"
+            ],
+            [
+                "Franz Marc",
+                "Franz Moriz Wilhelm Marc",
+                "Franz Moritz Wilhelm Marc",
+                "Marc"
             ],
             [
                 "Wassily Kandinsky",
@@ -8606,13 +8832,22 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
+            "http://www.wikidata.org/entity/Q71425",
             "http://www.wikidata.org/entity/Q448400",
-            "http://www.wikidata.org/entity/Q561091",
-            "http://www.wikidata.org/entity/Q71425"
+            "http://www.wikidata.org/entity/Q561091"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "Otto Modersohn",
+                "Friedrich Wilhelm Otto Modersohn",
+                "Friedrich Wilhelm Heinrich Otto Modersohn",
+                "Friedrich Wilhel Heinrich Otto Modersohn",
+                "prof. o. modersohn",
+                "o. modersohn",
+                "otto modersohn"
+            ],
             [
                 "Fritz Mackensen",
                 "Heinrich Friedrich Karl Mackensen",
@@ -8628,15 +8863,6 @@
                 "Hans an Ende",
                 "h. am ende",
                 "hans am ende"
-            ],
-            [
-                "Otto Modersohn",
-                "Friedrich Wilhelm Otto Modersohn",
-                "Friedrich Wilhelm Heinrich Otto Modersohn",
-                "Friedrich Wilhel Heinrich Otto Modersohn",
-                "prof. o. modersohn",
-                "o. modersohn",
-                "otto modersohn"
             ]
         ]
     },
@@ -8670,18 +8896,13 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q615"
+            "http://www.wikidata.org/entity/Q46896"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "Lionel Messi",
-                "Lionel Andres Messi",
-                "Messi",
-                "Lionel Andr\u00e9s Messi Cuccittini",
-                "Lionel Andr\u00e9s Messi",
-                "Leo Messi"
+                "Zlatan Ibrahimovi\u0107"
             ]
         ]
     },
@@ -8716,15 +8937,13 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q16019"
+            "http://www.wikidata.org/entity/Q1019016"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "Wolfgang Sch\u00e4uble",
-                "Wolfgang Schaeuble",
-                "Wolfgang Schauble"
+                "B\u00e4rbel Bas"
             ]
         ]
     },
@@ -8738,13 +8957,18 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q1395375"
+            "http://www.wikidata.org/entity/Q317521"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "Petr Kellner"
+                "Elon Musk",
+                "Elon R. Musk",
+                "Elon Reeve Musk",
+                "Elon R Musk",
+                "Elon Reeve Musk FRS",
+                "Elon Musk FRS"
             ]
         ]
     },
@@ -8849,19 +9073,19 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q1631816",
-            "http://www.wikidata.org/entity/Q683785"
+            "http://www.wikidata.org/entity/Q683785",
+            "http://www.wikidata.org/entity/Q1631816"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "Howard Kazanjian"
-            ],
-            [
                 "Rick McCallum",
                 "Richard \"Rick\" McCallum",
                 "Richard McCallum"
+            ],
+            [
+                "Howard Kazanjian"
             ]
         ]
     },
@@ -8958,20 +9182,20 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q14540",
-            "http://www.wikidata.org/entity/Q7342763"
+            "http://www.wikidata.org/entity/Q7342763",
+            "http://www.wikidata.org/entity/Q14540"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
+                "Robert Carlock",
+                "Robert Morgan Carlock"
+            ],
+            [
                 "Tina Fey",
                 "Elizabeth Stamatina \"Tina\" Fey",
                 "Elizabeth Stamatina Fey"
-            ],
-            [
-                "Robert Carlock",
-                "Robert Morgan Carlock"
             ]
         ]
     },
@@ -9169,13 +9393,15 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q6972617"
+            "http://www.wikidata.org/entity/Q205751"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "National Festival of Community Theatre"
+                "Venice Biennale",
+                "La Biennale di Venezia",
+                "Biennale di Venezia"
             ]
         ]
     },
@@ -9207,11 +9433,17 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
+            "http://www.wikidata.org/entity/Q1471",
             "http://www.wikidata.org/entity/Q1644"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
+            [
+                "Seine",
+                "river Seine",
+                "Seine River"
+            ],
             [
                 "Elbe",
                 "Labe"
@@ -9343,21 +9575,22 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q20718"
+            "http://www.wikidata.org/entity/Q312"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "Samsung Electronics",
-                "Samsung Electronics Co., Ltd",
-                "Samsung Electric Industries",
-                "Samsung Electronics Co.",
-                "Samsung Electronics Ltd",
-                "Samsung",
-                "S\u039bMSUNG",
-                "Samsung Electronics Co., Ltd.",
-                "Samsung Electronics Co., Ltd. (Suwon-si)"
+                "Apple",
+                "Apple Computer, Inc.",
+                "Apple Computer Inc",
+                "Apple Incorporated",
+                "Apple Computer Incorporated",
+                "Apple, Inc",
+                "Apple Computer Inc.",
+                "Apple Inc.",
+                "AAPL",
+                "Apple Inc. (Cupertino, CA)"
             ]
         ]
     },
@@ -9420,18 +9653,16 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q25369"
+            "http://www.wikidata.org/entity/Q41421"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
             [
-                "Kobe Bryant",
-                "Kobe Bean Bryant",
-                "Black Mamba",
-                "KB24",
-                "Kobe",
-                "Kobe B. Bryant"
+                "Michael Jordan",
+                "Air Jordan",
+                "Michael Jeffrey Jordan",
+                "His Airness"
             ]
         ]
     },
@@ -9445,12 +9676,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            false
+            true
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            false
+            true
         ]
     },
     {
@@ -9510,12 +9741,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "4"
+            "25"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "4"
+            "25"
         ]
     },
     {
@@ -9528,12 +9759,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "32"
+            "82"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "32"
+            "82"
         ]
     },
     {
@@ -9624,12 +9855,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+208610"
+            "208610"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+208610"
+            "208610"
         ]
     },
     {
@@ -9700,12 +9931,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+8126"
+            "8126"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+8126"
+            "8126"
         ]
     },
     {
@@ -9759,12 +9990,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+242.86"
+            "242.86"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+242.86"
+            "242.86"
         ]
     },
     {
@@ -9777,12 +10008,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "+0"
+            "0"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            "+0"
+            "0"
         ]
     },
     {
@@ -9954,25 +10185,12 @@
         "sparql_dbpedia18": "",
         "template": "",
         "answer": [
-            "http://www.wikidata.org/entity/Q35",
-            "http://www.wikidata.org/entity/Q30"
+            "http://www.wikidata.org/entity/Q30",
+            "http://www.wikidata.org/entity/Q35"
         ],
         "template_id": "",
         "simplified_query": "",
         "solved_answer": [
-            [
-                "Denmark",
-                "DK",
-                "Danmark",
-                "DNK",
-                "DEK",
-                "dk",
-                "\ud83c\udde9\ud83c\uddf0",
-                "DEN",
-                "TAN",
-                "Denmark proper",
-                "metropolitan Denmark"
-            ],
             [
                 "United States of America",
                 "United States",
@@ -9998,17 +10216,20 @@
                 "U. S. A.",
                 "the United States",
                 "Merica",
-                "ISO 3166-1:US",
-                "America (United States)",
-                "UNITED STATES",
-                "America (USA)",
-                "America (country)",
-                "The U.S.",
-                "UN/LOCODE:US",
-                "The US of A",
-                "The Us",
-                "The Usa",
-                "Us."
+                "America (United States)"
+            ],
+            [
+                "Denmark",
+                "DK",
+                "Danmark",
+                "DNK",
+                "DEK",
+                "dk",
+                "\ud83c\udde9\ud83c\uddf0",
+                "DEN",
+                "TAN",
+                "Denmark proper",
+                "metropolitan Denmark"
             ]
         ]
     },

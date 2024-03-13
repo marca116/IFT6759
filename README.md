@@ -15,11 +15,13 @@ The qald9_plus is used as a training set for the qald10 dataset.
 
 1_format_qald_dataset.py : Modify the format of the dataset so it's the same as LCQuad2 (so both can be used in the same manner). For the qald9 dataset, we remove all questions with over 25 answers (most of the size of the file is otherwise occupied by those questions, and that's not really what we want to test). The qald10 dataset is kept as is (only one question with many answers anyways). Save as qald_9_train_formatted_and_cleaned.json and qald_10_test_formatted_and_cleaned.json.
 
-2_get_solved_answer.py : Modify both dataset to fetch every answer's english label and place it in the "solved_answer" field. Save the result as qald_9_train_with_solved_answers.json and qald_10_test_with_solved_answers.json.
+2_update_dataset_answers.py : Update the answers in all datasets by relaunching the sparql queries. Save the result as qald_9_train_updated_answers.json and qald_10_test_updated_answers.json.
 
-3_extract_missing_questions_entities.py : Go through every questions in X_with_solved_answers files and extract any entity used in the question that is not already present in the list of vital article entities (vital_articles_entities_2019.csv). Save the results in qald_9_train_missing_entities_ids.txt and qald_10_test_missing_entities_ids.txt.
+3_get_solved_answer.py : Modify both dataset to fetch every answer's english label and place it in the "solved_answer" field. Save the result as qald_9_train_with_solved_answers.json and qald_10_test_with_solved_answers.json.
 
-4_query_missing_questions_entities_info.py : Fetch the corresponding wikipedia article title and url for every entities flagged as missing in qald_9_train_missing_entities_ids.txt and qald_10_test_missing_entities_ids.txt. Save as qald_9_train_missing_entities_ids_with_urls.txt qald_10_test_missing_entities_ids_with_urls.txt.
+4_extract_missing_questions_entities.py : Go through every questions in X_with_solved_answers files and extract any entity used in the question that is not already present in the list of vital article entities (vital_articles_entities_2019.csv). Save the results in qald_9_train_missing_entities_ids.txt and qald_10_test_missing_entities_ids.txt.
+
+5_query_missing_questions_entities_info.py : Fetch the corresponding wikipedia article title and url for every entities flagged as missing in qald_9_train_missing_entities_ids.txt and qald_10_test_missing_entities_ids.txt. Save as qald_9_train_missing_entities_ids_with_urls.txt qald_10_test_missing_entities_ids_with_urls.txt.
 
 # Modify LCQuad2 dataset
 
