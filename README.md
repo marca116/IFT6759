@@ -23,6 +23,12 @@ The qald9_plus is used as a training set for the qald10 dataset.
 
 5_query_missing_questions_entities_info.py : Fetch the corresponding wikipedia article title and url for every entities flagged as missing in qald_9_train_missing_entities_ids.txt and qald_10_test_missing_entities_ids.txt. Save as qald_9_train_missing_entities_ids_with_urls.txt qald_10_test_missing_entities_ids_with_urls.txt.
 
+6_extract_all_unique_entities.py : Go through all questions in both the qald9 and qald10 dataset and save all the unique entities present in the questions (not the answers) in qald_unique_entities.txt. 
+
+7_query_unique_entities_info.py : Go through all the entities in qald_unique_entities.txt and download all of the wikidata object's information (except the claims). Save each in json format in the qald_unique_entities_info folder.
+
+8_add_properties_and_relations_to_entities.py : Go through all the emtotoes in the qald_unique_entities_info folder and download all of their properties and relations (properties and relations (claims) directly attatched to the entities + external relations linking in (only the name of the relation). Add all this information to the already existing .json files in the folder.
+
 # Modify LCQuad2 dataset
 
 1_download_covered_entities_wiki_articles_json.py : Download all the full wikipedia articles in plaintext for each url located in vital_articles_entities_2019.csv (created in vital article section). Add each article as a json file in the folder "vital_articles_wiki_extract".

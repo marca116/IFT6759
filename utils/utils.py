@@ -82,7 +82,55 @@ def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
 
         return results
     else:
-        print(f"Failed to download {entity_id}")
+        print(f"Failed to download {entity_ids}")
+        return []
+
+def get_wikidata_entities_all_info(entity_ids, include_claims = False):
+    wiki_api_url = "https://www.wikidata.org/w/api.php"
+    params = {
+        'action': 'wbgetentities',
+        "format": "json",
+        'ids': entity_ids,
+        'props': 'info|descriptions|labels|aliases|sitelinks/urls',
+        "languages": "en",
+        'sitefilter': 'enwiki'
+    }
+
+    if include_claims:
+        params['props'] += '|claims'
+    
+    response = requests.get(wiki_api_url, params=params)
+    if response.status_code == 200:
+        json_obj = response.json()
+
+        if json_obj.get('entities') is None:
+            print(f"Failed to download {entity_ids}, no entity found.")
+            return None
+        
+        results = []
+
+        # Go through each property
+        for entity_id in json_obj['entities']:
+            entity = json_obj['entities'][entity_id]
+            #entity = json_obj['entities'][entity_id]
+            redirects = entity.get('redirects')
+            if redirects and redirects.get("to"):
+                print(f"Redirected from {entity_id} to {redirects['to']}")
+                redirect_results = get_wikidata_entities_all_info(redirects["to"])
+
+                # Should always be 1 result
+                if len(redirect_results) >= 1:
+                    results.append(redirect_results[0])
+                    continue
+                else:
+                    print(f"Failed to download {entity_id} redirected to {redirects['to']}")
+                
+            results.append(entity)
+
+        return results
+    else:
+        print(f"Failed to download {entity_ids}")
+        return []
 
 def get_wikidata_entity_from_wikipedia(titles):
     wiki_api_url = "https://en.wikipedia.org/w/api.php"
