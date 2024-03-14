@@ -56,16 +56,20 @@ for entity_info in unique_entities_info:
         aliases = entity_info['aliases']['en']
         entity_info['aliases'] = [alias['value'] for alias in aliases]
     else:
-        del entity_info['aliases']
+        entity_info['aliases'] = []
 
     # descriptions
     if entity_info.get('descriptions'):
         entity_info['descriptions'] = entity_info['descriptions']['en']
         entity_info['description'] = entity_info['descriptions']['value'] # rename descriptions to description
+    else:
+        entity_info['description'] = ""
     del entity_info['descriptions']
 
     if link.get("enwiki") and link.get("enwiki").get("url"):
         entity_info["wiki_link"] = link["enwiki"]["url"] # rename enwiki to wiki_link
+    else:
+        entity_info["wiki_link"] = ""
 
     with open(f"{output_dir}/{entity_id}.json", 'w', encoding='utf-8') as file:
         json.dump(entity_info, file, ensure_ascii=False, indent=4)

@@ -64,6 +64,11 @@ def query_sparql_properties(entity_id):
 	return direct_properties_objects, direct_relations_objects
 
 def query_sparql_external_relations(entity_id):
+	# Skip entities which I know will time out because there are too many external entities linking in
+		# scholarly article, english and human
+	if entity_id in ["Q13442814", "Q1860", "Q5"]:
+		return []
+
 	sparql_query = """
 		SELECT DISTINCT ?property ?propertyLabel WHERE {
 		?entity ?p wd:""" + entity_id + """ .
@@ -97,16 +102,14 @@ def process_question(entity_id):
 	with open(f"{input_dir}/{entity_id}.json", 'w', encoding='utf-8') as file:
 		json.dump(entity_info, file, ensure_ascii=False, indent=4)
 
-# Load all the filesnames in an array
+# Load all the filesnames in input dir
 files = os.listdir(input_dir)
-
-# Get the filename withotu extension in an array
 unique_entity_ids = [os.path.splitext(file)[0] for file in files]
 
 # for entity_id in unique_entity_ids:
 # 	process_question(entity_id)
 
-batch_size = 4
+batch_size = 5
 start_time = time.time()
 
 # sepparate the data in groups 

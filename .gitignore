@@ -174,3 +174,5 @@ create_lcquad2_dataset/*/
 */old_answers/
 */oai_config.json
 */qald_unique_entities_info/
+qald_unique_entities_info/
+*/NER_results/

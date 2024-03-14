@@ -16,11 +16,11 @@ unique_entity_all = []
 
 for question_index, question in enumerate(questions):
     # Finding all matches of the regex in the SPARQL query
-    entity_ids = re.findall(r"wd:Q\d+", question['sparql_wikidata'])
-    entity_ids_cleaned = [match.split(":")[1] for match in entity_ids]
+    entity_ids = re.findall(r"(?:wd:|http://www\.wikidata\.org/entity/)(Q\d+)", question['sparql_wikidata'])
+    #entity_ids_cleaned = [match.split(":")[1] for match in entity_ids]
 
     # remove the wd: part
-    entities = list(set(entity_ids_cleaned))
+    entities = list(set(entity_ids))
 
     for entity in entities:
         if entity not in unique_entity_all:
