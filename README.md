@@ -50,6 +50,14 @@ Note : Couldn't use the answers included in this dataset since they are out of d
 
 9_shrink_and_balance_dataset.py : Shrink train_lcquad2_final.json down to a more managable size (ex:  1.4k), while keeping the same template ratio as the original dataset (train.json). 
 
+# Query LLM
+
+1_answer_question_no_added_info.py : Go through all questions in the given dataset and attempt to answer each question using only the LLM to answer it (no added info). Save the results to qald_X_train_solved_answers.json
+
+2_identify_entity_in_question.py : Query the LLM to identify the main entity for the question and make a guess as to what the true answer could be. Save the results in NER_both.json.
+
+3_ner_guessed_answers_only.py : Similarly to step 1, use only the answers guessed in the previous step to answer each question. Since no extra info was given, this is equivalent to what was done in step 1. This macro f1 score can be used as a baseline to compare with the f1 scores obtained after adding more information to the query in the later steps. Save the results as qald_9_plus_train_with_long_answer_solved_answers_NER.json.
+
 # Final
 
 The final versions of all datasets is in the "datasets" folder.

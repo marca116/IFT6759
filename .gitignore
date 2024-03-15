@@ -172,6 +172,7 @@ create_lcquad2_dataset/*/
 */_intermediary_files/
 */current_convo_debug/
 */old_answers/
+*/prev_answers/
 */oai_config.json
 */qald_unique_entities_info/
 qald_unique_entities_info/

@@ -21,7 +21,7 @@ output_solved_answers_filename = f'{dataset_name}_solved_answers.json'
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-questions = questions[:10]
+#questions = questions[:10]
     
 prompt = prompt_config["identify_entities"]
 
@@ -62,9 +62,9 @@ def identify_entity(question):
     #print(f"Side entities: {side_entities}")
 
     reason = extracted_json.get("reason", "")
-    correct_answer = extracted_json.get("correct_answer", "")
+    correct_answers = extracted_json.get("correct_answers", [])
 
-    return main_entity, side_entities, reason, correct_answer
+    return main_entity, side_entities, reason, correct_answers
 
 def find_main_entity_id(main_entity_name, question, all_entities):
     question_text = question["question"]
@@ -82,7 +82,7 @@ def find_main_entity_id(main_entity_name, question, all_entities):
     return None, False
 
 def process_question(question):
-    main_entity, side_entities, reason, guessed_answer = identify_entity(question)
+    main_entity, side_entities, reason, guessed_answers = identify_entity(question)
     main_entity_id, is_label = find_main_entity_id(main_entity, question, all_entities)
 
     full_info = {
@@ -92,7 +92,7 @@ def process_question(question):
         "main_entity_id": main_entity_id,
         "is_label": is_label,
         "side_entities": side_entities,
-        "guessed_answer": guessed_answer,
+        "guessed_answers": guessed_answers,
         "reason": reason
     }
 
@@ -102,7 +102,7 @@ def process_question(question):
     print(f"Main entity id: {main_entity_id}")
     print(f"Is label: {is_label}")
     print(f"Side entities: {side_entities}")
-    print(f"Guessed answer: {guessed_answer}")
+    print(f"Guessed answers: {guessed_answers}")
     print(f"reason: {reason}")
     print("-------------------")
 
@@ -113,28 +113,28 @@ def process_question(question):
 
 # PROCESSING
 
-for question in questions:
-    process_question(question)
+# for question in questions:
+#     process_question(question)
     
-# batch_size = 5
-# start_time = time.time()
+batch_size = 5
+start_time = time.time()
 
-# # sepparate the data in groups 
-# batches = [questions[i:i + batch_size] for i in range(0, len(questions), batch_size)]
+# sepparate the data in groups 
+batches = [questions[i:i + batch_size] for i in range(0, len(questions), batch_size)]
 
-# # process each batch in parallel
-# for i, batch in enumerate(batches):
+# process each batch in parallel
+for i, batch in enumerate(batches):
 
-#     with ThreadPoolExecutor() as executor:
-#         futures = [executor.submit(process_question, question) for question in batch]
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(process_question, question) for question in batch]
 
-#         for future in as_completed(futures):
-#             try:
-#                 future.result()
-#             except Exception as e:
-#                 print(f"Error occurred in sub-thread: {e}")
+        for future in as_completed(futures):
+            try:
+                future.result()
+            except Exception as e:
+                print(f"Error occurred in sub-thread: {e}")
     
-#     print(f"Processed {i + 1}/{len(batches)} batches")
+    print(f"Processed {i + 1}/{len(batches)} batches")
 
 # print count
 print(f"Found entities: {len(found_entities_full_info)}")
@@ -143,6 +143,9 @@ print(f"Missing entities: {len(missing_entities_full_info)}")
 # sort
 found_entities_full_info.sort(key=lambda x: int(x["question_id"]))
 missing_entities_full_info.sort(key=lambda x: int(x["question_id"]))
+
+both_entities_full_info = found_entities_full_info + missing_entities_full_info
+both_entities_full_info.sort(key=lambda x: int(x["question_id"]))
 
 # SAVE TO FILE
 
@@ -168,3 +171,6 @@ with open(f"{ner_results_dir}/NER_failed.json", 'w', encoding='utf-8') as file:
 
 with open(f"{ner_results_dir}/NER_success.json", 'w', encoding='utf-8') as file:
     json.dump(found_entities_full_info, file, ensure_ascii=False, indent=4)
+
+with open(f"{ner_results_dir}/NER_both.json", 'w', encoding='utf-8') as file:
+    json.dump(both_entities_full_info, file, ensure_ascii=False, indent=4)
