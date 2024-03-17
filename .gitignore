@@ -182,3 +182,6 @@ qald_unique_entities_info/
 */info_msg_with_token_count_old/
 */results_with_properties_info/
 utils/cached_entity_labels.json
+*/results_no_external_info
+query_llm/*_solved_answers_no_external_info.json
+query_llm/*_NER_both.json

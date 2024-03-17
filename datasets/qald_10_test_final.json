@@ -1,7 +1,7 @@
 [
     {
         "NNQT_question": "After whom is the Riemannian geometry named?",
-        "uid": 0,
+        "uid": "0",
         "subgraph": "",
         "template_index": "",
         "question": "After whom is the Riemannian geometry named?",
@@ -22,7 +22,7 @@
     },
     {
         "NNQT_question": "Which animal participated in a military operation with the Australian Defence Force?",
-        "uid": 1,
+        "uid": "1",
         "subgraph": "",
         "template_index": "",
         "question": "Which animal participated in a military operation with the Australian Defence Force?",
@@ -44,7 +44,7 @@
     },
     {
         "NNQT_question": "among the characters in the witcher, who has two unmarried partners, Yennefer of Vengerberg and Triss Merigold?",
-        "uid": 2,
+        "uid": "2",
         "subgraph": "",
         "template_index": "",
         "question": "among the characters in the witcher, who has two unmarried partners, Yennefer of Vengerberg and Triss Merigold?",
@@ -66,7 +66,7 @@
     },
     {
         "NNQT_question": "among the founders of tencent company, who has been member of national people\u2019s congress?",
-        "uid": 3,
+        "uid": "3",
         "subgraph": "",
         "template_index": "",
         "question": "among the founders of tencent company, who has been member of national people\u2019s congress?",
@@ -89,7 +89,7 @@
     },
     {
         "NNQT_question": "among the other representative work of the author of hunter x hunter, which one is talking about middle school student?",
-        "uid": 4,
+        "uid": "4",
         "subgraph": "",
         "template_index": "",
         "question": "among the other representative work of the author of hunter x hunter, which one is talking about middle school student?",
@@ -114,7 +114,7 @@
     },
     {
         "NNQT_question": "On which stock exchanges are Siemens AG shares traded?",
-        "uid": 5,
+        "uid": "5",
         "subgraph": "",
         "template_index": "",
         "question": "On which stock exchanges are Siemens AG shares traded?",
@@ -167,7 +167,7 @@
     },
     {
         "NNQT_question": "Apart from the book series the witcher, name all of the author\u2019s notable work.",
-        "uid": 6,
+        "uid": "6",
         "subgraph": "",
         "template_index": "",
         "question": "Apart from the book series the witcher, name all of the author\u2019s notable work.",
@@ -198,7 +198,7 @@
     },
     {
         "NNQT_question": "are brooke raboutou and colin duffy from same state of the usa?",
-        "uid": 7,
+        "uid": "7",
         "subgraph": "",
         "template_index": "",
         "question": "are brooke raboutou and colin duffy from same state of the usa?",
@@ -216,7 +216,7 @@
     },
     {
         "NNQT_question": "What is the boiling point of water?",
-        "uid": 8,
+        "uid": "8",
         "subgraph": "",
         "template_index": "",
         "question": "What is the boiling point of water?",
@@ -234,7 +234,7 @@
     },
     {
         "NNQT_question": "At which school was Yayoi Kusama educated at?",
-        "uid": 9,
+        "uid": "9",
         "subgraph": "",
         "template_index": "",
         "question": "At which school was Yayoi Kusama educated at?",
@@ -260,7 +260,7 @@
     },
     {
         "NNQT_question": "Which High School did Allen Ginsberg attend?",
-        "uid": 10,
+        "uid": "10",
         "subgraph": "",
         "template_index": "",
         "question": "Which High School did Allen Ginsberg attend?",
@@ -281,7 +281,7 @@
     },
     {
         "NNQT_question": "On which island is the Indonesian capital located?",
-        "uid": 11,
+        "uid": "11",
         "subgraph": "",
         "template_index": "",
         "question": "On which island is the Indonesian capital located?",
@@ -310,7 +310,7 @@
     },
     {
         "NNQT_question": "can i play don't starve on play station 4?",
-        "uid": 12,
+        "uid": "12",
         "subgraph": "",
         "template_index": "",
         "question": "can i play don't starve on play station 4?",
@@ -328,7 +328,7 @@
     },
     {
         "NNQT_question": "How many General Secretaries of the CPSU were there before Leonid Brezhnev?",
-        "uid": 13,
+        "uid": "13",
         "subgraph": "",
         "template_index": "",
         "question": "How many General Secretaries of the CPSU were there before Leonid Brezhnev?",
@@ -346,7 +346,7 @@
     },
     {
         "NNQT_question": "How many different presidents of Russia have there been that took the position after 1990?",
-        "uid": 14,
+        "uid": "14",
         "subgraph": "",
         "template_index": "",
         "question": "How many different presidents of Russia have there been that took the position after 1990?",
@@ -364,7 +364,7 @@
     },
     {
         "NNQT_question": "Did adam ondra win a medal in the 2020 summer olympics?",
-        "uid": 15,
+        "uid": "15",
         "subgraph": "",
         "template_index": "",
         "question": "Did adam ondra win a medal in the 2020 summer olympics?",
@@ -382,7 +382,7 @@
     },
     {
         "NNQT_question": "Did the Chicago Bulls win at least two seasons of the NBA championship?",
-        "uid": 16,
+        "uid": "16",
         "subgraph": "",
         "template_index": "",
         "question": "Did the Chicago Bulls win at least two seasons of the NBA championship?",
@@ -400,7 +400,7 @@
     },
     {
         "NNQT_question": "Did Haruki Murakami receive the Nobel Prize in Literature?",
-        "uid": 17,
+        "uid": "17",
         "subgraph": "",
         "template_index": "",
         "question": "Did Haruki Murakami receive the Nobel Prize in Literature?",
@@ -418,7 +418,7 @@
     },
     {
         "NNQT_question": "Did Kobe Bryant leave the Lakers when LeBron James joined that team?",
-        "uid": 18,
+        "uid": "18",
         "subgraph": "",
         "template_index": "",
         "question": "Did Kobe Bryant leave the Lakers when LeBron James joined that team?",
@@ -436,7 +436,7 @@
     },
     {
         "NNQT_question": "Did Rawson Marshall Thurber, the director of Red Notice also direct Titanic?",
-        "uid": 19,
+        "uid": "19",
         "subgraph": "",
         "template_index": "",
         "question": "Did Rawson Marshall Thurber, the director of Red Notice also direct Titanic?",
@@ -454,7 +454,7 @@
     },
     {
         "NNQT_question": "Did Venice at any point belong to the Austrian Empire?",
-        "uid": 20,
+        "uid": "20",
         "subgraph": "",
         "template_index": "",
         "question": "Did Venice at any point belong to the Austrian Empire?",
@@ -472,7 +472,7 @@
     },
     {
         "NNQT_question": "Were at least two of the founders of tencent educated at the same university?",
-        "uid": 21,
+        "uid": "21",
         "subgraph": "",
         "template_index": "",
         "question": "Were at least two of the founders of tencent educated at the same university?",
@@ -490,7 +490,7 @@
     },
     {
         "NNQT_question": "Do all of batman\u2019s partner speak english as native language?",
-        "uid": 22,
+        "uid": "22",
         "subgraph": "",
         "template_index": "",
         "question": "Do all of batman\u2019s partner speak english as native language?",
@@ -508,7 +508,7 @@
     },
     {
         "NNQT_question": "How many spouses do head of states have on average?",
-        "uid": 23,
+        "uid": "23",
         "subgraph": "",
         "template_index": "",
         "question": "How many spouses do head of states have on average?",
@@ -526,7 +526,7 @@
     },
     {
         "NNQT_question": "Was there at least one Formula 1 event on the AVUS?",
-        "uid": 24,
+        "uid": "24",
         "subgraph": "",
         "template_index": "",
         "question": "Was there at least one Formula 1 event on the AVUS?",
@@ -544,7 +544,7 @@
     },
     {
         "NNQT_question": "Find all Turkish verbs ending with \u201cu\u015f\u201d with their lemma.",
-        "uid": 25,
+        "uid": "25",
         "subgraph": "",
         "template_index": "",
         "question": "Find all Turkish verbs ending with \u201cu\u015f\u201d with their lemma.",
@@ -558,7 +558,7 @@
     },
     {
         "NNQT_question": "From which country are the beagles originally from?",
-        "uid": 26,
+        "uid": "26",
         "subgraph": "",
         "template_index": "",
         "question": "From which country are the beagles originally from?",
@@ -596,7 +596,7 @@
     },
     {
         "NNQT_question": "From which country came the 2nd most winners of the Emmy Award ?",
-        "uid": 27,
+        "uid": "27",
         "subgraph": "",
         "template_index": "",
         "question": "From which country came the 2nd most winners of the Emmy Award ?",
@@ -634,7 +634,7 @@
     },
     {
         "NNQT_question": "Does the music style of Helloween belong to rock music?",
-        "uid": 28,
+        "uid": "28",
         "subgraph": "",
         "template_index": "",
         "question": "Does the music style of Helloween belong to rock music?",
@@ -652,7 +652,7 @@
     },
     {
         "NNQT_question": "Does the postal code 32423 belong to Minden?",
-        "uid": 29,
+        "uid": "29",
         "subgraph": "",
         "template_index": "",
         "question": "Does the postal code 32423 belong to Minden?",
@@ -670,7 +670,7 @@
     },
     {
         "NNQT_question": "has adam ondra been a winner of IFSC climbing world cup?",
-        "uid": 30,
+        "uid": "30",
         "subgraph": "",
         "template_index": "",
         "question": "has adam ondra been a winner of IFSC climbing world cup?",
@@ -688,7 +688,7 @@
     },
     {
         "NNQT_question": "has life expectancy in iran grown in any year after 1999?",
-        "uid": 31,
+        "uid": "31",
         "subgraph": "",
         "template_index": "",
         "question": "has life expectancy in iran grown in any year after 1999?",
@@ -706,7 +706,7 @@
     },
     {
         "NNQT_question": "has population of Isfahan increased at any point after 2006?",
-        "uid": 32,
+        "uid": "32",
         "subgraph": "",
         "template_index": "",
         "question": "has population of Isfahan increased at any point after 2006?",
@@ -724,7 +724,7 @@
     },
     {
         "NNQT_question": "Did Joe Cocker play at the Woodstock festival?",
-        "uid": 33,
+        "uid": "33",
         "subgraph": "",
         "template_index": "",
         "question": "Did Joe Cocker play at the Woodstock festival?",
@@ -742,7 +742,7 @@
     },
     {
         "NNQT_question": "Did Udo B\u00f6lts participate in the Tour de France?",
-        "uid": 34,
+        "uid": "34",
         "subgraph": "",
         "template_index": "",
         "question": "Did Udo B\u00f6lts participate in the Tour de France?",
@@ -760,7 +760,7 @@
     },
     {
         "NNQT_question": "How many of Reinhold Messner's brothers still live?",
-        "uid": 35,
+        "uid": "35",
         "subgraph": "",
         "template_index": "",
         "question": "How many of Reinhold Messner's brothers still live?",
@@ -778,7 +778,7 @@
     },
     {
         "NNQT_question": "In which manner did Hemingway die?",
-        "uid": 36,
+        "uid": "36",
         "subgraph": "",
         "template_index": "",
         "question": "In which manner did Hemingway die?",
@@ -802,7 +802,7 @@
     },
     {
         "NNQT_question": "In which industry does the House of Medici own a business?",
-        "uid": 37,
+        "uid": "37",
         "subgraph": "",
         "template_index": "",
         "question": "In which industry does the House of Medici own a business?",
@@ -827,7 +827,7 @@
     },
     {
         "NNQT_question": "How do people from Turkey call the official name of the united states of america?",
-        "uid": 38,
+        "uid": "38",
         "subgraph": "",
         "template_index": "",
         "question": "How do people from Turkey call the official name of the united states of america?",
@@ -841,7 +841,7 @@
     },
     {
         "NNQT_question": "How high is the Cologne Cathedral ?",
-        "uid": 39,
+        "uid": "39",
         "subgraph": "",
         "template_index": "",
         "question": "How high is the Cologne Cathedral ?",
@@ -859,7 +859,7 @@
     },
     {
         "NNQT_question": "How is the Harz called in Mandarin Chinese?",
-        "uid": 40,
+        "uid": "40",
         "subgraph": "",
         "template_index": "",
         "question": "How is the Harz called in Mandarin Chinese?",
@@ -877,7 +877,7 @@
     },
     {
         "NNQT_question": "How many international airports are located within the city of Hamburg ?",
-        "uid": 41,
+        "uid": "41",
         "subgraph": "",
         "template_index": "",
         "question": "How many international airports are located within the city of Hamburg ?",
@@ -895,7 +895,7 @@
     },
     {
         "NNQT_question": "On how many albums does Madonna perform?",
-        "uid": 42,
+        "uid": "42",
         "subgraph": "",
         "template_index": "",
         "question": "On how many albums does Madonna perform?",
@@ -913,7 +913,7 @@
     },
     {
         "NNQT_question": "On how many albums does Mariah Carey perform?",
-        "uid": 43,
+        "uid": "43",
         "subgraph": "",
         "template_index": "",
         "question": "On how many albums does Mariah Carey perform?",
@@ -931,7 +931,7 @@
     },
     {
         "NNQT_question": "How many studio albums has Lana Del Rey have?",
-        "uid": 44,
+        "uid": "44",
         "subgraph": "",
         "template_index": "",
         "question": "How many studio albums has Lana Del Rey have?",
@@ -949,7 +949,7 @@
     },
     {
         "NNQT_question": "How many ancient civilizations are there?",
-        "uid": 45,
+        "uid": "45",
         "subgraph": "",
         "template_index": "",
         "question": "How many ancient civilizations are there?",
@@ -967,7 +967,7 @@
     },
     {
         "NNQT_question": "In how many years did Kobe Bryant receive an NBA All-Defensive Team award?",
-        "uid": 46,
+        "uid": "46",
         "subgraph": "",
         "template_index": "",
         "question": "In how many years did Kobe Bryant receive an NBA All-Defensive Team award?",
@@ -985,7 +985,7 @@
     },
     {
         "NNQT_question": "How many All-NBA Team awards have Shaquille O'Neal and Kobe Bryant received in the same year?",
-        "uid": 47,
+        "uid": "47",
         "subgraph": "",
         "template_index": "",
         "question": "How many All-NBA Team awards have Shaquille O'Neal and Kobe Bryant received in the same year?",
@@ -1003,7 +1003,7 @@
     },
     {
         "NNQT_question": "How many literary works did Richard Bachman write?",
-        "uid": 48,
+        "uid": "48",
         "subgraph": "",
         "template_index": "",
         "question": "How many literary works did Richard Bachman write?",
@@ -1021,7 +1021,7 @@
     },
     {
         "NNQT_question": "How many notable works does Sarah J. Maas have?",
-        "uid": 49,
+        "uid": "49",
         "subgraph": "",
         "template_index": "",
         "question": "How many notable works does Sarah J. Maas have?",
@@ -1039,7 +1039,7 @@
     },
     {
         "NNQT_question": "Did Bryan Evenson work for at least one university where he was educated at?",
-        "uid": 50,
+        "uid": "50",
         "subgraph": "",
         "template_index": "",
         "question": "Did Bryan Evenson work for at least one university where he was educated at?",
@@ -1057,7 +1057,7 @@
     },
     {
         "NNQT_question": "How many children (including apopted ones) does Jeff Bezos have with his ex-wife?",
-        "uid": 51,
+        "uid": "51",
         "subgraph": "",
         "template_index": "",
         "question": "How many children (including apopted ones) does Jeff Bezos have with his ex-wife?",
@@ -1075,7 +1075,7 @@
     },
     {
         "NNQT_question": "How many children had Paul McCartney together with his ex-wife Linda McCartney?",
-        "uid": 52,
+        "uid": "52",
         "subgraph": "",
         "template_index": "",
         "question": "How many children had Paul McCartney together with his ex-wife Linda McCartney?",
@@ -1093,7 +1093,7 @@
     },
     {
         "NNQT_question": "How many Chinese zodiac animals are there in total?",
-        "uid": 53,
+        "uid": "53",
         "subgraph": "",
         "template_index": "",
         "question": "How many Chinese zodiac animals are there in total?",
@@ -1111,7 +1111,7 @@
     },
     {
         "NNQT_question": "How many cities are part of the Pearl River Delta?",
-        "uid": 54,
+        "uid": "54",
         "subgraph": "",
         "template_index": "",
         "question": "How many cities are part of the Pearl River Delta?",
@@ -1129,7 +1129,7 @@
     },
     {
         "NNQT_question": "How many city-states are currently in the world?",
-        "uid": 55,
+        "uid": "55",
         "subgraph": "",
         "template_index": "",
         "question": "How many city-states are currently in the world?",
@@ -1147,7 +1147,7 @@
     },
     {
         "NNQT_question": "How many businesses did Steve Jobs found?",
-        "uid": 56,
+        "uid": "56",
         "subgraph": "",
         "template_index": "",
         "question": "How many businesses did Steve Jobs found?",
@@ -1165,7 +1165,7 @@
     },
     {
         "NNQT_question": "How many countries have a democracy index higher than 7 and drive on the left side ?",
-        "uid": 57,
+        "uid": "57",
         "subgraph": "",
         "template_index": "",
         "question": "How many countries have a democracy index higher than 7 and drive on the left side ?",
@@ -1183,7 +1183,7 @@
     },
     {
         "NNQT_question": "How many countries have never been members of the UN?",
-        "uid": 58,
+        "uid": "58",
         "subgraph": "",
         "template_index": "",
         "question": "How many countries have never been members of the UN?",
@@ -1201,7 +1201,7 @@
     },
     {
         "NNQT_question": "How many countries are on the continent of South America ?",
-        "uid": 59,
+        "uid": "59",
         "subgraph": "",
         "template_index": "",
         "question": "How many countries are on the continent of South America ?",
@@ -1219,7 +1219,7 @@
     },
     {
         "NNQT_question": "How many countries have mountains whose peaks are higher than 2000m above sea level?",
-        "uid": 60,
+        "uid": "60",
         "subgraph": "",
         "template_index": "",
         "question": "How many countries have mountains whose peaks are higher than 2000m above sea level?",
@@ -1237,7 +1237,7 @@
     },
     {
         "NNQT_question": "How many fictional dragons are present in Game of Thrones?",
-        "uid": 61,
+        "uid": "61",
         "subgraph": "",
         "template_index": "",
         "question": "How many fictional dragons are present in Game of Thrones?",
@@ -1255,7 +1255,7 @@
     },
     {
         "NNQT_question": "how many emmy awards has the tv series game of thrones won?",
-        "uid": 62,
+        "uid": "62",
         "subgraph": "",
         "template_index": "",
         "question": "how many emmy awards has the tv series game of thrones won?",
@@ -1273,7 +1273,7 @@
     },
     {
         "NNQT_question": "How many films are derived from the original Ghost in the Shell Manga?",
-        "uid": 63,
+        "uid": "63",
         "subgraph": "",
         "template_index": "",
         "question": "How many films are derived from the original Ghost in the Shell Manga?",
@@ -1291,7 +1291,7 @@
     },
     {
         "NNQT_question": "How many French kings didn't die of natural causes?",
-        "uid": 64,
+        "uid": "64",
         "subgraph": "",
         "template_index": "",
         "question": "How many French kings didn't die of natural causes?",
@@ -1309,7 +1309,7 @@
     },
     {
         "NNQT_question": "How many given names has Queen Elizabeth II ?",
-        "uid": 65,
+        "uid": "65",
         "subgraph": "",
         "template_index": "",
         "question": "How many given names has Queen Elizabeth II ?",
@@ -1327,7 +1327,7 @@
     },
     {
         "NNQT_question": "How many different female mayors did Hamburg have?",
-        "uid": 66,
+        "uid": "66",
         "subgraph": "",
         "template_index": "",
         "question": "How many different female mayors did Hamburg have?",
@@ -1345,7 +1345,7 @@
     },
     {
         "NNQT_question": "how many head of the state does iran have?",
-        "uid": 67,
+        "uid": "67",
         "subgraph": "",
         "template_index": "",
         "question": "how many head of the state does iran have?",
@@ -1363,7 +1363,7 @@
     },
     {
         "NNQT_question": "How many scholary articles have ImageNet as a subject?",
-        "uid": 68,
+        "uid": "68",
         "subgraph": "",
         "template_index": "",
         "question": "How many scholary articles have ImageNet as a subject?",
@@ -1381,7 +1381,7 @@
     },
     {
         "NNQT_question": "How many inhabitants does the birthplace of Cristiano Ronaldo have?",
-        "uid": 69,
+        "uid": "69",
         "subgraph": "",
         "template_index": "",
         "question": "How many inhabitants does the birthplace of Cristiano Ronaldo have?",
@@ -1433,7 +1433,7 @@
     },
     {
         "NNQT_question": "How many Japanese writers received the Nobel Prize?",
-        "uid": 70,
+        "uid": "70",
         "subgraph": "",
         "template_index": "",
         "question": "How many Japanese writers received the Nobel Prize?",
@@ -1451,7 +1451,7 @@
     },
     {
         "NNQT_question": "How many languages are widely used in India?",
-        "uid": 71,
+        "uid": "71",
         "subgraph": "",
         "template_index": "",
         "question": "How many languages are widely used in India?",
@@ -1469,7 +1469,7 @@
     },
     {
         "NNQT_question": "How many different colors can water take?",
-        "uid": 72,
+        "uid": "72",
         "subgraph": "",
         "template_index": "",
         "question": "How many different colors can water take?",
@@ -1487,7 +1487,7 @@
     },
     {
         "NNQT_question": "How many locations has Georges Braque worked at (work location)?",
-        "uid": 73,
+        "uid": "73",
         "subgraph": "",
         "template_index": "",
         "question": "How many locations has Georges Braque worked at (work location)?",
@@ -1505,7 +1505,7 @@
     },
     {
         "NNQT_question": "How many months does winter consist of in Germany?",
-        "uid": 74,
+        "uid": "74",
         "subgraph": "",
         "template_index": "",
         "question": "How many months does winter consist of in Germany?",
@@ -1523,7 +1523,7 @@
     },
     {
         "NNQT_question": "How many movies does the Scream franchise have?",
-        "uid": 75,
+        "uid": "75",
         "subgraph": "",
         "template_index": "",
         "question": "How many movies does the Scream franchise have?",
@@ -1541,7 +1541,7 @@
     },
     {
         "NNQT_question": "How many movies has James Cameron directed prior to the year 2010?",
-        "uid": 76,
+        "uid": "76",
         "subgraph": "",
         "template_index": "",
         "question": "How many movies has James Cameron directed prior to the year 2010?",
@@ -1559,7 +1559,7 @@
     },
     {
         "NNQT_question": "How many movies were directed by Akira Kurosawa ?",
-        "uid": 77,
+        "uid": "77",
         "subgraph": "",
         "template_index": "",
         "question": "How many movies were directed by Akira Kurosawa ?",
@@ -1577,7 +1577,7 @@
     },
     {
         "NNQT_question": "How many musical scales are there?",
-        "uid": 78,
+        "uid": "78",
         "subgraph": "",
         "template_index": "",
         "question": "How many musical scales are there?",
@@ -1595,7 +1595,7 @@
     },
     {
         "NNQT_question": "How many public holidays does the state Bavaria have in a year?",
-        "uid": 79,
+        "uid": "79",
         "subgraph": "",
         "template_index": "",
         "question": "How many public holidays does the state Bavaria have in a year?",
@@ -1613,7 +1613,7 @@
     },
     {
         "NNQT_question": "How many literary works besides The Picture of Dorian Gray did its author write?",
-        "uid": 80,
+        "uid": "80",
         "subgraph": "",
         "template_index": "",
         "question": "How many literary works besides The Picture of Dorian Gray did its author write?",
@@ -1631,7 +1631,7 @@
     },
     {
         "NNQT_question": "How many literary works did Mark Twain write in his lifetime?",
-        "uid": 81,
+        "uid": "81",
         "subgraph": "",
         "template_index": "",
         "question": "How many literary works did Mark Twain write in his lifetime?",
@@ -1649,7 +1649,7 @@
     },
     {
         "NNQT_question": "How many occupations did Mark Twain have?",
-        "uid": 82,
+        "uid": "82",
         "subgraph": "",
         "template_index": "",
         "question": "How many occupations did Mark Twain have?",
@@ -1667,7 +1667,7 @@
     },
     {
         "NNQT_question": "how many of spiderman perfomers are citizens of the united kingdom?",
-        "uid": 83,
+        "uid": "83",
         "subgraph": "",
         "template_index": "",
         "question": "how many of spiderman perfomers are citizens of the united kingdom?",
@@ -1685,7 +1685,7 @@
     },
     {
         "NNQT_question": "how many official languages does the united states of america have?",
-        "uid": 84,
+        "uid": "84",
         "subgraph": "",
         "template_index": "",
         "question": "how many official languages does the united states of america have?",
@@ -1703,7 +1703,7 @@
     },
     {
         "NNQT_question": "How many official languages has Pakistan ?",
-        "uid": 85,
+        "uid": "85",
         "subgraph": "",
         "template_index": "",
         "question": "How many official languages has Pakistan ?",
@@ -1721,7 +1721,7 @@
     },
     {
         "NNQT_question": "How many Oscars did all the movies directed by Hayao Miyazaki combined win?",
-        "uid": 86,
+        "uid": "86",
         "subgraph": "",
         "template_index": "",
         "question": "How many Oscars did all the movies directed by Hayao Miyazaki combined win?",
@@ -1739,7 +1739,7 @@
     },
     {
         "NNQT_question": "How many paintings of Pablo Picasso were ever in a museum?",
-        "uid": 87,
+        "uid": "87",
         "subgraph": "",
         "template_index": "",
         "question": "How many paintings of Pablo Picasso were ever in a museum?",
@@ -1757,7 +1757,7 @@
     },
     {
         "NNQT_question": "How many people can play \"Mensch \u00e4rgere dich nicht\" at most?",
-        "uid": 88,
+        "uid": "88",
         "subgraph": "",
         "template_index": "",
         "question": "How many people can play \"Mensch \u00e4rgere dich nicht\" at most?",
@@ -1775,7 +1775,7 @@
     },
     {
         "NNQT_question": "How many people did Oscar Pistorius kill?",
-        "uid": 89,
+        "uid": "89",
         "subgraph": "",
         "template_index": "",
         "question": "How many people did Oscar Pistorius kill?",
@@ -1793,7 +1793,7 @@
     },
     {
         "NNQT_question": "How many people died due to the Great Leap Forward according to the highest estimate?",
-        "uid": 90,
+        "uid": "90",
         "subgraph": "",
         "template_index": "",
         "question": "How many people died due to the Great Leap Forward according to the highest estimate?",
@@ -1811,7 +1811,7 @@
     },
     {
         "NNQT_question": "How many people have won the Nobel Prize in Literature since its inception?",
-        "uid": 91,
+        "uid": "91",
         "subgraph": "",
         "template_index": "",
         "question": "How many people have won the Nobel Prize in Literature since its inception?",
@@ -1829,7 +1829,7 @@
     },
     {
         "NNQT_question": "How many people live in cities in the vicinity of the Nile ?",
-        "uid": 92,
+        "uid": "92",
         "subgraph": "",
         "template_index": "",
         "question": "How many people live in cities in the vicinity of the Nile ?",
@@ -1847,7 +1847,7 @@
     },
     {
         "NNQT_question": "How many pitch classes are part of the chromatic scale?",
-        "uid": 93,
+        "uid": "93",
         "subgraph": "",
         "template_index": "",
         "question": "How many pitch classes are part of the chromatic scale?",
@@ -1865,7 +1865,7 @@
     },
     {
         "NNQT_question": "how many plays has William Shakespeare written in the 16th century.",
-        "uid": 94,
+        "uid": "94",
         "subgraph": "",
         "template_index": "",
         "question": "how many plays has William Shakespeare written in the 16th century.",
@@ -1883,7 +1883,7 @@
     },
     {
         "NNQT_question": "How many poems did Allen Ginsberg published?",
-        "uid": 95,
+        "uid": "95",
         "subgraph": "",
         "template_index": "",
         "question": "How many poems did Allen Ginsberg published?",
@@ -1901,7 +1901,7 @@
     },
     {
         "NNQT_question": "How many political parties have ever had seats in the German Bundestag ?",
-        "uid": 96,
+        "uid": "96",
         "subgraph": "",
         "template_index": "",
         "question": "How many political parties have ever had seats in the German Bundestag ?",
@@ -1919,7 +1919,7 @@
     },
     {
         "NNQT_question": "How many positions did Kobe Bryant play in his team?",
-        "uid": 97,
+        "uid": "97",
         "subgraph": "",
         "template_index": "",
         "question": "How many positions did Kobe Bryant play in his team?",
@@ -1937,7 +1937,7 @@
     },
     {
         "NNQT_question": "How many prizes are there established by Alfred Nobel ?",
-        "uid": 98,
+        "uid": "98",
         "subgraph": "",
         "template_index": "",
         "question": "How many prizes are there established by Alfred Nobel ?",
@@ -1955,7 +1955,7 @@
     },
     {
         "NNQT_question": "Did SpaceX ever operate a space mission that was a failed launch?",
-        "uid": 99,
+        "uid": "99",
         "subgraph": "",
         "template_index": "",
         "question": "Did SpaceX ever operate a space mission that was a failed launch?",
@@ -1973,7 +1973,7 @@
     },
     {
         "NNQT_question": "How many people nominated for the nobel prize in chemistry didn't ever win it?",
-        "uid": 100,
+        "uid": "100",
         "subgraph": "",
         "template_index": "",
         "question": "How many people nominated for the nobel prize in chemistry didn't ever win it?",
@@ -1991,7 +1991,7 @@
     },
     {
         "NNQT_question": "How many seasons does Pose have?",
-        "uid": 101,
+        "uid": "101",
         "subgraph": "",
         "template_index": "",
         "question": "How many seasons does Pose have?",
@@ -2009,7 +2009,7 @@
     },
     {
         "NNQT_question": "How many seats are there in the current German Bundestag ?",
-        "uid": 102,
+        "uid": "102",
         "subgraph": "",
         "template_index": "",
         "question": "How many seats are there in the current German Bundestag ?",
@@ -2027,7 +2027,7 @@
     },
     {
         "NNQT_question": "How many siblings had the author of \u201cLittle Women\u201d ?",
-        "uid": 103,
+        "uid": "103",
         "subgraph": "",
         "template_index": "",
         "question": "How many siblings had the author of \u201cLittle Women\u201d ?",
@@ -2045,7 +2045,7 @@
     },
     {
         "NNQT_question": "How many ski resorts were there ever in France?",
-        "uid": 104,
+        "uid": "104",
         "subgraph": "",
         "template_index": "",
         "question": "How many ski resorts were there ever in France?",
@@ -2063,7 +2063,7 @@
     },
     {
         "NNQT_question": "How many songs were composed by Jay Chou but not released in his own albums?",
-        "uid": 105,
+        "uid": "105",
         "subgraph": "",
         "template_index": "",
         "question": "How many songs were composed by Jay Chou but not released in his own albums?",
@@ -2081,7 +2081,7 @@
     },
     {
         "NNQT_question": "How many works that are based on Spider-Man has Venom been a part of?",
-        "uid": 106,
+        "uid": "106",
         "subgraph": "",
         "template_index": "",
         "question": "How many works that are based on Spider-Man has Venom been a part of?",
@@ -2099,7 +2099,7 @@
     },
     {
         "NNQT_question": "How many spouses had Rama V (one of the former Kings of Siam)?",
-        "uid": 107,
+        "uid": "107",
         "subgraph": "",
         "template_index": "",
         "question": "How many spouses had Rama V (one of the former Kings of Siam)?",
@@ -2117,7 +2117,7 @@
     },
     {
         "NNQT_question": "Does Switzerland have a place north of the Point (8.57 47.8)?",
-        "uid": 108,
+        "uid": "108",
         "subgraph": "",
         "template_index": "",
         "question": "Does Switzerland have a place north of the Point (8.57 47.8)?",
@@ -2135,7 +2135,7 @@
     },
     {
         "NNQT_question": "how many times has Giorgio Moroder won golden globe award?",
-        "uid": 109,
+        "uid": "109",
         "subgraph": "",
         "template_index": "",
         "question": "how many times has Giorgio Moroder won golden globe award?",
@@ -2153,7 +2153,7 @@
     },
     {
         "NNQT_question": "How many Olympic Games has Kobe Bryant taken part in?",
-        "uid": 110,
+        "uid": "110",
         "subgraph": "",
         "template_index": "",
         "question": "How many Olympic Games has Kobe Bryant taken part in?",
@@ -2171,7 +2171,7 @@
     },
     {
         "NNQT_question": "How many times was Oskar Lafontaine elected Member of the Landtag of Saarland?",
-        "uid": 111,
+        "uid": "111",
         "subgraph": "",
         "template_index": "",
         "question": "How many times was Oskar Lafontaine elected Member of the Landtag of Saarland?",
@@ -2189,7 +2189,7 @@
     },
     {
         "NNQT_question": "How many wars did the Empire of Japan participate in?",
-        "uid": 112,
+        "uid": "112",
         "subgraph": "",
         "template_index": "",
         "question": "How many wars did the Empire of Japan participate in?",
@@ -2207,7 +2207,7 @@
     },
     {
         "NNQT_question": "How many women were amongst the founding members of \u201cThe Bridge\u201d (\u201cDie Br\u00fccke\u201d)?",
-        "uid": 113,
+        "uid": "113",
         "subgraph": "",
         "template_index": "",
         "question": "How many women were amongst the founding members of \u201cThe Bridge\u201d (\u201cDie Br\u00fccke\u201d)?",
@@ -2225,7 +2225,7 @@
     },
     {
         "NNQT_question": "Who has a higher observed lifespan out of the common bottlenose dolphin and the brown bear?",
-        "uid": 114,
+        "uid": "114",
         "subgraph": "",
         "template_index": "",
         "question": "Who has a higher observed lifespan out of the common bottlenose dolphin and the brown bear?",
@@ -2250,7 +2250,7 @@
     },
     {
         "NNQT_question": "What is TNFAIP1 ?",
-        "uid": 115,
+        "uid": "115",
         "subgraph": "",
         "template_index": "",
         "question": "What is TNFAIP1 ?",
@@ -2271,7 +2271,7 @@
     },
     {
         "NNQT_question": "How often did Naomi Novik win the nebula award?",
-        "uid": 116,
+        "uid": "116",
         "subgraph": "",
         "template_index": "",
         "question": "How often did Naomi Novik win the nebula award?",
@@ -2289,7 +2289,7 @@
     },
     {
         "NNQT_question": "How often did the Mongols try to invade Japan?",
-        "uid": 117,
+        "uid": "117",
         "subgraph": "",
         "template_index": "",
         "question": "How often did the Mongols try to invade Japan?",
@@ -2307,7 +2307,7 @@
     },
     {
         "NNQT_question": "How often was Naomi Novik nominated for a Hugo Award?",
-        "uid": 118,
+        "uid": "118",
         "subgraph": "",
         "template_index": "",
         "question": "How often was Naomi Novik nominated for a Hugo Award?",
@@ -2325,7 +2325,7 @@
     },
     {
         "NNQT_question": "How many years did the second oldest dog in the world live?",
-        "uid": 119,
+        "uid": "119",
         "subgraph": "",
         "template_index": "",
         "question": "How many years did the second oldest dog in the world live?",
@@ -2343,7 +2343,7 @@
     },
     {
         "NNQT_question": "if someone died in 1969, is there any chance they heard of queen\u2019s music?",
-        "uid": 120,
+        "uid": "120",
         "subgraph": "",
         "template_index": "",
         "question": "if someone died in 1969, is there any chance they heard of queen\u2019s music?",
@@ -2361,7 +2361,7 @@
     },
     {
         "NNQT_question": "Is Dr. Pepper named after its inventor?",
-        "uid": 121,
+        "uid": "121",
         "subgraph": "",
         "template_index": "",
         "question": "Is Dr. Pepper named after its inventor?",
@@ -2379,7 +2379,7 @@
     },
     {
         "NNQT_question": "In how many movies did Carey Mulligan and Ryan Gosling star together?",
-        "uid": 122,
+        "uid": "122",
         "subgraph": "",
         "template_index": "",
         "question": "In how many movies did Carey Mulligan and Ryan Gosling star together?",
@@ -2397,7 +2397,7 @@
     },
     {
         "NNQT_question": "in the country where ghost in the shell is born, who is the current head of the state?",
-        "uid": 123,
+        "uid": "123",
         "subgraph": "",
         "template_index": "",
         "question": "in the country where ghost in the shell is born, who is the current head of the state?",
@@ -2428,7 +2428,7 @@
     },
     {
         "NNQT_question": "How many rivers are in or next to the U.S. state where cage the elephant is from?",
-        "uid": 124,
+        "uid": "124",
         "subgraph": "",
         "template_index": "",
         "question": "How many rivers are in or next to the U.S. state where cage the elephant is from?",
@@ -2446,7 +2446,7 @@
     },
     {
         "NNQT_question": "In which federal state is the Veltins brewery headquarter?",
-        "uid": 125,
+        "uid": "125",
         "subgraph": "",
         "template_index": "",
         "question": "In which federal state is the Veltins brewery headquarter?",
@@ -2468,7 +2468,7 @@
     },
     {
         "NNQT_question": "In which stadium do the New York Yankees play?",
-        "uid": 126,
+        "uid": "126",
         "subgraph": "",
         "template_index": "",
         "question": "In which stadium do the New York Yankees play?",
@@ -2489,7 +2489,7 @@
     },
     {
         "NNQT_question": "In which countries is the Himalayas located?",
-        "uid": 127,
+        "uid": "127",
         "subgraph": "",
         "template_index": "",
         "question": "In which countries is the Himalayas located?",
@@ -2583,7 +2583,7 @@
     },
     {
         "NNQT_question": "Was Isfahan a capital in the year 934?",
-        "uid": 128,
+        "uid": "128",
         "subgraph": "",
         "template_index": "",
         "question": "Was Isfahan a capital in the year 934?",
@@ -2601,7 +2601,7 @@
     },
     {
         "NNQT_question": "In how many countries has IKEA been established?",
-        "uid": 129,
+        "uid": "129",
         "subgraph": "",
         "template_index": "",
         "question": "In how many countries has IKEA been established?",
@@ -2619,7 +2619,7 @@
     },
     {
         "NNQT_question": "In which country did the United Fruit Company have their headquarters?",
-        "uid": 130,
+        "uid": "130",
         "subgraph": "",
         "template_index": "",
         "question": "In which country did the United Fruit Company have their headquarters?",
@@ -2663,7 +2663,7 @@
     },
     {
         "NNQT_question": "In how many countries is pysanka practiced?",
-        "uid": 131,
+        "uid": "131",
         "subgraph": "",
         "template_index": "",
         "question": "In how many countries is pysanka practiced?",
@@ -2681,7 +2681,7 @@
     },
     {
         "NNQT_question": "In which country is Oberirrach ?",
-        "uid": 132,
+        "uid": "132",
         "subgraph": "",
         "template_index": "",
         "question": "In which country is Oberirrach ?",
@@ -2707,7 +2707,7 @@
     },
     {
         "NNQT_question": "In which country was Spotify created?",
-        "uid": 133,
+        "uid": "133",
         "subgraph": "",
         "template_index": "",
         "question": "In which country was Spotify created?",
@@ -2734,7 +2734,7 @@
     },
     {
         "NNQT_question": "What is the song Vogue by Madonna named after?",
-        "uid": 134,
+        "uid": "134",
         "subgraph": "",
         "template_index": "",
         "question": "What is the song Vogue by Madonna named after?",
@@ -2755,7 +2755,7 @@
     },
     {
         "NNQT_question": "in which language does the united stated have the shortest short name?",
-        "uid": 135,
+        "uid": "135",
         "subgraph": "",
         "template_index": "",
         "question": "in which language does the united stated have the shortest short name?",
@@ -2773,7 +2773,7 @@
     },
     {
         "NNQT_question": "Does Bremerhaven's local dialing code start with 4?",
-        "uid": 136,
+        "uid": "136",
         "subgraph": "",
         "template_index": "",
         "question": "Does Bremerhaven's local dialing code start with 4?",
@@ -2791,7 +2791,7 @@
     },
     {
         "NNQT_question": "In how many movies was Johnny Depp casted in?",
-        "uid": 137,
+        "uid": "137",
         "subgraph": "",
         "template_index": "",
         "question": "In how many movies was Johnny Depp casted in?",
@@ -2809,7 +2809,7 @@
     },
     {
         "NNQT_question": "In which year did ABBA publish their album The Visitors ?",
-        "uid": 138,
+        "uid": "138",
         "subgraph": "",
         "template_index": "",
         "question": "In which year did ABBA publish their album The Visitors ?",
@@ -2827,7 +2827,7 @@
     },
     {
         "NNQT_question": "In which year was the author of \u201cThe Vanishing Half\u201d born?",
-        "uid": 139,
+        "uid": "139",
         "subgraph": "",
         "template_index": "",
         "question": "In which year was the author of \u201cThe Vanishing Half\u201d born?",
@@ -2845,7 +2845,7 @@
     },
     {
         "NNQT_question": "Is After Eight manufactured by Unilever?",
-        "uid": 140,
+        "uid": "140",
         "subgraph": "",
         "template_index": "",
         "question": "Is After Eight manufactured by Unilever?",
@@ -2863,7 +2863,7 @@
     },
     {
         "NNQT_question": "Is ALDI also in Italy?",
-        "uid": 141,
+        "uid": "141",
         "subgraph": "",
         "template_index": "",
         "question": "Is ALDI also in Italy?",
@@ -2881,7 +2881,7 @@
     },
     {
         "NNQT_question": "is Isfahan a big city?",
-        "uid": 142,
+        "uid": "142",
         "subgraph": "",
         "template_index": "",
         "question": "is Isfahan a big city?",
@@ -2899,7 +2899,7 @@
     },
     {
         "NNQT_question": "Is math related to science ?",
-        "uid": 143,
+        "uid": "143",
         "subgraph": "",
         "template_index": "",
         "question": "Is math related to science ?",
@@ -2917,7 +2917,7 @@
     },
     {
         "NNQT_question": "Is Python a kind of Programming languages?",
-        "uid": 144,
+        "uid": "144",
         "subgraph": "",
         "template_index": "",
         "question": "Is Python a kind of Programming languages?",
@@ -2935,7 +2935,7 @@
     },
     {
         "NNQT_question": "Is samurai champloo a piece of original work or an adaptation?",
-        "uid": 145,
+        "uid": "145",
         "subgraph": "",
         "template_index": "",
         "question": "Is samurai champloo a piece of original work or an adaptation?",
@@ -2949,7 +2949,7 @@
     },
     {
         "NNQT_question": "Was the first female chancellor in Germany ever married?",
-        "uid": 146,
+        "uid": "146",
         "subgraph": "",
         "template_index": "",
         "question": "Was the first female chancellor in Germany ever married?",
@@ -2967,7 +2967,7 @@
     },
     {
         "NNQT_question": "Is the Mariana Trench deeper than Mount Everest is high (above sea level)?",
-        "uid": 147,
+        "uid": "147",
         "subgraph": "",
         "template_index": "",
         "question": "Is the Mariana Trench deeper than Mount Everest is high (above sea level)?",
@@ -2985,7 +2985,7 @@
     },
     {
         "NNQT_question": "Is the number of countries in Europe larger than that in Asia?",
-        "uid": 148,
+        "uid": "148",
         "subgraph": "",
         "template_index": "",
         "question": "Is the number of countries in Europe larger than that in Asia?",
@@ -3003,7 +3003,7 @@
     },
     {
         "NNQT_question": "Is the production company of samurai champloo still existing?",
-        "uid": 149,
+        "uid": "149",
         "subgraph": "",
         "template_index": "",
         "question": "Is the production company of samurai champloo still existing?",
@@ -3021,7 +3021,7 @@
     },
     {
         "NNQT_question": "is there female main character in hunter x hunter?",
-        "uid": 150,
+        "uid": "150",
         "subgraph": "",
         "template_index": "",
         "question": "is there female main character in hunter x hunter?",
@@ -3039,7 +3039,7 @@
     },
     {
         "NNQT_question": "Is water colorless?",
-        "uid": 151,
+        "uid": "151",
         "subgraph": "",
         "template_index": "",
         "question": "Is water colorless?",
@@ -3057,7 +3057,7 @@
     },
     {
         "NNQT_question": "Is Axel Rose a member of Guns N' Roses?",
-        "uid": 152,
+        "uid": "152",
         "subgraph": "",
         "template_index": "",
         "question": "Is Axel Rose a member of Guns N' Roses?",
@@ -3075,7 +3075,7 @@
     },
     {
         "NNQT_question": "Is the capital of Iran bigger than that of Germany?",
-        "uid": 153,
+        "uid": "153",
         "subgraph": "",
         "template_index": "",
         "question": "Is the capital of Iran bigger than that of Germany?",
@@ -3093,7 +3093,7 @@
     },
     {
         "NNQT_question": "Is the Weser longer than the Rhine?",
-        "uid": 154,
+        "uid": "154",
         "subgraph": "",
         "template_index": "",
         "question": "Is the Weser longer than the Rhine?",
@@ -3111,7 +3111,7 @@
     },
     {
         "NNQT_question": "Is Tony Blair taller than Tiger Woods?",
-        "uid": 155,
+        "uid": "155",
         "subgraph": "",
         "template_index": "",
         "question": "Is Tony Blair taller than Tiger Woods?",
@@ -3129,7 +3129,7 @@
     },
     {
         "NNQT_question": "Is Chicago located at Lake Michigan?",
-        "uid": 156,
+        "uid": "156",
         "subgraph": "",
         "template_index": "",
         "question": "Is Chicago located at Lake Michigan?",
@@ -3147,7 +3147,7 @@
     },
     {
         "NNQT_question": "Is the district of H\u00f6xter next to the district of Paderborn?",
-        "uid": 157,
+        "uid": "157",
         "subgraph": "",
         "template_index": "",
         "question": "Is the district of H\u00f6xter next to the district of Paderborn?",
@@ -3165,7 +3165,7 @@
     },
     {
         "NNQT_question": "Are part of the Harz mountains in the district of Nordhausen?",
-        "uid": 158,
+        "uid": "158",
         "subgraph": "",
         "template_index": "",
         "question": "Are part of the Harz mountains in the district of Nordhausen?",
@@ -3183,7 +3183,7 @@
     },
     {
         "NNQT_question": "How many people won the Nobel Prize in Literature or Physics since 2000?",
-        "uid": 159,
+        "uid": "159",
         "subgraph": "",
         "template_index": "",
         "question": "How many people won the Nobel Prize in Literature or Physics since 2000?",
@@ -3201,7 +3201,7 @@
     },
     {
         "NNQT_question": "How many african-american people got a star on the Hollywood Walk of Fame?",
-        "uid": 160,
+        "uid": "160",
         "subgraph": "",
         "template_index": "",
         "question": "How many african-american people got a star on the Hollywood Walk of Fame?",
@@ -3219,7 +3219,7 @@
     },
     {
         "NNQT_question": "With how many countries does Australia share a border?",
-        "uid": 161,
+        "uid": "161",
         "subgraph": "",
         "template_index": "",
         "question": "With how many countries does Australia share a border?",
@@ -3237,7 +3237,7 @@
     },
     {
         "NNQT_question": "How many female Chinese Empresses have there been?",
-        "uid": 162,
+        "uid": "162",
         "subgraph": "",
         "template_index": "",
         "question": "How many female Chinese Empresses have there been?",
@@ -3255,7 +3255,7 @@
     },
     {
         "NNQT_question": "Of which political party was Joseph Beuys a member?",
-        "uid": 163,
+        "uid": "163",
         "subgraph": "",
         "template_index": "",
         "question": "Of which political party was Joseph Beuys a member?",
@@ -3276,7 +3276,7 @@
     },
     {
         "NNQT_question": "In what year did the Hollywood Walk of Fame open?",
-        "uid": 164,
+        "uid": "164",
         "subgraph": "",
         "template_index": "",
         "question": "In what year did the Hollywood Walk of Fame open?",
@@ -3294,7 +3294,7 @@
     },
     {
         "NNQT_question": "on which video streaming services can i watch hunter x hunter anime series?",
-        "uid": 165,
+        "uid": "165",
         "subgraph": "",
         "template_index": "",
         "question": "on which video streaming services can i watch hunter x hunter anime series?",
@@ -3326,7 +3326,7 @@
     },
     {
         "NNQT_question": "People of what age belong to the Silent Generation ?",
-        "uid": 166,
+        "uid": "166",
         "subgraph": "",
         "template_index": "",
         "question": "People of what age belong to the Silent Generation ?",
@@ -3340,7 +3340,7 @@
     },
     {
         "NNQT_question": "In what year did the district of H\u00f6xter come into existence?",
-        "uid": 167,
+        "uid": "167",
         "subgraph": "",
         "template_index": "",
         "question": "In what year did the district of H\u00f6xter come into existence?",
@@ -3358,7 +3358,7 @@
     },
     {
         "NNQT_question": "Is the Linux Foundation verified on Twitter?",
-        "uid": 168,
+        "uid": "168",
         "subgraph": "",
         "template_index": "",
         "question": "Is the Linux Foundation verified on Twitter?",
@@ -3376,7 +3376,7 @@
     },
     {
         "NNQT_question": "Were Angela Merkel and Tony Blair born in the same year?",
-        "uid": 169,
+        "uid": "169",
         "subgraph": "",
         "template_index": "",
         "question": "Were Angela Merkel and Tony Blair born in the same year?",
@@ -3394,7 +3394,7 @@
     },
     {
         "NNQT_question": "Do more than 100000000 people speak Japanese?",
-        "uid": 170,
+        "uid": "170",
         "subgraph": "",
         "template_index": "",
         "question": "Do more than 100000000 people speak Japanese?",
@@ -3412,7 +3412,7 @@
     },
     {
         "NNQT_question": "Tell me all the cast members of the film Red Notice directed by Rawson Marshall Thurber ?",
-        "uid": 171,
+        "uid": "171",
         "subgraph": "",
         "template_index": "",
         "question": "Tell me all the cast members of the film Red Notice directed by Rawson Marshall Thurber ?",
@@ -3466,7 +3466,7 @@
     },
     {
         "NNQT_question": "The first album of Jay Chou",
-        "uid": 172,
+        "uid": "172",
         "subgraph": "",
         "template_index": "",
         "question": "The first album of Jay Chou",
@@ -3486,7 +3486,7 @@
     },
     {
         "NNQT_question": "Through which countries does the Danube go?",
-        "uid": 173,
+        "uid": "173",
         "subgraph": "",
         "template_index": "",
         "question": "Through which countries does the Danube go?",
@@ -3599,7 +3599,7 @@
     },
     {
         "NNQT_question": "What do sperm whales mainly eat?",
-        "uid": 174,
+        "uid": "174",
         "subgraph": "",
         "template_index": "",
         "question": "What do sperm whales mainly eat?",
@@ -3621,7 +3621,7 @@
     },
     {
         "NNQT_question": "Was Frida Kahlo a surrealist?",
-        "uid": 175,
+        "uid": "175",
         "subgraph": "",
         "template_index": "",
         "question": "Was Frida Kahlo a surrealist?",
@@ -3639,7 +3639,7 @@
     },
     {
         "NNQT_question": "Was Funny Games and its remake directed by different persons?",
-        "uid": 176,
+        "uid": "176",
         "subgraph": "",
         "template_index": "",
         "question": "Was Funny Games and its remake directed by different persons?",
@@ -3657,7 +3657,7 @@
     },
     {
         "NNQT_question": "Was Google founded by Bill Gates?",
-        "uid": 177,
+        "uid": "177",
         "subgraph": "",
         "template_index": "",
         "question": "Was Google founded by Bill Gates?",
@@ -3675,7 +3675,7 @@
     },
     {
         "NNQT_question": "What is the second letter in the Greek alphabet?",
-        "uid": 178,
+        "uid": "178",
         "subgraph": "",
         "template_index": "",
         "question": "What is the second letter in the Greek alphabet?",
@@ -3697,7 +3697,7 @@
     },
     {
         "NNQT_question": "Was it the cancer that caused the death of Steve Jobs who was the CEO of Apple?",
-        "uid": 179,
+        "uid": "179",
         "subgraph": "",
         "template_index": "",
         "question": "Was it the cancer that caused the death of Steve Jobs who was the CEO of Apple?",
@@ -3715,7 +3715,7 @@
     },
     {
         "NNQT_question": "Was Shaquille O'Neal the teammate of Kobe Bryant in the year of 2000?",
-        "uid": 180,
+        "uid": "180",
         "subgraph": "",
         "template_index": "",
         "question": "Was Shaquille O'Neal the teammate of Kobe Bryant in the year of 2000?",
@@ -3733,7 +3733,7 @@
     },
     {
         "NNQT_question": "Was Shaquille O'Neal, as the basketball player, also an film actor?",
-        "uid": 181,
+        "uid": "181",
         "subgraph": "",
         "template_index": "",
         "question": "Was Shaquille O'Neal, as the basketball player, also an film actor?",
@@ -3751,7 +3751,7 @@
     },
     {
         "NNQT_question": "Was the first album of the band Darkside released in 2012?",
-        "uid": 182,
+        "uid": "182",
         "subgraph": "",
         "template_index": "",
         "question": "Was the first album of the band Darkside released in 2012?",
@@ -3769,7 +3769,7 @@
     },
     {
         "NNQT_question": "What are the spin-offs of Breaking Bad?",
-        "uid": 183,
+        "uid": "183",
         "subgraph": "",
         "template_index": "",
         "question": "What are the spin-offs of Breaking Bad?",
@@ -3796,7 +3796,7 @@
     },
     {
         "NNQT_question": "Which river flows through the Grand Canyon?",
-        "uid": 184,
+        "uid": "184",
         "subgraph": "",
         "template_index": "",
         "question": "Which river flows through the Grand Canyon?",
@@ -3817,7 +3817,7 @@
     },
     {
         "NNQT_question": "What was the key event related to Salvador Dal\u00ed?",
-        "uid": 185,
+        "uid": "185",
         "subgraph": "",
         "template_index": "",
         "question": "What was the key event related to Salvador Dal\u00ed?",
@@ -3839,7 +3839,7 @@
     },
     {
         "NNQT_question": "Who passed the German Occupational Safety and Health Act?",
-        "uid": 186,
+        "uid": "186",
         "subgraph": "",
         "template_index": "",
         "question": "Who passed the German Occupational Safety and Health Act?",
@@ -3859,7 +3859,7 @@
     },
     {
         "NNQT_question": "What are the German names of academic disciplines containing \u201clinguistik\u201d?",
-        "uid": 187,
+        "uid": "187",
         "subgraph": "",
         "template_index": "",
         "question": "What are the German names of academic disciplines containing \u201clinguistik\u201d?",
@@ -3897,7 +3897,7 @@
     },
     {
         "NNQT_question": "What are the names of the head of states of Germany and France ?",
-        "uid": 188,
+        "uid": "188",
         "subgraph": "",
         "template_index": "",
         "question": "What are the names of the head of states of Germany and France ?",
@@ -3922,7 +3922,7 @@
     },
     {
         "NNQT_question": "What are the professions of John Lennon\u2019s sons?",
-        "uid": 189,
+        "uid": "189",
         "subgraph": "",
         "template_index": "",
         "question": "What are the professions of John Lennon\u2019s sons?",
@@ -4002,7 +4002,7 @@
     },
     {
         "NNQT_question": "What are the titles of the Star Wars series movies?",
-        "uid": 190,
+        "uid": "190",
         "subgraph": "",
         "template_index": "",
         "question": "What are the titles of the Star Wars series movies?",
@@ -4036,7 +4036,7 @@
     },
     {
         "NNQT_question": "What came first: the TV show The Flintstones or the end of racial discrimination in voting in the US ?",
-        "uid": 191,
+        "uid": "191",
         "subgraph": "",
         "template_index": "",
         "question": "What came first: the TV show The Flintstones or the end of racial discrimination in voting in the US ?",
@@ -4057,7 +4057,7 @@
     },
     {
         "NNQT_question": "What colors does the German national flag have?",
-        "uid": 192,
+        "uid": "192",
         "subgraph": "",
         "template_index": "",
         "question": "What colors does the German national flag have?",
@@ -4094,7 +4094,7 @@
     },
     {
         "NNQT_question": "What did the suffragettes stand for?",
-        "uid": 193,
+        "uid": "193",
         "subgraph": "",
         "template_index": "",
         "question": "What did the suffragettes stand for?",
@@ -4117,7 +4117,7 @@
     },
     {
         "NNQT_question": "What do you call a female form of an emperor in English?",
-        "uid": 194,
+        "uid": "194",
         "subgraph": "",
         "template_index": "",
         "question": "What do you call a female form of an emperor in English?",
@@ -4135,7 +4135,7 @@
     },
     {
         "NNQT_question": "What event killed the most people in the years 1910 to 1920?",
-        "uid": 195,
+        "uid": "195",
         "subgraph": "",
         "template_index": "",
         "question": "What event killed the most people in the years 1910 to 1920?",
@@ -4149,7 +4149,7 @@
     },
     {
         "NNQT_question": "Does the ATI Company still exist?",
-        "uid": 196,
+        "uid": "196",
         "subgraph": "",
         "template_index": "",
         "question": "Does the ATI Company still exist?",
@@ -4167,7 +4167,7 @@
     },
     {
         "NNQT_question": "What happened to the dinosaurs ?",
-        "uid": 197,
+        "uid": "197",
         "subgraph": "",
         "template_index": "",
         "question": "What happened to the dinosaurs ?",
@@ -4181,7 +4181,7 @@
     },
     {
         "NNQT_question": "What instruments did Louis Armstrong play?",
-        "uid": 198,
+        "uid": "198",
         "subgraph": "",
         "template_index": "",
         "question": "What instruments did Louis Armstrong play?",
@@ -4217,7 +4217,7 @@
     },
     {
         "NNQT_question": "what did the author of the phrase: \"Alea iacta est\" die of?",
-        "uid": 199,
+        "uid": "199",
         "subgraph": "",
         "template_index": "",
         "question": "what did the author of the phrase: \"Alea iacta est\" die of?",
@@ -4243,7 +4243,7 @@
     },
     {
         "NNQT_question": "What is the binary gender of the partner of Allen Ginsberg ?",
-        "uid": 200,
+        "uid": "200",
         "subgraph": "",
         "template_index": "",
         "question": "What is the binary gender of the partner of Allen Ginsberg ?",
@@ -4265,7 +4265,7 @@
     },
     {
         "NNQT_question": "What is the capital of the prefecture Tokyo ?",
-        "uid": 201,
+        "uid": "201",
         "subgraph": "",
         "template_index": "",
         "question": "What is the capital of the prefecture Tokyo ?",
@@ -4286,7 +4286,7 @@
     },
     {
         "NNQT_question": "What is the Chinese zodiac animal that follows the ox?",
-        "uid": 202,
+        "uid": "202",
         "subgraph": "",
         "template_index": "",
         "question": "What is the Chinese zodiac animal that follows the ox?",
@@ -4306,7 +4306,7 @@
     },
     {
         "NNQT_question": "What is the combined total revenue of three largest Big Tech companies ordered by number of employees?",
-        "uid": 203,
+        "uid": "203",
         "subgraph": "",
         "template_index": "",
         "question": "What is the combined total revenue of three largest Big Tech companies ordered by number of employees?",
@@ -4324,7 +4324,7 @@
     },
     {
         "NNQT_question": "What is the coordinate location of Shenzhen ?",
-        "uid": 204,
+        "uid": "204",
         "subgraph": "",
         "template_index": "",
         "question": "What is the coordinate location of Shenzhen ?",
@@ -4342,7 +4342,7 @@
     },
     {
         "NNQT_question": "What is the Erlangen program ?",
-        "uid": 205,
+        "uid": "205",
         "subgraph": "",
         "template_index": "",
         "question": "What is the Erlangen program ?",
@@ -4363,7 +4363,7 @@
     },
     {
         "NNQT_question": "Did the Roland Corporation produce synthesizers?",
-        "uid": 206,
+        "uid": "206",
         "subgraph": "",
         "template_index": "",
         "question": "Did the Roland Corporation produce synthesizers?",
@@ -4381,7 +4381,7 @@
     },
     {
         "NNQT_question": "How many perople do the Port of Rotterdam employ?",
-        "uid": 207,
+        "uid": "207",
         "subgraph": "",
         "template_index": "",
         "question": "How many perople do the Port of Rotterdam employ?",
@@ -4399,7 +4399,7 @@
     },
     {
         "NNQT_question": "what is the main subject of the manga \"your lie in april\": primary school, middle school or high school student?",
-        "uid": 208,
+        "uid": "208",
         "subgraph": "",
         "template_index": "",
         "question": "what is the main subject of the manga \"your lie in april\": primary school, middle school or high school student?",
@@ -4420,7 +4420,7 @@
     },
     {
         "NNQT_question": "What is the mother tongue of the author Chimamanda Ngozi Adichie ?",
-        "uid": 209,
+        "uid": "209",
         "subgraph": "",
         "template_index": "",
         "question": "What is the mother tongue of the author Chimamanda Ngozi Adichie ?",
@@ -4442,7 +4442,7 @@
     },
     {
         "NNQT_question": "Who was the partner of Allen Ginsberg?",
-        "uid": 210,
+        "uid": "210",
         "subgraph": "",
         "template_index": "",
         "question": "Who was the partner of Allen Ginsberg?",
@@ -4463,7 +4463,7 @@
     },
     {
         "NNQT_question": "What is the second game developed by Piranha Bytes?",
-        "uid": 211,
+        "uid": "211",
         "subgraph": "",
         "template_index": "",
         "question": "What is the second game developed by Piranha Bytes?",
@@ -4484,7 +4484,7 @@
     },
     {
         "NNQT_question": "What is the TV-show that starred Rowan Atkinson , had 4 seasons and started in 1983?",
-        "uid": 212,
+        "uid": "212",
         "subgraph": "",
         "template_index": "",
         "question": "What is the TV-show that starred Rowan Atkinson , had 4 seasons and started in 1983?",
@@ -4504,7 +4504,7 @@
     },
     {
         "NNQT_question": "What is the english nickname of Ella Fitzgerald?",
-        "uid": 213,
+        "uid": "213",
         "subgraph": "",
         "template_index": "",
         "question": "What is the english nickname of Ella Fitzgerald?",
@@ -4522,7 +4522,7 @@
     },
     {
         "NNQT_question": "What are the occupations of Kazuo Ishiguro\u2019s daughter?",
-        "uid": 214,
+        "uid": "214",
         "subgraph": "",
         "template_index": "",
         "question": "What are the occupations of Kazuo Ishiguro\u2019s daughter?",
@@ -4564,7 +4564,7 @@
     },
     {
         "NNQT_question": "What are the occupations of Nat King Cole?",
-        "uid": 215,
+        "uid": "215",
         "subgraph": "",
         "template_index": "",
         "question": "What are the occupations of Nat King Cole?",
@@ -4614,7 +4614,7 @@
     },
     {
         "NNQT_question": "what is the official language of iran?",
-        "uid": 216,
+        "uid": "216",
         "subgraph": "",
         "template_index": "",
         "question": "what is the official language of iran?",
@@ -4642,7 +4642,7 @@
     },
     {
         "NNQT_question": "What is the population in Freiburg ?",
-        "uid": 217,
+        "uid": "217",
         "subgraph": "",
         "template_index": "",
         "question": "What is the population in Freiburg ?",
@@ -4660,7 +4660,7 @@
     },
     {
         "NNQT_question": "What is the title of the 2020 released movie in which Carey Mulligan was the main actress?",
-        "uid": 218,
+        "uid": "218",
         "subgraph": "",
         "template_index": "",
         "question": "What is the title of the 2020 released movie in which Carey Mulligan was the main actress?",
@@ -4678,7 +4678,7 @@
     },
     {
         "NNQT_question": "What does Ray-Ban produce primarily?",
-        "uid": 219,
+        "uid": "219",
         "subgraph": "",
         "template_index": "",
         "question": "What does Ray-Ban produce primarily?",
@@ -4700,7 +4700,7 @@
     },
     {
         "NNQT_question": "What language did the famous king, who was also a student of Aristotle's , speak?",
-        "uid": 220,
+        "uid": "220",
         "subgraph": "",
         "template_index": "",
         "question": "What language did the famous king, who was also a student of Aristotle's , speak?",
@@ -4724,7 +4724,7 @@
     },
     {
         "NNQT_question": "What language do they speak in Poland ?",
-        "uid": 221,
+        "uid": "221",
         "subgraph": "",
         "template_index": "",
         "question": "What language do they speak in Poland ?",
@@ -4810,7 +4810,7 @@
     },
     {
         "NNQT_question": "How many different languages are spoken in West Europe?",
-        "uid": 222,
+        "uid": "222",
         "subgraph": "",
         "template_index": "",
         "question": "How many different languages are spoken in West Europe?",
@@ -4828,7 +4828,7 @@
     },
     {
         "NNQT_question": "Is Germany bigger than Poland?",
-        "uid": 223,
+        "uid": "223",
         "subgraph": "",
         "template_index": "",
         "question": "Is Germany bigger than Poland?",
@@ -4846,7 +4846,7 @@
     },
     {
         "NNQT_question": "What notes does a C major chord consist of?",
-        "uid": 224,
+        "uid": "224",
         "subgraph": "",
         "template_index": "",
         "question": "What notes does a C major chord consist of?",
@@ -4882,7 +4882,7 @@
     },
     {
         "NNQT_question": "How many different occupations did/do spouses of winners of the Nobel Prize in Literature hold?",
-        "uid": 225,
+        "uid": "225",
         "subgraph": "",
         "template_index": "",
         "question": "How many different occupations did/do spouses of winners of the Nobel Prize in Literature hold?",
@@ -4900,7 +4900,7 @@
     },
     {
         "NNQT_question": "How many other video games began the same year as Dead by Daylight?",
-        "uid": 226,
+        "uid": "226",
         "subgraph": "",
         "template_index": "",
         "question": "How many other video games began the same year as Dead by Daylight?",
@@ -4918,7 +4918,7 @@
     },
     {
         "NNQT_question": "What other civilizations existed during the Aztecs ?",
-        "uid": 227,
+        "uid": "227",
         "subgraph": "",
         "template_index": "",
         "question": "What other civilizations existed during the Aztecs ?",
@@ -4942,7 +4942,7 @@
     },
     {
         "NNQT_question": "What brand uses petroleum jelly?",
-        "uid": 228,
+        "uid": "228",
         "subgraph": "",
         "template_index": "",
         "question": "What brand uses petroleum jelly?",
@@ -4962,7 +4962,7 @@
     },
     {
         "NNQT_question": "How many other musical films were launched the same year as Grease?",
-        "uid": 229,
+        "uid": "229",
         "subgraph": "",
         "template_index": "",
         "question": "How many other musical films were launched the same year as Grease?",
@@ -4980,7 +4980,7 @@
     },
     {
         "NNQT_question": "Which creator of The OA also acted in it?",
-        "uid": 230,
+        "uid": "230",
         "subgraph": "",
         "template_index": "",
         "question": "Which creator of The OA also acted in it?",
@@ -5001,7 +5001,7 @@
     },
     {
         "NNQT_question": "What albums has Atif Aslam been on?",
-        "uid": 231,
+        "uid": "231",
         "subgraph": "",
         "template_index": "",
         "question": "What albums has Atif Aslam been on?",
@@ -5029,7 +5029,7 @@
     },
     {
         "NNQT_question": "What was Ada Lovelace\u2019s noble title?",
-        "uid": 232,
+        "uid": "232",
         "subgraph": "",
         "template_index": "",
         "question": "What was Ada Lovelace\u2019s noble title?",
@@ -5050,7 +5050,7 @@
     },
     {
         "NNQT_question": "What was Janus the god of?",
-        "uid": 233,
+        "uid": "233",
         "subgraph": "",
         "template_index": "",
         "question": "What was Janus the god of?",
@@ -5119,7 +5119,7 @@
     },
     {
         "NNQT_question": "Who was the fellow Hobbit who was an enemy of Frodo?",
-        "uid": 234,
+        "uid": "234",
         "subgraph": "",
         "template_index": "",
         "question": "Who was the fellow Hobbit who was an enemy of Frodo?",
@@ -5141,7 +5141,7 @@
     },
     {
         "NNQT_question": "What was the last painting that Van Gogh painted?",
-        "uid": 235,
+        "uid": "235",
         "subgraph": "",
         "template_index": "",
         "question": "What was the last painting that Van Gogh painted?",
@@ -5161,7 +5161,7 @@
     },
     {
         "NNQT_question": "What was the main subject addressed in the Deep Purple song \u201cSmoke on the water\u201d?",
-        "uid": 236,
+        "uid": "236",
         "subgraph": "",
         "template_index": "",
         "question": "What was the main subject addressed in the Deep Purple song \u201cSmoke on the water\u201d?",
@@ -5182,7 +5182,7 @@
     },
     {
         "NNQT_question": "When did the first sperm whales exist?",
-        "uid": 237,
+        "uid": "237",
         "subgraph": "",
         "template_index": "",
         "question": "When did the first sperm whales exist?",
@@ -5200,7 +5200,7 @@
     },
     {
         "NNQT_question": "What year did the Berlin Wall fall?",
-        "uid": 238,
+        "uid": "238",
         "subgraph": "",
         "template_index": "",
         "question": "What year did the Berlin Wall fall?",
@@ -5218,7 +5218,7 @@
     },
     {
         "NNQT_question": "What year was Riverdale first aired?",
-        "uid": 239,
+        "uid": "239",
         "subgraph": "",
         "template_index": "",
         "question": "What year was Riverdale first aired?",
@@ -5236,7 +5236,7 @@
     },
     {
         "NNQT_question": "When did Allen Ginsberg die?",
-        "uid": 240,
+        "uid": "240",
         "subgraph": "",
         "template_index": "",
         "question": "When did Allen Ginsberg die?",
@@ -5254,7 +5254,7 @@
     },
     {
         "NNQT_question": "When did Ella Fitzgerald die?",
-        "uid": 241,
+        "uid": "241",
         "subgraph": "",
         "template_index": "",
         "question": "When did Ella Fitzgerald die?",
@@ -5272,7 +5272,7 @@
     },
     {
         "NNQT_question": "when did human first start to bouldering?",
-        "uid": 242,
+        "uid": "242",
         "subgraph": "",
         "template_index": "",
         "question": "when did human first start to bouldering?",
@@ -5290,7 +5290,7 @@
     },
     {
         "NNQT_question": "When did Pakistan become independent?",
-        "uid": 243,
+        "uid": "243",
         "subgraph": "",
         "template_index": "",
         "question": "When did Pakistan become independent?",
@@ -5308,7 +5308,7 @@
     },
     {
         "NNQT_question": "When did Rumi die?",
-        "uid": 244,
+        "uid": "244",
         "subgraph": "",
         "template_index": "",
         "question": "When did Rumi die?",
@@ -5326,7 +5326,7 @@
     },
     {
         "NNQT_question": "When did the brother of the author of Slaughterhouse Five die?",
-        "uid": 245,
+        "uid": "245",
         "subgraph": "",
         "template_index": "",
         "question": "When did the brother of the author of Slaughterhouse Five die?",
@@ -5344,7 +5344,7 @@
     },
     {
         "NNQT_question": "when was the creator of saturday night live born?",
-        "uid": 246,
+        "uid": "246",
         "subgraph": "",
         "template_index": "",
         "question": "when was the creator of saturday night live born?",
@@ -5362,7 +5362,7 @@
     },
     {
         "NNQT_question": "Who was part of the Hambach Festival?",
-        "uid": 247,
+        "uid": "247",
         "subgraph": "",
         "template_index": "",
         "question": "Who was part of the Hambach Festival?",
@@ -5394,7 +5394,7 @@
     },
     {
         "NNQT_question": "When did The OA was first released?",
-        "uid": 248,
+        "uid": "248",
         "subgraph": "",
         "template_index": "",
         "question": "When did The OA was first released?",
@@ -5412,7 +5412,7 @@
     },
     {
         "NNQT_question": "How many casualties were a result of the Troubles?",
-        "uid": 249,
+        "uid": "249",
         "subgraph": "",
         "template_index": "",
         "question": "How many casualties were a result of the Troubles?",
@@ -5430,7 +5430,7 @@
     },
     {
         "NNQT_question": "When did the Weimar Republic start?",
-        "uid": 250,
+        "uid": "250",
         "subgraph": "",
         "template_index": "",
         "question": "When did the Weimar Republic start?",
@@ -5448,7 +5448,7 @@
     },
     {
         "NNQT_question": "When did World War II officially end?",
-        "uid": 251,
+        "uid": "251",
         "subgraph": "",
         "template_index": "",
         "question": "When did World War II officially end?",
@@ -5466,7 +5466,7 @@
     },
     {
         "NNQT_question": "when is the first ironman world championship?",
-        "uid": 252,
+        "uid": "252",
         "subgraph": "",
         "template_index": "",
         "question": "when is the first ironman world championship?",
@@ -5484,7 +5484,7 @@
     },
     {
         "NNQT_question": "when was the magazine in which hunter x hunter is published established?",
-        "uid": 253,
+        "uid": "253",
         "subgraph": "",
         "template_index": "",
         "question": "when was the magazine in which hunter x hunter is published established?",
@@ -5502,7 +5502,7 @@
     },
     {
         "NNQT_question": "When the film Red Notice was released?",
-        "uid": 254,
+        "uid": "254",
         "subgraph": "",
         "template_index": "",
         "question": "When the film Red Notice was released?",
@@ -5520,7 +5520,7 @@
     },
     {
         "NNQT_question": "When was Cologne Cathedral built?",
-        "uid": 255,
+        "uid": "255",
         "subgraph": "",
         "template_index": "",
         "question": "When was Cologne Cathedral built?",
@@ -5538,7 +5538,7 @@
     },
     {
         "NNQT_question": "What can be done against gout?",
-        "uid": 256,
+        "uid": "256",
         "subgraph": "",
         "template_index": "",
         "question": "What can be done against gout?",
@@ -5754,7 +5754,7 @@
     },
     {
         "NNQT_question": "When was HIV first identified?",
-        "uid": 257,
+        "uid": "257",
         "subgraph": "",
         "template_index": "",
         "question": "When was HIV first identified?",
@@ -5772,7 +5772,7 @@
     },
     {
         "NNQT_question": "When was the first article about Liquid State Machines published?",
-        "uid": 258,
+        "uid": "258",
         "subgraph": "",
         "template_index": "",
         "question": "When was the first article about Liquid State Machines published?",
@@ -5790,7 +5790,7 @@
     },
     {
         "NNQT_question": "When was Marlene Dietrich born?",
-        "uid": 259,
+        "uid": "259",
         "subgraph": "",
         "template_index": "",
         "question": "When was Marlene Dietrich born?",
@@ -5808,7 +5808,7 @@
     },
     {
         "NNQT_question": "When was Penicillin discovered?",
-        "uid": 260,
+        "uid": "260",
         "subgraph": "",
         "template_index": "",
         "question": "When was Penicillin discovered?",
@@ -5826,7 +5826,7 @@
     },
     {
         "NNQT_question": "When was Rumi born?",
-        "uid": 261,
+        "uid": "261",
         "subgraph": "",
         "template_index": "",
         "question": "When was Rumi born?",
@@ -5844,7 +5844,7 @@
     },
     {
         "NNQT_question": "When was the beginning of Romanticism ?",
-        "uid": 262,
+        "uid": "262",
         "subgraph": "",
         "template_index": "",
         "question": "When was the beginning of Romanticism ?",
@@ -5862,7 +5862,7 @@
     },
     {
         "NNQT_question": "When was the Echo Music Prize abolished?",
-        "uid": 263,
+        "uid": "263",
         "subgraph": "",
         "template_index": "",
         "question": "When was the Echo Music Prize abolished?",
@@ -5880,7 +5880,7 @@
     },
     {
         "NNQT_question": "When was the first album of the American band Typhoon released?",
-        "uid": 264,
+        "uid": "264",
         "subgraph": "",
         "template_index": "",
         "question": "When was the first album of the American band Typhoon released?",
@@ -5898,7 +5898,7 @@
     },
     {
         "NNQT_question": "When was the Hamburg Airport inaugurated?",
-        "uid": 265,
+        "uid": "265",
         "subgraph": "",
         "template_index": "",
         "question": "When was the Hamburg Airport inaugurated?",
@@ -5916,7 +5916,7 @@
     },
     {
         "NNQT_question": "When was the Hamburg S-Bahn officially opened?",
-        "uid": 266,
+        "uid": "266",
         "subgraph": "",
         "template_index": "",
         "question": "When was the Hamburg S-Bahn officially opened?",
@@ -5934,7 +5934,7 @@
     },
     {
         "NNQT_question": "When was the jazz club Birdland in Hamburg founded?",
-        "uid": 267,
+        "uid": "267",
         "subgraph": "",
         "template_index": "",
         "question": "When was the jazz club Birdland in Hamburg founded?",
@@ -5952,7 +5952,7 @@
     },
     {
         "NNQT_question": "When was the poem Howl written?",
-        "uid": 268,
+        "uid": "268",
         "subgraph": "",
         "template_index": "",
         "question": "When was the poem Howl written?",
@@ -5970,7 +5970,7 @@
     },
     {
         "NNQT_question": "When was the university of Cambridge founded?",
-        "uid": 269,
+        "uid": "269",
         "subgraph": "",
         "template_index": "",
         "question": "When was the university of Cambridge founded?",
@@ -5988,7 +5988,7 @@
     },
     {
         "NNQT_question": "When was the University of Hamburg founded?",
-        "uid": 270,
+        "uid": "270",
         "subgraph": "",
         "template_index": "",
         "question": "When was the University of Hamburg founded?",
@@ -6006,7 +6006,7 @@
     },
     {
         "NNQT_question": "When was the University of Saskatchewan founded?",
-        "uid": 271,
+        "uid": "271",
         "subgraph": "",
         "template_index": "",
         "question": "When was the University of Saskatchewan founded?",
@@ -6024,7 +6024,7 @@
     },
     {
         "NNQT_question": "When was the Vatican City created?",
-        "uid": 272,
+        "uid": "272",
         "subgraph": "",
         "template_index": "",
         "question": "When was the Vatican City created?",
@@ -6042,7 +6042,7 @@
     },
     {
         "NNQT_question": "When was United Fruit Company founded?",
-        "uid": 273,
+        "uid": "273",
         "subgraph": "",
         "template_index": "",
         "question": "When was United Fruit Company founded?",
@@ -6060,7 +6060,7 @@
     },
     {
         "NNQT_question": "Where did Trotzky die?",
-        "uid": 274,
+        "uid": "274",
         "subgraph": "",
         "template_index": "",
         "question": "Where did Trotzky die?",
@@ -6081,7 +6081,7 @@
     },
     {
         "NNQT_question": "Where are both The Call of the Wild and White Fang set, the most two famous works of Jack London?",
-        "uid": 275,
+        "uid": "275",
         "subgraph": "",
         "template_index": "",
         "question": "Where are both The Call of the Wild and White Fang set, the most two famous works of Jack London?",
@@ -6118,7 +6118,7 @@
     },
     {
         "NNQT_question": "Where did the Hambach Festival happen?",
-        "uid": 276,
+        "uid": "276",
         "subgraph": "",
         "template_index": "",
         "question": "Where did the Hambach Festival happen?",
@@ -6138,7 +6138,7 @@
     },
     {
         "NNQT_question": "Where do the novels of the franchise The Lord of the Rings take place?",
-        "uid": 277,
+        "uid": "277",
         "subgraph": "",
         "template_index": "",
         "question": "Where do the novels of the franchise The Lord of the Rings take place?",
@@ -6193,7 +6193,7 @@
     },
     {
         "NNQT_question": "Where does the Nutri-Score originate from?",
-        "uid": 278,
+        "uid": "278",
         "subgraph": "",
         "template_index": "",
         "question": "Where does the Nutri-Score originate from?",
@@ -6219,7 +6219,7 @@
     },
     {
         "NNQT_question": "Are there at least two winners of the Academy Award for Best Actress who have been educated at the same institution?",
-        "uid": 279,
+        "uid": "279",
         "subgraph": "",
         "template_index": "",
         "question": "Are there at least two winners of the Academy Award for Best Actress who have been educated at the same institution?",
@@ -6237,7 +6237,7 @@
     },
     {
         "NNQT_question": "Where was K-pop star Lisa Manoban born?",
-        "uid": 280,
+        "uid": "280",
         "subgraph": "",
         "template_index": "",
         "question": "Where was K-pop star Lisa Manoban born?",
@@ -6259,7 +6259,7 @@
     },
     {
         "NNQT_question": "What is the highest point of Norway?",
-        "uid": 281,
+        "uid": "281",
         "subgraph": "",
         "template_index": "",
         "question": "What is the highest point of Norway?",
@@ -6279,7 +6279,7 @@
     },
     {
         "NNQT_question": "Where did the psychedelic band \u201cKhruangbin\u201d form?",
-        "uid": 282,
+        "uid": "282",
         "subgraph": "",
         "template_index": "",
         "question": "Where did the psychedelic band \u201cKhruangbin\u201d form?",
@@ -6302,7 +6302,7 @@
     },
     {
         "NNQT_question": "Where was Caesar murdered?",
-        "uid": 283,
+        "uid": "283",
         "subgraph": "",
         "template_index": "",
         "question": "Where was Caesar murdered?",
@@ -6323,7 +6323,7 @@
     },
     {
         "NNQT_question": "Where was Goethe\u2019s unmarried partner born ?",
-        "uid": 284,
+        "uid": "284",
         "subgraph": "",
         "template_index": "",
         "question": "Where was Goethe\u2019s unmarried partner born ?",
@@ -6345,7 +6345,7 @@
     },
     {
         "NNQT_question": "Where was Roland Corporation founded?",
-        "uid": 285,
+        "uid": "285",
         "subgraph": "",
         "template_index": "",
         "question": "Where was Roland Corporation founded?",
@@ -6367,7 +6367,7 @@
     },
     {
         "NNQT_question": "Where was the author of The Catcher in the Rye born ?",
-        "uid": 286,
+        "uid": "286",
         "subgraph": "",
         "template_index": "",
         "question": "Where was the author of The Catcher in the Rye born ?",
@@ -6416,7 +6416,7 @@
     },
     {
         "NNQT_question": "Who developed the Erlangen program?",
-        "uid": 287,
+        "uid": "287",
         "subgraph": "",
         "template_index": "",
         "question": "Who developed the Erlangen program?",
@@ -6439,7 +6439,7 @@
     },
     {
         "NNQT_question": "Which actor starring in Free Guy also starred in Deadpool?",
-        "uid": 288,
+        "uid": "288",
         "subgraph": "",
         "template_index": "",
         "question": "Which actor starring in Free Guy also starred in Deadpool?",
@@ -6461,7 +6461,7 @@
     },
     {
         "NNQT_question": "Which American presidents followed in their father\u2018s step and also became the president?",
-        "uid": 289,
+        "uid": "289",
         "subgraph": "",
         "template_index": "",
         "question": "Which American presidents followed in their father\u2018s step and also became the president?",
@@ -6501,7 +6501,7 @@
     },
     {
         "NNQT_question": "which animal can possibly live longer, panda or koala?",
-        "uid": 290,
+        "uid": "290",
         "subgraph": "",
         "template_index": "",
         "question": "which animal can possibly live longer, panda or koala?",
@@ -6524,7 +6524,7 @@
     },
     {
         "NNQT_question": "Which archipelago has more islands: the Gal\u00e1pagos Islands or the Hawaiian Islands ?",
-        "uid": 291,
+        "uid": "291",
         "subgraph": "",
         "template_index": "",
         "question": "Which archipelago has more islands: the Gal\u00e1pagos Islands or the Hawaiian Islands ?",
@@ -6578,7 +6578,7 @@
     },
     {
         "NNQT_question": "Which art movement was Yoko Ono part of?",
-        "uid": 292,
+        "uid": "292",
         "subgraph": "",
         "template_index": "",
         "question": "Which art movement was Yoko Ono part of?",
@@ -6600,7 +6600,7 @@
     },
     {
         "NNQT_question": "which band is created earlier, queen or pink floyd?",
-        "uid": 293,
+        "uid": "293",
         "subgraph": "",
         "template_index": "",
         "question": "which band is created earlier, queen or pink floyd?",
@@ -6622,7 +6622,7 @@
     },
     {
         "NNQT_question": "What caused Kobe Bryant's Death?",
-        "uid": 294,
+        "uid": "294",
         "subgraph": "",
         "template_index": "",
         "question": "What caused Kobe Bryant's Death?",
@@ -6647,7 +6647,7 @@
     },
     {
         "NNQT_question": "What are the opposites of zero?",
-        "uid": 295,
+        "uid": "295",
         "subgraph": "",
         "template_index": "",
         "question": "What are the opposites of zero?",
@@ -6690,7 +6690,7 @@
     },
     {
         "NNQT_question": "Which businesses are founded by the person in charge of Tesla?",
-        "uid": 296,
+        "uid": "296",
         "subgraph": "",
         "template_index": "",
         "question": "Which businesses are founded by the person in charge of Tesla?",
@@ -6750,7 +6750,7 @@
     },
     {
         "NNQT_question": "Did Germany have a population growth of at least 1% since 2010?",
-        "uid": 297,
+        "uid": "297",
         "subgraph": "",
         "template_index": "",
         "question": "Did Germany have a population growth of at least 1% since 2010?",
@@ -6768,7 +6768,7 @@
     },
     {
         "NNQT_question": "Which aircraft did Howard Hughes build?",
-        "uid": 298,
+        "uid": "298",
         "subgraph": "",
         "template_index": "",
         "question": "Which aircraft did Howard Hughes build?",
@@ -6788,7 +6788,7 @@
     },
     {
         "NNQT_question": "Which country has more official languages: South Africa (\u200b\u200bQ258) or Ethiopia ?",
-        "uid": 299,
+        "uid": "299",
         "subgraph": "",
         "template_index": "",
         "question": "Which country has more official languages: South Africa (\u200b\u200bQ258) or Ethiopia ?",
@@ -6815,7 +6815,7 @@
     },
     {
         "NNQT_question": "Is throat singing a tradition?",
-        "uid": 300,
+        "uid": "300",
         "subgraph": "",
         "template_index": "",
         "question": "Is throat singing a tradition?",
@@ -6833,7 +6833,7 @@
     },
     {
         "NNQT_question": "Which disease caused the death of Mark Twain?",
-        "uid": 301,
+        "uid": "301",
         "subgraph": "",
         "template_index": "",
         "question": "Which disease caused the death of Mark Twain?",
@@ -6858,7 +6858,7 @@
     },
     {
         "NNQT_question": "Which diseases can be caused by smoking ?",
-        "uid": 302,
+        "uid": "302",
         "subgraph": "",
         "template_index": "",
         "question": "Which diseases can be caused by smoking ?",
@@ -6954,7 +6954,7 @@
     },
     {
         "NNQT_question": "Which genre that Cage the Elephant belongs to has the fewest english characters?",
-        "uid": 303,
+        "uid": "303",
         "subgraph": "",
         "template_index": "",
         "question": "Which genre that Cage the Elephant belongs to has the fewest english characters?",
@@ -6975,7 +6975,7 @@
     },
     {
         "NNQT_question": "Which takes less space? 1kg of lead or 1kg of iron.",
-        "uid": 304,
+        "uid": "304",
         "subgraph": "",
         "template_index": "",
         "question": "Which takes less space? 1kg of lead or 1kg of iron.",
@@ -6997,7 +6997,7 @@
     },
     {
         "NNQT_question": "Which kingdom preceded the Thonburi Kingdom ?",
-        "uid": 305,
+        "uid": "305",
         "subgraph": "",
         "template_index": "",
         "question": "Which kingdom preceded the Thonburi Kingdom ?",
@@ -7017,7 +7017,7 @@
     },
     {
         "NNQT_question": "How many mountains are located in Germany?",
-        "uid": 306,
+        "uid": "306",
         "subgraph": "",
         "template_index": "",
         "question": "How many mountains are located in Germany?",
@@ -7035,7 +7035,7 @@
     },
     {
         "NNQT_question": "Which movements is the painting \u201cLes Demoiselles d'Avignon\u201d assigned to?",
-        "uid": 307,
+        "uid": "307",
         "subgraph": "",
         "template_index": "",
         "question": "Which movements is the painting \u201cLes Demoiselles d'Avignon\u201d assigned to?",
@@ -7061,7 +7061,7 @@
     },
     {
         "NNQT_question": "Which movies belong to the Cornetto trilogy ?",
-        "uid": 308,
+        "uid": "308",
         "subgraph": "",
         "template_index": "",
         "question": "Which movies belong to the Cornetto trilogy ?",
@@ -7090,7 +7090,7 @@
     },
     {
         "NNQT_question": "During what event was the Four Policemen Council proposed?",
-        "uid": 309,
+        "uid": "309",
         "subgraph": "",
         "template_index": "",
         "question": "During what event was the Four Policemen Council proposed?",
@@ -7121,7 +7121,7 @@
     },
     {
         "NNQT_question": "Which NBA teams have won the most seasons?",
-        "uid": 310,
+        "uid": "310",
         "subgraph": "",
         "template_index": "",
         "question": "Which NBA teams have won the most seasons?",
@@ -7156,7 +7156,7 @@
     },
     {
         "NNQT_question": "Which of the dragons in Game of Thrones died?",
-        "uid": 311,
+        "uid": "311",
         "subgraph": "",
         "template_index": "",
         "question": "Which of the dragons in Game of Thrones died?",
@@ -7180,7 +7180,7 @@
     },
     {
         "NNQT_question": "Which other movies by the director of Another Round also starred Mads Mikkelsen ?",
-        "uid": 312,
+        "uid": "312",
         "subgraph": "",
         "template_index": "",
         "question": "Which other movies by the director of Another Round also starred Mads Mikkelsen ?",
@@ -7202,7 +7202,7 @@
     },
     {
         "NNQT_question": "Which egyptian pyramid is the tallest?",
-        "uid": 313,
+        "uid": "313",
         "subgraph": "",
         "template_index": "",
         "question": "Which egyptian pyramid is the tallest?",
@@ -7224,7 +7224,7 @@
     },
     {
         "NNQT_question": "What is the offical language of Taipei?",
-        "uid": 314,
+        "uid": "314",
         "subgraph": "",
         "template_index": "",
         "question": "What is the offical language of Taipei?",
@@ -7248,7 +7248,7 @@
     },
     {
         "NNQT_question": "Which shows aired for the first time the same year as Saturday Night Live ?",
-        "uid": 315,
+        "uid": "315",
         "subgraph": "",
         "template_index": "",
         "question": "Which shows aired for the first time the same year as Saturday Night Live ?",
@@ -8259,7 +8259,7 @@
     },
     {
         "NNQT_question": "Which songs made up the album Fijaci\u00f3n Oral vol. 1 ?",
-        "uid": 316,
+        "uid": "316",
         "subgraph": "",
         "template_index": "",
         "question": "Which songs made up the album Fijaci\u00f3n Oral vol. 1 ?",
@@ -8310,7 +8310,7 @@
     },
     {
         "NNQT_question": "Which started first: impressionism or expressionism (art movements)?",
-        "uid": 317,
+        "uid": "317",
         "subgraph": "",
         "template_index": "",
         "question": "Which started first: impressionism or expressionism (art movements)?",
@@ -8330,7 +8330,7 @@
     },
     {
         "NNQT_question": "which state inside USA is batman living in?",
-        "uid": 318,
+        "uid": "318",
         "subgraph": "",
         "template_index": "",
         "question": "which state inside USA is batman living in?",
@@ -8361,7 +8361,7 @@
     },
     {
         "NNQT_question": "which swordfighter in the lord of the rings marry a half-elven and belong to rangers of the north?",
-        "uid": 319,
+        "uid": "319",
         "subgraph": "",
         "template_index": "",
         "question": "which swordfighter in the lord of the rings marry a half-elven and belong to rangers of the north?",
@@ -8386,7 +8386,7 @@
     },
     {
         "NNQT_question": "Which teams participated in the 2020 UEFA Champions League Final ?",
-        "uid": 320,
+        "uid": "320",
         "subgraph": "",
         "template_index": "",
         "question": "Which teams participated in the 2020 UEFA Champions League Final ?",
@@ -8431,7 +8431,7 @@
     },
     {
         "NNQT_question": "Which universities have more than 200000 students?",
-        "uid": 321,
+        "uid": "321",
         "subgraph": "",
         "template_index": "",
         "question": "Which universities have more than 200000 students?",
@@ -8481,7 +8481,7 @@
     },
     {
         "NNQT_question": "which university is established earlier, university of oxford or university of cambridge?",
-        "uid": 322,
+        "uid": "322",
         "subgraph": "",
         "template_index": "",
         "question": "which university is established earlier, university of oxford or university of cambridge?",
@@ -8507,7 +8507,7 @@
     },
     {
         "NNQT_question": "Who developed WordNet?",
-        "uid": 323,
+        "uid": "323",
         "subgraph": "",
         "template_index": "",
         "question": "Who developed WordNet?",
@@ -8527,7 +8527,7 @@
     },
     {
         "NNQT_question": "Who are the actresses in Portrait of a Lady on Fire?",
-        "uid": 324,
+        "uid": "324",
         "subgraph": "",
         "template_index": "",
         "question": "Who are the actresses in Portrait of a Lady on Fire?",
@@ -8570,7 +8570,7 @@
     },
     {
         "NNQT_question": "Did Michael Jordan and Kobe Bryant play for the same team?",
-        "uid": 325,
+        "uid": "325",
         "subgraph": "",
         "template_index": "",
         "question": "Did Michael Jordan and Kobe Bryant play for the same team?",
@@ -8588,7 +8588,7 @@
     },
     {
         "NNQT_question": "Who created the Turing machine?",
-        "uid": 326,
+        "uid": "326",
         "subgraph": "",
         "template_index": "",
         "question": "Who created the Turing machine?",
@@ -8612,7 +8612,7 @@
     },
     {
         "NNQT_question": "When was the Hambach Castle built?",
-        "uid": 327,
+        "uid": "327",
         "subgraph": "",
         "template_index": "",
         "question": "When was the Hambach Castle built?",
@@ -8630,7 +8630,7 @@
     },
     {
         "NNQT_question": "Who died at the North Pole?",
-        "uid": 328,
+        "uid": "328",
         "subgraph": "",
         "template_index": "",
         "question": "Who died at the North Pole?",
@@ -8651,7 +8651,7 @@
     },
     {
         "NNQT_question": "Who directed Anne with an E ?",
-        "uid": 329,
+        "uid": "329",
         "subgraph": "",
         "template_index": "",
         "question": "Who directed Anne with an E ?",
@@ -8672,7 +8672,7 @@
     },
     {
         "NNQT_question": "Who wrote \"Prototypical Networks for Few-shot Learning\"?",
-        "uid": 330,
+        "uid": "330",
         "subgraph": "",
         "template_index": "",
         "question": "Who wrote \"Prototypical Networks for Few-shot Learning\"?",
@@ -8699,7 +8699,7 @@
     },
     {
         "NNQT_question": "Who founded \u201cThe Blue Rider\u201d?",
-        "uid": 331,
+        "uid": "331",
         "subgraph": "",
         "template_index": "",
         "question": "Who founded \u201cThe Blue Rider\u201d?",
@@ -8824,7 +8824,7 @@
     },
     {
         "NNQT_question": "Who founded the Worpswede artist colony ?",
-        "uid": 332,
+        "uid": "332",
         "subgraph": "",
         "template_index": "",
         "question": "Who founded the Worpswede artist colony ?",
@@ -8868,7 +8868,7 @@
     },
     {
         "NNQT_question": "Who is the author of \u201cConvenience Store Woman\u201d ?",
-        "uid": 333,
+        "uid": "333",
         "subgraph": "",
         "template_index": "",
         "question": "Who is the author of \u201cConvenience Store Woman\u201d ?",
@@ -8888,7 +8888,7 @@
     },
     {
         "NNQT_question": "Who is the soccer player with the most goals in their career?",
-        "uid": 334,
+        "uid": "334",
         "subgraph": "",
         "template_index": "",
         "question": "Who is the soccer player with the most goals in their career?",
@@ -8908,7 +8908,7 @@
     },
     {
         "NNQT_question": "Who is the creator of the Dinosaurs tv show ?",
-        "uid": 335,
+        "uid": "335",
         "subgraph": "",
         "template_index": "",
         "question": "Who is the creator of the Dinosaurs tv show ?",
@@ -8929,7 +8929,7 @@
     },
     {
         "NNQT_question": "Who is the current president of the German Bundestag currently?",
-        "uid": 336,
+        "uid": "336",
         "subgraph": "",
         "template_index": "",
         "question": "Who is the current president of the German Bundestag currently?",
@@ -8949,7 +8949,7 @@
     },
     {
         "NNQT_question": "Who is the most wealthy entrepreneur?",
-        "uid": 337,
+        "uid": "337",
         "subgraph": "",
         "template_index": "",
         "question": "Who is the most wealthy entrepreneur?",
@@ -8974,7 +8974,7 @@
     },
     {
         "NNQT_question": "Who is the oldest cast member of the Netflix show \u201cQueer Eye\u201d ?",
-        "uid": 338,
+        "uid": "338",
         "subgraph": "",
         "template_index": "",
         "question": "Who is the oldest cast member of the Netflix show \u201cQueer Eye\u201d ?",
@@ -8995,7 +8995,7 @@
     },
     {
         "NNQT_question": "Who is the publisher of Smite ?",
-        "uid": 339,
+        "uid": "339",
         "subgraph": "",
         "template_index": "",
         "question": "Who is the publisher of Smite ?",
@@ -9017,7 +9017,7 @@
     },
     {
         "NNQT_question": "Who wrote the Erlangen program?",
-        "uid": 340,
+        "uid": "340",
         "subgraph": "",
         "template_index": "",
         "question": "Who wrote the Erlangen program?",
@@ -9040,7 +9040,7 @@
     },
     {
         "NNQT_question": "In which country is the Nanga Parbat located?",
-        "uid": 341,
+        "uid": "341",
         "subgraph": "",
         "template_index": "",
         "question": "In which country is the Nanga Parbat located?",
@@ -9065,7 +9065,7 @@
     },
     {
         "NNQT_question": "who produced Star Wars: Episode VI \u2013 Return of the Jedi?",
-        "uid": 342,
+        "uid": "342",
         "subgraph": "",
         "template_index": "",
         "question": "who produced Star Wars: Episode VI \u2013 Return of the Jedi?",
@@ -9091,7 +9091,7 @@
     },
     {
         "NNQT_question": "Who was an actor in more movies, Daniel Day Lewis or Paul Dano ?",
-        "uid": 343,
+        "uid": "343",
         "subgraph": "",
         "template_index": "",
         "question": "Who was an actor in more movies, Daniel Day Lewis or Paul Dano ?",
@@ -9112,7 +9112,7 @@
     },
     {
         "NNQT_question": "For what literature prize was Simone de Beauvoir nominated?",
-        "uid": 344,
+        "uid": "344",
         "subgraph": "",
         "template_index": "",
         "question": "For what literature prize was Simone de Beauvoir nominated?",
@@ -9133,7 +9133,7 @@
     },
     {
         "NNQT_question": "What is the website of NPR's \u201cTiny Desk Concert\u201d?",
-        "uid": 345,
+        "uid": "345",
         "subgraph": "",
         "template_index": "",
         "question": "What is the website of NPR's \u201cTiny Desk Concert\u201d?",
@@ -9151,7 +9151,7 @@
     },
     {
         "NNQT_question": "Who was the creator of Boo-Boo Bear ?",
-        "uid": 346,
+        "uid": "346",
         "subgraph": "",
         "template_index": "",
         "question": "Who was the creator of Boo-Boo Bear ?",
@@ -9174,7 +9174,7 @@
     },
     {
         "NNQT_question": "Who was the creator of Unbreakable Kimmy Schmidt ?",
-        "uid": 347,
+        "uid": "347",
         "subgraph": "",
         "template_index": "",
         "question": "Who was the creator of Unbreakable Kimmy Schmidt ?",
@@ -9201,7 +9201,7 @@
     },
     {
         "NNQT_question": "Who was the director of Llamas with Hats ?",
-        "uid": 348,
+        "uid": "348",
         "subgraph": "",
         "template_index": "",
         "question": "Who was the director of Llamas with Hats ?",
@@ -9222,7 +9222,7 @@
     },
     {
         "NNQT_question": "Who founded the Roland Corporation?",
-        "uid": 349,
+        "uid": "349",
         "subgraph": "",
         "template_index": "",
         "question": "Who founded the Roland Corporation?",
@@ -9242,7 +9242,7 @@
     },
     {
         "NNQT_question": "Who was the original actor who played Pinhead ?",
-        "uid": 350,
+        "uid": "350",
         "subgraph": "",
         "template_index": "",
         "question": "Who was the original actor who played Pinhead ?",
@@ -9263,7 +9263,7 @@
     },
     {
         "NNQT_question": "Who were the parents of Socrates ?",
-        "uid": 351,
+        "uid": "351",
         "subgraph": "",
         "template_index": "",
         "question": "Who were the parents of Socrates ?",
@@ -9287,7 +9287,7 @@
     },
     {
         "NNQT_question": "Who wrote Anne of Green Gables ?",
-        "uid": 352,
+        "uid": "352",
         "subgraph": "",
         "template_index": "",
         "question": "Who wrote Anne of Green Gables ?",
@@ -9313,7 +9313,7 @@
     },
     {
         "NNQT_question": "Who wrote the poem Howl ?",
-        "uid": 353,
+        "uid": "353",
         "subgraph": "",
         "template_index": "",
         "question": "Who wrote the poem Howl ?",
@@ -9334,7 +9334,7 @@
     },
     {
         "NNQT_question": "Who's the author of The Hellbound Heart ?",
-        "uid": 354,
+        "uid": "354",
         "subgraph": "",
         "template_index": "",
         "question": "Who's the author of The Hellbound Heart ?",
@@ -9354,7 +9354,7 @@
     },
     {
         "NNQT_question": "Whom did Clara Westhoff marry?",
-        "uid": 355,
+        "uid": "355",
         "subgraph": "",
         "template_index": "",
         "question": "Whom did Clara Westhoff marry?",
@@ -9385,7 +9385,7 @@
     },
     {
         "NNQT_question": "what is the oldest film festival?",
-        "uid": 356,
+        "uid": "356",
         "subgraph": "",
         "template_index": "",
         "question": "what is the oldest film festival?",
@@ -9407,7 +9407,7 @@
     },
     {
         "NNQT_question": "When was Athens founded?",
-        "uid": 357,
+        "uid": "357",
         "subgraph": "",
         "template_index": "",
         "question": "When was Athens founded?",
@@ -9425,7 +9425,7 @@
     },
     {
         "NNQT_question": "which river is longer, the Seine or Elbe\uff1f",
-        "uid": 358,
+        "uid": "358",
         "subgraph": "",
         "template_index": "",
         "question": "which river is longer, the Seine or Elbe\uff1f",
@@ -9452,7 +9452,7 @@
     },
     {
         "NNQT_question": "which game is created earlier, super mario bros or Pac-Man?",
-        "uid": 359,
+        "uid": "359",
         "subgraph": "",
         "template_index": "",
         "question": "which game is created earlier, super mario bros or Pac-Man?",
@@ -9472,7 +9472,7 @@
     },
     {
         "NNQT_question": "who is the youngested member in g-idle?",
-        "uid": 360,
+        "uid": "360",
         "subgraph": "",
         "template_index": "",
         "question": "who is the youngested member in g-idle?",
@@ -9495,7 +9495,7 @@
     },
     {
         "NNQT_question": "who is older, Lionel Messi or Cristiano Ronaldo\uff1f",
-        "uid": 361,
+        "uid": "361",
         "subgraph": "",
         "template_index": "",
         "question": "who is older, Lionel Messi or Cristiano Ronaldo\uff1f",
@@ -9518,7 +9518,7 @@
     },
     {
         "NNQT_question": "Is heidelberg university or university hamburg founded earlier?",
-        "uid": 362,
+        "uid": "362",
         "subgraph": "",
         "template_index": "",
         "question": "Is heidelberg university or university hamburg founded earlier?",
@@ -9540,7 +9540,7 @@
     },
     {
         "NNQT_question": "which forest is bigger, Amazon Rainforest or Congo Basin?",
-        "uid": 363,
+        "uid": "363",
         "subgraph": "",
         "template_index": "",
         "question": "which forest is bigger, Amazon Rainforest or Congo Basin?",
@@ -9567,7 +9567,7 @@
     },
     {
         "NNQT_question": "Does Samsung Electronics or Apple have more employees?",
-        "uid": 364,
+        "uid": "364",
         "subgraph": "",
         "template_index": "",
         "question": "Does Samsung Electronics or Apple have more employees?",
@@ -9596,7 +9596,7 @@
     },
     {
         "NNQT_question": "which company is founded later, samsung or sony?",
-        "uid": 365,
+        "uid": "365",
         "subgraph": "",
         "template_index": "",
         "question": "which company is founded later, samsung or sony?",
@@ -9622,7 +9622,7 @@
     },
     {
         "NNQT_question": "who is taller, Lionel Messi or Cristiano Ronaldo\uff1f",
-        "uid": 366,
+        "uid": "366",
         "subgraph": "",
         "template_index": "",
         "question": "who is taller, Lionel Messi or Cristiano Ronaldo\uff1f",
@@ -9645,7 +9645,7 @@
     },
     {
         "NNQT_question": "who has won more NBA awards, Michael Jordan or Kobe Bean Bryant\uff1f",
-        "uid": 367,
+        "uid": "367",
         "subgraph": "",
         "template_index": "",
         "question": "who has won more NBA awards, Michael Jordan or Kobe Bean Bryant\uff1f",
@@ -9668,7 +9668,7 @@
     },
     {
         "NNQT_question": "Did Michael Jordan ever weigh more than Kobe Bean Bryant\uff1f",
-        "uid": 368,
+        "uid": "368",
         "subgraph": "",
         "template_index": "",
         "question": "Did Michael Jordan ever weigh more than Kobe Bean Bryant\uff1f",
@@ -9686,7 +9686,7 @@
     },
     {
         "NNQT_question": "Who is older, Sebastian Vettel or Lewis Hamilton?",
-        "uid": 369,
+        "uid": "369",
         "subgraph": "",
         "template_index": "",
         "question": "Who is older, Sebastian Vettel or Lewis Hamilton?",
@@ -9709,7 +9709,7 @@
     },
     {
         "NNQT_question": "which city is more populated, copenhagen or amsterdam?",
-        "uid": 370,
+        "uid": "370",
         "subgraph": "",
         "template_index": "",
         "question": "which city is more populated, copenhagen or amsterdam?",
@@ -9733,7 +9733,7 @@
     },
     {
         "NNQT_question": "How many things are part of the \"One Piece\" Franchise?",
-        "uid": 371,
+        "uid": "371",
         "subgraph": "",
         "template_index": "",
         "question": "How many things are part of the \"One Piece\" Franchise?",
@@ -9751,7 +9751,7 @@
     },
     {
         "NNQT_question": "How many fictional female swordfighters are there?",
-        "uid": 372,
+        "uid": "372",
         "subgraph": "",
         "template_index": "",
         "question": "How many fictional female swordfighters are there?",
@@ -9769,7 +9769,7 @@
     },
     {
         "NNQT_question": "which company started earlier, Black Diamond Equipment or la sportiva?",
-        "uid": 373,
+        "uid": "373",
         "subgraph": "",
         "template_index": "",
         "question": "which company started earlier, Black Diamond Equipment or la sportiva?",
@@ -9789,7 +9789,7 @@
     },
     {
         "NNQT_question": "which desert is bigger, sahara desert or arabian desert?",
-        "uid": 374,
+        "uid": "374",
         "subgraph": "",
         "template_index": "",
         "question": "which desert is bigger, sahara desert or arabian desert?",
@@ -9827,7 +9827,7 @@
     },
     {
         "NNQT_question": "who lives longer, series black or bellatrix Lestrange?",
-        "uid": 375,
+        "uid": "375",
         "subgraph": "",
         "template_index": "",
         "question": "who lives longer, series black or bellatrix Lestrange?",
@@ -9847,7 +9847,7 @@
     },
     {
         "NNQT_question": "What is the area of the great lakes?",
-        "uid": 376,
+        "uid": "376",
         "subgraph": "",
         "template_index": "",
         "question": "What is the area of the great lakes?",
@@ -9865,7 +9865,7 @@
     },
     {
         "NNQT_question": "What is native name of the composer of the Japanese national anthem?",
-        "uid": 377,
+        "uid": "377",
         "subgraph": "",
         "template_index": "",
         "question": "What is native name of the composer of the Japanese national anthem?",
@@ -9883,7 +9883,7 @@
     },
     {
         "NNQT_question": "Who is the founder of the capital of Vietnam?",
-        "uid": 378,
+        "uid": "378",
         "subgraph": "",
         "template_index": "",
         "question": "Who is the founder of the capital of Vietnam?",
@@ -9903,7 +9903,7 @@
     },
     {
         "NNQT_question": "Who is the manager of the operator of Neumayer III?",
-        "uid": 379,
+        "uid": "379",
         "subgraph": "",
         "template_index": "",
         "question": "Who is the manager of the operator of Neumayer III?",
@@ -9923,7 +9923,7 @@
     },
     {
         "NNQT_question": "How high is the mountain on which G\u00fcnther Messner died?",
-        "uid": 380,
+        "uid": "380",
         "subgraph": "",
         "template_index": "",
         "question": "How high is the mountain on which G\u00fcnther Messner died?",
@@ -9941,7 +9941,7 @@
     },
     {
         "NNQT_question": "What is the twitter name of Running Wild?",
-        "uid": 381,
+        "uid": "381",
         "subgraph": "",
         "template_index": "",
         "question": "What is the twitter name of Running Wild?",
@@ -9964,7 +9964,7 @@
     },
     {
         "NNQT_question": "How many times did the Italian national soccer team win the Fifa World Cup?",
-        "uid": 382,
+        "uid": "382",
         "subgraph": "",
         "template_index": "",
         "question": "How many times did the Italian national soccer team win the Fifa World Cup?",
@@ -9982,7 +9982,7 @@
     },
     {
         "NNQT_question": "What is the area of the capital of Spitsbergen?",
-        "uid": 383,
+        "uid": "383",
         "subgraph": "",
         "template_index": "",
         "question": "What is the area of the capital of Spitsbergen?",
@@ -10000,7 +10000,7 @@
     },
     {
         "NNQT_question": "What percentage of Andorra is covered with water?",
-        "uid": 384,
+        "uid": "384",
         "subgraph": "",
         "template_index": "",
         "question": "What percentage of Andorra is covered with water?",
@@ -10018,7 +10018,7 @@
     },
     {
         "NNQT_question": "How many countries are located around the euorpean Lake Constance?",
-        "uid": 385,
+        "uid": "385",
         "subgraph": "",
         "template_index": "",
         "question": "How many countries are located around the euorpean Lake Constance?",
@@ -10036,7 +10036,7 @@
     },
     {
         "NNQT_question": "With how many persons was Richard Burton married?",
-        "uid": 386,
+        "uid": "386",
         "subgraph": "",
         "template_index": "",
         "question": "With how many persons was Richard Burton married?",
@@ -10054,7 +10054,7 @@
     },
     {
         "NNQT_question": "At what coordinates was the \"Sender Teutoburger Wald\" erected?",
-        "uid": 387,
+        "uid": "387",
         "subgraph": "",
         "template_index": "",
         "question": "At what coordinates was the \"Sender Teutoburger Wald\" erected?",
@@ -10072,7 +10072,7 @@
     },
     {
         "NNQT_question": "Where is the poet Alexander Pope buried?",
-        "uid": 388,
+        "uid": "388",
         "subgraph": "",
         "template_index": "",
         "question": "Where is the poet Alexander Pope buried?",
@@ -10121,7 +10121,7 @@
     },
     {
         "NNQT_question": "In what country is the Kandahar-downhill?",
-        "uid": 389,
+        "uid": "389",
         "subgraph": "",
         "template_index": "",
         "question": "In what country is the Kandahar-downhill?",
@@ -10150,7 +10150,7 @@
     },
     {
         "NNQT_question": "Who founded the architectural firm who planned the Elbphilharmonie?",
-        "uid": 390,
+        "uid": "390",
         "subgraph": "",
         "template_index": "",
         "question": "Who founded the architectural firm who planned the Elbphilharmonie?",
@@ -10177,7 +10177,7 @@
     },
     {
         "NNQT_question": "Where are the founders of the band Metallica from?",
-        "uid": 391,
+        "uid": "391",
         "subgraph": "",
         "template_index": "",
         "question": "Where are the founders of the band Metallica from?",
@@ -10235,7 +10235,7 @@
     },
     {
         "NNQT_question": "Where does the Granny Smith apple variety come from?",
-        "uid": 392,
+        "uid": "392",
         "subgraph": "",
         "template_index": "",
         "question": "Where does the Granny Smith apple variety come from?",
@@ -10269,7 +10269,7 @@
     },
     {
         "NNQT_question": "What is the Fujiyama made of?",
-        "uid": 393,
+        "uid": "393",
         "subgraph": "",
         "template_index": "",
         "question": "What is the Fujiyama made of?",

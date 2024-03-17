@@ -7,17 +7,23 @@ import re
 import time
 from datetime import datetime
 
-from evaluation import calc_question_f1_score, calc_question_macro_f1_score, print_solved_question, get_final_solved_questions_obj, print_solved_question
+from evaluation import calc_question_f1_score, calc_question_macro_f1_score, get_final_solved_questions_obj
+from qa_utils import print_solved_question, create_qa_convo_history, extract_info_qa_response, sort_questions
 
 sys.path.insert(0, "../utils")
 from utils import clean_number, is_date, format_date_iso_format
 
 prompt_config = read_json('prompts.json')
 
-# qald_9_plus_train, qald_10_test
+# qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
 dataset_name = "qald_9_plus_train_with_long_answer"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
+
+# Default answers when no entity linking is found
+no_extra_info_solved_answers_filename = f'{dataset_name}_solved_answers_no_external_info.json'
+with open(no_extra_info_solved_answers_filename, 'r', encoding='utf-8') as file:
+    question_answers_no_extra_info = json.load(file)
 
 # current date time format with fractions of seconds
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S%f")
@@ -33,9 +39,9 @@ qald_unique_entities_info_dir = '../qald_unique_entities_info'
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-#questions = questions[:10] # First 10 questions only
+# questions = questions[:10] # First 10 questions only
 
-ner_file = f"NER_both.json"
+ner_file = f"{dataset_name}_NER_both.json"
 
 # open ner_file
 with open(ner_file, 'r', encoding='utf-8') as file:
@@ -174,18 +180,7 @@ def process_question_with_entity_properties(question, ner_entity_info):
     # Save info messages with token counts
     # save_info_messages_with_token_counts(info_messages, question)
 
-    # system message (current date)
-    system_messages = [format_msg_oai("system", f"Current date: {datetime.now().strftime('%Y-%m-%d')}")]
-
-    # Examples
-    example_question_text = prompt_config["kgqa_with_info_example_question"]
-    example_output_text = prompt_config["kgqa_with_info_example_answer"]
-    examples_history = [format_msg_oai("user", "Example question: [" + example_question_text + "]"), format_msg_oai("assistant", "Example answer: [" + example_output_text + "]")]
-
-    prompt = prompt_config["kgqa_with_info"]
-
-    convo_history = [format_msg_oai("user", "Question: " + question["question"]), format_msg_oai("user", prompt)]
-    convo_history = system_messages + info_messages + examples_history + convo_history
+    convo_history = create_qa_convo_history(prompt_config, question, True, info_messages)
 
     info_tokens_count = count_tokens(info_messages)
     current_tokens_count = count_tokens(convo_history)
@@ -207,42 +202,7 @@ def process_question_with_entity_properties(question, ner_entity_info):
 
     # Send message to API
     result = send_open_ai_gpt_message(convo_history, json_mode=True)
-    extracted_json = extract_json_from_response("ner_with_info", result["content"])
-
-    reason = extracted_json.get("reason", "")
-    answers_datatype = extracted_json.get("answers_datatype", "")
-    extra_info = extracted_json.get("additional_information", "")
-
-    original_gpt_answers = extracted_json.get("answers", [])
-
-    # Fix answers formatting
-    gpt_answers = []
-    removed_parenthesis = False
-
-    for answer in original_gpt_answers:
-        if answer == "":
-            continue
-
-        # Check if any of the gpt answers has parenthesis and remove them
-        if "(" in answer:
-            removed_parenthesis = True
-
-        # Use regex to remove all parenthesis and their content
-        formatted_answer =  re.sub(r'\([^)]*\)', '', answer).strip()
-
-        # Clean numbers so they are in the same format as wikidata's query output (no commas, no spaces)
-        if answers_datatype == "quantity":
-            formatted_answer = clean_number(formatted_answer)
-
-        # Wiki data queries always return iso format dates
-        if is_date(formatted_answer):
-            formatted_answer = format_date_iso_format(formatted_answer)
-
-        # Remove empty answers
-        gpt_answers.append(formatted_answer)
-
-    if removed_parenthesis:
-        print(f"Removing parenthesis in question {question['uid']}. Original answers: {original_gpt_answers}")
+    gpt_answers, reason, answers_datatype, extra_info = extract_info_qa_response(result, question)
 
     return gpt_answers, reason, answers_datatype, extra_info
 
@@ -253,57 +213,61 @@ def process_question(question):
 
     # Use guessed answers as fallback in case the entity linking failed
     if entity_id is None:
-        answers = ner_entity_info["guessed_answers"]
-        reason = ner_entity_info["reason"]
-        answers_datatype = extra_info = None
+        #answers = ner_entity_info["guessed_answers"]
+        #reason = ner_entity_info["reason"]
+        #answers_datatype = extra_info = None
+        default_solved_questions = question_answers_no_extra_info["solved_questions"]
+        # Find the question in the solved questions
+        default_solved_question = next((default_question for default_question in default_solved_questions if default_question["uid"] == question["uid"]), None)
+        answers = default_solved_question["solved_answer"]
+        reason = default_solved_question["reasoning"]
+        answers_datatype = default_solved_question["answers_datatype"]
+        extra_info = default_solved_question["extra_info"]
     else:
         answers, reason, answers_datatype, extra_info = process_question_with_entity_properties(question, ner_entity_info)
 
-    solved_question = calc_question_f1_score(question, answers, reason)
-    solved_question["answers_datatype"] = answers_datatype
-    solved_question["extra_info"] = extra_info
-
+    solved_question = calc_question_f1_score(question, answers, reason, answers_datatype, extra_info)
     solved_questions.append(solved_question)
 
-# for index, question in enumerate(questions):
-#     process_question(question)
-#     print(f"Processed {index + 1}/{len(questions)} questions")
+for index, question in enumerate(questions):
+    process_question(question)
+    print(f"Processed {index + 1}/{len(questions)} questions")
 
-batch_size = 2 # Get rate limited above that (160k TPM atm)
-start_time = time.time()
+# batch_size = 2 # Get rate limited above that (160k TPM atm)
+# start_time = time.time()
 
-# sepparate the data in groups 
-batches = [questions[i:i + batch_size] for i in range(0, len(questions), batch_size)]
+# # sepparate the data in groups 
+# batches = [questions[i:i + batch_size] for i in range(0, len(questions), batch_size)]
 
-# process each batch in parallel
-for i, batch in enumerate(batches):
+# # process each batch in parallel
+# for i, batch in enumerate(batches):
 
-    with ThreadPoolExecutor() as executor:
-        futures = [executor.submit(process_question, question) for question in batch]
+#     with ThreadPoolExecutor() as executor:
+#         futures = [executor.submit(process_question, question) for question in batch]
 
-        for future in as_completed(futures):
-            try:
-                future.result()
-            except Exception as e:
-                print(f"Error occurred in sub-thread: {e}")
+#         for future in as_completed(futures):
+#             try:
+#                 future.result()
+#             except Exception as e:
+#                 print(f"Error occurred in sub-thread: {e}")
     
-    print(f"Processed {i + 1}/{len(batches)} batches")
+#     print(f"Processed {i + 1}/{len(batches)} batches")
  
 # Sort by uid, fix sort for nb < 100 by adding zeros
-solved_questions.sort(key=lambda x: x["uid"].zfill(3)) 
+sort_questions(solved_questions)
 
-# # Print questions info
-# for question in solved_questions:
-#     print_solved_question(question)
-
-# Total token count + average token count
-print(f"Total token count: {total_token_count}")
-print(f"Total questions with tokens: {total_questions_with_tokens}")
-print(f"Average token count: {total_token_count / total_questions_with_tokens}")
+# Print questions info
+for question in solved_questions:
+    print_solved_question(question)
 
 if len(solved_questions) == 0:
     print("No questions to process")
     sys.exit()
+
+# Total token count + average token count
+print(f"Total token count: {total_token_count}")
+print(f"Average token count: {total_token_count / total_questions_with_tokens}")
+print(f"Total questions with tokens: {total_questions_with_tokens}")
 
 # calc macro f1
 macro_f1 = calc_question_macro_f1_score(solved_questions)

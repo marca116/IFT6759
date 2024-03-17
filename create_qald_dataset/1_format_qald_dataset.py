@@ -19,7 +19,7 @@ for question in data['questions']:
     # Create a new dictionary for the LC-QuAD format
     lcquad_question = {
         "NNQT_question": question['question'][0]['string'], 
-        "uid": question['id'],
+        "uid": str(question['id']),
         "subgraph": "", 
         "template_index": "",  
         "question": question['question'][0]['string'], 

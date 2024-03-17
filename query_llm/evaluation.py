@@ -1,9 +1,10 @@
 import sys
+import re
 
 sys.path.insert(0, "../utils")
 from utils import case_insensitive_equals, case_insensitive_elem_in_list
 
-def calc_question_f1_score(question, gpt_answers, reason):
+def calc_question_f1_score(question, gpt_answers, reason, answers_datatype = None, extra_info = None):
     golden_answers = question["solved_answer"]
 
     # Validate the answer
@@ -67,9 +68,11 @@ def calc_question_f1_score(question, gpt_answers, reason):
         "uid": question["uid"],
         "question": question["question"],
         "solved_answer": gpt_answers,
-        "reasoning": reason,
         "gold_answers": question["answer"],
         "gold_solved_answers": question["solved_answer"],
+        "reasoning": reason,
+        "answers_datatype": answers_datatype,
+        "extra_info": extra_info,
         "TP Answers": true_positives,
         "FN Answers": false_negatives,
         "FP Answers": false_positives,
@@ -78,33 +81,21 @@ def calc_question_f1_score(question, gpt_answers, reason):
         "f1": f1
     }
 
+    if answers_datatype is None:
+        del solved_question["answers_datatype"]
+    if extra_info is None:
+        del solved_question["extra_info"]
+
+    is_different = any([gold_answer not in question["solved_answer"] for gold_answer in question["answer"]])
+    if not is_different:
+        del solved_question["gold_solved_answers"]
+
     return solved_question
 
 def calc_question_macro_f1_score(solved_questions):
     # Calc macro f1 score
     macro_f1 = sum([x["f1"] for x in solved_questions]) / len(solved_questions)
     return macro_f1
-
-def print_solved_question(question):
-    print(f"Question {question['uid']}: {question['question']}")
-    print(f"Gold answers: {question['gold_answers']}")
-    print(f"GPT answers: {question['solved_answer']}")
-    print("-------------------")
-    print(f"TP answers: {question['TP Answers']}")
-    print(f"FN answers: {question['FN Answers']}")
-    print(f"FP answers: {question['FP Answers']}")
-    print(f"Precision: {question['precision']}")
-    print(f"Recall: {question['recall']}")
-    print(f"F1 score: {question['f1']}")
-    print(f"Reasoning: {question['reasoning']}")
-
-    if question.get("answers_datatype"):
-        print(f"Answers datatype: {question['answers_datatype']}")
-    
-    if question.get("additional_information"):
-        print(f"Additional information: {question['additional_information']}")
-
-    print("")
 
 def get_final_solved_questions_obj(solved_questions, macro_f1_score, total_token_count = None, total_questions_with_tokens = None):
     question_obj = {
@@ -113,7 +104,7 @@ def get_final_solved_questions_obj(solved_questions, macro_f1_score, total_token
 
     if total_token_count is not None and total_questions_with_tokens is not None:
         question_obj["total_token_count"] = total_token_count
-        question_obj["total_questions_with_tokens"] = total_token_count
+        question_obj["total_questions_with_tokens"] = total_questions_with_tokens
         question_obj["average_token_count"] = round(total_token_count / total_questions_with_tokens, 2)
 
     question_obj["solved_questions"] = solved_questions
