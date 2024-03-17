@@ -5,7 +5,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import re
 
-from evaluation import calc_question_f1_score, calc_question_macro_f1_score, get_final_solved_questions_obj
+from evaluation import calc_question_f1_score, calc_question_macro_f1_score, get_final_solved_questions_obj, print_solved_question
 
 sys.path.insert(0, "../utils")
 from utils import case_insensitive_equals, case_insensitive_elem_in_list
@@ -75,18 +75,7 @@ solved_questions.sort(key=lambda x: x["uid"])
 
 # Print questions info
 for question in solved_questions:
-    print(f"Question {question['uid']}: {question['question']}")
-    print(f"Gold answers: {question['gold_answers']}")
-    print(f"GPT answers: {question['solved_answer']}")
-    print("-------------------")
-    print(f"TP answers: {question['TP Answers']}")
-    print(f"FN answers: {question['FN Answers']}")
-    print(f"FP answers: {question['FP Answers']}")
-    print(f"Precision: {question['precision']}")
-    print(f"Recall: {question['recall']}")
-    print(f"F1 score: {question['f1']}")
-    print(f"Reasoning: {question['reasoning']}")
-    print("")
+    print_solved_question(question)
 
 print(f"Total time: {time.time() - start_time} seconds")
 

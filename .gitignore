@@ -177,3 +177,8 @@ create_lcquad2_dataset/*/
 */qald_unique_entities_info/
 qald_unique_entities_info/
 */NER_results/
+*/tests/
+*/info_msg_with_token_count/
+*/info_msg_with_token_count_old/
+*/results_with_properties_info/
+utils/cached_entity_labels.json
