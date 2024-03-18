@@ -15,7 +15,7 @@ from utils import case_insensitive_equals, case_insensitive_elem_in_list
 prompt_config = read_json('prompts.json')
 
 # qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
-dataset_name = "qald_10_test"
+dataset_name = "qald_9_plus_train_with_long_answer"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
 
@@ -56,9 +56,9 @@ def process_question(question):
 
     result = send_open_ai_gpt_message(convo_history, json_mode=True)
 
-    gpt_answers, reason, answers_datatype, extra_info = extract_info_qa_response(result, question)
+    gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info = extract_info_qa_response(result, question)
 
-    solved_question = calc_question_f1_score(question, gpt_answers, reason, answers_datatype, extra_info)
+    solved_question = calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info)
     solved_questions.append(solved_question)
 
 start_time = time.time()

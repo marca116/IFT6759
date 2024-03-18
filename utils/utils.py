@@ -4,6 +4,7 @@ import os
 import time
 import re
 from dateutil.parser import parse
+from datetime import datetime
 
 def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
     wiki_api_url = "https://www.wikidata.org/w/api.php"
@@ -614,13 +615,12 @@ def clean_number(text):
 
     return clean_number
 
-# Return true if the text is a date
 def is_date(text):
     try:
-        parse(text)
-        return True
+        datetime.strptime(text, '%Y-%m-%d')
+        return True 
     except Exception as e:
-        return False
+        return False 
     
 def format_date_iso_format(text):
     try:

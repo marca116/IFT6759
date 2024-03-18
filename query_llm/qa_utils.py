@@ -1,7 +1,8 @@
-from openai_requests_utils import format_msg_oai, extract_json_from_response
+from openai_requests_utils import send_open_ai_gpt_message, format_msg_oai, extract_json_from_response, count_tokens, read_json
 import sys
 import re
 from datetime import datetime
+import json
 
 sys.path.insert(0, "../utils")
 from utils import clean_number, is_date, format_date_iso_format
@@ -10,10 +11,12 @@ def print_solved_question(question):
     print(f"Question {question['uid']}: {question['question']}")
     print(f"Gold answers: {question['gold_answers']}")
     print(f"GPT answers: {question['solved_answer']}")
+    if question.get("unmodified_solved_answer"):
+        print(f"Unmodified GPT answers: {question['unmodified_solved_answer']}")
     print("-------------------")
-    print(f"TP answers: {question['TP Answers']}")
-    print(f"FN answers: {question['FN Answers']}")
-    print(f"FP answers: {question['FP Answers']}")
+    print(f"TP answers: {question['TP_answers']}")
+    print(f"FN answers: {question['FN_answers']}")
+    print(f"FP answers: {question['FP_answers']}")
     print(f"Precision: {question['precision']}")
     print(f"Recall: {question['recall']}")
     print(f"F1 score: {question['f1']}")
@@ -99,7 +102,149 @@ def extract_info_qa_response(result, question):
     # Fix answers formatting
     gpt_answers = format_gpt_answers(original_gpt_answers, question['uid'], answers_datatype)
 
-    return gpt_answers, reason, answers_datatype, extra_info
+    return gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info
 
 def sort_questions(questions):
     questions.sort(key=lambda x: x["uid"].zfill(3)) 
+
+
+# Save info messages with token counts (when token count is too high)
+def save_info_messages_with_token_counts(info_messages, question, entity_id, info_tokens_count, convo_tokens_count, info_messages_dir):
+    info_msg_with_token_counts = [{"token_count": count_tokens([msg]), "msg_content": msg} for msg in info_messages]
+    info_msg_with_token_counts.sort(key=lambda x: x["token_count"], reverse=True)
+
+    root_obj = {
+        "question": question["question"],
+        "uid": question["uid"],
+        "entity_id": entity_id,
+        "info_tokens_count": info_tokens_count,
+        "convo_total_tokens_count": convo_tokens_count,
+        "info_messages": info_msg_with_token_counts
+    }
+
+    # save to file
+    with open(f"{info_messages_dir}/info_messages_{question['uid']}.json", 'w', encoding='utf-8') as outfile:
+        json.dump(root_obj, outfile, indent=4)
+
+# Filters for entity properties
+def entity_property_filters():
+    # Properties that makes the token count too high to process (Ex : For Germany (Q183))
+    # P530 = diplomatic relation
+    # P1448 = official name in it's original language (not that useful anyways)
+    # P1549 = demonym (the way to adress the people of the country)
+    # P998 = curlie (not that useful + take a bunch of space)
+    # P41 = flag image, not really relevant
+    properties_to_skip = ["P530", "P1448", "P1549", "P998", "P41"]
+
+    # Keep only the top 10 instances for these properties
+        # P2936 = language used (too many for big countries (USA))
+        # P608 = Time zone (too many for big countries)
+    properties_top_10_only = ["P2936", "P421"]
+
+    # Remove some qualfiers that are not that useful
+        # P2241 = Reason for deprecation
+        # P459 = determination method (could potentially be useful in some context, but takes way too much space (ex : population in canada))
+    qualifiers_to_skip = ["P2241", "P459"]
+
+    # Whether to remove id properties from the output
+    remove_id_properties = True
+
+    return properties_to_skip, properties_top_10_only, qualifiers_to_skip, remove_id_properties
+
+def process_question_with_entity_properties(question, ner_entity_info, info_messages_dir):
+    entity_id = ner_entity_info["main_entity_id"]
+    entity_info = {}
+
+    qald_unique_entities_info_dir = '../qald_unique_entities_info'
+    with open(f"{qald_unique_entities_info_dir}/{entity_id}.json", 'r', encoding='utf-8') as file:
+        entity_info = json.load(file)
+
+    info = f"Wikidata id:{entity_info['id']}, label: {entity_info['label']}, aliases: {', '.join(entity_info.get('aliases', []))}, description: {entity_info['description']}"
+    info_messages = [format_msg_oai("user", info)]
+
+    properties_to_skip, properties_top_10_only, qualifiers_to_skip, remove_id_properties = entity_property_filters()
+    removed_id_properties = []
+
+    for root_property in entity_info['properties']:
+        root_id = root_property["id"]
+
+        # Properties that makes the token count too high to process
+        if root_id in properties_to_skip:
+            continue
+
+        root_label = root_property["label"]
+
+        # Skip the id properties, not very relevant to questions we want to answer
+        if remove_id_properties and (" ID " in root_label or root_label.endswith("ID")):
+            removed_id_properties.append(root_label)
+            continue
+
+        root_text = f"Property: {root_label} ({root_id})\n"
+        instances_texts = []
+
+        for index, property_instance in enumerate(root_property["instances"]):
+            # Keep only the top 10 instances for these properties
+            if index == 10 and root_id in properties_top_10_only:
+                break
+
+            # Skip deprecated rank (-1)
+            if property_instance.get("rank") == -1:
+                continue
+
+            value = property_instance.get("value_label", property_instance.get("value"))
+
+            # Remove the + at the start
+            if property_instance["type"] in ["time", "quantity"]:
+                value = value.replace("+", "")
+
+            qualifiers_texts = []
+
+            if property_instance.get("rank") == 1:
+                qualifiers_texts.append("current value")
+
+            for qualifier in property_instance.get("qualifiers", []):
+                if qualifier["id"] in qualifiers_to_skip:
+                    continue
+
+                qualifier_value = qualifier.get("value_label", qualifier.get("value"))
+
+                # Remove the + at the start
+                if qualifier["type"] in ["time", "quantity"]:
+                    qualifier_value = qualifier_value.replace("+", "")
+
+                qualifiers_texts.append(f"{qualifier['label']}: {qualifier_value}")
+
+            formatted_qualifiers = (" (" + ", ".join(qualifiers_texts) + ")") if len(qualifiers_texts) > 0 else ""
+
+            #value_rank_text = "*" if property_instance.get("rank", 0) == 1 else ""
+            #instances_texts.append(f"{value}{value_rank_text}{formatted_qualifiers}")
+            instances_texts.append(f"{value}{formatted_qualifiers}")
+
+        root_text += "\n".join(instances_texts)
+
+        info_messages.append(format_msg_oai("user", root_text))
+
+    prompt_config = read_json('prompts.json')
+    convo_history = create_qa_convo_history(prompt_config, question, True, info_messages)
+
+    info_tokens_count = count_tokens(info_messages)
+    current_tokens_count = count_tokens(convo_history)
+
+    # print("--------------------")
+    # print(f"Processing question {question['uid']}")
+    # print(f"Total convo tokens count: {current_tokens_count}, Info tokens count: {info_tokens_count}, Info user msg count: {len(info_messages)}")
+
+    # Save info messages used for the question with token counts
+    save_info_messages_with_token_counts(info_messages, question, entity_id, info_tokens_count, current_tokens_count, info_messages_dir)
+
+    if current_tokens_count > 16380:
+        print(f"Skipping question {question['uid']}, token count too high: {current_tokens_count}")
+        return [], "Total tokens count too high"
+
+    #return [], "Success"
+
+    # Send message to API
+    result = send_open_ai_gpt_message(convo_history, json_mode=True)
+    gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info = extract_info_qa_response(result, question)
+
+    return gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info, current_tokens_count

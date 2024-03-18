@@ -4,7 +4,7 @@ import re
 sys.path.insert(0, "../utils")
 from utils import case_insensitive_equals, case_insensitive_elem_in_list
 
-def calc_question_f1_score(question, gpt_answers, reason, answers_datatype = None, extra_info = None):
+def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, answers_datatype = None, extra_info = None, ner_entity_info = None):
     golden_answers = question["solved_answer"]
 
     # Validate the answer
@@ -67,15 +67,18 @@ def calc_question_f1_score(question, gpt_answers, reason, answers_datatype = Non
     solved_question = {
         "uid": question["uid"],
         "question": question["question"],
+        "main_entity": ner_entity_info["main_entity"] if ner_entity_info else None,
+        "main_entity_id": ner_entity_info["main_entity_id"] if ner_entity_info else None,
         "solved_answer": gpt_answers,
+        "unmodified_solved_answer": original_gpt_answers,
         "gold_answers": question["answer"],
         "gold_solved_answers": question["solved_answer"],
         "reasoning": reason,
         "answers_datatype": answers_datatype,
         "extra_info": extra_info,
-        "TP Answers": true_positives,
-        "FN Answers": false_negatives,
-        "FP Answers": false_positives,
+        "TP_answers": true_positives,
+        "FN_answers": false_negatives,
+        "FP_answers": false_positives,
         "precision": precision,
         "recall": recall,
         "f1": f1
@@ -85,6 +88,15 @@ def calc_question_f1_score(question, gpt_answers, reason, answers_datatype = Non
         del solved_question["answers_datatype"]
     if extra_info is None:
         del solved_question["extra_info"]
+    if ner_entity_info is None:
+        del solved_question["main_entity"]
+        del solved_question["main_entity_id"]
+
+    if not isinstance(original_gpt_answers, list):
+        original_gpt_answers = [original_gpt_answers]
+
+    if original_gpt_answers is None or all([original_answer in gpt_answers for original_answer in original_gpt_answers]):
+        del solved_question["unmodified_solved_answer"]
 
     is_different = any([gold_answer not in question["solved_answer"] for gold_answer in question["answer"]])
     if not is_different:

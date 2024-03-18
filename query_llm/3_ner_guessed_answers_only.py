@@ -16,7 +16,7 @@ from utils import case_insensitive_equals, case_insensitive_elem_in_list
 prompt_config = read_json('prompts.json')
 
 # qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
-dataset_name = "qald_10_test"
+dataset_name = "qald_9_plus_train_with_long_answer"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_solved_answers_filename = f'{dataset_name}_solved_answers.json'
 
@@ -32,7 +32,7 @@ output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" 
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-ner_file = f"NER_both.json"
+ner_file = f"{dataset_name}_NER_both.json"
 
 # open ner_file
 with open(ner_file, 'r', encoding='utf-8') as file:
@@ -51,7 +51,7 @@ for question in questions:
     # Fix answers formatting
     gpt_answers = format_gpt_answers(original_gpt_answers, question['uid']) #, answers_datatype)
 
-    solved_question = calc_question_f1_score(question, gpt_answers, reason)
+    solved_question = calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason)
     solved_questions.append(solved_question)
 
 # print solved questions
