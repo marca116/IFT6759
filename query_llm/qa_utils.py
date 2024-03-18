@@ -30,6 +30,23 @@ def print_solved_question(question):
 
     print("")
 
+def text_is_boolean(value):
+    if not isinstance(value, str):
+        return False
+
+    return value.lower() in ["yes", "no", "true", "false"]
+
+def convert_to_boolean(value):
+    if not isinstance(value, str):
+        return value
+
+    if value.lower() in ["yes", "true"]:
+        return True
+    elif value.lower() in ["no", "false"]:
+        return False
+    else:
+        return value
+
 def format_gpt_answers(original_gpt_answers, question_uid, answers_datatype = None):
     # Fix answers formatting
     gpt_answers = []
@@ -43,6 +60,10 @@ def format_gpt_answers(original_gpt_answers, question_uid, answers_datatype = No
         # Skip empty answers
         if answer == "":
             continue
+
+        # Convert boolean text (yes, no) to boolean
+        if text_is_boolean(answer):
+            answer = convert_to_boolean(answer)
 
         # If the answer is a boolean, just append it
         if isinstance(answer, bool):

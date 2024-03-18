@@ -92,7 +92,7 @@ def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, 
         del solved_question["main_entity"]
         del solved_question["main_entity_id"]
 
-    if not isinstance(original_gpt_answers, list):
+    if original_gpt_answers is not None and not isinstance(original_gpt_answers, list):
         original_gpt_answers = [original_gpt_answers]
 
     if original_gpt_answers is None or all([original_answer in gpt_answers for original_answer in original_gpt_answers]):
