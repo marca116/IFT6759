@@ -88,9 +88,9 @@ for i, batch in enumerate(batches):
 # Sort solved questions by uid
 sort_questions(solved_questions)
 
-# Print questions info
-for question in solved_questions:
-    print_solved_question(question)
+# # Print questions info
+# for question in solved_questions:
+#     print_solved_question(question)
 
 if len(solved_questions) == 0:
     print("No questions to process")

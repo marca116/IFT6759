@@ -115,6 +115,10 @@ def create_qa_convo_history(prompt_config, question, use_external_info = False, 
 
 def extract_info_qa_response(result, question):
     extracted_json = extract_json_from_response("qa", result["content"])
+    if extracted_json is None:
+        print(f"Error: Could not extract json from response, empty answer given. Question {question['uid']}. Response: {result['content']}")
+        return [], [], "", "", ""
+
     reason = extracted_json.get("reason", "")
     answers_datatype = extracted_json.get("answers_datatype", "")
     extra_info = extracted_json.get("additional_information", "")
@@ -127,7 +131,6 @@ def extract_info_qa_response(result, question):
 
 def sort_questions(questions):
     questions.sort(key=lambda x: x["uid"].zfill(3)) 
-
 
 # Save info messages with token counts (when token count is too high)
 def save_info_messages_with_token_counts(info_messages, question, entity_id, info_tokens_count, convo_tokens_count, info_messages_dir):

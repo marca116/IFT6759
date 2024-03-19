@@ -86,17 +86,20 @@ def identify_entity(question):
 
     return main_entity, side_entities, correct_answers, reason#, answers_datatype
 
-def find_main_entity_id(main_entity_name, question, all_entities):
-    # question_text = question["question"]
+def find_main_entity_id(main_entity_name, all_entities):
+    if not main_entity_name:
+        return None, False
 
-    # Try with label
+    # Try to match label in a case insensitive way
     for entity in all_entities:
-        if entity["label"] == main_entity_name:
+        if entity["label"].lower() == main_entity_name.lower():
             return entity["id"], True
-
-    # Try with aliases
+        
+    # Try to match aliases in a case insensitive way
     for entity in all_entities:
-        if main_entity_name in entity.get("aliases", []):
+        lowercase_aliases = [alias.lower() for alias in entity.get("aliases", [])]
+        
+        if main_entity_name.lower() in lowercase_aliases:
             return entity["id"], False
 
     return None, False
@@ -104,7 +107,7 @@ def find_main_entity_id(main_entity_name, question, all_entities):
 def process_question(question):
     #main_entity, side_entities, guessed_answers, reason, datatype = identify_entity(question)
     main_entity, side_entities, guessed_answers, reason = identify_entity(question)
-    main_entity_id, is_label = find_main_entity_id(main_entity, question, all_entities)
+    main_entity_id, is_label = find_main_entity_id(main_entity, all_entities)
 
     full_info = {
         "question": question["question"],
