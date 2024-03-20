@@ -98,7 +98,7 @@ def format_gpt_answers(original_gpt_answers, question_uid, answers_datatype = No
 
 def create_qa_convo_history(prompt_config, question, use_external_info = False, info_messages = []):
     # system message (current date)
-    system_messages = [format_msg_oai("system", f"Current date: {datetime.now().strftime('%Y-%m-%d')}")]
+    system_messages = [format_msg_oai("system", f"Current date: {datetime.now().strftime('%Y-%m-%d')}\n{prompt_config['qa_system_msg']}")]
 
     # Examples
     example_question_text = prompt_config["qa_example_question"]

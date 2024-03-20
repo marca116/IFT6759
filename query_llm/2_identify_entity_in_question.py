@@ -74,6 +74,10 @@ def identify_entity(question):
     result = send_open_ai_gpt_message(convo_history, json_mode=True)
     extracted_json = extract_json_from_response("identify_entities", result["content"])
 
+    if extracted_json is None:
+        print(f"Error: Could not extract json from response, empty answer given. Question {question['uid']}. Response: {result['content']}")
+        return None, [], [], ""
+
     main_entity = extracted_json.get("main_entity_label", "")
     #print(f"Main entity: {main_entity}")
 

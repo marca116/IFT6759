@@ -84,7 +84,7 @@ def process_question(question):
 #     process_question(question)
 #     print(f"Processed {index + 1}/{len(questions)} questions")
 
-batch_size = 2 # Get rate limited above that (160k TPM atm)
+batch_size = 2 # Might get rate limited above that
 start_time = time.time()
 
 # sepparate the data in groups 
