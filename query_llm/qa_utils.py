@@ -272,3 +272,20 @@ def process_question_with_entity_properties(question, ner_entity_info, info_mess
     gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info = extract_info_qa_response(result, question)
 
     return gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info, current_tokens_count
+
+def process_question_with_rag_context(question, contexts, info_messages_dir, prompt_config):
+    contexts = list(map(lambda t: format_msg_oai("user", t), contexts))
+    convo_history = create_qa_convo_history(prompt_config, question, True, contexts)
+    current_tokens_count = count_tokens(convo_history)
+    result = send_open_ai_gpt_message(convo_history, json_mode=True)
+    gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info = extract_info_qa_response(result, question)
+
+    return gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info, current_tokens_count
+
+
+
+
+
+
+
+
