@@ -187,3 +187,4 @@ query_llm/*_solved_answers_no_external_info.json
 query_llm/*_NER_both.json
 query_llm/question_failed_or_successful_with_entity_linking
 query_llm/results_ner_guesses_only/
+query_llm/wikidata_entities/

@@ -283,8 +283,7 @@ def run_sparql_query(query, flatten_answers = True):
         print(f"Error running query: {e}")
         return []
 
-def get_batched_entities_info(entity_ids, properties = None):
-    max_entity_per_group = 50
+def get_batched_entities_info(entity_ids, properties = None, max_entity_per_group = 50):
     entities_info = []
 
     # combine in groups of entity_per_group (in case higher than max_entity_per_group)
@@ -572,11 +571,25 @@ def format_entity_infos(entity_infos):
 
     # Go through all the entity_infos properties and update the labels
     for entity_info in entity_infos:
+        aliases = entity_info.get("aliases", [])
+        properties = entity_info["properties"]
+
+        # Move the aliases and properties to the end of the dictionary
+        del entity_info["aliases"]
+        del entity_info["properties"]
+        entity_info["aliases"] = aliases
+        entity_info["properties"] = properties
+
         # Update the labels for each property
         for property in entity_info["properties"]:
             property_id = property["id"]
+            
             # Set property label
-            property["label"] = wikidata_properties_dict[property_id]["label"] 
+            existing_property = wikidata_properties_dict.get(property_id)
+            property["label"] = existing_property["label"] if existing_property is not None else ""
+
+            if existing_property is None:
+                print(f"Missing property: {property_id}")
 
             property_instances = property["instances"]
 

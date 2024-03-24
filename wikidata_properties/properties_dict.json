@@ -9219,13 +9219,13 @@
         "label": "ESPN FC player ID",
         "description": "identifier for an association football (soccer) player at ESPN FC"
     },
-    "P10073": {
-        "label": "ESPN MMA fighter ID",
-        "description": "identifier of an fighter on ESPN.com/mma"
-    },
     "P3571": {
         "label": "ESPN.com MLB player ID",
         "description": "ID for a Major League Baseball player at ESPN.com"
+    },
+    "P10073": {
+        "label": "ESPN.com MMA fighter ID",
+        "description": "identifier of an fighter on ESPN.com/mma"
     },
     "P3685": {
         "label": "ESPN.com NBA player ID",
@@ -9972,11 +9972,11 @@
         "description": "code for a railway line in Britain owned by Network Rail"
     },
     "P6330": {
-        "label": "England Football Online manager profile",
+        "label": "England Football Online manager ID",
         "description": "identifier for football manager on England Football Online site"
     },
     "P6331": {
-        "label": "England Football Online player profile",
+        "label": "England Football Online player ID",
         "description": "identifier for football player on England Football Online site"
     },
     "P11172": {
@@ -12428,7 +12428,7 @@
         "description": "unique identifier of a genome assembly"
     },
     "P692": {
-        "label": "Gene Atlas Image",
+        "label": "Gene Atlas image",
         "description": "image showing the GeneAtlas expression pattern"
     },
     "P686": {
@@ -12491,6 +12491,10 @@
         "label": "Genie song ID",
         "description": "identifier for a song on the South Korean music streaming site Genie"
     },
+    "P6218": {
+        "label": "Genius ID",
+        "description": "identifier for a song, musical composition, written work, discography, list and other on Genius"
+    },
     "P6217": {
         "label": "Genius album ID",
         "description": "identifier for an album, single, other music release or other publication on Genius"
@@ -12506,10 +12510,6 @@
     "P6351": {
         "label": "Genius artist numeric ID",
         "description": "numeric identifier for an artist on Genius"
-    },
-    "P6218": {
-        "label": "Genius song ID",
-        "description": "identifier for a song, musical composition or written work on Genius"
     },
     "P6361": {
         "label": "Genius song numeric ID",
@@ -21257,7 +21257,7 @@
     },
     "P11948": {
         "label": "NFSA title ID",
-        "description": "identifier for a film title in National Film and Sound Archive database"
+        "description": "identifier for a creative work in the National Film and Sound Archive database"
     },
     "P3563": {
         "label": "NGA lighthouse ID",
@@ -21694,6 +21694,10 @@
     "P8885": {
         "label": "Namuwiki ID",
         "description": "identifier of an article on Namuwiki"
+    },
+    "P12545": {
+        "label": "Nanopublication identifier",
+        "description": "Nanopublications are small RDF-based publications, quite similar to Wikidata Statements with references and history."
     },
     "P11945": {
         "label": "Nantes Museum of Arts artwork ID",
@@ -23036,8 +23040,8 @@
         "description": "identifier for a person in the Obrazi slovenskih pokrajin"
     },
     "P11247": {
-        "label": "Observation.org place ID",
-        "description": "Identifier for a place or other geographical object in Observation.org"
+        "label": "Observation.org location ID",
+        "description": "Identifier for a locationon Observation.org"
     },
     "P6105": {
         "label": "Observation.org taxon ID",
@@ -25040,7 +25044,7 @@
         "description": "reference in a Polish cultural heritage register"
     },
     "P3124": {
-        "label": "Polish scientist ID",
+        "label": "Polish scientist ID (deprecated)",
         "description": "identifier for a scientist, in the Polish Government's Information Processing Centre database"
     },
     "P2267": {
@@ -26134,6 +26138,10 @@
     "P2905": {
         "label": "RateBeer brewery ID",
         "description": "identifier for a brewery, in the RateBeer database"
+    },
+    "P12544": {
+        "label": "RatingGraph TV show ID",
+        "description": "identifier for a TV show on the Ratingraph site"
     },
     "P7602": {
         "label": "Ratingraph actor ID",
@@ -33432,7 +33440,7 @@
         "description": "former identifier for a female rugby union player at the 15-a-side World Cup"
     },
     "P2804": {
-        "label": "World Sailing member ID (ID for former website)",
+        "label": "World Sailing member ID (archived)",
         "description": "member identifier for a sailor in the World Sailing database (use P11616 for the new website)"
     },
     "P4832": {
@@ -33913,7 +33921,7 @@
     },
     "P4072": {
         "label": "Zemereshet song ID",
-        "description": "ID of a song in the israeli database for lyrics, Zemereshet"
+        "description": "ID of a song in Zemereshet, an Israeli database for pre-State Hebrew songs"
     },
     "P8816": {
         "label": "Zen ID",
@@ -35367,6 +35375,10 @@
         "label": "category for people born here",
         "description": "category item that groups people born in this place"
     },
+    "P1791": {
+        "label": "category for people buried here",
+        "description": "Wikimedia category for people with a burial site within this area"
+    },
     "P1465": {
         "label": "category for people who died here",
         "description": "category item for people who died in this location"
@@ -35418,10 +35430,6 @@
     "P1792": {
         "label": "category of associated people",
         "description": "Wikimedia category for people associated with this place or organization"
-    },
-    "P1791": {
-        "label": "category of people buried here",
-        "description": "Wikimedia category for people with a burial site within this area"
     },
     "P1754": {
         "label": "category related to list",
@@ -37085,7 +37093,7 @@
     },
     "P2262": {
         "label": "draft",
-        "description": "depth below the water line to the bottom of a vessel's hull. summer draft is implied unless stated otherwise."
+        "description": "depth below the water line to the bottom of a vessel's hull; summer draft is implied unless stated otherwise."
     },
     "P1836": {
         "label": "draft pick number",
@@ -39240,8 +39248,8 @@
         "description": "qualifier for subjects which may have different identities which are covered by different items, the identity to which the qualified statement applies"
     },
     "P5753": {
-        "label": "ideographic description sequences",
-        "description": "method to describe composition of Han characters using ideographic description characters and character components"
+        "label": "ideographic description sequence",
+        "description": "method to describe composition of Han characters using ideographic description characters and character or stroke components"
     },
     "P11905": {
         "label": "ifkdb player ID",
@@ -41513,7 +41521,7 @@
     },
     "P2351": {
         "label": "number of graves",
-        "description": "number of burial places In a cemetery or necropolis"
+        "description": "number of burial places in a cemetery or necropolis"
     },
     "P9184": {
         "label": "number of hits",
@@ -46698,6 +46706,10 @@
     "P12332": {
         "label": "‎Playstation Store concept ID",
         "description": "identifier for a game available on the PlayStation Store"
+    },
+    "P12543": {
+        "label": "‎Portal Wiki ID",
+        "description": "identifier of an article on Portal Wiki"
     },
     "P12539": {
         "label": "‎Premier League player ID",

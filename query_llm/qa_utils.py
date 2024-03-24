@@ -175,11 +175,11 @@ def entity_property_filters():
 
     return properties_to_skip, properties_top_10_only, qualifiers_to_skip, remove_id_properties
 
-def process_question_with_entity_properties(question, ner_entity_info, info_messages_dir):
+def process_question_with_entity_properties(question, ner_entity_info, info_messages_dir, directly_from_wikidata = False):
     entity_id = ner_entity_info["main_entity_id"]
     entity_info = {}
 
-    qald_unique_entities_info_dir = '../qald_unique_entities_info'
+    qald_unique_entities_info_dir = '../qald_unique_entities_info' if not directly_from_wikidata else "wikidata_entities"
     with open(f"{qald_unique_entities_info_dir}/{entity_id}.json", 'r', encoding='utf-8') as file:
         entity_info = json.load(file)
 
@@ -272,3 +272,35 @@ def process_question_with_entity_properties(question, ner_entity_info, info_mess
     gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info = extract_info_qa_response(result, question)
 
     return gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info, current_tokens_count
+
+def identify_entity(question, prompt_config):
+    question_text = question["question"]
+
+    # Examples
+    example_question_text = prompt_config["identify_entities_example_question"]
+    example_output_text = prompt_config["identify_entities_example_answer"]
+    examples_history = [format_msg_oai("user", "History: [" + example_question_text + "]"), format_msg_oai("assistant", "History: [" + example_output_text + "]")]
+
+    # Convo history
+    convo_history = [format_msg_oai("user", "Previous user's question: " + question_text), format_msg_oai("user", prompt_config["identify_entities"])]
+    convo_history = examples_history + convo_history
+
+    current_tokens_count = count_tokens(convo_history)
+
+    result = send_open_ai_gpt_message(convo_history, json_mode=True)
+    extracted_json = extract_json_from_response("identify_entities", result["content"])
+
+    if extracted_json is None:
+        print(f"Error: Could not extract json from response, empty answer given. Question {question['uid']}. Response: {result['content']}")
+        return None, [], [], "", current_tokens_count
+
+    main_entity = extracted_json.get("main_entity_label", "")
+    #print(f"Main entity: {main_entity}")
+
+    side_entities = extracted_json.get("side_entities_labels", [])
+    #print(f"Side entities: {side_entities}")
+
+    reason = extracted_json.get("reason", "")
+    correct_answers = extracted_json.get("correct_answers", [])
+
+    return main_entity, side_entities, correct_answers, reason, current_tokens_count

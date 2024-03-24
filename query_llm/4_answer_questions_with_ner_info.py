@@ -15,6 +15,8 @@ from utils import clean_number, is_date, format_date_iso_format
 
 # qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
 dataset_name = "qald_9_plus_train_with_long_answer"
+directly_from_wikidata = True
+
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
 
@@ -73,7 +75,7 @@ def process_question(question):
         answers_datatype = default_solved_question["answers_datatype"]
         extra_info = default_solved_question["extra_info"]
     else:
-        answers, original_answers, reason, answers_datatype, extra_info, token_count = process_question_with_entity_properties(question, ner_entity_info, info_messages_dir)
+        answers, original_answers, reason, answers_datatype, extra_info, token_count = process_question_with_entity_properties(question, ner_entity_info, info_messages_dir, directly_from_wikidata)
         total_token_count += token_count
         total_questions_with_tokens += 1
 

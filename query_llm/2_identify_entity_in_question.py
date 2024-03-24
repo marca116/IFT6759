@@ -5,6 +5,8 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 
+from qa_utils import identify_entity
+
 sys.path.insert(0, "../utils")
 from utils import case_insensitive_equals, case_insensitive_elem_in_list
 
@@ -35,8 +37,6 @@ with open(input_dataset_filename, 'r', encoding='utf-8') as file:
 
 #questions = questions[:10]
     
-prompt = prompt_config["identify_entities"]
-
 # Load entities
 all_entity_files = os.listdir(input_dir)
 all_entities = []
@@ -53,42 +53,6 @@ missing_entities_full_info = []
 # FUNCTION DEFINITIONS
 
 total_token_count = 0
-
-def identify_entity(question):
-    global total_token_count
-
-    question_text = question["question"]
-
-    # Examples
-    example_question_text = prompt_config["identify_entities_example_question"]
-    example_output_text = prompt_config["identify_entities_example_answer"]
-    examples_history = [format_msg_oai("user", "History: [" + example_question_text + "]"), format_msg_oai("assistant", "History: [" + example_output_text + "]")]
-
-    # Convo history
-    convo_history = [format_msg_oai("user", "Previous user's question: " + question_text), format_msg_oai("user", prompt)]
-    convo_history = examples_history + convo_history
-
-    current_tokens_count = count_tokens(convo_history)
-    total_token_count += current_tokens_count
-
-    result = send_open_ai_gpt_message(convo_history, json_mode=True)
-    extracted_json = extract_json_from_response("identify_entities", result["content"])
-
-    if extracted_json is None:
-        print(f"Error: Could not extract json from response, empty answer given. Question {question['uid']}. Response: {result['content']}")
-        return None, [], [], ""
-
-    main_entity = extracted_json.get("main_entity_label", "")
-    #print(f"Main entity: {main_entity}")
-
-    side_entities = extracted_json.get("side_entities_labels", [])
-    #print(f"Side entities: {side_entities}")
-
-    reason = extracted_json.get("reason", "")
-    #answers_datatype = extracted_json.get("answers_datatype", "")
-    correct_answers = extracted_json.get("correct_answers", [])
-
-    return main_entity, side_entities, correct_answers, reason#, answers_datatype
 
 def find_main_entity_id(main_entity_name, all_entities):
     if not main_entity_name:
@@ -109,8 +73,11 @@ def find_main_entity_id(main_entity_name, all_entities):
     return None, False
 
 def process_question(question):
-    #main_entity, side_entities, guessed_answers, reason, datatype = identify_entity(question)
-    main_entity, side_entities, guessed_answers, reason = identify_entity(question)
+    global total_token_count
+
+    main_entity, side_entities, guessed_answers, reason, current_tokens_count = identify_entity(question, prompt_config)
+    total_token_count += current_tokens_count
+
     main_entity_id, is_label = find_main_entity_id(main_entity, all_entities)
 
     full_info = {
@@ -122,7 +89,6 @@ def process_question(question):
         "side_entities": side_entities,
         "guessed_answers": guessed_answers,
         "reason": reason
-        #"datatype": datatype
     }
 
     # # Print question, main entity, main entity id, side entities and reasoning

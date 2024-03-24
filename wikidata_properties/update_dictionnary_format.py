@@ -19,5 +19,5 @@ wikidata_properties_dict = {}
 for property in wikidata_properties:
     wikidata_properties_dict[property['id']] = {"label": property['label'], "description": property['description']}
 
-with open("properties.json", 'w', encoding='utf-8') as file:
+with open("properties_dict.json", 'w', encoding='utf-8') as file:
     json.dump(wikidata_properties_dict, file, ensure_ascii=False, indent=4)
