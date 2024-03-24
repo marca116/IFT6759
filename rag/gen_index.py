@@ -14,6 +14,7 @@ from transformers import (
 torch.set_grad_enabled(False)
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
+
 def embed(documents: dict, ctx_encoder: DPRContextEncoder, ctx_tokenizer: DPRContextEncoderTokenizerFast) -> dict:
     """Compute embeddings of document passages"""
     input_ids = ctx_tokenizer(
