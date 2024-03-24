@@ -9,7 +9,7 @@ import time
 from datetime import datetime
 
 from evaluation import calc_question_f1_score, calc_question_macro_f1_score, get_final_solved_questions_obj
-from qa_utils import print_solved_question, sort_questions, process_question_with_entity_properties
+from qa_utils import print_solved_question, sort_questions, process_question_with_entity_properties, process_question_with_rag_context
 
 import numpy as np
 import torch
