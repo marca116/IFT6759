@@ -1,7 +1,7 @@
 import json
 
 remove_long_answers = False # False for qald_9_train, True for qald_10_test
-dataset_name = "qald_10_test" # qald_9_plus_train_wikidata and qald_10_test
+dataset_name = "original_qald_9_plus_test_wikidata" # qald_9_plus_train_wikidata and qald_10_test
 
 original_dataset = f'{dataset_name}.json'
 formatted_dataset = f'{dataset_name}_formatted_and_cleaned.json'
@@ -50,10 +50,10 @@ for question in data['questions']:
                 value = binding[property]['value']
                 lcquad_question['answer'].append(value)
 
-                # Remove statement answer (only one, don't need to support it for now)
-                if isinstance(value, str) and value.startswith("http://www.wikidata.org/entity/statement/"):
-                    print(f"Question {lcquad_question['uid']} has statement answer. Skipping question...")
-                    skip_question = True
+                # # Remove statement answer (only one, don't need to support it for now)
+                # if isinstance(value, str) and value.startswith("http://www.wikidata.org/entity/statement/"):
+                #     print(f"Question {lcquad_question['uid']} has statement answer. Skipping question...")
+                #     skip_question = True
 
     nb_answers = len(lcquad_question['answer'])
     

@@ -9,10 +9,12 @@ import sys
 sys.path.insert(0, "../utils")
 from utils import get_wikidata_entities_info
 
-dataset_name = 'qald_9_plus_train_wikidata' # qald_9_plus_train_wikidata and qald_10_test
+dataset_name = 'original_qald_9_plus_test_wikidata' # qald_9_plus_train_wikidata and qald_10_test
 formatted_dataset = f'{dataset_name}_updated_answers.json'
-unique_entities_and_url_filename = f'{dataset_name}_answers_unique_entities_and_url.csv'
+unique_entities_and_url_filename = f'{dataset_name}_unique_entities_and_url.csv'
+
 solved_answers_dataset = f'{dataset_name}_with_solved_answers.json'
+final_answers_dataset = f'../datasets/{dataset_name}_final.json' # Same as above, but in datasets folder
 
 with open(formatted_dataset, 'r', encoding='utf-8') as file:
     data = json.load(file)
@@ -67,6 +69,10 @@ for result in unique_entities_and_url:
 
 # Save to solved_answers_dataset
 with open(solved_answers_dataset, 'w', encoding='utf-8') as outfile:
+    json.dump(data, outfile, indent=4)
+
+# Save to final_answers_dataset
+with open(final_answers_dataset, 'w', encoding='utf-8') as outfile:
     json.dump(data, outfile, indent=4)
 
 print(f"Total time: {time.time() - start_time} seconds")

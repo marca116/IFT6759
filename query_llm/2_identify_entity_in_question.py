@@ -14,8 +14,8 @@ input_dir = '../qald_unique_entities_info'
 
 prompt_config = read_json('prompts.json')
 
-# qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
-dataset_name = "qald_9_plus_train_with_long_answer"
+# qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
+dataset_name = "qald_10_test"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_solved_answers_filename = f'{dataset_name}_solved_answers.json'
 
@@ -139,11 +139,11 @@ if len(questions) == 0:
 # Total token count + average token count
 print(f"Total token count: {total_token_count}")
 print(f"Average token count: {total_token_count / len(questions)}")
-print(f"Total questions with tokens: {len(questions)}")
 
 # print count
 print(f"Found entities: {len(found_entities_full_info)}")
 print(f"Missing entities: {len(missing_entities_full_info)}")
+print(f"Total questions with tokens: {len(questions)}")
 
 # sort
 found_entities_full_info.sort(key=lambda x: x["question_id"].zfill(3)) 

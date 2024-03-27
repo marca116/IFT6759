@@ -31,6 +31,10 @@
         "label": "1001Tracklists track ID",
         "description": "identifier for a music track on 1001Tracklists"
     },
+    "P12551": {
+        "label": "11v11 player ID",
+        "description": "identifier for a player's profile on the 11v11.com website"
+    },
     "P11322": {
         "label": "18th Century Russian Dictionary ID",
         "description": "identifier for a lexeme in the Словарь русского языка XVIII века (1984-1991) as hosted on the Fundamental Electronic Library of Russian Literature and Folklore"
@@ -5403,6 +5407,10 @@
         "label": "Cal-IPC ID",
         "description": "identifier for a species on the California Invasive Plant Council website"
     },
+    "P12554": {
+        "label": "CalPhotos taxon ID",
+        "description": "identifier for a plant, animal, or fossil species or subspecies on the CalPhotos website"
+    },
     "P9038": {
         "label": "Calaméo ID",
         "description": "unique identifier for publications on online publishing platform Calaméo"
@@ -7367,10 +7375,6 @@
         "label": "DLCM ID",
         "description": "identifier for a past or present member of the Legislative Council of Hong Kong in the Database on Legislative Council Members"
     },
-    "P12529": {
-        "label": "DLE entry ID",
-        "description": "identifier for an entry in the Spanish Language Dictionary of the Spanish Royal Academy"
-    },
     "P2185": {
         "label": "DLI ID",
         "description": "identifier for a work in the Digital Library of India"
@@ -8079,8 +8083,12 @@
         "label": "Diccionari del cinema a Catalunya ID",
         "description": "identifier for an item in the Diccionari del cinema a Catalunya"
     },
+    "P12529": {
+        "label": "Diccionario de la lengua española entry ID",
+        "description": "identifier for an entry in the Spanish Language Dictionary of the Spanish Royal Academy"
+    },
     "P7790": {
-        "label": "Diccionario de la lengua española ID",
+        "label": "Diccionario de la lengua española word (non-ID)",
         "description": "word in the Spanish Language Dictionary of the Spanish Royal Academy"
     },
     "P11581": {
@@ -13983,6 +13991,10 @@
         "label": "Hunterian transliteration",
         "description": "transliteration of different Indic scripts"
     },
+    "P12552": {
+        "label": "Hyatt hotel ID",
+        "description": "5-letter identifier for hotels under the Hyatt brand"
+    },
     "P9356": {
         "label": "Hymenoptera Anatomy Ontology ID",
         "description": "identifier for an anatomical entity in Hymenoptera Anatomy Ontology, a structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, sawflies and ants)"
@@ -16208,7 +16220,7 @@
         "description": "identifier for an athlete (sportsperson) at CONI.it, a website of the Italian National Olympic Committee (Italian: Comitato Olimpico Nazionale Italiano)"
     },
     "P8161": {
-        "label": "Italian National Olympic Committee honoured athlete ID",
+        "label": "Italian National Olympic Committee honored athlete ID",
         "description": "identifier at coni.it for an Italian athlete (sportsperson) who received an award from the Italian National Olympic Committee (Italian: Comitato Olimpico Nazionale Italiano, CONI)"
     },
     "P3863": {
@@ -19397,7 +19409,7 @@
     },
     "P12122": {
         "label": "ManyVids ID",
-        "description": "identifier for a person on the ManyVids website"
+        "description": "identifier for a person's store on the ManyVids website"
     },
     "P6092": {
         "label": "Map of Life ID",
@@ -21694,10 +21706,6 @@
     "P8885": {
         "label": "Namuwiki ID",
         "description": "identifier of an article on Namuwiki"
-    },
-    "P12545": {
-        "label": "Nanopublication identifier",
-        "description": "Nanopublications are small RDF-based publications, quite similar to Wikidata Statements with references and history."
     },
     "P11945": {
         "label": "Nantes Museum of Arts artwork ID",
@@ -26141,7 +26149,7 @@
     },
     "P12544": {
         "label": "RatingGraph TV show ID",
-        "description": "identifier for a TV show on the Ratingraph site"
+        "description": "identifier for a TV show on the RatingGraph site"
     },
     "P7602": {
         "label": "Ratingraph actor ID",
@@ -33817,7 +33825,7 @@
     },
     "P2397": {
         "label": "YouTube channel ID",
-        "description": "ID of the YouTube channel of a person or organisation (not to be confused with the name of the channel) The ID can also be used for music.youtube.com IDs."
+        "description": "ID of the YouTube channel of a person or organisation (not to be confused with the name of the channel) The ID can also be used for music.youtube.com IDs"
     },
     "P11245": {
         "label": "YouTube handle",
@@ -36697,7 +36705,7 @@
     },
     "P180": {
         "label": "depicts",
-        "description": "entity visually depicted in an image, literarily described in a work, or otherwise incorporated into an audiovisual or other medium; see also P921,  'main subject'"
+        "description": "entity visually depicted in an image"
     },
     "P1257": {
         "label": "depicts Iconclass notation",
@@ -38955,6 +38963,10 @@
         "label": "height of center of mass",
         "description": "Wikidata property for physical quantities"
     },
+    "P12549": {
+        "label": "height of letters",
+        "description": "height of the letters of an inscription"
+    },
     "P8503": {
         "label": "heraldic attitude",
         "description": "the attitude or posture of a charge on a coat of arms (e.g. lion rampant)"
@@ -40579,6 +40591,10 @@
         "label": "media legend",
         "description": "qualifier to describe the media of the statement. This avoids legend storage in the local infobox when the media is defined at Wikidata. For the date, use P585 instead"
     },
+    "P12548": {
+        "label": "media modality",
+        "description": "which media modalities are present in a creative work, particularly in digital, multimodal works such as electronic literature"
+    },
     "P11899": {
         "label": "median household income",
         "description": "median of the household income (cumulated salaries etc.) of a specific place, such as city, state, country"
@@ -41162,6 +41178,10 @@
     "P9664": {
         "label": "named place on map",
         "description": "property linking a map to a place named on it"
+    },
+    "P12545": {
+        "label": "nanopublication identifier",
+        "description": "RDF-based publication, with references and history"
     },
     "P6249": {
         "label": "narrative age",
@@ -46503,6 +46523,10 @@
         "label": "‎Cultural Heritage Online (Japan) heritage ID",
         "description": "identifier for heritage assets on Cultural Heritage Online"
     },
+    "P12550": {
+        "label": "‎DWDS sense ID",
+        "description": "url slug of a sense in DWDS"
+    },
     "P12282": {
         "label": "‎Deutsche Bahn station number",
         "description": "numeric identifier for train stations operated by Deutsche Bahn"
@@ -46518,6 +46542,10 @@
     "P12233": {
         "label": "‎DraCor ID",
         "description": "identifier in the DraCor database"
+    },
+    "P12553": {
+        "label": "‎ECF rating code",
+        "description": "identifier for a chess player issued by the English Chess Federation"
     },
     "P12507": {
         "label": "‎European Union trademark number",
@@ -46618,6 +46646,10 @@
     "P12252": {
         "label": "‎Indie DB company ID",
         "description": "identifier of a company in the ‎Indie DB database"
+    },
+    "P12546": {
+        "label": "‎Instagram account numeric ID",
+        "description": "unique numeric identifier for Instagram accounts"
     },
     "P12243": {
         "label": "‎Internet Game Database event ID",
@@ -46898,5 +46930,9 @@
     "P12010": {
         "label": "‎wadoku ID",
         "description": "identifier for a lexeme in the wadoku database"
+    },
+    "P12547": {
+        "label": "‎‎Doom Wiki ID",
+        "description": "identifier of an article on ‎Doom Wiki"
     }
 }

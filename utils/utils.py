@@ -56,7 +56,7 @@ def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
                 label_language_objs = list(entity["labels"].values())
                 if len(label_language_objs) > 0:
                     label_language_obj = label_language_objs[0]
-                    print(f"En language label missing for entity {entity_id}, using language '{label_language_obj['language']}' instead.")
+                    #print(f"En language label missing for entity {entity_id}, using language '{label_language_obj['language']}' instead.")
 
             if label_language_obj is None:
                 print(f"Failed to download {entity_id} missing label.")
@@ -74,7 +74,7 @@ def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
             wiki_url = ""
             
             if entity.get("sitelinks") is None or entity["sitelinks"].get("enwiki") is None:
-                print(f"Failed to download {entity_id} missing url.")
+                #print(f"Failed to download {entity_id} missing url.")
                 with open('answer_entities_missing_url.txt', 'a') as f:
                     f.write(entity_id + '\n')
             else:
@@ -280,7 +280,7 @@ def run_sparql_query(query, flatten_answers = True):
         return answers
     
     except Exception as e:
-        print(f"Error running query: {e}")
+        print(f"Error running query: {query}\n\nError: {e}")
         return []
 
 def get_batched_entities_info(entity_ids, properties = None, max_entity_per_group = 50):
@@ -431,6 +431,10 @@ def process_property(main_property):
     return main_value, qualifiers, main_type
 
 def format_entity_info(entity_info):
+    if entity_info.get("missing") is not None:
+        print(f"Missing entity: {entity_info}")
+        return None, []
+
     claims = entity_info["claims"]
 
     properties = []
@@ -472,8 +476,11 @@ def format_entity_info(entity_info):
     del entity_info["sitelinks"]
 
     # Flatten labels (remove the 'en' level)
-    entity_info['labels'] = entity_info['labels']['en']
-    entity_info['label'] = entity_info['labels']['value'] # rename labels to label
+    if entity_info.get('labels') and entity_info['labels'].get('en') and entity_info['labels']['en'].get('value'):
+        entity_info['label'] = entity_info['labels']["en"]["value"] # rename labels to label
+    else:
+        entity_info['label'] = ""
+        
     del entity_info['labels']
 
     # aliases

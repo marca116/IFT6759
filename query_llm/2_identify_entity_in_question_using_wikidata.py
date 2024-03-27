@@ -4,6 +4,7 @@ import time
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
+import re
 
 from qa_utils import identify_entity
 
@@ -14,13 +15,15 @@ input_dir = '../qald_unique_entities_info'
 
 prompt_config = read_json('prompts.json')
 
-# qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
-dataset_name = "qald_9_plus_train_with_long_answer"
+# qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
+dataset_name = "qald_10_test"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_solved_answers_filename = f'{dataset_name}_solved_answers.json'
 
+using_wikidata = "_using_wikidata"
+
 # Create NER_results folder if it doesn't exist
-ner_root_dir = f"NER_results"
+ner_root_dir = f"NER_results" + using_wikidata
 if not os.path.exists(ner_root_dir):
     os.makedirs(ner_root_dir)
 
@@ -32,7 +35,7 @@ if not os.path.exists(wikidata_entities_dir):
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-# questions = questions[:5]
+#questions = questions[0:1]
 
 found_entities_full_info = []
 missing_entities_full_info = []
@@ -40,7 +43,8 @@ total_token_count = 0
 
 def find_main_entity_id(question, main_entity_name):
     if not main_entity_name:
-        return None, False
+        print(f"Error: Main entity name is empty. Question {question['uid']}")
+        return None, "", 0, []
 
     sparql_query = """
         SELECT DISTINCT ?item ?itemLabel ?itemDescription WHERE {
@@ -56,7 +60,7 @@ def find_main_entity_id(question, main_entity_name):
 
     # dict = {item, itemLabel, itemDescription}
     result_dicts = run_sparql_query(sparql_query, False)
-    results_text = "Wikidata items found:\n"
+    results_text = "Wikidata items:\n"
     
     # If no results found for the entity linking, return None
     if len(result_dicts) == 0:  
@@ -88,7 +92,12 @@ def find_main_entity_id(question, main_entity_name):
         return None, "", current_tokens_count, []
 
     main_entity_item_id = extracted_json.get("main_entity_item_id", None)
-    main_entity_item_id = main_entity_item_id.split("/")[-1] if main_entity_item_id else None # Remove the url if necessary
+    main_entity_item_id = main_entity_item_id.split("/")[-1].strip() if main_entity_item_id else None # Remove the url if necessary
+
+    # Validate if starts with Q + a string of numbers (no letters) using a regex
+    if main_entity_item_id and (not main_entity_item_id.startswith("Q") or not re.match(r'^Q\d+$', main_entity_item_id)):
+        print(f"Error: Main entity item id is invalid: {main_entity_item_id}. Question {question['uid']}. Response: {result['content']}")
+        main_entity_item_id = None
 
     reason = extracted_json.get("reason", "")
 
@@ -126,6 +135,7 @@ def process_question(question):
 def download_found_entities(found_entities):
     # Already downloaded entities
     files = os.listdir(wikidata_entities_dir)
+
     already_downloaded_entity_ids = [os.path.splitext(file)[0] for file in files]
 
     # Unique found entities
@@ -135,7 +145,15 @@ def download_found_entities(found_entities):
     main_entity_ids = [entity_id for entity_id in main_entity_ids if entity_id not in already_downloaded_entity_ids]
 
     # Get all the given entities full info from wikidata
-    unique_entities_info = get_batched_entities_info(main_entity_ids)
+    unique_entities_info_unvalidated = get_batched_entities_info(main_entity_ids)
+
+    # Don't include missing entities (has the field 'missing')
+    unique_entities_info = []
+    for entity_info in unique_entities_info_unvalidated:
+        if 'missing' not in entity_info:
+            unique_entities_info.append(entity_info)
+        else:
+            print(f"Entity {entity_info.get('id')} not found")
 
     # Format the info correctly (ex:  Add labels to properties)
     entities_info = format_entity_infos(unique_entities_info)
@@ -181,11 +199,11 @@ download_found_entities(found_entities_full_info)
 # Total token count + average token count
 print(f"Total token count: {total_token_count}")
 print(f"Average token count: {total_token_count / len(questions)}")
-print(f"Total questions with tokens: {len(questions)}")
 
 # print count
 print(f"Found entities: {len(found_entities_full_info)}")
 print(f"Missing entities: {len(missing_entities_full_info)}")
+print(f"Total questions with tokens: {len(questions)}")
 
 # sort
 found_entities_full_info.sort(key=lambda x: x["question_id"].zfill(3)) 
@@ -207,7 +225,7 @@ with open(f"{ner_results_dir}/NER_count.txt", 'w', encoding='utf-8') as file:
     file.write(f"Missing entities: {len(missing_entities_full_info)}\n")
     file.write(f"Total token count: {total_token_count}\n")
     file.write(f"Average token count: {total_token_count / len(questions)}\n")
-    file.write(f"Total questions with token: {questions}")
+    file.write(f"Total questions with token: {len(questions)}")
 
 with open(f"{ner_results_dir}/NER_failed.json", 'w', encoding='utf-8') as file:
     json.dump(missing_entities_full_info, file, ensure_ascii=False, indent=4)
@@ -221,5 +239,5 @@ with open(f"{ner_results_dir}/NER_both.json", 'w', encoding='utf-8') as file:
 print(f"Results saved to {ner_results_dir}")
 
 # Overwrite current NER_both file
-with open(f"{dataset_name}_NER_both.json", 'w', encoding='utf-8') as file:
+with open(f"{dataset_name}_NER_both{using_wikidata}.json", 'w', encoding='utf-8') as file:
     json.dump(both_entities_full_info, file, ensure_ascii=False, indent=4)

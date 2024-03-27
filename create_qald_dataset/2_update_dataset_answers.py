@@ -8,8 +8,9 @@ import sys
 sys.path.insert(0, "../utils")
 from utils import run_sparql_query
 
-input_file = "qald_9_plus_train_wikidata_formatted_and_cleaned.json"
-output_file = "qald_9_plus_train_wikidata_updated_answers.json"
+dataset_name = "original_qald_9_plus_test_wikidata" 
+input_file = f"{dataset_name}_formatted_and_cleaned.json"
+output_file = f"{dataset_name}_updated_answers.json"
 
 def process_question(question):
     # retry after 1 min if fails
@@ -30,7 +31,7 @@ with open(input_file, 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 # Process the data in batches
-batch_size = 4
+batch_size = 5
 start_time = time.time()
 
 # sepparate the data in groups of 3

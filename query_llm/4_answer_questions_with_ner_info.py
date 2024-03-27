@@ -13,8 +13,8 @@ from qa_utils import print_solved_question,sort_questions, process_question_with
 sys.path.insert(0, "../utils")
 from utils import clean_number, is_date, format_date_iso_format
 
-# qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
-dataset_name = "qald_9_plus_train_with_long_answer"
+# qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
+dataset_name = "qald_10_test"
 directly_from_wikidata = True
 
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
@@ -38,8 +38,9 @@ with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
 # questions = questions[:10] # First 10 questions only
-
-ner_file = f"{dataset_name}_NER_both.json"
+    
+using_wikidata_text = "_using_wikidata" if directly_from_wikidata else ""
+ner_file = f"{dataset_name}_NER_both{using_wikidata_text}.json"
 
 # open ner_file
 with open(ner_file, 'r', encoding='utf-8') as file:
@@ -86,7 +87,7 @@ def process_question(question):
 #     process_question(question)
 #     print(f"Processed {index + 1}/{len(questions)} questions")
 
-batch_size = 2 # Might get rate limited above that
+batch_size = 5 # Might get rate limited above that
 start_time = time.time()
 
 # sepparate the data in groups 

@@ -177,6 +177,7 @@ create_lcquad2_dataset/*/
 */qald_unique_entities_info/
 qald_unique_entities_info/
 */NER_results/
+*/NER_results_using_wikidata/
 */tests/
 */info_msg_with_token_count/
 */info_msg_with_token_count_old/
@@ -185,6 +186,10 @@ utils/cached_entity_labels.json
 */results_no_external_info
 query_llm/*_solved_answers_no_external_info.json
 query_llm/*_NER_both.json
+query_llm/*_NER_both_using_wikidata.json
 query_llm/question_failed_or_successful_with_entity_linking
 query_llm/results_ner_guesses_only/
 query_llm/wikidata_entities/
+qald_unique_entities_info_prev/
+*/qald_unique_entities_info_prev/
+*/temp/
