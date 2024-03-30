@@ -1,0 +1,84 @@
+[
+    {
+        "NNQT_question": "Who is the head of state of the United Kingdom?",
+        "uid": "1",
+        "subgraph": "",
+        "template_index": "",
+        "question": "Who is the head of state of the United Kingdom?",
+        "sparql_wikidata": "",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q43274"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "Charles III of the United Kingdom",
+                "The Prince Charles Philip Arthur George, Prince of Wales",
+                "Prince Charles Philip Arthur George, Prince of Wales",
+                "His Majesty The King",
+                "Prince Charles Philip Arthur George of Edinburgh",
+                "Charles Wales",
+                "Prince Charles",
+                "Prince Charles, Duke of Rothesay",
+                "King of England",
+                "Prince Charles of Edinburgh",
+                "HM King Charles III",
+                "Charles Windsor",
+                "The Prince Charles, Prince of Wales",
+                "Prince Charles, Prince of Wales",
+                "Charles Philip Arthur George Windsor",
+                "Charles the Third",
+                "His Royal Highness Charles III of Great Britain",
+                "King Charles III",
+                "King Charles",
+                "His Majesty",
+                "Charles Mountbatten-Windsor",
+                "Charles Philip Arthur George Mountbatten-Windsor",
+                "Charles Philip Arthur George, Prince of Wales",
+                "C III",
+                "Charles III of England",
+                "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
+                "Chuck"
+            ]
+        ]
+    },
+    {
+        "NNQT_question": "When did the Francis Scott Key Bridge collapse?",
+        "uid": "2",
+        "subgraph": "",
+        "template_index": "",
+        "question": "When did the Francis Scott Key Bridge collapse?",
+        "sparql_wikidata": "",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "2024-03-26T00:00:00Z"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            "2024-03-26T00:00:00Z"
+        ]
+    },
+    {
+        "NNQT_question": "What's the population of Costa Rica?",
+        "uid": "3",
+        "subgraph": "",
+        "template_index": "",
+        "question": "What's the population of the Costa Rica?",
+        "sparql_wikidata": "",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "5044197"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            "5044197"
+        ]
+    }
+]

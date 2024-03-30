@@ -189,7 +189,10 @@ query_llm/*_NER_both.json
 query_llm/*_NER_both_using_wikidata.json
 query_llm/question_failed_or_successful_with_entity_linking
 query_llm/results_ner_guesses_only/
+query_llm/results_with_react/
 query_llm/wikidata_entities/
 qald_unique_entities_info_prev/
 */qald_unique_entities_info_prev/
 */temp/
+qald_unique_entities_info_qald_9_plus_orig/
+qald_unique_entities_info_qald10/

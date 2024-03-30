@@ -5,6 +5,15 @@ import time
 import re
 from dateutil.parser import parse
 from datetime import datetime
+import threading
+from openai_requests_utils import read_json
+
+write_lock = threading.Lock()
+
+def write_json(filename, content):
+    with write_lock: 
+        with open(filename, 'w', encoding="utf-8") as file:
+            json.dump(content, file, indent=4)
 
 def get_wikidata_entities_info(entity_ids, allow_fallback_language=False):
     wiki_api_url = "https://www.wikidata.org/w/api.php"
@@ -505,12 +514,22 @@ def format_entity_info(entity_info):
 
     return entity_info, properties_entity_ids
 
-# def update_entity_labels(entity_infos, property_id, property_label):
-#     entity_info['labels'] = new_labels
-#     entity_info['label'] = new_labels['value'] # rename labels to label
-#     return entity_info
+cached_entity_labels_filename = "../utils/cached_entity_labels.json"
 
-def format_entity_infos(entity_infos):
+def get_cached_entity_labels_dict():
+    # Load the cached entity labels
+    cached_entity_labels_dict = {}
+
+    if os.path.exists(cached_entity_labels_filename):
+        cached_entity_labels_dict = read_json(cached_entity_labels_filename)
+
+    return cached_entity_labels_dict
+
+def save_cached_entity_labels_dict(cached_entity_labels_dict):
+    # Save the cached entity labels
+    write_json(cached_entity_labels_filename, cached_entity_labels_dict)
+
+def format_entity_infos(entity_infos, cached_entity_labels_dict):
     all_properties_entity_ids = []
 
     # Load the wikidata quantity properties dictionary
@@ -529,14 +548,6 @@ def format_entity_infos(entity_infos):
     unique_properties_entity_ids = list(set(all_properties_entity_ids))
 
     print(f"{len(unique_properties_entity_ids)} entity properties to get label for. Loading cached labels...")
-
-    # Load the cached entity labels
-    cached_entity_labels_filename = "../utils/cached_entity_labels.json"
-    cached_entity_labels_dict = {}
-
-    if os.path.exists(cached_entity_labels_filename):
-        with open(cached_entity_labels_filename, 'r', encoding='utf-8') as file:
-            cached_entity_labels_dict = json.load(file)
 
     # Use cached entity labels if possible
     property_entities_to_update_dict = {}
@@ -566,10 +577,6 @@ def format_entity_infos(entity_infos):
 
             property_entities_to_update_dict[prop_id] = prop_label
             cached_entity_labels_dict[prop_id] = prop_label # cache the label
-
-    # Save the cached entity labels
-    with open(cached_entity_labels_filename, 'w', encoding='utf-8') as file:
-        json.dump(cached_entity_labels_dict, file, ensure_ascii=False, indent=4)
 
     # Load the wikidata properties dictionary
     wikidata_properties_dict = {}

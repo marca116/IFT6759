@@ -6,17 +6,17 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 import re
 
-from qa_utils import identify_entity
+from qa_utils import identify_entity, download_entities_info
 
 sys.path.insert(0, "../utils")
-from utils import run_sparql_query, get_batched_entities_info, format_entity_infos
+from utils import run_sparql_query, get_cached_entity_labels_dict, save_cached_entity_labels_dict
 
 input_dir = '../qald_unique_entities_info'
 
 prompt_config = read_json('prompts.json')
 
 # qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
-dataset_name = "qald_10_test"
+dataset_name = "qald_10_train_short"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_solved_answers_filename = f'{dataset_name}_solved_answers.json'
 
@@ -132,38 +132,6 @@ def process_question(question):
     else:
         found_entities_full_info.append(full_info)
 
-def download_found_entities(found_entities):
-    # Already downloaded entities
-    files = os.listdir(wikidata_entities_dir)
-
-    already_downloaded_entity_ids = [os.path.splitext(file)[0] for file in files]
-
-    # Unique found entities
-    main_entity_ids = list(set([question["main_entity_id"].strip() for question in found_entities]))
-
-    # Remove already downloaded entities
-    main_entity_ids = [entity_id for entity_id in main_entity_ids if entity_id not in already_downloaded_entity_ids]
-
-    # Get all the given entities full info from wikidata
-    unique_entities_info_unvalidated = get_batched_entities_info(main_entity_ids)
-
-    # Don't include missing entities (has the field 'missing')
-    unique_entities_info = []
-    for entity_info in unique_entities_info_unvalidated:
-        if 'missing' not in entity_info:
-            unique_entities_info.append(entity_info)
-        else:
-            print(f"Entity {entity_info.get('id')} not found")
-
-    # Format the info correctly (ex:  Add labels to properties)
-    entities_info = format_entity_infos(unique_entities_info)
-
-    for entity_info in entities_info:
-        entity_id = entity_info['id']
-        
-        with open(f"{wikidata_entities_dir}/{entity_id}.json", 'w', encoding='utf-8') as file:
-            json.dump(entity_info, file, ensure_ascii=False, indent=4)
-
 # PROCESSING
 
 # for question in questions:
@@ -193,8 +161,14 @@ if len(questions) == 0:
     print("No questions to process")
     sys.exit()
 
+# Load the cached entity labels
+cached_entity_labels_dict = get_cached_entity_labels_dict()
+
 # Download the found entities
-download_found_entities(found_entities_full_info)
+found_entity_ids = list(set([question["main_entity_id"].strip() for question in found_entities_full_info]))    
+download_entities_info(found_entity_ids, wikidata_entities_dir, cached_entity_labels_dict)
+
+save_cached_entity_labels_dict(cached_entity_labels_dict)
 
 # Total token count + average token count
 print(f"Total token count: {total_token_count}")

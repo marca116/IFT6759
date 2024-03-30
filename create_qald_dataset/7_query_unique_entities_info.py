@@ -4,7 +4,7 @@ import json
 import sys
 
 sys.path.insert(0, "../utils")
-from utils import get_batched_entities_info, format_entity_infos
+from utils import get_batched_entities_info, format_entity_infos, get_cached_entity_labels_dict, save_cached_entity_labels_dict
 
 input_unique_entities = 'qald_unique_entities.txt' # qald_9_plus_train_wikidata and qald_10_test
 output_dir = 'qald_unique_entities_info'
@@ -25,13 +25,18 @@ start_time = time.time()
 # Get all the given entities full info from wikidata
 unique_entities_info = get_batched_entities_info(unique_entity_ids)
 
+cached_entity_labels_dict = get_cached_entity_labels_dict()
+
 # Format the info correctly (ex:  Add labels to properties)
-entities_info = format_entity_infos(unique_entities_info)
+entities_info = format_entity_infos(unique_entities_info, cached_entity_labels_dict)
 
 for entity_info in entities_info:
     entity_id = entity_info['id']
     
     with open(f"{output_dir}/{entity_id}.json", 'w', encoding='utf-8') as file:
         json.dump(entity_info, file, ensure_ascii=False, indent=4)
+
+# Save the cached entity labels
+save_cached_entity_labels_dict(cached_entity_labels_dict)
 
 print(f"Total time: {time.time() - start_time} seconds")

@@ -1,0 +1,22 @@
+[
+    {
+        "NNQT_question": "Who is the oldest child of Meryl Streep?",
+        "uid": "356",
+        "subgraph": "",
+        "template_index": "",
+        "question": "Who is the oldest child of Meryl Streep?",
+        "sparql_wikidata": "PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> SELECT DISTINCT ?uri WHERE { wd:Q873 wdt:P40 ?uri . ?uri wdt:P569 ?date . } ORDER BY ASC(?date) LIMIT 1",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q15052227"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "Henry Wolfe Gummer"
+            ]
+        ]
+    }
+]
