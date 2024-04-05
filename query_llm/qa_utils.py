@@ -306,7 +306,8 @@ def answer_qa_question(question, info_messages, entity_id, info_messages_dir, in
     save_info_messages_with_token_counts(info_messages, question, entity_id, info_tokens_count, convo_token_count, info_messages_dir)
     current_tokens_count = initial_token_count + convo_token_count
     
-    if convo_token_count > 16380:
+    # Take into account the token limit for ggpt 3.5 (16385 - 1750 max output tokens count)
+    if convo_token_count > 14635:
         print(f"Skipping question {question['uid']}, token count too high: {convo_token_count}")
         return None, None, None, None, None, current_tokens_count
 
@@ -495,7 +496,7 @@ def process_question_react(question, ner_entity_info, info_messages_dir, cached_
     is_question_answered = False
 
     # Check if any of the property's instances are of type wikibase-entityid
-    property_instances_are_wikibase_entity = any(instance["type"] == "wikibase-entityid" for instance in property["instances"])
+    property_instances_are_wikibase_entity = any(instance["type"] == "wikibase-entityid" and instance.get("value", "").startswith("Q") for instance in property["instances"])
 
     # Validate if the question can already be answered with the property's values
     if property_instances_are_wikibase_entity:

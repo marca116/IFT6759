@@ -481,8 +481,12 @@ def format_entity_info(entity_info):
     entity_info["properties"] = properties
     del entity_info["claims"]
 
-    link = entity_info["sitelinks"]
-    del entity_info["sitelinks"]
+    link = None
+    if entity_info.get("sitelinks") is not None:
+        link = entity_info["sitelinks"]
+        del entity_info["sitelinks"]
+    else:
+        print(f"Missing sitelinks for entity: {entity_info.get('id')}")
 
     # Flatten labels (remove the 'en' level)
     if entity_info.get('labels') and entity_info['labels'].get('en') and entity_info['labels']['en'].get('value'):
@@ -507,7 +511,7 @@ def format_entity_info(entity_info):
         entity_info['description'] = ""
     del entity_info['descriptions']
 
-    if link.get("enwiki") and link.get("enwiki").get("url"):
+    if link is not None and link.get("enwiki") and link.get("enwiki").get("url"):
         entity_info["wiki_link"] = link["enwiki"]["url"] # rename enwiki to wiki_link
     else:
         entity_info["wiki_link"] = ""
