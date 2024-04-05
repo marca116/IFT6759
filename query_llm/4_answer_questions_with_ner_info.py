@@ -14,7 +14,7 @@ sys.path.insert(0, "../utils")
 from utils import clean_number, is_date, format_date_iso_format, get_cached_entity_labels_dict, save_cached_entity_labels_dict
 
 # qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
-dataset_name = "react_questions"
+dataset_name = "qald_10_test"
 use_react = True
 directly_from_wikidata = True
 add_properties_on_fallback = False # Whether to add all wikidata properties when react fails, or just use pure llm as fallback

@@ -300,14 +300,15 @@ def answer_qa_question(question, info_messages, entity_id, info_messages_dir, in
     convo_history = create_qa_convo_history(question, True, info_messages)
 
     info_tokens_count = count_tokens(info_messages)
-    current_tokens_count = initial_token_count + count_tokens(convo_history)
+    convo_token_count = count_tokens(convo_history)
 
     # Save info messages used for the question with token counts
-    save_info_messages_with_token_counts(info_messages, question, entity_id, info_tokens_count, current_tokens_count, info_messages_dir)
-
-    if current_tokens_count > 16380:
-        print(f"Skipping question {question['uid']}, token count too high: {current_tokens_count}")
-        return [], "Total tokens count too high"
+    save_info_messages_with_token_counts(info_messages, question, entity_id, info_tokens_count, convo_token_count, info_messages_dir)
+    current_tokens_count = initial_token_count + convo_token_count
+    
+    if convo_token_count > 16380:
+        print(f"Skipping question {question['uid']}, token count too high: {convo_token_count}")
+        return None, None, None, None, None, current_tokens_count
 
     # Send message to API
     result = send_open_ai_gpt_message(convo_history, json_mode=True)
