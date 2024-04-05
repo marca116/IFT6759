@@ -14,9 +14,9 @@ sys.path.insert(0, "../utils")
 from utils import clean_number, is_date, format_date_iso_format, get_cached_entity_labels_dict, save_cached_entity_labels_dict
 
 # qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
-dataset_name = "original_qald_9_plus_test"
-use_react = True
-directly_from_wikidata = True
+dataset_name = "qald_10_train"
+use_react = False
+directly_from_wikidata = False
 add_properties_on_fallback = False # Whether to add all wikidata properties when react fails, or just use pure llm as fallback
 
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
@@ -31,7 +31,13 @@ with open(no_extra_info_solved_answers_filename, 'r', encoding='utf-8') as file:
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S%f")
 
 # create dir if doesn't exist
-root_results_folder = "results_with_properties_info" if not use_react else "results_with_react"
+if use_react:
+    root_results_folder = "results_with_react"
+elif directly_from_wikidata:
+    root_results_folder = "results_with_properties_info_wikidata_directly"
+else:
+    root_results_folder = "results_with_properties_info"
+
 if not os.path.exists(root_results_folder):
     os.makedirs(root_results_folder)
 output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" + output_filename
