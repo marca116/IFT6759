@@ -197,3 +197,6 @@ qald_unique_entities_info_prev/
 */temp/
 qald_unique_entities_info_qald_9_plus_orig/
 qald_unique_entities_info_qald10/
+
+datasets/oai_embeddings/
+
