@@ -143,7 +143,7 @@ def normalize_text(s):
     def lower(text):
         return text.lower()
 
-    return white_space_fix(remove_articles(remove_punc(lower(s))))
+    return white_space_fix(remove_articles(remove_punc(lower(str(s)))))
 
 
 def compute_exact_match(prediction, truth):
@@ -173,6 +173,10 @@ def compute_relaxed_f1(prediction, truth):
 def relaxed_f1_score(sq):
     if len(sq['solved_answer']) == 0:
         return 0
+
+    if not 'gold_solved_answers' in sq and 'gold_answers' in sq:
+        sq['gold_solved_answers'] = [sq['gold_answers']]
+
     if len(sq.get('gold_solved_answers', [])) == 0:
         return None
 

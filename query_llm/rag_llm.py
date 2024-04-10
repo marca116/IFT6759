@@ -100,7 +100,7 @@ kd_index = KDTree(embeddings)
 titles = dict(zip(range(len(df)), df.title))
 
 # qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
-dataset_name = "qald_10_train"
+dataset_name = "qald_10_test"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
 
@@ -147,7 +147,7 @@ def process_question_rag(question, model="text-embedding-3-small"):
         encoded_question = encoded_questions[question['uid']]
 
     d, indices = kd_index.query(encoded_question, k=5)
-    contexts = [(titles[t] + ' - ' + dataset[t]['text'], cos_sim(embeddings[t], encoded_question[0])) for t in indices[0]]
+    contexts = [titles[int(t)] + ' - ' + dataset[int(t)]['text'] for t in indices[0]]
 
     answers, original_answers, reason, answers_datatype, extra_info, token_count = process_question_with_rag_context(
         question, contexts, info_messages_dir, prompt_config)
@@ -186,6 +186,7 @@ print(f"Macro F1 score: {macro_f1}")
 #########################################################
 # COMPUTE RELAXED F1 SCORE ##############################
 for q in solved_questions:
+    q['strict_f1'] = q['f1']
     q['f1'] = relaxed_f1_score(q)
 
 macro_f1 = calc_question_macro_f1_score([t for t in solved_questions if t['f1'] is not None])
