@@ -100,7 +100,7 @@ kd_index = KDTree(embeddings)
 titles = dict(zip(range(len(df)), df.title))
 
 # qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
-dataset_name = "qald_10_test"
+dataset_name = "qald_10_train"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
 
@@ -117,8 +117,9 @@ with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
 # Need to take care better of answer format/type
-questions[101]['solved_answer'] = ['1888']
-questions[101]['answer'] = ['1888']
+if dataset_name == "qald_10_train":
+    questions[101]['solved_answer'] = ['1888']
+    questions[101]['answer'] = ['1888']
 
 solved_questions = []
 total_token_count = 0
@@ -186,7 +187,7 @@ print(f"Macro F1 score: {macro_f1}")
 #########################################################
 # COMPUTE RELAXED F1 SCORE ##############################
 for q in solved_questions:
-    q['strict_f1'] = q['f1']
+    #q['strict_f1'] = q['f1']
     q['f1'] = relaxed_f1_score(q)
 
 macro_f1 = calc_question_macro_f1_score([t for t in solved_questions if t['f1'] is not None])

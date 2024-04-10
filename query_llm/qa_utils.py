@@ -160,7 +160,7 @@ def extract_info_qa_response(result, question):
     extra_info = extracted_json.get("additional_information", "")
     original_gpt_answers = extracted_json.get("answers", [])
 
-    print(extracted_json)
+    #print(extracted_json)
 
     # Fix answers formatting
     gpt_answers = format_gpt_answers(original_gpt_answers, question['uid'], answers_datatype)

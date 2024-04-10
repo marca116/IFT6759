@@ -199,4 +199,6 @@ qald_unique_entities_info_qald_9_plus_orig/
 qald_unique_entities_info_qald10/
 
 datasets/oai_embeddings/
+query_llm/results_with_rag_oai/
+rag/data
 

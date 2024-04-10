@@ -132,8 +132,9 @@ output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" 
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-questions[101]['solved_answer'] = [['1888']]
-questions[101]['answer'] = ['1888']
+if dataset_name == "qald_10_train":
+    questions[101]['solved_answer'] = ['1888']
+    questions[101]['answer'] = ['1888']
 
 solved_questions = []
 total_token_count = 0

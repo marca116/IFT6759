@@ -169,6 +169,14 @@ def compute_relaxed_f1(prediction, truth):
 
     return 2 * (prec * rec) / (prec + rec)
 
+def n_items(lst):
+    n = 0
+    for elem in lst:
+        if isinstance(elem, list):
+            n += n_items(elem)
+        else:
+            n += 1
+    return n
 
 def relaxed_f1_score(sq):
     if len(sq['solved_answer']) == 0:
@@ -181,6 +189,9 @@ def relaxed_f1_score(sq):
         return None
 
     gold_solved_ans = sq.get('gold_solved_answers', [])
+    if n_items(gold_solved_ans) == 0:
+        return None
+
     if isinstance(gold_solved_ans[0], str):
         gold_solved_ans = [gold_solved_ans]
 
