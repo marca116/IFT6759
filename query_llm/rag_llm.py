@@ -121,7 +121,9 @@ if dataset_name == "qald_10_train":
     questions[101]['solved_answer'] = ['1888']
     questions[101]['answer'] = ['1888']
 
-solved_questions = []
+# Todo: save this to disk
+encoded_questions = dict()
+
 total_token_count = 0
 total_questions_with_tokens = 0
 
@@ -134,9 +136,7 @@ cos_sim = lambda a, b: np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
 prompt_config = read_json('prompts.json')
 
-# Todo: save this to disk
-encoded_questions = dict()
-
+solved_questions = []
 def process_question_rag(question, model="text-embedding-3-small"):
     global total_token_count, total_questions_with_tokens, all_contexts
 
@@ -187,7 +187,7 @@ print(f"Macro F1 score: {macro_f1}")
 #########################################################
 # COMPUTE RELAXED F1 SCORE ##############################
 for q in solved_questions:
-    #q['strict_f1'] = q['f1']
+    q['strict_f1'] = q['f1']
     q['f1'] = relaxed_f1_score(q)
 
 macro_f1 = calc_question_macro_f1_score([t for t in solved_questions if t['f1'] is not None])
