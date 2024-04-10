@@ -6,6 +6,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import re
 import time
+import pandas as pn
 from datetime import datetime
 
 from scipy import io
@@ -16,15 +17,14 @@ from qa_utils import print_solved_question, sort_questions, process_question_wit
 import numpy as np
 from datasets import load_from_disk
 
-passages_path = os.path.join('..', 'rag', 'data', "wikipedia_kb_dataset")
+passages_path = os.path.join('..', 'rag', 'data', "wikipedia_kb_dataset.csv")
 embeddings_path = os.path.join('..', 'datasets/oai_embeddings')
 
 ##############################
 # LOAD DATASET AND INDEX #####
 ##############################
 
-dataset = load_from_disk(passages_path)
-df = dataset.to_pandas()
+df = pn.read_csv(passages_path)
 
 #########################
 from openai import OpenAI
@@ -182,13 +182,13 @@ def process_question_grag(question, model="text-embedding-3-small"):
 
                 contexts.append(
                     (
-                        titles[indices_map[(entity_id, t)]] + ' - ' + dataset[indices_map[(entity_id, t)]]['text']
+                        titles[indices_map[(entity_id, t)]] + ' - ' + df.iloc[indices_map[(entity_id, t)]]['text']
                     )
                 )
     else:
         # Todo: Default to full index?
         d, indices = full_kd_index.query(encoded_question, k=5)
-        contexts = [titles[t] + ' - ' + dataset[t]['text'] for t in indices[0]]
+        contexts = [titles[t] + ' - ' + df.iloc[int(t)]['text'] for t in indices[0]]
 
     answers, original_answers, reason, answers_datatype, extra_info, token_count = process_question_with_rag_context(
         question, contexts, info_messages_dir, prompt_config)
@@ -227,6 +227,7 @@ print(f"Macro F1 score: {macro_f1}")
 #########################################################
 # COMPUTE RELAXED F1 SCORE ##############################
 for q in solved_questions:
+    q['strict_f1'] = q['f1']
     q['f1'] = relaxed_f1_score(q)
 
 macro_f1 = calc_question_macro_f1_score([t for t in solved_questions if t['f1'] is not None])

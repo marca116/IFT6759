@@ -185,12 +185,10 @@ def relaxed_f1_score(sq):
     if not 'gold_solved_answers' in sq and 'gold_answers' in sq:
         sq['gold_solved_answers'] = [sq['gold_answers']]
 
-    if len(sq.get('gold_solved_answers', [])) == 0:
+    if n_items(sq.get('gold_solved_answers', [])) == 0:
         return None
 
     gold_solved_ans = sq.get('gold_solved_answers', [])
-    if n_items(gold_solved_ans) == 0:
-        return None
 
     if isinstance(gold_solved_ans[0], str):
         gold_solved_ans = [gold_solved_ans]

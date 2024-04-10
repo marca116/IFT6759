@@ -6,6 +6,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import re
 import time
+import pandas as pn
 from datetime import datetime
 
 from scipy import io
@@ -16,16 +17,14 @@ from qa_utils import print_solved_question, sort_questions, process_question_wit
 import numpy as np
 from datasets import load_from_disk
 
-passages_path = os.path.join('..', 'rag', 'data', "wikipedia_kb_dataset")
+passages_path = os.path.join('..', 'rag', 'data', "wikipedia_kb_dataset.csv")
 embeddings_path = os.path.join('..', 'datasets/oai_embeddings')
 
 ##############################
-# LOAD DATASET AND INDEX #####
+# LOAD DATASET ###############
 ##############################
 
-# Todo: save dataset without embeddings
-dataset = load_from_disk(passages_path)
-df = dataset.to_pandas()
+df = pn.read_csv(passages_path)
 
 #########################
 from openai import OpenAI
@@ -85,7 +84,7 @@ if compute_embedding_db:
 else:
     for i in range(10):
         print('loading', i)
-        c_emb = io.loadmat(f'/Users/oscarcuellar/ocn/mila/amlp/IFT6759/datasets/oai_embeddings/emb_{i}')['text_emb']
+        c_emb = io.loadmat(os.path.join(embeddings_path, f'emb_{i}'))['text_emb']
         if i == 0:
             embeddings = c_emb
         else:
@@ -116,7 +115,7 @@ output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" 
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-# Need to take care better of answer format/type
+# Need to take care better of answer format/type: DATES!
 if dataset_name == "qald_10_train":
     questions[101]['solved_answer'] = ['1888']
     questions[101]['answer'] = ['1888']
@@ -148,7 +147,7 @@ def process_question_rag(question, model="text-embedding-3-small"):
         encoded_question = encoded_questions[question['uid']]
 
     d, indices = kd_index.query(encoded_question, k=5)
-    contexts = [titles[int(t)] + ' - ' + dataset[int(t)]['text'] for t in indices[0]]
+    contexts = [titles[int(t)] + ' - ' + df.iloc[int(t)]['text'] for t in indices[0]]
 
     answers, original_answers, reason, answers_datatype, extra_info, token_count = process_question_with_rag_context(
         question, contexts, info_messages_dir, prompt_config)
