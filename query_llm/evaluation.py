@@ -171,8 +171,41 @@ def compute_relaxed_f1(prediction, truth):
 
 
 def relaxed_f1_score(sq):
-    return sum(
-        [max([compute_f1(sa, ga) for gas in sq.get('gold_solved_answers', [['']]) for ga in gas]) for sa in sq['solved_answer']]
-    ) / (len(sq['solved_answer']) + .001)
+    if len(sq['solved_answer']) == 0:
+        return 0
+    if len(sq.get('gold_solved_answers', [])) == 0:
+        return None
+
+    gold_solved_ans = sq.get('gold_solved_answers', [])
+    if isinstance(gold_solved_ans[0], str):
+        gold_solved_ans = [gold_solved_ans]
+
+    used_ga = set()
+    scores = list()
+    for sa in sq['solved_answer']:
+        max_score = 0
+        c_idx_ga = None
+        for idx_gold_ans, gold_ans in enumerate(gold_solved_ans):
+            if idx_gold_ans in used_ga:
+                continue
+            for ga in gold_ans:
+
+                c_f1 = compute_relaxed_f1(sa, ga)
+                if c_f1 > max_score:
+                    max_score = c_f1
+                    c_idx_ga = idx_gold_ans
+
+        if c_idx_ga is not None:
+            used_ga.add(c_idx_ga)
+        scores.append(max_score)
+
+    prec = sum(scores) / len(sq['solved_answer'])
+    rec = sum(scores) / len(sq.get('gold_solved_answers', [0]))
+
+    if (prec + rec) == 0:
+        return 0
+
+    return 2 * (prec * rec) / (prec + rec)
+
 
 

@@ -23,7 +23,6 @@ embeddings_path = os.path.join('..', 'datasets/oai_embeddings')
 # LOAD DATASET AND INDEX #####
 ##############################
 
-# Todo: save dataset without embeddings
 dataset = load_from_disk(passages_path)
 df = dataset.to_pandas()
 
@@ -91,13 +90,30 @@ else:
         else:
             embeddings = np.concatenate((embeddings, c_emb))
 
+########################################
+# Full index ###########################
+
+full_kd_index = KDTree(embeddings)
+
+########################################
+# Build an index for each article ######
+
+df['idx'] = range(len(df))
+entityid_chunkidx = dict(df.groupby('id')['idx'].agg(lambda t: t.tolist()).reset_index().values)
+
+indices_map = dict()
+kdtrees = dict()
+k = 0
+for ent_id, chunks in entityid_chunkidx.items():
+    kdtrees[ent_id] = KDTree(embeddings[chunks])
+    for idx, chunkid in enumerate(chunks):
+        indices_map[(ent_id, idx)] = chunkid
+    k += 1
+
+titles = dict(zip(range(len(df)), df.title))
 
 ##############################
-# Create index for all chunks
-# Need to normalize to norm 1?
-
-kd_index = KDTree(embeddings)
-titles = dict(zip(range(len(df)), df.title))
+# LOAD DATA #####
 
 # qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
 dataset_name = "qald_10_train"
@@ -116,8 +132,7 @@ output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" 
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-# Need to take care better of answer format/type
-questions[101]['solved_answer'] = ['1888']
+questions[101]['solved_answer'] = [['1888']]
 questions[101]['answer'] = ['1888']
 
 solved_questions = []
@@ -133,10 +148,12 @@ cos_sim = lambda a, b: np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
 prompt_config = read_json('prompts.json')
 
-# Todo: save this to disk
-encoded_questions = dict()
+f = open(f'{dataset_name}_NER_both_using_wikidata.json', 'r', encoding='utf8')
+both_entities_full_info = json.load(f)
+f.close()
 
-def process_question_rag(question, model="text-embedding-3-small"):
+encoded_questions = dict()
+def process_question_grag(question, model="text-embedding-3-small"):
     global total_token_count, total_questions_with_tokens, all_contexts
 
     if question['uid'] not in encoded_questions:
@@ -146,8 +163,31 @@ def process_question_rag(question, model="text-embedding-3-small"):
     else:
         encoded_question = encoded_questions[question['uid']]
 
-    d, indices = kd_index.query(encoded_question, k=5)
-    contexts = [(titles[t] + ' - ' + dataset[t]['text'], cos_sim(embeddings[t], encoded_question[0])) for t in indices[0]]
+    entities_info = [t for t in both_entities_full_info if t['question_id'] == question['uid']]
+
+    entities_ids = [
+        ent_info['main_entity_id'] for ent_info in entities_info
+        if 'main_entity_id' in ent_info and ent_info['main_entity_id'] is not None
+    ]
+
+    if len(entities_ids):
+
+        contexts = []
+        for entity_id in entities_ids:
+            kd_index = kdtrees[entity_id]
+            d, indices = kd_index.query(encoded_question, k=3)
+
+            for t in indices[0]:
+
+                contexts.append(
+                    (
+                        titles[indices_map[(entity_id, t)]] + ' - ' + dataset[indices_map[(entity_id, t)]]['text']
+                    )
+                )
+    else:
+        # Todo: Default to full index?
+        d, indices = full_kd_index.query(encoded_question, k=5)
+        contexts = [titles[t] + ' - ' + dataset[t]['text'] for t in indices[0]]
 
     answers, original_answers, reason, answers_datatype, extra_info, token_count = process_question_with_rag_context(
         question, contexts, info_messages_dir, prompt_config)
@@ -162,7 +202,7 @@ def process_question_rag(question, model="text-embedding-3-small"):
 for i, q in enumerate(questions):
     if i % 10 == 0:
         print(i)
-    process_question_rag(q, "text-embedding-3-small")
+    process_question_grag(q, "text-embedding-3-small")
 
 sort_questions(solved_questions)
 
