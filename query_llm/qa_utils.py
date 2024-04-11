@@ -118,6 +118,12 @@ def format_gpt_answers(original_gpt_answers, question_uid, answers_datatype = No
         if is_date(formatted_answer):
             formatted_answer = format_date_iso_format(formatted_answer)
 
+        # Urls always start with https
+        if formatted_answer.startswith("http://"):
+            formatted_answer = formatted_answer.replace("http://", "https://")
+            if formatted_answer[-1] == "/":
+                formatted_answer = formatted_answer[:-1]
+
         # Remove empty answers
         gpt_answers.append(formatted_answer)
 
@@ -144,7 +150,7 @@ def create_qa_convo_history(question, use_external_info = False, info_messages =
     prompt = f'{prompt_config["qa_intro"]}{previous_info} {prompt_config["qa_content"]}'
 
     convo_history = [format_msg_oai("user", "Question: " + question["question"]), format_msg_oai("user", prompt)]
-    convo_history = system_messages + info_messages + examples_history + convo_history
+    convo_history = system_messages + examples_history + info_messages + convo_history
 
     return convo_history
 
@@ -182,7 +188,7 @@ def create_choose_entity_convo_history(question, info_messages, current_step, en
 
     return convo_history
 
-def extract_choose_entity_response(result, question):
+def extract_choose_entity_response(result, question, react_info):
     extracted_json = extract_json_from_response("qa", result["content"])
     if extracted_json is None:
         print(f"Error: Could not extract json from response, empty answer given. Question {question['uid']}. Response: {result['content']}")
@@ -191,6 +197,20 @@ def extract_choose_entity_response(result, question):
     information_requested = extracted_json.get("information_requested", "")
     property_name = extracted_json.get("property_name", "")
     property_id = extracted_json.get("property_id", "")
+    property_id = property_id if property_id is not None else "" # set to "" if was set to None
+
+    # If propertyId doesn't start with a P, but is a number, add "P" at the start
+    if property_id.isdigit():
+        property_id = "P" + property_id
+
+    react_info_field_name = "choose_property" if "choose_property" not in react_info else "choose_property_2"
+    react_info_property_obj = {
+        "information_requested": information_requested,
+        "property_name": property_name,
+        "property_id": property_id,
+        "reason": extracted_json.get("reason", "")
+    }
+    react_info[react_info_field_name] = react_info_property_obj
 
     print(extracted_json)
 
@@ -209,16 +229,30 @@ def create_is_question_answered_convo_history(question, tentative_answer, info_m
 
     return convo_history
 
-def extract_is_question_answered(result, question):
+def extract_is_question_answered(result, question, react_info):
     extracted_json = extract_json_from_response("qa", result["content"])
     if extracted_json is None:
         print(f"Error: Could not extract json from response, empty answer given. Question {question['uid']}. Response: {result['content']}")
         return [], [], "", "", ""
 
     answer_status = extracted_json.get("answer_status", "") # True if question was correctly answered with the given info
+    reason = extracted_json.get("reason", "")
+    additional_details_required = extracted_json.get("additional_details_required", "")
+   
     is_question_answered = answer_status == "correct"
 
     print(extracted_json)
+
+    react_info_question_is_answered_obj = {
+        "answer_status": answer_status,
+        "reason": reason,
+        "additional_details_required": additional_details_required
+    }
+
+    if not additional_details_required:
+        del react_info_question_is_answered_obj["additional_details_required"]
+
+    react_info["question_is_answered"] = react_info_question_is_answered_obj
 
     return is_question_answered
 
@@ -296,7 +330,7 @@ def get_instances_text(root_property, root_id):
 
     return instances_texts
 
-def answer_qa_question(question, info_messages, entity_id, info_messages_dir, initial_token_count = 0):
+def answer_qa_question(question, info_messages, entity_id, info_messages_dir, initial_token_count = 0, react_info = None):
     convo_history = create_qa_convo_history(question, True, info_messages)
 
     info_tokens_count = count_tokens(info_messages)
@@ -309,13 +343,13 @@ def answer_qa_question(question, info_messages, entity_id, info_messages_dir, in
     # Take into account the token limit for ggpt 3.5 (16385 - 1750 max output tokens count)
     if convo_token_count > 14635:
         print(f"Skipping question {question['uid']}, token count too high: {convo_token_count}")
-        return None, None, None, None, None, current_tokens_count
+        return None, None, None, None, None, current_tokens_count, react_info
 
     # Send message to API
     result = send_open_ai_gpt_message(convo_history, json_mode=True)
     gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info = extract_info_qa_response(result, question)
 
-    return gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info, current_tokens_count
+    return gpt_answers, original_gpt_answers, reason, answers_datatype, extra_info, current_tokens_count, react_info
 
 # Filters for entity properties
 def entity_property_filters():
@@ -366,7 +400,7 @@ def process_question_with_entity_properties(question, ner_entity_info, info_mess
 
     return answer_qa_question(question, info_messages, entity_id, info_messages_dir)
 
-def analyze_question_property(question, entity_info, info_messages, current_step = 1, property_entity_names = None):
+def analyze_question_property(question, entity_info, info_messages, react_info, current_step = 1, property_entity_names = None):
     properties_to_skip = entity_property_filters()
     removed_id_properties = []
 
@@ -398,11 +432,11 @@ def analyze_question_property(question, entity_info, info_messages, current_step
 
     # Send message to API
     result = send_open_ai_gpt_message(convo_history, json_mode=True)
-    information_requested, property_name, property_id = extract_choose_entity_response(result, question)
+    information_requested, property_name, property_id = extract_choose_entity_response(result, question, react_info)
 
     return information_requested, property_name, property_id, current_tokens_count
 
-def get_question_property(question, main_entity_id, info_messages = None, current_step = 1, property_entity_names = None):
+def get_question_property(question, main_entity_id, react_info, info_messages = None, current_step = 1, property_entity_names = None):
     if info_messages is None:
         info_messages = []
 
@@ -413,7 +447,7 @@ def get_question_property(question, main_entity_id, info_messages = None, curren
         info = f"Current entity: {entity_info['label']} ({entity_info['id']}), aliases: {', '.join(entity_info.get('aliases', []))}, description: {entity_info['description']}"
         info_messages += [format_msg_oai("user", info)] 
 
-    information_requested, property_name, property_id, token_count = analyze_question_property(question, entity_info, info_messages, current_step, property_entity_names)
+    information_requested, property_name, property_id, token_count = analyze_question_property(question, entity_info, info_messages, react_info, current_step, property_entity_names)
 
     # Find the property
     properties = entity_info["properties"]
@@ -424,26 +458,35 @@ def get_question_property(question, main_entity_id, info_messages = None, curren
 
     return property, information_requested, property_id, token_count
 
-def validate_if_question_answered(question, information_requested, ner_entity_info, property):
+def validate_if_question_answered(question, information_requested, ner_entity_info, property, react_info):
     # Step 1 msg : 
     step1_text = f"Step 1 : {information_requested}"
     info_messages = [format_msg_oai("user", step1_text)]
 
     step1_results = [f'{instance["value_label"]}' for instance in property["instances"] if instance["type"] == "wikibase-entityid"]
 
+    # Add the query
     info_messages += [format_msg_oai("user", f"Query: {ner_entity_info['main_entity']} => {property['label']} ({property['id']})")]
+
+    # Add the results
+    str_results = '[\n ' + '\n '.join(step1_results) + '\n]'
+    info_messages += [format_msg_oai("user", f"Entity: {ner_entity_info['main_entity']}, Property {property['label']} ({property['id']}): {str_results}]")]
+
     tentative_answer = ", ".join(step1_results)
+
+    if "how many" in question["question"].lower() and len(step1_results) > 1:
+        tentative_answer += " (Answer count: " + str(len(step1_results)) + ")"
 
     convo_history = create_is_question_answered_convo_history(question, tentative_answer, info_messages)
     current_tokens_count = count_tokens(convo_history)
 
     # Send message to API
     result = send_open_ai_gpt_message(convo_history, json_mode=True)
-    is_question_answered = extract_is_question_answered(result, question)
+    is_question_answered = extract_is_question_answered(result, question, react_info)
 
     return is_question_answered, current_tokens_count
 
-def process_child_entities_react(question, information_requested_step_1, property, ner_entity_info, child_entity_ids, info_messages_dir, original_token_count):
+def process_child_entities_react(question, information_requested_step_1, property, ner_entity_info, child_entity_ids, info_messages_dir, original_token_count, react_info):
     step1_text = f"Step 1 : {information_requested_step_1}"
     info_messages = [format_msg_oai("user", step1_text)]
 
@@ -452,15 +495,26 @@ def process_child_entities_react(question, information_requested_step_1, propert
 
     child_entity_labels = [f'{instance["value_label"]} ({instance["value"]})' for instance in property["instances"] if instance["type"] == "wikibase-entityid"]
 
-    info_messages += [format_msg_oai("user", f"Query: {ner_entity_info['main_entity']} => {main_property_name} ({main_property_id}), Results: " + ", ".join(child_entity_labels))]
+    info_messages += [format_msg_oai("user", f"Query: {ner_entity_info['main_entity']} => {main_property_name} ({main_property_id})")]
+
+    str_results = '[\n '+ '\n '.join(child_entity_labels) + '\n]'
+    info_messages += [format_msg_oai("user", f"Entity: {ner_entity_info['main_entity']}, Property: {main_property_name} ({main_property_id}): {str_results}")]
 
     # Determine which of the first child entity's properties to use to answer the question
-    first_child_property, information_requested, child_property_id, token_count = get_question_property(question, child_entity_ids[0], info_messages, 2, child_entity_labels) # step 2
+    first_child_property, information_requested, child_property_id, token_count = get_question_property(question, child_entity_ids[0], react_info, info_messages, 2, child_entity_labels) # step 2
+
+    react_info_child_properties_obj = {
+        "information_requested": information_requested,
+        "first_child_property": first_child_property
+    }
 
     total_token_count = original_token_count + token_count
 
     if first_child_property is None:
-        return None, None, None, None, None, total_token_count
+        return None, None, None, None, None, total_token_count, react_info
+
+    react_info_child_properties_obj["child_properties"] = []
+    total_answer_count = 0
 
     for child_entity_id in child_entity_ids:
         with open(f"wikidata_entities/{child_entity_id}.json", 'r', encoding='utf-8') as file:
@@ -472,25 +526,49 @@ def process_child_entities_react(question, information_requested_step_1, propert
             # Get all of the child entity's properties values
             instances_texts = get_instances_text(child_property, child_property_id)
 
-                # Get all of the properties values and associate them to each of the child entities
-            root_text = f"Entity: {child_entity_info['label']} ({child_entity_id}), Property: {child_property['label']} ({child_property_id})\n"
-            root_text += "\n".join(instances_texts)
+            react_info_child_properties_obj["child_properties"].append({
+                "child_property_id": child_property_id,
+                "property": child_property,
+                "instances_texts": instances_texts
+            })
+
+            # Get all of the properties values and associate them to each of the child entities
+            root_text = f"Entity: {child_entity_info['label']} ({child_entity_id}), Property: {child_property['label']} ({child_property_id}): [\n "
+            root_text += "\n ".join(instances_texts) + "\n]"
             
             info_messages.append(format_msg_oai("user", root_text))
+
+            total_answer_count += len(instances_texts)
         else:
             print(f"Property {child_property_id} not found for the entity {child_entity_info['label']}({child_entity_id})")
 
+            react_info_child_properties_obj["child_properties"].append({
+                "child_property_id": child_property_id,
+                "property": None
+            })
+
+    react_info["child_properties"] = react_info_child_properties_obj
+
+    if "how many" in question["question"].lower() and total_answer_count > 1:
+        info_messages.append(format_msg_oai("user", f"Count: {total_answer_count}"))
+
+    # Remove the info message that starts with "List of properties"
+    info_messages = [msg for msg in info_messages if not msg["content"].startswith("List of properties")]
+
     # Answer the question
-    return answer_qa_question(question, info_messages, child_entity_id, info_messages_dir, total_token_count)
+    return answer_qa_question(question, info_messages, child_entity_id, info_messages_dir, total_token_count, react_info)
 
 def process_question_react(question, ner_entity_info, info_messages_dir, cached_entity_labels_dict):
+    react_info = {}
     main_entity_id = ner_entity_info["main_entity_id"]
 
     # Determine which of the main entity's properties to use to answer the question
-    property, information_requested, property_id, token_count = get_question_property(question, main_entity_id)
+    property, information_requested, property_id, token_count = get_question_property(question, main_entity_id, react_info)
 
     if property is None:
-        return None, None, None, None, None, token_count
+        return None, None, None, None, None, token_count, react_info
+
+    react_info["property"] = property
 
     child_entity_ids = []
     is_question_answered = False
@@ -503,23 +581,29 @@ def process_question_react(question, ner_entity_info, info_messages_dir, cached_
         child_entity_ids = [instance["value"] for instance in property["instances"] if instance["type"] == "wikibase-entityid"] # All wikibase-entityid properties
         download_entities_info(child_entity_ids, "wikidata_entities", cached_entity_labels_dict)
 
-        is_question_answered, new_token_count = validate_if_question_answered(question, information_requested, ner_entity_info, property)
+        is_question_answered, new_token_count = validate_if_question_answered(question, information_requested, ner_entity_info, property, react_info)
         token_count += new_token_count
 
     # Answer question with the property's values directly
     if not property_instances_are_wikibase_entity or is_question_answered:
         instances_texts = get_instances_text(property, property_id)
 
-        root_text = f"Property: {property['label']} ({property_id})\n"
-        root_text += "\n".join(instances_texts)
+        root_text = f"Entity: {ner_entity_info['main_entity']}, Property: {property['label']} ({property_id}): [\n "
+        root_text += "\n ".join(instances_texts) + "\n]"
+
+        react_info["properties_instances"] = instances_texts
         
         info_messages = [format_msg_oai("user", root_text)]
 
+        if "how many" in question["question"].lower() and len(instances_texts) > 1:
+            #tentative_answer += " (count: " + str(len(step1_results)) + ")"
+            info_messages.append(format_msg_oai("user", f"Answer count: {len(instances_texts)}"))
+
         # Answer the question
-        return answer_qa_question(question, info_messages, main_entity_id, info_messages_dir, token_count)
+        return answer_qa_question(question, info_messages, main_entity_id, info_messages_dir, token_count, react_info)
     else:
         # Find out which child-entity's property to use to answer the question
-        return process_child_entities_react(question, information_requested, property, ner_entity_info, child_entity_ids, info_messages_dir, token_count)
+        return process_child_entities_react(question, information_requested, property, ner_entity_info, child_entity_ids, info_messages_dir, token_count, react_info)
 
 def identify_entity(question, prompt_config):
     question_text = question["question"]

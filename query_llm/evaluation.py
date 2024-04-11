@@ -4,7 +4,7 @@ import re
 sys.path.insert(0, "../utils")
 from utils import case_insensitive_equals, case_insensitive_elem_in_list
 
-def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, answers_datatype = None, extra_info = None, ner_entity_info = None):
+def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, answers_datatype = None, extra_info = None, ner_entity_info = None, react_info = None):
     golden_answers = question["solved_answer"]
 
     # Validate the answer
@@ -73,6 +73,7 @@ def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, 
         "unmodified_solved_answer": original_gpt_answers,
         "gold_answers": question["answer"],
         "gold_solved_answers": question["solved_answer"],
+        "react_info": react_info,
         "reasoning": reason,
         "answers_datatype": answers_datatype,
         "extra_info": extra_info,
@@ -83,6 +84,9 @@ def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, 
         "recall": recall,
         "f1": f1
     }
+
+    if react_info is None:
+        del solved_question["react_info"]
 
     if answers_datatype is None:
         del solved_question["answers_datatype"]

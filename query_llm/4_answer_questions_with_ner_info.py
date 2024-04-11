@@ -15,8 +15,8 @@ from utils import clean_number, is_date, format_date_iso_format, get_cached_enti
 
 # qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
 dataset_name = "qald_10_train"
-use_react = False
-directly_from_wikidata = False
+use_react = True
+directly_from_wikidata = True
 add_properties_on_fallback = False # Whether to add all wikidata properties when react fails, or just use pure llm as fallback
 
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
@@ -45,7 +45,7 @@ output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" 
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-# questions = questions[:10] # First 10 questions only
+#questions = questions[:10] # First 10 questions only
     
 using_wikidata_text = "_using_wikidata" if directly_from_wikidata else ""
 ner_file = f"{dataset_name}_NER_both{using_wikidata_text}.json"
@@ -66,7 +66,7 @@ if not os.path.exists(info_messages_dir):
 
 cached_entity_labels_dict = get_cached_entity_labels_dict()
 
-def process_question(question, use_fallback = False):
+def process_question(question, use_fallback = False, react_info = None):
     global total_token_count, total_questions_with_tokens, total_questions_react_failed
 
     # find entity where question uid matches question_id
@@ -89,21 +89,22 @@ def process_question(question, use_fallback = False):
     else:
         # Use react to answer the question (unless it already failed, then use fallback)
         if use_react and not use_fallback:
-            answers, original_answers, reason, answers_datatype, extra_info, token_count = process_question_react(question, ner_entity_info, info_messages_dir, cached_entity_labels_dict)
+            answers, original_answers, reason, answers_datatype, extra_info, token_count, react_info = process_question_react(question, ner_entity_info, info_messages_dir, cached_entity_labels_dict)
         else:
-            answers, original_answers, reason, answers_datatype, extra_info, token_count = process_question_with_entity_properties(question, ner_entity_info, info_messages_dir, directly_from_wikidata)
+            answers, original_answers, reason, answers_datatype, extra_info, token_count, react_info = process_question_with_entity_properties(question, ner_entity_info, info_messages_dir, directly_from_wikidata) # react_info = none in this case
 
         total_token_count += token_count
 
         # Use fallback if an issue occured while processing the question
         if answers is None:
-            process_question(question, True)
+            react_info["used_fallback"] = True
+            process_question(question, True, react_info)
             total_questions_react_failed += 1
             return
         else:
             total_questions_with_tokens += 1
 
-    solved_question = calc_question_f1_score(question, answers, original_answers, reason, answers_datatype, extra_info, ner_entity_info)
+    solved_question = calc_question_f1_score(question, answers, original_answers, reason, answers_datatype, extra_info, ner_entity_info, react_info = react_info)
     solved_questions.append(solved_question)
 
 # for index, question in enumerate(questions):

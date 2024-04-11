@@ -15,7 +15,7 @@ from utils import case_insensitive_equals, case_insensitive_elem_in_list
 prompt_config = read_json('prompts.json')
 
 # qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
-dataset_name = "qald_10_train_short"
+dataset_name = "qald_10_train"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
 
@@ -50,7 +50,7 @@ total_token_count = 0
 def process_question(question):
     global total_token_count
     
-    convo_history = create_qa_convo_history(prompt_config, question)
+    convo_history = create_qa_convo_history(question)
     current_tokens_count = count_tokens(convo_history)
     total_token_count += current_tokens_count
 
