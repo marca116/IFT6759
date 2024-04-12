@@ -18,7 +18,7 @@ prompt_config = read_json('prompts.json')
 # qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
 dataset_name = "qald_10_train"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
-output_solved_answers_filename = f'{dataset_name}_solved_answers.json'
+# output_solved_answers_filename = f'{dataset_name}_solved_answers.json'
 
 using_wikidata = "_using_wikidata"
 

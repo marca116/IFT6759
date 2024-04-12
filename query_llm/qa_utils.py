@@ -197,7 +197,7 @@ def extract_choose_entity_response(result, question, react_info):
     information_requested = extracted_json.get("information_requested", "")
     property_name = extracted_json.get("property_name", "")
     property_id = extracted_json.get("property_id", "")
-    property_id = property_id if property_id is not None else "" # set to "" if was set to None
+    property_id = property_id if property_id is not None and isinstance(property_id, str) else "" # set to "" if was set to None
 
     # If propertyId doesn't start with a P, but is a number, add "P" at the start
     if property_id.isdigit():
