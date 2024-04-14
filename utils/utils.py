@@ -647,11 +647,14 @@ def clean_number(text):
     return clean_number
 
 def is_date(text):
-    try:
-        datetime.strptime(text, '%Y-%m-%d')
-        return True 
-    except Exception as e:
-        return False 
+    formats = ['%Y-%m-%d', '%Y-%m-%dT%H:%M:%SZ']
+    for fmt in formats:
+        try:
+            datetime.strptime(text, fmt)
+            return True
+        except Exception as e:
+            continue
+    return False
     
 def format_date_iso_format(text):
     try:

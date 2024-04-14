@@ -30,6 +30,8 @@ The qald9_plus is used as a training set for the qald10 dataset. Qald_X can refe
 
 4_answer_questions_with_ner_info.py : Use the LLM to answer each questions, appending all of information linked to the entity found in the previous step (either from the entity folder or directly from wikidata). If the entity linking failed in step 2 for that question, use the answer found in step 1 (LLM only, no added information).
 
+5_answer_entity_linking : Use the LLM to link every answer given in step 4 that is not a boolean, a number or a date to the corresponding entity in wikidata. Recalculate the f1 score by matching the found wikidata entity url on both sides, instead of doing an exact match on the labels and aliases of the answer entity.
+
 # Final
 
 The final versions of all datasets is in the "datasets" folder.

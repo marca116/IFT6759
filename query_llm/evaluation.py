@@ -4,8 +4,8 @@ import re
 sys.path.insert(0, "../utils")
 from utils import case_insensitive_equals, case_insensitive_elem_in_list
 
-def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, answers_datatype = None, extra_info = None, ner_entity_info = None, react_info = None):
-    golden_answers = question["solved_answer"]
+def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, answers_datatype = None, extra_info = None, ner_entity_info = None, react_info = None, answer_linking_objs = None, use_original_answers = False, original_f1_score = None):
+    golden_answers = question["answer"] if use_original_answers else question["solved_answer"]
 
     # Validate the answer
     true_positives = []
@@ -73,6 +73,7 @@ def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, 
         "unmodified_solved_answer": original_gpt_answers,
         "gold_answers": question["answer"],
         "gold_solved_answers": question["solved_answer"],
+        "answer_linking_objs": answer_linking_objs,
         "react_info": react_info,
         "reasoning": reason,
         "answers_datatype": answers_datatype,
@@ -82,11 +83,20 @@ def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, 
         "FP_answers": false_positives,
         "precision": precision,
         "recall": recall,
+        "f1_score_is_different": f1 != original_f1_score if original_f1_score is not None else False,
+        "f1_original": original_f1_score,
         "f1": f1
     }
 
     if react_info is None:
         del solved_question["react_info"]
+
+    if answer_linking_objs is None:
+        del solved_question["answer_linking_objs"]
+
+    if original_f1_score is None:
+        del solved_question["original_f1_score"]
+        del solved_question["f1_score_is_different"]
 
     if answers_datatype is None:
         del solved_question["answers_datatype"]

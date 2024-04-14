@@ -6,7 +6,7 @@ import json
 import os
 
 sys.path.insert(0, "../utils")
-from utils import clean_number, is_date, format_date_iso_format, get_batched_entities_info, format_entity_infos
+from utils import clean_number, is_date, format_date_iso_format, get_batched_entities_info, format_entity_infos, run_sparql_query
 
 def download_entities_info(orig_entity_ids, wikidata_entities_dir, cached_entity_labels_dict):
     # Already downloaded entities
@@ -131,6 +131,151 @@ def format_gpt_answers(original_gpt_answers, question_uid, answers_datatype = No
         print(f"Removing parenthesis in question {question_uid}. Original answers: {original_gpt_answers}")
 
     return gpt_answers
+
+def find_main_entity_id(question, main_entity_name, prompt_config):
+    if not main_entity_name:
+        print(f"Error: Main entity name is empty. Question {question['uid']}")
+        return None, "", 0, []
+
+    sparql_query = """
+        SELECT DISTINCT ?item ?itemLabel ?itemDescription WHERE {
+        { 
+            ?item rdfs:label \"""" + main_entity_name + """\"@en. 
+        } UNION { 
+            ?item skos:altLabel \"""" + main_entity_name + """\"@en. 
+        }
+        ?article schema:about ?item .
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }    
+        }
+    """
+
+    # dict = {item, itemLabel, itemDescription}
+    result_dicts = run_sparql_query(sparql_query, False)
+    results_text = "Wikidata items:\n"
+    
+    # If no results found for the entity linking, return None
+    if len(result_dicts) == 0:  
+        return None, "", 0, []
+    
+    for result_dict in result_dicts:
+        text = f"Id: {result_dict['item']}, label: {result_dict['itemLabel']}"
+
+        if result_dict.get('itemDescription'):
+            text += f", description: {result_dict['itemDescription']}"
+
+        results_text += text + "\n"
+
+    wikidata_results_msg = [format_msg_oai("user", results_text)]
+
+    question_and_main_entity = "Main entity: " + main_entity_name + ", Question: " + question["question"]
+
+    # Convo history
+    convo_history = [format_msg_oai("user", question_and_main_entity), format_msg_oai("user", prompt_config["disambiguate_entities"])]
+    convo_history = wikidata_results_msg + convo_history
+
+    current_tokens_count = count_tokens(convo_history)
+
+    result = send_open_ai_gpt_message(convo_history, json_mode=True)
+    extracted_json = extract_json_from_response("link_entities", result["content"])
+
+    if extracted_json is None:
+        print(f"Error: Could not extract json from response, empty answer given. Question {question['uid']}. Response: {result['content']}")
+        return None, "", current_tokens_count, []
+
+    main_entity_item_id = extracted_json.get("main_entity_item_id", None)
+    main_entity_item_id = main_entity_item_id.split("/")[-1].strip() if main_entity_item_id else None # Remove the url if necessary
+
+    # Validate if starts with Q + a string of numbers (no letters) using a regex
+    if main_entity_item_id and (not main_entity_item_id.startswith("Q") or not re.match(r'^Q\d+$', main_entity_item_id)):
+        print(f"Error: Main entity item id is invalid: {main_entity_item_id}. Question {question['uid']}. Response: {result['content']}")
+        main_entity_item_id = None
+
+    reason = extracted_json.get("reason", "")
+
+    # print(f"Main entity: {main_entity_name}, main entity item id: {main_entity_item_id}, reason: {reason}")
+
+    return main_entity_item_id, reason, current_tokens_count, result_dicts
+
+def find_answer_entity_id(question, answer_entity_name, prompt_config, reasoning, extra_info, react_info):
+    if not answer_entity_name:
+        print(f"Error: Main entity name is empty. Question {question['uid']}")
+        return None, "", 0, []
+
+    sparql_query = """
+        SELECT DISTINCT ?item ?itemLabel ?itemDescription WHERE {
+        { 
+            ?item rdfs:label \"#answer_entity_name#\"@en. 
+        } UNION { 
+            ?item skos:altLabel \"#answer_entity_name#\"@en. 
+        }
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }    
+        }
+    """
+
+    sparql_query_normal = sparql_query.replace("#answer_entity_name#", answer_entity_name)
+    result_dicts_normal = run_sparql_query(sparql_query_normal, False) # dict = {item, itemLabel, itemDescription}
+
+    answer_entity_name_lower = answer_entity_name.lower()
+    sparql_query_lower = sparql_query.replace("#answer_entity_name#", answer_entity_name_lower)
+    result_dicts_lower = run_sparql_query(sparql_query_lower, False) # dict = {item, itemLabel, itemDescription}
+
+    result_dicts = result_dicts_lower + result_dicts_normal
+
+    # Remove disambiguation pages
+    result_dicts = [result_dict for result_dict in result_dicts if "disambiguation page" not in result_dict.get("itemDescription", "").lower()]
+
+    results_text = "Wikidata items:\n"
+    
+    # If no results found for the entity linking, return None
+    if len(result_dicts) == 0:  
+        return None, "", 0, []
+    
+    for result_dict in result_dicts:
+        text = f"Id: {result_dict['item']}, label: {result_dict['itemLabel']}"
+
+        if result_dict.get('itemDescription'):
+            text += f", description: {result_dict['itemDescription']}"
+
+        results_text += text + "\n"
+
+    wikidata_results_msg = [format_msg_oai("user", results_text)]
+
+    react_explanation = ""
+    react_query_msg = []
+    if react_info is not None:
+        react_query_msg.append(format_msg_oai("user", f"Step by step process: {react_info}"))
+        react_explanation = prompt_config["react_explanation"]
+    
+    disambiguate_entities_prompt = prompt_config["disambiguate_entities_answer_linking"].replace("#react_explanation#", react_explanation)
+
+    question_and_main_entity = "Question: " + question["question"] + ", Reasoning: " + reasoning + ", Extra info: " + extra_info + ", Answer entity: '" + answer_entity_name + "'"
+
+    # Convo history
+    convo_history = [format_msg_oai("user", question_and_main_entity), format_msg_oai("user", disambiguate_entities_prompt)]
+    convo_history = wikidata_results_msg + react_query_msg + convo_history
+
+    current_tokens_count = count_tokens(convo_history)
+
+    result = send_open_ai_gpt_message(convo_history, json_mode=True)
+    extracted_json = extract_json_from_response("link_entities", result["content"])
+
+    if extracted_json is None:
+        print(f"Error: Could not extract json from response, empty answer given. Question {question['uid']}. Response: {result['content']}")
+        return None, "", current_tokens_count, []
+
+    answer_entity_item_id = extracted_json.get("answer_entity_item_id", None)
+    answer_entity_item_id = answer_entity_item_id.split("/")[-1].strip() if answer_entity_item_id else None # Remove the url if necessary
+
+    # Validate if starts with Q + a string of numbers (no letters) using a regex
+    if answer_entity_item_id and (not answer_entity_item_id.startswith("Q") or not re.match(r'^Q\d+$', answer_entity_item_id)):
+        print(f"Error: Main entity item id is invalid: {answer_entity_item_id}. Question {question['uid']}. Response: {result['content']}")
+        answer_entity_item_id = None
+
+    reason = extracted_json.get("reason", "")
+
+    # print(f"Main entity: {main_entity_name}, main entity item id: {answer_entity_item_id}, reason: {reason}")
+
+    return answer_entity_item_id, reason, current_tokens_count, result_dicts
 
 def create_qa_convo_history(question, use_external_info = False, info_messages = None):
     if info_messages is None:
