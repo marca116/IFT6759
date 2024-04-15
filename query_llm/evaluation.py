@@ -95,7 +95,7 @@ def calc_question_f1_score(question, gpt_answers, original_gpt_answers, reason, 
         del solved_question["answer_linking_objs"]
 
     if original_f1_score is None:
-        del solved_question["original_f1_score"]
+        del solved_question["f1_original"]
         del solved_question["f1_score_is_different"]
 
     if answers_datatype is None:
