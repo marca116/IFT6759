@@ -13,10 +13,22 @@ from qa_utils import print_solved_question,sort_questions, process_question_with
 sys.path.insert(0, "../utils")
 from utils import clean_number, is_date, format_date_iso_format, get_cached_entity_labels_dict, save_cached_entity_labels_dict
 
-# qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
-dataset_name = "qald_10_train"
-use_react = True
-directly_from_wikidata = True
+if len(sys.argv) != 4:
+    print("Usage: python 4_answer_questions_with_ner_info.py <dataset_name> <directly_from_wikidata> <use_react>")
+    sys.exit(1)
+
+dataset_name = sys.argv[1]
+directly_from_wikidata = sys.argv[2].lower() == "true"
+use_react = sys.argv[3].lower() == "true"
+
+# dataset_name = "qald_10_train_short"
+# directly_from_wikidata = True
+# use_react = True
+
+# Always use wikidata directly with react
+if use_react:
+    directly_from_wikidata = True
+
 add_properties_on_fallback = False # Whether to add all wikidata properties when react fails, or just use pure llm as fallback
 
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
@@ -30,17 +42,18 @@ with open(no_extra_info_solved_answers_filename, 'r', encoding='utf-8') as file:
 # current date time format with fractions of seconds
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S%f")
 
-# create dir if doesn't exist
+# Results name
 if use_react:
-    root_results_folder = "results_with_react"
+    results_text = "results_with_react"
 elif directly_from_wikidata:
-    root_results_folder = "results_with_properties_info_wikidata_directly"
+    results_text = "results_with_properties_info_wikidata_directly"
 else:
-    root_results_folder = "results_with_properties_info"
+    results_text = "results_with_properties_info"
 
-if not os.path.exists(root_results_folder):
-    os.makedirs(root_results_folder)
-output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" + output_filename
+# create results dir if doesn't exist
+if not os.path.exists(results_text):
+    os.makedirs(results_text)
+output_solved_answers_filepath = results_text + "/" + current_time + "_" + output_filename
 
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
@@ -147,7 +160,7 @@ if len(solved_questions) == 0:
 
 # Total token count + average token count
 print(f"Total token count: {total_token_count}")
-print(f"Average token count: {total_token_count / total_questions_with_tokens}")
+print(f"Average token count: {(total_token_count / total_questions_with_tokens) if total_questions_with_tokens > 0 else 0}")
 print(f"Total questions with tokens: {total_questions_with_tokens}")
 print(f"Total questions react failed: {total_questions_react_failed}")
 
@@ -157,5 +170,10 @@ print(f"Macro F1 score: {macro_f1}")
 
 solved_questions_obj = get_final_solved_questions_obj(solved_questions, macro_f1, total_token_count, total_questions_with_tokens, total_questions_react_failed)
 
+# Save to corresponding results folder
 with open(output_solved_answers_filepath, 'w', encoding='utf-8') as outfile:
+    json.dump(solved_questions_obj, outfile, indent=4)
+
+# Save latest result in current dir
+with open(f"{dataset_name}_{results_text}.json", 'w', encoding='utf-8') as outfile:
     json.dump(solved_questions_obj, outfile, indent=4)

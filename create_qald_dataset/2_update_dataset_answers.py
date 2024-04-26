@@ -8,7 +8,12 @@ import sys
 sys.path.insert(0, "../utils")
 from utils import run_sparql_query
 
-dataset_name = "original_qald_9_plus_test_wikidata" 
+if len(sys.argv) != 2:
+    print("Usage: python 2_update_dataset_answers.py <dataset_name>")
+    sys.exit(1)
+
+dataset_name = sys.argv[1]
+
 input_file = f"{dataset_name}_formatted_and_cleaned.json"
 output_file = f"{dataset_name}_updated_answers.json"
 

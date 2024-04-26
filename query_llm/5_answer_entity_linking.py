@@ -13,25 +13,43 @@ from qa_utils import print_solved_question,sort_questions, process_question_with
 sys.path.insert(0, "../utils")
 from utils import clean_number, is_date, format_date_iso_format, get_cached_entity_labels_dict, save_cached_entity_labels_dict
 
-# qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
-dataset_name = "qald_10_test"
+if len(sys.argv) != 4:
+    print("Usage: python 5_answer_entity_linking.py <dataset_name> <directly_from_wikidata> <use_react>")
+    sys.exit(1)
 
-input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
-output_filename = f'{dataset_name}_solved_answers(with_answer_entity_linking).json'
+dataset_name = sys.argv[1]
+directly_from_wikidata = sys.argv[2].lower() == "true"
+use_react = sys.argv[3].lower() == "true"
 
-with open(input_dataset_filename, 'r', encoding='utf-8') as file:
-    dataset_questions = json.load(file)
+# dataset_name = "qald_10_train_short"
+# directly_from_wikidata = True
+# use_react = True
 
 # current date time format with fractions of seconds
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S%f")
 
-root_results_folder = "results_with_react"
+# Results name
+if use_react:
+    results_text = "results_with_react"
+elif directly_from_wikidata:
+    results_text = "results_with_properties_info_wikidata_directly"
+else:
+    results_text = "results_with_properties_info"
 
-output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" + output_filename
+input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
+output_filename = f'{dataset_name}_solved_answers_with_answer_entity_linking.json'
+
+# create results dir if doesn't exist
+if not os.path.exists(results_text):
+    os.makedirs(results_text)
+output_solved_answers_filepath = results_text + "/" + current_time + "_" + output_filename
+
+with open(input_dataset_filename, 'r', encoding='utf-8') as file:
+    dataset_questions = json.load(file)
 
 # GPT3 : 20240411-142859808335_qald_10_test_solved_answers.json
 # GPT4 : 20240411-185356593926_qald_10_test_solved_answers.json
-with open("results_with_react/20240411-185356593926_qald_10_test_solved_answers.json", 'r', encoding='utf-8') as file:
+with open(f"{dataset_name}_{results_text}.json", 'r', encoding='utf-8') as file:
     questions = json.load(file)
     questions = questions["solved_questions"]
 
@@ -138,5 +156,10 @@ print(f"Macro F1 score: {macro_f1}")
 
 solved_questions_obj = get_final_solved_questions_obj(solved_questions, macro_f1)
 
+# Save to corresponding results folder
 with open(output_solved_answers_filepath, 'w', encoding='utf-8') as outfile:
+    json.dump(solved_questions_obj, outfile, indent=4)
+
+# Save latest result in current dir
+with open(f"{results_text}_{dataset_name}_with_answer_entity_linking.json", 'w', encoding='utf-8') as outfile:
     json.dump(solved_questions_obj, outfile, indent=4)

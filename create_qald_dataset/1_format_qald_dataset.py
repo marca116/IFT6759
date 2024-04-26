@@ -1,13 +1,19 @@
 import json
+import sys
 
-remove_long_answers = False # False for qald_9_train, True for qald_10_test
-dataset_name = "original_qald_9_plus_test_wikidata" # qald_9_plus_train_wikidata and qald_10_test
+if len(sys.argv) != 2:
+    print("Usage: python 1_format_qald_dataset.py <dataset_name>")
+    sys.exit(1)
+
+dataset_name = sys.argv[1]
 
 original_dataset = f'{dataset_name}.json'
 formatted_dataset = f'{dataset_name}_formatted_and_cleaned.json'
 
 with open(f'../original_datasets/{original_dataset}', 'r', encoding='utf-8') as file:
     data = json.load(file)
+
+remove_long_answers = False
 
 lcquad_formatted_questions = []
 lcquad_removed_questions = []

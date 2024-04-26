@@ -3,6 +3,7 @@ import sys
 import os
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import shutil
 
 sys.path.insert(0, "../utils")
 from utils import run_sparql_query
@@ -70,3 +71,6 @@ for i, batch in enumerate(batches):
                 print(f"Error occurred in sub-thread: {e}")
 
     print(f"Processed {i + 1}/{len(batches)} batches")
+    
+# Copy qald_unique_entities_info folder to root folder
+shutil.copytree(input_dir, '../qald_unique_entities_info')

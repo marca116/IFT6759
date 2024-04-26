@@ -9,7 +9,12 @@ import sys
 sys.path.insert(0, "../utils")
 from utils import get_wikidata_entities_info
 
-dataset_name = 'original_qald_9_plus_test_wikidata' # qald_9_plus_train_wikidata and qald_10_test
+if len(sys.argv) != 2:
+    print("Usage: python 3_get_solved_answer.py <dataset_name>")
+    sys.exit(1)
+
+dataset_name = sys.argv[1]
+
 formatted_dataset = f'{dataset_name}_updated_answers.json'
 unique_entities_and_url_filename = f'{dataset_name}_unique_entities_and_url.csv'
 

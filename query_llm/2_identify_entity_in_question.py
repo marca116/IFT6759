@@ -11,11 +11,14 @@ sys.path.insert(0, "../utils")
 from utils import case_insensitive_equals, case_insensitive_elem_in_list
 
 input_dir = '../qald_unique_entities_info'
-
 prompt_config = read_json('prompts.json')
 
-# qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
-dataset_name = "new_questions"
+if len(sys.argv) != 2:
+    print("Usage: python 2_identify_entity_in_question.py <dataset_name>")
+    sys.exit(1)
+
+dataset_name = sys.argv[1]
+
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_solved_answers_filename = f'{dataset_name}_solved_answers.json'
 
@@ -138,7 +141,7 @@ if len(questions) == 0:
 
 # Total token count + average token count
 print(f"Total token count: {total_token_count}")
-print(f"Average token count: {total_token_count / len(questions)}")
+print(f"Average token count: {total_token_count / len(questions) if len(questions) > 0 else 0}")
 
 # print count
 print(f"Found entities: {len(found_entities_full_info)}")
@@ -157,7 +160,7 @@ with open(f"{ner_results_dir}/NER_count.txt", 'w', encoding='utf-8') as file:
     file.write(f"Found entities: {len(found_entities_full_info)}\n")
     file.write(f"Missing entities: {len(missing_entities_full_info)}\n")
     file.write(f"Total token count: {total_token_count}\n")
-    file.write(f"Average token count: {total_token_count / len(questions)}\n")
+    file.write(f"Average token count: {total_token_count / len(questions) if len(questions) > 0 else 0}\n")
     file.write(f"Total questions with token: {questions}")
 
 with open(f"{ner_results_dir}/NER_failed.json", 'w', encoding='utf-8') as file:

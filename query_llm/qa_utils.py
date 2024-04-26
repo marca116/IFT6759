@@ -243,6 +243,14 @@ def find_answer_entity_id(question, answer_entity_name, prompt_config, reasoning
     react_explanation = ""
     react_query_msg = []
     if react_info is not None:
+        child_properties = react_info.get("child_properties")
+        child_properties = child_properties.get("child_properties", []) if child_properties else []
+
+        # del "property" for each child_property (info already contained in instances)
+        for child_property in child_properties:
+            if "property" in child_property:
+                del child_property["property"]
+
         react_query_msg.append(format_msg_oai("user", f"Step by step process: {react_info}"))
         react_explanation = prompt_config["react_explanation"]
     
@@ -255,6 +263,9 @@ def find_answer_entity_id(question, answer_entity_name, prompt_config, reasoning
     convo_history = wikidata_results_msg + react_query_msg + convo_history
 
     current_tokens_count = count_tokens(convo_history)
+    if current_tokens_count > 14635:
+        print(f"Skipping question {question['uid']}, token count too high: {current_tokens_count}")
+        return None, "", current_tokens_count, []
 
     result = send_open_ai_gpt_message(convo_history, json_mode=True)
     extracted_json = extract_json_from_response("link_entities", result["content"])

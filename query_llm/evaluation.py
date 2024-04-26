@@ -130,7 +130,7 @@ def get_final_solved_questions_obj(solved_questions, macro_f1_score, total_token
 
     if total_token_count is not None and total_questions_with_tokens is not None:
         question_obj["total_token_count"] = total_token_count
-        question_obj["average_token_count"] = round(total_token_count / total_questions_with_tokens, 2)
+        question_obj["average_token_count"] = round(total_token_count / total_questions_with_tokens, 2) if total_questions_with_tokens > 0 else 0
         question_obj["total_questions_with_tokens"] = total_questions_with_tokens
 
     if total_questions_react_failed is not None:

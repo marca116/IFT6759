@@ -14,8 +14,12 @@ from utils import case_insensitive_equals, case_insensitive_elem_in_list
 
 prompt_config = read_json('prompts.json')
 
-# qald_10_train, qald_10_test, original_qald_9_plus_train, original_qald_9_plus_test
-dataset_name = "qald_10_train"
+if len(sys.argv) != 2:
+    print("Usage: python 1_answer_question_no_added_info.py <dataset_name>")
+    sys.exit(1)
+
+dataset_name = sys.argv[1]
+
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
 
@@ -98,7 +102,7 @@ if len(solved_questions) == 0:
 
 # Total token count + average token count
 print(f"Total token count: {total_token_count}")
-print(f"Average token count: {total_token_count / len(questions)}")
+print(f"Average token count: {total_token_count / len(questions) if len(questions) > 0 else 0}")
 print(f"Total questions with tokens: {len(questions)}")
 
 print(f"Total time: {time.time() - start_time} seconds")

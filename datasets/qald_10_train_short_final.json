@@ -1,0 +1,1828 @@
+[
+    {
+        "NNQT_question": "What is the time zone of Salt Lake City?",
+        "uid": "1",
+        "subgraph": "",
+        "template_index": "",
+        "question": "What is the time zone of Salt Lake City?",
+        "sparql_wikidata": "SELECT DISTINCT ?o1 WHERE { <http://www.wikidata.org/entity/Q23337>  <http://www.wikidata.org/prop/direct/P421>  ?o1 .  }",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q3134980",
+            "http://www.wikidata.org/entity/Q2212"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "Mountain Time Zone",
+                "MT",
+                "MST",
+                "Mountain Standard Time",
+                "MDT",
+                "Mountain Daylight Time",
+                "MST7MDT"
+            ],
+            [
+                "UTC\u221207:00",
+                "Mountain Standard Time",
+                "UTC-07:00",
+                "utc-7",
+                "Pacific Daylight Time"
+            ]
+        ]
+    },
+    {
+        "NNQT_question": "Who killed Caesar?",
+        "uid": "2",
+        "subgraph": "",
+        "template_index": "",
+        "question": "Who killed Caesar?",
+        "sparql_wikidata": "SELECT DISTINCT ?o1 WHERE { <http://www.wikidata.org/entity/Q1048>  <http://www.wikidata.org/prop/direct/P157>  ?o1 .  }",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q172248",
+            "http://www.wikidata.org/entity/Q207370",
+            "http://www.wikidata.org/entity/Q294846",
+            "http://www.wikidata.org/entity/Q1228715",
+            "http://www.wikidata.org/entity/Q1243545"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "Marcus Junius Brutus",
+                "Brutus",
+                "Quintus Servilius Caepio Brutus",
+                "Marcus Iunius Brutus",
+                "Q. Caepio Brutus",
+                "Quintus Servilius Caepio Junianus",
+                "Marcus Junius Brutus the Younger"
+            ],
+            [
+                "Gaius Cassius Longinus",
+                "Cassius",
+                "Caius Cassius"
+            ],
+            [
+                "Decimus Junius Brutus Albinus",
+                "Decimus Iunius Brutus Albinus",
+                "Brutus Albinus"
+            ],
+            [
+                "Tillius Cimber"
+            ],
+            [
+                "Publius Servilius Casca",
+                "Publius Servilius Casca Longus"
+            ]
+        ]
+    },
+    {
+        "NNQT_question": "What is the highest mountain in Germany?",
+        "uid": "3",
+        "subgraph": "",
+        "template_index": "",
+        "question": "What is the highest mountain in Germany?",
+        "sparql_wikidata": "PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> SELECT ?uri WHERE { ?uri wdt:P31 wd:Q8502 ; wdt:P2044 ?elevation ; wdt:P17 wd:Q183 . } ORDER BY DESC(?elevation) LIMIT 1",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q3375"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "Zugspitze"
+            ]
+        ]
+    },
+    {
+        "NNQT_question": "Which artists were born on the same date as Rachel Stevens?",
+        "uid": "4",
+        "subgraph": "",
+        "template_index": "",
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "sparql_wikidata": " SELECT ?s WHERE { <http://www.wikidata.org/entity/Q241665>  <http://www.wikidata.org/prop/direct/P569>  ?date . ?s <http://www.wikidata.org/prop/direct/P106> / <http://www.wikidata.org/prop/direct/P279>*   <http://www.wikidata.org/entity/Q483501> . ?s  <http://www.wikidata.org/prop/direct/P569>  ?date . }",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q98538749",
+            "http://www.wikidata.org/entity/Q9364870",
+            "http://www.wikidata.org/entity/Q95210650",
+            "http://www.wikidata.org/entity/Q98538749",
+            "http://www.wikidata.org/entity/Q43963991",
+            "http://www.wikidata.org/entity/Q6131269",
+            "http://www.wikidata.org/entity/Q2519431",
+            "http://www.wikidata.org/entity/Q95210650",
+            "http://www.wikidata.org/entity/Q11587490",
+            "http://www.wikidata.org/entity/Q2515323",
+            "http://www.wikidata.org/entity/Q6131269",
+            "http://www.wikidata.org/entity/Q4717039",
+            "http://www.wikidata.org/entity/Q3274687",
+            "http://www.wikidata.org/entity/Q2735138",
+            "http://www.wikidata.org/entity/Q466435",
+            "http://www.wikidata.org/entity/Q241665",
+            "http://www.wikidata.org/entity/Q15965067",
+            "http://www.wikidata.org/entity/Q466435",
+            "http://www.wikidata.org/entity/Q241665",
+            "http://www.wikidata.org/entity/Q466435",
+            "http://www.wikidata.org/entity/Q20021106",
+            "http://www.wikidata.org/entity/Q13034715",
+            "http://www.wikidata.org/entity/Q3274687",
+            "http://www.wikidata.org/entity/Q2515323",
+            "http://www.wikidata.org/entity/Q2441062",
+            "http://www.wikidata.org/entity/Q2163710",
+            "http://www.wikidata.org/entity/Q241665",
+            "http://www.wikidata.org/entity/Q98538749",
+            "http://www.wikidata.org/entity/Q16217595",
+            "http://www.wikidata.org/entity/Q76370382",
+            "http://www.wikidata.org/entity/Q19737612",
+            "http://www.wikidata.org/entity/Q11587490",
+            "http://www.wikidata.org/entity/Q2515323",
+            "http://www.wikidata.org/entity/Q98538749",
+            "http://www.wikidata.org/entity/Q4717039",
+            "http://www.wikidata.org/entity/Q2735138",
+            "http://www.wikidata.org/entity/Q2519431",
+            "http://www.wikidata.org/entity/Q2163710",
+            "http://www.wikidata.org/entity/Q3274687",
+            "http://www.wikidata.org/entity/Q241665",
+            "http://www.wikidata.org/entity/Q11589525",
+            "http://www.wikidata.org/entity/Q241665",
+            "http://www.wikidata.org/entity/Q4653445",
+            "http://www.wikidata.org/entity/Q62267382",
+            "http://www.wikidata.org/entity/Q98538749",
+            "http://www.wikidata.org/entity/Q6147129",
+            "http://www.wikidata.org/entity/Q11473351",
+            "http://www.wikidata.org/entity/Q4388123",
+            "http://www.wikidata.org/entity/Q12720402",
+            "http://www.wikidata.org/entity/Q95227126",
+            "http://www.wikidata.org/entity/Q28740234",
+            "http://www.wikidata.org/entity/Q95227126",
+            "http://www.wikidata.org/entity/Q16217595",
+            "http://www.wikidata.org/entity/Q112499499",
+            "http://www.wikidata.org/entity/Q43963991",
+            "http://www.wikidata.org/entity/Q95227126"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "Julien Roturier"
+            ],
+            [
+                "Chen Yu"
+            ],
+            [
+                "Nina Vukovic"
+            ],
+            [
+                "Vidal Aragon\u00e9s i Chicharro",
+                "Vidal Aragon\u00e9s"
+            ],
+            [
+                "Sof\u00eda Rhei",
+                "Sofia Rhei"
+            ],
+            [
+                "Jelle Brandt Corstius"
+            ],
+            [
+                "Mami Sunada"
+            ],
+            [
+                "Verena Mundhenke"
+            ],
+            [
+                "Alex Gaumond"
+            ],
+            [
+                "Kousei Amano",
+                "Amano Kousei",
+                "K\u014dsei Amano",
+                "Amano K\u014dsei",
+                "Kosei Amano",
+                "Amano Kosei",
+                "Hironari Hinagata",
+                "Hinagata Hironari"
+            ],
+            [
+                "Cameron Cartio"
+            ],
+            [
+                "Vesna Pisarovi\u0107"
+            ],
+            [
+                "Rachel Stevens",
+                "Rachel Lauren Stevens",
+                "Rachel Stevens"
+            ],
+            [
+                "Matt Pavolka",
+                "Matthew Pavolka"
+            ],
+            [
+                "Salva Reina"
+            ],
+            [
+                "Emo Adams",
+                "Imraan Adams"
+            ],
+            [
+                "Petra Kagchelland"
+            ],
+            [
+                "Veronica Taylor",
+                "Kathleen McInerney"
+            ],
+            [
+                "Gizem Saka"
+            ],
+            [
+                "Andreas B\u00f8ggild Monies"
+            ],
+            [
+                "Ario Rubbik"
+            ],
+            [
+                "Misa Kamiyama"
+            ],
+            [
+                "AP",
+                "Yohann Duport",
+                "AP du 113"
+            ],
+            [
+                "Yoshino Masaya",
+                "Kana"
+            ],
+            [
+                "Jamie Little"
+            ],
+            [
+                "Fumihiro Okabayashi"
+            ],
+            [
+                "Takashi \u014chara",
+                "\u014chara Takashi",
+                "Takashi Ohara",
+                "Ohara Takashi",
+                "Takashi Oohara",
+                "Oohara Takashi"
+            ],
+            [
+                "Alexandru Vakulovski"
+            ],
+            [
+                "Old\u0159ich \u010c\u00ed\u017eek"
+            ],
+            [
+                "Geronimo Villanueva",
+                "Geronimo L. Villanueva"
+            ],
+            [
+                "Old\u0159ich \u010c\u00ed\u017eek"
+            ],
+            [
+                "Gizem Saka"
+            ],
+            [
+                "Luka Bogdani\u0107"
+            ],
+            [
+                "Vidal Aragon\u00e9s i Chicharro",
+                "Vidal Aragon\u00e9s"
+            ]
+        ]
+    },
+    {
+        "NNQT_question": "What is the profession of Frank Herbert?",
+        "uid": "5",
+        "subgraph": "",
+        "template_index": "",
+        "question": "What is the profession of Frank Herbert?",
+        "sparql_wikidata": "SELECT ?o1 WHERE { <http://www.wikidata.org/entity/Q7934>  <http://www.wikidata.org/prop/direct/P106>  ?o1 .  }",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q33231",
+            "http://www.wikidata.org/entity/Q36180",
+            "http://www.wikidata.org/entity/Q1930187",
+            "http://www.wikidata.org/entity/Q6625963",
+            "http://www.wikidata.org/entity/Q12144794",
+            "http://www.wikidata.org/entity/Q18844224"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "photographer",
+                "photog",
+                "photographers"
+            ],
+            [
+                "writer",
+                "author",
+                "writers",
+                "authors",
+                "penman",
+                "penwoman"
+            ],
+            [
+                "journalist",
+                "journo"
+            ],
+            [
+                "novelist",
+                "novel author",
+                "novel writer"
+            ],
+            [
+                "prose writer",
+                "prose writers",
+                "proser",
+                "prosaist",
+                "prosaists"
+            ],
+            [
+                "science fiction writer"
+            ]
+        ]
+    },
+    {
+        "NNQT_question": "How many seats does the home stadium of FC Porto have?",
+        "uid": "6",
+        "subgraph": "",
+        "template_index": "",
+        "question": "How many seats does the home stadium of FC Porto have?",
+        "sparql_wikidata": "SELECT DISTINCT ?num WHERE { <http://www.wikidata.org/entity/Q128446> <http://www.wikidata.org/prop/direct/P115>/<http://www.wikidata.org/prop/direct/P1083> ?num }",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "50431"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            "50431"
+        ]
+    },
+    {
+        "NNQT_question": "Which European countries have a constitutional monarchy?",
+        "uid": "7",
+        "subgraph": "",
+        "template_index": "",
+        "question": "Which European countries have a constitutional monarchy?",
+        "sparql_wikidata": " SELECT ?o1 WHERE { <http://www.wikidata.org/entity/Q458>  <http://www.wikidata.org/prop/direct/P150>  ?o1 . ?o1 <http://www.wikidata.org/prop/direct/P122>   <http://www.wikidata.org/entity/Q41614> }",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q31",
+            "http://www.wikidata.org/entity/Q32",
+            "http://www.wikidata.org/entity/Q34",
+            "http://www.wikidata.org/entity/Q35",
+            "http://www.wikidata.org/entity/Q29999"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "Belgium",
+                "Kingdom of Belgium",
+                "BEL",
+                "be",
+                "\ud83c\udde7\ud83c\uddea",
+                "BE"
+            ],
+            [
+                "Luxembourg",
+                "Luxemburg",
+                "Grand Duchy of Luxembourg",
+                "LU",
+                "lu",
+                "\ud83c\uddf1\ud83c\uddfa",
+                "LUX",
+                "L\u00ebtzebuerg",
+                "Groussherzogtum L\u00ebtzebuerg",
+                "Grand-Duch\u00e9 de Luxembourg",
+                "Gro\u00dfherzogtum Luxemburg"
+            ],
+            [
+                "Sweden",
+                "Kingdom of Sweden",
+                "\ud83c\uddf8\ud83c\uddea",
+                "SE",
+                "se",
+                "SWE",
+                "Sverige",
+                "Konungariket Sverige"
+            ],
+            [
+                "Denmark",
+                "DK",
+                "Danmark",
+                "DNK",
+                "DEK",
+                "dk",
+                "\ud83c\udde9\ud83c\uddf0",
+                "DEN",
+                "TAN",
+                "Denmark proper",
+                "metropolitan Denmark"
+            ],
+            [
+                "Kingdom of the Netherlands",
+                "the Netherlands",
+                "Netherlands",
+                "NL",
+                "\ud83c\uddf3\ud83c\uddf1"
+            ]
+        ]
+    },
+    {
+        "NNQT_question": "Which countries have places with more than two caves?",
+        "uid": "8",
+        "subgraph": "",
+        "template_index": "",
+        "question": "Which countries have places with more than two caves?",
+        "sparql_wikidata": "PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> SELECT DISTINCT ?uri WHERE { ?cave wdt:P31 wd:Q35509 ; wdt:P17 ?uri . } GROUP BY ?uri HAVING (COUNT(?cave) > 2)",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q219",
+            "http://www.wikidata.org/entity/Q222",
+            "http://www.wikidata.org/entity/Q221",
+            "http://www.wikidata.org/entity/Q227",
+            "http://www.wikidata.org/entity/Q224",
+            "http://www.wikidata.org/entity/Q225",
+            "http://www.wikidata.org/entity/Q230",
+            "http://www.wikidata.org/entity/Q228",
+            "http://www.wikidata.org/entity/Q232",
+            "http://www.wikidata.org/entity/Q233",
+            "http://www.wikidata.org/entity/Q236",
+            "http://www.wikidata.org/entity/Q242",
+            "http://www.wikidata.org/entity/Q241",
+            "http://www.wikidata.org/entity/Q252",
+            "http://www.wikidata.org/entity/Q34020",
+            "http://www.wikidata.org/entity/Q36678",
+            "http://www.wikidata.org/entity/Q46395",
+            "http://www.wikidata.org/entity/Q47588",
+            "http://www.wikidata.org/entity/Q219060",
+            "http://www.wikidata.org/entity/Q31354462",
+            "http://www.wikidata.org/entity/Q258",
+            "http://www.wikidata.org/entity/Q262",
+            "http://www.wikidata.org/entity/Q265",
+            "http://www.wikidata.org/entity/Q298",
+            "http://www.wikidata.org/entity/Q399",
+            "http://www.wikidata.org/entity/Q403",
+            "http://www.wikidata.org/entity/Q408",
+            "http://www.wikidata.org/entity/Q414",
+            "http://www.wikidata.org/entity/Q419",
+            "http://www.wikidata.org/entity/Q423",
+            "http://www.wikidata.org/entity/Q574",
+            "http://www.wikidata.org/entity/Q664",
+            "http://www.wikidata.org/entity/Q668",
+            "http://www.wikidata.org/entity/Q683",
+            "http://www.wikidata.org/entity/Q685",
+            "http://www.wikidata.org/entity/Q691",
+            "http://www.wikidata.org/entity/Q711",
+            "http://www.wikidata.org/entity/Q712",
+            "http://www.wikidata.org/entity/Q717",
+            "http://www.wikidata.org/entity/Q750",
+            "http://www.wikidata.org/entity/Q754",
+            "http://www.wikidata.org/entity/Q766",
+            "http://www.wikidata.org/entity/Q774",
+            "http://www.wikidata.org/entity/Q786",
+            "http://www.wikidata.org/entity/Q794",
+            "http://www.wikidata.org/entity/Q796",
+            "http://www.wikidata.org/entity/Q801",
+            "http://www.wikidata.org/entity/Q810",
+            "http://www.wikidata.org/entity/Q813",
+            "http://www.wikidata.org/entity/Q819",
+            "http://www.wikidata.org/entity/Q822",
+            "http://www.wikidata.org/entity/Q833",
+            "http://www.wikidata.org/entity/Q836",
+            "http://www.wikidata.org/entity/Q837",
+            "http://www.wikidata.org/entity/Q842",
+            "http://www.wikidata.org/entity/Q843",
+            "http://www.wikidata.org/entity/Q851",
+            "http://www.wikidata.org/entity/Q854",
+            "http://www.wikidata.org/entity/Q858",
+            "http://www.wikidata.org/entity/Q865",
+            "http://www.wikidata.org/entity/Q869",
+            "http://www.wikidata.org/entity/Q874",
+            "http://www.wikidata.org/entity/Q878",
+            "http://www.wikidata.org/entity/Q881",
+            "http://www.wikidata.org/entity/Q884",
+            "http://www.wikidata.org/entity/Q889",
+            "http://www.wikidata.org/entity/Q928",
+            "http://www.wikidata.org/entity/Q945",
+            "http://www.wikidata.org/entity/Q948",
+            "http://www.wikidata.org/entity/Q954",
+            "http://www.wikidata.org/entity/Q974",
+            "http://www.wikidata.org/entity/Q1019",
+            "http://www.wikidata.org/entity/Q1016",
+            "http://www.wikidata.org/entity/Q1030",
+            "http://www.wikidata.org/entity/Q1028",
+            "http://www.wikidata.org/entity/Q1033",
+            "http://www.wikidata.org/entity/Q1036",
+            "http://www.wikidata.org/entity/Q1246",
+            "http://www.wikidata.org/entity/Q4628",
+            "http://www.wikidata.org/entity/Q23334",
+            "http://www.wikidata.org/entity/Q25230",
+            "http://www.wikidata.org/entity/Q16",
+            "http://www.wikidata.org/entity/Q17",
+            "http://www.wikidata.org/entity/Q20",
+            "http://www.wikidata.org/entity/Q27",
+            "http://www.wikidata.org/entity/Q30",
+            "http://www.wikidata.org/entity/Q31",
+            "http://www.wikidata.org/entity/Q28",
+            "http://www.wikidata.org/entity/Q29",
+            "http://www.wikidata.org/entity/Q34",
+            "http://www.wikidata.org/entity/Q32",
+            "http://www.wikidata.org/entity/Q33",
+            "http://www.wikidata.org/entity/Q38",
+            "http://www.wikidata.org/entity/Q39",
+            "http://www.wikidata.org/entity/Q36",
+            "http://www.wikidata.org/entity/Q37",
+            "http://www.wikidata.org/entity/Q43",
+            "http://www.wikidata.org/entity/Q40",
+            "http://www.wikidata.org/entity/Q41",
+            "http://www.wikidata.org/entity/Q45",
+            "http://www.wikidata.org/entity/Q55",
+            "http://www.wikidata.org/entity/Q79",
+            "http://www.wikidata.org/entity/Q77",
+            "http://www.wikidata.org/entity/Q96",
+            "http://www.wikidata.org/entity/Q142",
+            "http://www.wikidata.org/entity/Q145",
+            "http://www.wikidata.org/entity/Q148",
+            "http://www.wikidata.org/entity/Q155",
+            "http://www.wikidata.org/entity/Q159",
+            "http://www.wikidata.org/entity/Q183",
+            "http://www.wikidata.org/entity/Q191",
+            "http://www.wikidata.org/entity/Q189",
+            "http://www.wikidata.org/entity/Q211",
+            "http://www.wikidata.org/entity/Q214",
+            "http://www.wikidata.org/entity/Q215",
+            "http://www.wikidata.org/entity/Q212",
+            "http://www.wikidata.org/entity/Q213",
+            "http://www.wikidata.org/entity/Q218"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "Bulgaria",
+                "BGR",
+                "BUL",
+                "Republic of Bulgaria",
+                "bg",
+                "\ud83c\udde7\ud83c\uddec"
+            ],
+            [
+                "Albania",
+                "Republic of Albania",
+                "Republika e Shqip\u00ebris\u00eb",
+                "Shqip\u00ebris\u00eb",
+                "\ud83c\udde6\ud83c\uddf1",
+                "ALB",
+                "People's Socialist Republic of Albania",
+                "People's Republic of Albania",
+                "Republika Popullore Socialiste e Shqiperise",
+                "Republika Popullore e Shqiperise",
+                "AL"
+            ],
+            [
+                "North Macedonia",
+                "Republic of North Macedonia",
+                "MKD",
+                "FYROM",
+                "FYR Macedonia",
+                "Former Yugoslav Republic of Macedonia",
+                "\ud83c\uddf2\ud83c\uddf0",
+                "NM",
+                "MK",
+                "Republic of Macedonia",
+                "Macedonia"
+            ],
+            [
+                "Azerbaijan",
+                "\ud83c\udde6\ud83c\uddff",
+                "AZE",
+                "Republic of Azerbaijan",
+                "az",
+                "Az\u0259rbaycan",
+                "Az\u0259rbaycan Respublikas\u0131"
+            ],
+            [
+                "Croatia",
+                "Republic of Croatia",
+                "HR",
+                "HRV",
+                "CRO",
+                "RH"
+            ],
+            [
+                "Bosnia and Herzegovina",
+                "Bosnia-Herzegovina",
+                "Bosnia",
+                "BiH",
+                "Bosnia & Herzegovina",
+                "B&H",
+                "\ud83c\udde7\ud83c\udde6",
+                "BIH",
+                "ba",
+                "Bosnia and Hercegovina"
+            ],
+            [
+                "Georgia",
+                "Republic of Georgia",
+                "GE",
+                "\ud83c\uddec\ud83c\uddea",
+                "GEO",
+                "Georgia (country)",
+                "Sakartvelo"
+            ],
+            [
+                "Andorra",
+                "Principality of Andorra",
+                "Principality of the Valleys of Andorra",
+                "AND",
+                "Principat d'Andorra",
+                "AD"
+            ],
+            [
+                "Kazakhstan",
+                "Republic of Kazakhstan",
+                "kz",
+                "Qazaqstan",
+                "KAZ",
+                "\ud83c\uddf0\ud83c\uddff",
+                "Republic of Qazaqstan"
+            ],
+            [
+                "Malta",
+                "Republic of Malta",
+                "\ud83c\uddf2\ud83c\uddf9",
+                "MLT",
+                "MT"
+            ],
+            [
+                "Montenegro",
+                "me",
+                "\ud83c\uddf2\ud83c\uddea",
+                "MNE",
+                "Crna Gora"
+            ],
+            [
+                "Belize",
+                "bz"
+            ],
+            [
+                "Cuba",
+                "Republic of Cuba",
+                "cu",
+                "\ud83c\udde8\ud83c\uddfa",
+                "CUB"
+            ],
+            [
+                "Indonesia",
+                "Republic of Indonesia",
+                "id",
+                "ID",
+                "INA",
+                "IDN"
+            ],
+            [
+                "Niue",
+                "Niu\u0113",
+                "nu",
+                "\ud83c\uddf3\ud83c\uddfa"
+            ],
+            [
+                "West Bank",
+                "Cisjordan",
+                "Judea and Samaria",
+                "WestBank"
+            ],
+            [
+                "British overseas territories",
+                "BOT",
+                "United Kingdom overseas territories",
+                "British dependent territories",
+                "British overseas territory",
+                "British dependent territory",
+                "United Kingdom overseas territory"
+            ],
+            [
+                "Basque Country",
+                "Basqueland",
+                "Basque Provinces",
+                "Basque nation"
+            ],
+            [
+                "State of Palestine",
+                "Palestine",
+                "Palestinian National Authority",
+                "Palestinian Authority",
+                "\ud83c\uddf5\ud83c\uddf8"
+            ],
+            [
+                "Republic of Abkhazia",
+                "Abkhazia",
+                "The Republic of Abkhazia",
+                "Abkhazian Republic",
+                "Respublika Abkhaziya",
+                "Apsny",
+                "A\u1e57sny",
+                "A\u1e57sny Ahwyntqarra",
+                "Abkhaziya"
+            ],
+            [
+                "South Africa",
+                "Republic of South Africa",
+                "RSA",
+                "SA",
+                "za",
+                "\ud83c\uddff\ud83c\udde6",
+                "zaf",
+                "Mzanzi",
+                "R.S.A."
+            ],
+            [
+                "Algeria",
+                "People's Democratic Republic of Algeria",
+                "dz",
+                "\ud83c\udde9\ud83c\uddff",
+                "ALG",
+                "Dzayer",
+                "Djaza\u00efr"
+            ],
+            [
+                "Uzbekistan",
+                "Republic of Uzbekistan",
+                "uz",
+                "\ud83c\uddfa\ud83c\uddff",
+                "UZB"
+            ],
+            [
+                "Chile",
+                "Republic of Chile",
+                "CL",
+                "cl",
+                "Rep\u00fablica de Chile",
+                "CHI",
+                "\ud83c\udde8\ud83c\uddf1"
+            ],
+            [
+                "Armenia",
+                "Hayastan",
+                "Republic of Armenia",
+                "ARM",
+                "AM",
+                "Hayastani Hanrapetut\u2019yun"
+            ],
+            [
+                "Serbia",
+                "Republic of Serbia",
+                "Republika Srbija",
+                "Srbija",
+                "SRB",
+                "RS"
+            ],
+            [
+                "Australia",
+                "Commonwealth of Australia",
+                "AU",
+                "AUS",
+                "au",
+                "\ud83c\udde6\ud83c\uddfa",
+                "Straya",
+                "Aussieland",
+                "Oz",
+                "Stralia",
+                "New Holland",
+                "New Hollandia",
+                "Nova Hollandia",
+                "Down Under",
+                "Stria",
+                "The Commonwealth of Australia"
+            ],
+            [
+                "Argentina",
+                "Argentine Republic",
+                "Republic of Argentina",
+                "Republica Argentina"
+            ],
+            [
+                "Peru",
+                "pe",
+                "Republic of Peru",
+                "Rep\u00fablica del Per\u00fa",
+                "\ud83c\uddf5\ud83c\uddea",
+                "Republica del Peru",
+                "per"
+            ],
+            [
+                "North Korea",
+                "\ud83c\uddf0\ud83c\uddf5",
+                "PRK",
+                "kp",
+                "Democratic People's Republic of Korea",
+                "DPRK",
+                "N. Korea",
+                "DPR Korea"
+            ],
+            [
+                "East Timor",
+                "Democratic Republic of Timor-Leste",
+                "tl",
+                "\ud83c\uddf9\ud83c\uddf1",
+                "Democratic Republic of East Timor",
+                "TLS",
+                "Timor Leste",
+                "Timor-Leste"
+            ],
+            [
+                "New Zealand",
+                "NZ",
+                "NZL",
+                "Dominion of New Zealand",
+                "Aotearoa",
+                "nz",
+                "\ud83c\uddf3\ud83c\uddff",
+                "Aotearoa New Zealand",
+                "New Zeeland",
+                "Zeelandia Nova",
+                "Nova Zelandia",
+                "Zelandia Nova"
+            ],
+            [
+                "India",
+                "Republic of India",
+                "Bharat",
+                "Bharatvarsh",
+                "Hindustan",
+                "IN",
+                "IND",
+                "\ud83c\uddee\ud83c\uddf3",
+                "Bharata",
+                "Hindoostan",
+                "Indostan",
+                "Bharat Ganarajya"
+            ],
+            [
+                "Samoa",
+                "Western Samoa",
+                "Independent State of Samoa",
+                "ws",
+                "\ud83c\uddfc\ud83c\uddf8",
+                "SAM"
+            ],
+            [
+                "Solomon Islands",
+                "sb",
+                "\ud83c\uddf8\ud83c\udde7",
+                "SOL"
+            ],
+            [
+                "Papua New Guinea",
+                "Independent State of Papua New Guinea",
+                "PNG",
+                "pg",
+                "\ud83c\uddf5\ud83c\uddec"
+            ],
+            [
+                "Mongolia",
+                "mn",
+                "Mongol uls",
+                "MNG",
+                "MGL",
+                "\ud83c\uddf2\ud83c\uddf3"
+            ],
+            [
+                "Fiji",
+                "Republic of Fiji",
+                "fj",
+                "\ud83c\uddeb\ud83c\uddef",
+                "FIJ",
+                "Republic of the Fiji Islands",
+                "Viti",
+                "Fij\u012b",
+                "Matanitu Tugalala o Viti",
+                "Fij\u012b Ga\u1e47ar\u0101jya"
+            ],
+            [
+                "Venezuela",
+                "Bolivarian Republic of Venezuela",
+                "BR Venezuela",
+                "VE",
+                "\ud83c\uddfb\ud83c\uddea",
+                "Estados Unidos de Venezuela",
+                "Vzla",
+                "VEN"
+            ],
+            [
+                "Bolivia",
+                "bo",
+                "\ud83c\udde7\ud83c\uddf4",
+                "Plurinational State of Bolivia",
+                "bol",
+                "Republic of Bolivia",
+                "BOL",
+                "Bolivia (Plurinational State of)"
+            ],
+            [
+                "Trinidad and Tobago",
+                "Republic of Trinidad and Tobago",
+                "tt",
+                "\ud83c\uddf9\ud83c\uddf9",
+                "TTO",
+                "TRI",
+                "Trinidad & Tobago"
+            ],
+            [
+                "Jamaica",
+                "JA",
+                "Commonwealth of Jamaica",
+                "JM",
+                "JAM",
+                "\ud83c\uddef\ud83c\uddf2"
+            ],
+            [
+                "Guatemala",
+                "gt",
+                "\ud83c\uddec\ud83c\uddf9",
+                "Republic of Guatemala",
+                "GUA"
+            ],
+            [
+                "Dominican Republic",
+                "Rep\u00fablica Dominicana",
+                "\ud83c\udde9\ud83c\uddf4",
+                "RD",
+                "DR",
+                "Republica Dominicana",
+                "Dominicana",
+                "DO",
+                "DomRep"
+            ],
+            [
+                "Iran",
+                "\ud83c\uddee\ud83c\uddf7",
+                "irn",
+                "Eron Islom Respublikasi",
+                "Fors",
+                "va",
+                "Persia"
+            ],
+            [
+                "Iraq",
+                "Republic of Iraq",
+                "al-\u2018Ir\u0101q",
+                "Jumh\u016briyyat al-\u2018Ir\u0101q",
+                "Komar-i \u2018\u00caraq",
+                "iq",
+                "\ud83c\uddee\ud83c\uddf6",
+                "IRQ",
+                "\u0627\u0644\u0639\u0631\u0627\u0642"
+            ],
+            [
+                "Israel",
+                "ISR",
+                "IL",
+                "State of Israel",
+                "il",
+                "Zionist state",
+                "Jewish state"
+            ],
+            [
+                "Jordan",
+                "Hashemite Kingdom of Jordan",
+                "JO",
+                "JOR",
+                "jo",
+                "Kingdom of Jordan",
+                "\ud83c\uddef\ud83c\uddf4",
+                "Yarden",
+                "Giordania"
+            ],
+            [
+                "Kyrgyzstan",
+                "Kyrgyz Republic",
+                "kg",
+                "Kirgizia",
+                "\ud83c\uddf0\ud83c\uddec",
+                "KGZ"
+            ],
+            [
+                "Laos",
+                "Lao People's Democratic Republic",
+                "la",
+                "Lao PDR",
+                "LAO",
+                "\ud83c\uddf1\ud83c\udde6"
+            ],
+            [
+                "Lebanon",
+                "\ud83c\uddf1\ud83c\udde7",
+                "LBN",
+                "Lebanese Republic",
+                "lb",
+                "Republic of Lebanon",
+                "Lubnan"
+            ],
+            [
+                "Malaysia",
+                "my",
+                "Federation of Malaysia",
+                "Malaysia Federation",
+                "MAS",
+                "MYS",
+                "\ud83c\uddf2\ud83c\uddfe"
+            ],
+            [
+                "Myanmar",
+                "Burma",
+                "Republic of the Union of Myanmar",
+                "\ud83c\uddf2\ud83c\uddf2",
+                "Union of Burma",
+                "MM",
+                "BUR",
+                "MYA"
+            ],
+            [
+                "Nepal",
+                "Federal Democratic Republic of Nepal",
+                "NEP",
+                "\ud83c\uddf3\ud83c\uddf5",
+                "NP",
+                "NPL"
+            ],
+            [
+                "Oman",
+                "om",
+                "\ud83c\uddf4\ud83c\uddf2",
+                "Sultanate of Oman",
+                "\u0633\u0644\u0637\u0646\u062a \u0639\u0645\u0627\u0646",
+                "omn"
+            ],
+            [
+                "Pakistan",
+                "Islamic Republic of Pakistan",
+                "Republic of Pakistan",
+                "\ud83c\uddf5\ud83c\uddf0",
+                "pk",
+                "PAK"
+            ],
+            [
+                "Saudi Arabia",
+                "\ud83c\uddf8\ud83c\udde6",
+                "KSA",
+                "Kingdom of Saudi Arabia",
+                "sa"
+            ],
+            [
+                "Sri Lanka",
+                "Democratic Socialist Republic of Sri Lanka",
+                "Ceylon",
+                "Taprobane",
+                "Serendib",
+                "Ceylan",
+                "\ud83c\uddf1\ud83c\uddf0",
+                "lk",
+                "Lanka, Sri",
+                "sri",
+                "lke",
+                "ce",
+                "Srilanka",
+                "SRI",
+                "\u0633\u0631\u0646\u062f\u064a\u0628",
+                "\u0633\u064a\u0644\u0627\u0646"
+            ],
+            [
+                "Syria",
+                "sy",
+                "\ud83c\uddf8\ud83c\uddfe",
+                "Syrian Arab Republic",
+                "SYR"
+            ],
+            [
+                "Taiwan",
+                "Chunghwa Minkwo",
+                "Chunghwa Minkuo",
+                "Formosa",
+                "Nationalist China",
+                "Free China",
+                "Free area of the Republic of China",
+                "Republic of China (Taiwan)",
+                "Chinese Taipei",
+                "\ud83c\uddf9\ud83c\uddfc",
+                "TW",
+                "ROC",
+                "Taiwan ROC",
+                "China, Republic",
+                "TWN",
+                "TPE",
+                "Nanasian",
+                "Taywan",
+                "Taivang",
+                "Ilaod",
+                "Taivang\u0289",
+                "The ROC",
+                "Republic of China"
+            ],
+            [
+                "Thailand",
+                "Kingdom of Thailand",
+                "th",
+                "Siam",
+                "\ud83c\uddf9\ud83c\udded",
+                "Land of Smiles",
+                "THA"
+            ],
+            [
+                "Turkmenistan",
+                "Turkmenia",
+                "tm",
+                "TKM",
+                "\ud83c\uddf9\ud83c\uddf2"
+            ],
+            [
+                "United Arab Emirates",
+                "U.A.E.",
+                "\ud83c\udde6\ud83c\uddea",
+                "UAE",
+                "ae",
+                "Emirates",
+                "the United Arab Emirates",
+                "the UAE",
+                "the U.A.E.",
+                "the Emirates"
+            ],
+            [
+                "Vietnam",
+                "Socialist Republic of Vietnam",
+                "VN",
+                "VIE",
+                "\ud83c\uddfb\ud83c\uddf3",
+                "Vi\u1ec7t Nam",
+                "Viet Nam",
+                "SRV",
+                "VNM"
+            ],
+            [
+                "South Korea",
+                "Republic of Korea",
+                "ROK",
+                "kr",
+                "Rep. Korea",
+                "S. Korea",
+                "Korea Republic",
+                "\ud83c\uddf0\ud83c\uddf7",
+                "KOR",
+                "Hanguk",
+                "Daehan Minguk",
+                "Daehanminguk",
+                "SK",
+                "Korea (South)"
+            ],
+            [
+                "Afghanistan",
+                "\ud83c\udde6\ud83c\uddeb",
+                "AFG",
+                "af"
+            ],
+            [
+                "Philippines",
+                "PH",
+                "ph",
+                "\ud83c\uddf5\ud83c\udded",
+                "Republic of the Philippines",
+                "The Philippines",
+                "Philippine Islands",
+                "PHL",
+                "PHI",
+                "RP"
+            ],
+            [
+                "Togo",
+                "Togolese Republic",
+                "tg",
+                "\ud83c\uddf9\ud83c\uddec",
+                "TOG"
+            ],
+            [
+                "Tunisia",
+                "Republic of Tunisia",
+                "Tunisian Republic",
+                "tn",
+                "\ud83c\uddf9\ud83c\uddf3",
+                "TUN"
+            ],
+            [
+                "Zimbabwe",
+                "Republic of Zimbabwe",
+                "Southern Rhodesia",
+                "Rhodesia",
+                "Zimbabwe Rhodesia",
+                "\ud83c\uddff\ud83c\uddfc",
+                "zw",
+                "ZIM"
+            ],
+            [
+                "Democratic Republic of the Congo",
+                "DRC",
+                "DR Congo",
+                "Congo-Kinshasa",
+                "Zaire",
+                "Congo",
+                "Democratic Republic of Congo",
+                "cd",
+                "Dem. Republic of the Congo",
+                "Dem. Republic of Congo",
+                "Dem. Rep. Congo",
+                "\ud83c\udde8\ud83c\udde9",
+                "Congo (Kinshasa)",
+                "COD",
+                "D.R.C."
+            ],
+            [
+                "Madagascar",
+                "mg",
+                "\ud83c\uddf2\ud83c\uddec",
+                "Republic of Madagascar",
+                "MAD",
+                "Malagaskar",
+                "Malagascar"
+            ],
+            [
+                "Libya",
+                "State of Libya",
+                "ly",
+                "\ud83c\uddf1\ud83c\uddfe",
+                "LBA"
+            ],
+            [
+                "Namibia",
+                "Republic of Namibia",
+                "na",
+                "\ud83c\uddf3\ud83c\udde6",
+                "NAM"
+            ],
+            [
+                "Morocco",
+                "Kingdom of Morocco",
+                "Marocco",
+                "\u2d30\u2d4e\u2d53\u2d54 \u2d4f \u2d61\u2d30\u2d3d\u2d53\u2d5b",
+                "al-Ma\u0121rib",
+                "Lma\u0121rib",
+                "Maroc",
+                "ma",
+                "\ud83c\uddf2\ud83c\udde6",
+                "MAR"
+            ],
+            [
+                "Nigeria",
+                "Federal Republic of Nigeria",
+                "\ud83c\uddf3\ud83c\uddec",
+                "NG",
+                "FRN",
+                "NGA",
+                "NGR",
+                "Naija"
+            ],
+            [
+                "Uganda",
+                "Republic of Uganda",
+                "ug",
+                "\ud83c\uddfa\ud83c\uddec",
+                "UGA",
+                "The pearl of Africa",
+                "UG",
+                "The Republic of Uganda"
+            ],
+            [
+                "Kosovo",
+                "Republic of Kosovo",
+                "XK",
+                "KOS",
+                "XKX",
+                "KV",
+                "\ud83c\uddfd\ud83c\uddf0",
+                "Kosova"
+            ],
+            [
+                "Faroe Islands",
+                "Faeroe Islands",
+                "Atlantic/Faroe",
+                "Fareo islands",
+                "Faeroyene",
+                "Far Oer",
+                "Faeroerne",
+                "Faer Oer",
+                "Faroe Isles",
+                "Faroer",
+                "F\u00e4r\u00f6er",
+                "Faeroe Isles",
+                "Faroes",
+                "Faroese Islands",
+                "Foroyar",
+                "Faeroes",
+                "Faeroer",
+                "F\u00f8royar",
+                "Faroe Island",
+                "F\u00e6r\u00f8er",
+                "F\u00e6reyjar",
+                "F\u00e6r \u00d8er",
+                "Faeroe Is",
+                "F\u00e6r\u00f8yene",
+                "F\u00e6r\u00f8erne",
+                "Far\u00f6e Islands",
+                "Sheep Islands",
+                "F\u00e6roes",
+                "fo",
+                "\ud83c\uddeb\ud83c\uddf4",
+                "the Faroe Islands",
+                "the Faeroe Islands",
+                "Farre",
+                "Farre Islands",
+                "Farre I.",
+                "Farre Is.",
+                "Farre Isl."
+            ],
+            [
+                "Abkhazia",
+                "Abkhasia",
+                "Abkazia",
+                "Abchasia",
+                "Abkhaziya"
+            ],
+            [
+                "Bailiwick of Guernsey",
+                "GB-GSY",
+                "Bailliage de Guernesey",
+                "\ud83c\uddec\ud83c\uddec",
+                "XA-GG",
+                "GBG",
+                "Great Britain Guernsey",
+                "Lisia",
+                "GGY",
+                "gg",
+                "Giern\u00e9si",
+                "Bailliage d\u00e9 Guern\u00e9si",
+                "Guernesey"
+            ],
+            [
+                "Canada",
+                "CAN",
+                "CA",
+                "Dominion of Canada",
+                "ISO 3166-1:CA",
+                "\u1472\u14c7\u1455",
+                "Commonwealth of Canada",
+                "Canada (country)"
+            ],
+            [
+                "Japan",
+                "State of Japan",
+                "Land of the Rising Sun",
+                "Nihon",
+                "Nippon",
+                "JP",
+                "Nippon-koku",
+                "Nihon-koku",
+                "JPN",
+                "jp",
+                "JAP",
+                "Jap",
+                "JA",
+                "Ja",
+                "\ud83c\uddef\ud83c\uddf5",
+                "Iapan",
+                "Iapon",
+                "Land of Rising Sun"
+            ],
+            [
+                "Norway",
+                "Kingdom of Norway",
+                "NO",
+                "NOR",
+                "\ud83c\uddf3\ud83c\uddf4"
+            ],
+            [
+                "Republic of Ireland",
+                "\u00c9ire",
+                "IE",
+                "IRL",
+                "Hibernia",
+                "Ireland, Republic of",
+                "ie",
+                "\ud83c\uddee\ud83c\uddea",
+                "Eire",
+                "Southern Ireland",
+                "Ireland (state)",
+                "Ireland"
+            ],
+            [
+                "United States of America",
+                "United States",
+                "the States",
+                "the United States of America",
+                "US of America",
+                "USA",
+                "U.S.A.",
+                "America",
+                "the US",
+                "the U.S.",
+                "the US of A",
+                "U.S. of America",
+                "the US of America",
+                "US",
+                "the USA",
+                "U.S.",
+                "the U.S.A.",
+                "the U.S. of A",
+                "US of A",
+                "the U.S. of America",
+                "U. S.",
+                "U. S. A.",
+                "the United States",
+                "Merica",
+                "America (United States)",
+                "Murica"
+            ],
+            [
+                "Belgium",
+                "Kingdom of Belgium",
+                "BEL",
+                "be",
+                "\ud83c\udde7\ud83c\uddea",
+                "BE"
+            ],
+            [
+                "Hungary",
+                "hu",
+                "\ud83c\udded\ud83c\uddfa",
+                "HUN",
+                "Magyarorsz\u00e1g"
+            ],
+            [
+                "Spain",
+                "Kingdom of Spain",
+                "ES",
+                "ESP"
+            ],
+            [
+                "Sweden",
+                "Kingdom of Sweden",
+                "\ud83c\uddf8\ud83c\uddea",
+                "SE",
+                "se",
+                "SWE",
+                "Sverige",
+                "Konungariket Sverige"
+            ],
+            [
+                "Luxembourg",
+                "Luxemburg",
+                "Grand Duchy of Luxembourg",
+                "LU",
+                "lu",
+                "\ud83c\uddf1\ud83c\uddfa",
+                "LUX",
+                "L\u00ebtzebuerg",
+                "Groussherzogtum L\u00ebtzebuerg",
+                "Grand-Duch\u00e9 de Luxembourg",
+                "Gro\u00dfherzogtum Luxemburg"
+            ],
+            [
+                "Finland",
+                "Republic of Finland",
+                "Finnia",
+                "Land of Thousand Lakes",
+                "fi",
+                "Suomi",
+                "Suomen tasavalta",
+                "Republiken Finland",
+                "\ud83c\uddeb\ud83c\uddee",
+                "FIN"
+            ],
+            [
+                "Italy",
+                "Italia",
+                "Italian Republic",
+                "IT",
+                "\ud83c\uddee\ud83c\uddf9",
+                "ITA",
+                "Republic of Italy",
+                "Repubblica Italiana"
+            ],
+            [
+                "Switzerland",
+                "Swiss Confederation",
+                "SUI",
+                "Swiss",
+                "CHE",
+                "CH",
+                "Confoederatio Helvetica"
+            ],
+            [
+                "Poland",
+                "POL",
+                "Republic of Poland",
+                "PL",
+                "Polska"
+            ],
+            [
+                "Lithuania",
+                "\ud83c\uddf1\ud83c\uddf9",
+                "LTU",
+                "LT",
+                "Republic of Lithuania",
+                "Lietuva",
+                "Lietuvos Respublika"
+            ],
+            [
+                "Turkey",
+                "TR",
+                "TUR",
+                "Republic of T\u00fcrkiye",
+                "T\u00fcrkiye",
+                "Turkiye",
+                "Republic of Turkey"
+            ],
+            [
+                "Austria",
+                "Republic of Austria",
+                "\u00d6sterreich",
+                "Republik \u00d6sterreich",
+                "AT",
+                "AUT",
+                "\ud83c\udde6\ud83c\uddf9"
+            ],
+            [
+                "Greece",
+                "Hellenic Republic",
+                "Hellas",
+                "gr",
+                "el",
+                "\ud83c\uddec\ud83c\uddf7",
+                "Greek Republic",
+                "GRE",
+                "Ellada",
+                "Greek"
+            ],
+            [
+                "Portugal",
+                "Portuguese Republic",
+                "PT",
+                "\ud83c\uddf5\ud83c\uddf9",
+                "PRT",
+                "POR"
+            ],
+            [
+                "Netherlands",
+                "Holland",
+                "the Netherlands",
+                "NL",
+                "NED",
+                "Nederland",
+                "nl",
+                "\ud83c\uddf3\ud83c\uddf1",
+                "Netherlands (after 1945)"
+            ],
+            [
+                "Egypt",
+                "Republic of Egypt",
+                "eg",
+                "EGY",
+                "\ud83c\uddea\ud83c\uddec",
+                "Arab Republic of Egypt",
+                "Arab Rep. Egypt",
+                "Rep. Egypt"
+            ],
+            [
+                "Uruguay",
+                "Rep\u00fablica Oriental del Uruguay",
+                "uy",
+                "\ud83c\uddfa\ud83c\uddfe",
+                "URU",
+                "Oriental Republic of Uruguay"
+            ],
+            [
+                "Mexico",
+                "MX",
+                "mx",
+                "United Mexican States",
+                "Mexican Republic",
+                "MEX",
+                "\ud83c\uddf2\ud83c\uddfd",
+                "US of M",
+                "MXN"
+            ],
+            [
+                "France",
+                "fr",
+                "FR",
+                "French Republic",
+                "Republic of France",
+                "FRA",
+                "the Hexagon"
+            ],
+            [
+                "United Kingdom",
+                "UK",
+                "United Kingdom of Great Britain and Northern Ireland",
+                "U.K.",
+                "GBR",
+                "GB",
+                "U. K.",
+                "U K",
+                "G.B.",
+                "G. B.",
+                "G B",
+                "Great Britain",
+                "G.B.R.",
+                "G B R",
+                "Britain",
+                "Great Britain and Northern Ireland",
+                "The United Kingdom of Great Britain and Northern Ireland",
+                "The UK"
+            ],
+            [
+                "People's Republic of China",
+                "Red China",
+                "PR China",
+                "Communist China",
+                "Mainland China",
+                "China PR",
+                "CHN",
+                "RPC",
+                "PRC",
+                "CN",
+                "\ud83c\udde8\ud83c\uddf3",
+                "cn",
+                "China",
+                "The PRC"
+            ],
+            [
+                "Brazil",
+                "Federative Republic of Brazil",
+                "BR",
+                "BRA",
+                "br",
+                "\ud83c\udde7\ud83c\uddf7",
+                "Brasil"
+            ],
+            [
+                "Russia",
+                "Rossiya",
+                "Rossija",
+                "RU",
+                "ru",
+                "RUS",
+                "Rossijskaja Federatsija",
+                "Russian Federation",
+                "Rossiyskaya Federatsiya",
+                "RF",
+                "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
+                "\u0420\u043e\u0441\u0441\u0438\u044f",
+                "Federation of Russia"
+            ],
+            [
+                "Germany",
+                "Federal Republic of Germany",
+                "Deutschland",
+                "GER",
+                "BR Deutschland",
+                "DE",
+                "BRD",
+                "Bundesrepublik Deutschland",
+                "de",
+                "GFR"
+            ],
+            [
+                "Estonia",
+                "Republic of Estonia",
+                "Estland",
+                "Eesti",
+                "ee",
+                "EST",
+                "\ud83c\uddea\ud83c\uddea",
+                "Eesti Vabariik"
+            ],
+            [
+                "Iceland",
+                "Republic of Iceland",
+                "is",
+                "Island",
+                "\ud83c\uddee\ud83c\uddf8",
+                "ISL",
+                "Ysland"
+            ],
+            [
+                "Latvia",
+                "lv",
+                "\ud83c\uddf1\ud83c\uddfb",
+                "LVA",
+                "Le\u0163m\u043e\u0304 Vab\u0101m\u043e\u0304",
+                "Le\u0163m\u043e\u0304",
+                "Republic of Latvia",
+                "Latvian Republic",
+                "Latvija",
+                "LAT",
+                "Latveja",
+                "Latvijas Republika",
+                "Latvejas Republika"
+            ],
+            [
+                "Slovakia",
+                "Slovak Republic",
+                "sk",
+                "\ud83c\uddf8\ud83c\uddf0",
+                "SVK",
+                "Slovakia (Slovak Republic)"
+            ],
+            [
+                "Slovenia",
+                "Slovenija",
+                "Republika Slovenija",
+                "si",
+                "\ud83c\uddf8\ud83c\uddee",
+                "svn",
+                "slo",
+                "Republic of Slovenia",
+                "SLO"
+            ],
+            [
+                "Ukraine",
+                "UA",
+                "UKR",
+                "Ukrainia",
+                "\ud83c\uddfa\ud83c\udde6",
+                "Ukr.",
+                "Ukraina",
+                "the Ukraine",
+                "Ukra\u00efna"
+            ],
+            [
+                "Czech Republic",
+                "CZR",
+                "CZE",
+                "CZ",
+                "Czechia"
+            ],
+            [
+                "Romania",
+                "Roumania",
+                "Rumania",
+                "Rom\u00e2nia",
+                "ro",
+                "\ud83c\uddf7\ud83c\uddf4"
+            ]
+        ]
+    },
+    {
+        "NNQT_question": "What is Angela Merkel\u2019s birth name?",
+        "uid": "9",
+        "subgraph": "",
+        "template_index": "",
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "sparql_wikidata": "SELECT ?o1 WHERE { <http://www.wikidata.org/entity/Q567> <http://www.wikidata.org/prop/direct/P1477>  ?o1 .  }",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "Angela Dorothea Kasner"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            "Angela Dorothea Kasner"
+        ]
+    },
+    {
+        "NNQT_question": "Who is the mayor of Berlin?",
+        "uid": "10",
+        "subgraph": "",
+        "template_index": "",
+        "question": "Who is the mayor of Berlin?",
+        "sparql_wikidata": "SELECT ?o1 WHERE { <http://www.wikidata.org/entity/Q64>  <http://www.wikidata.org/prop/direct/P6>  ?o1 .  }",
+        "sparql_dbpedia18": "",
+        "template": "",
+        "answer": [
+            "http://www.wikidata.org/entity/Q1721361"
+        ],
+        "template_id": "",
+        "simplified_query": "",
+        "solved_answer": [
+            [
+                "Kai Wegner",
+                "Kai Peter Wegner"
+            ]
+        ]
+    }
+]
