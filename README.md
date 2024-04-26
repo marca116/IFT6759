@@ -1,5 +1,14 @@
 # IFT6759
 
+# Install the conda environment
+conda create --name IFT6759_tests python=3.10
+conda activate IFT6759_tests
+pip install -r requirements.txt
+
+### Install pytorch
+Follow the download instructions on the official pytorch download page: https://pytorch.org/get-started/locally/
+Note : Only used for the RAG part of the project.
+
 # Modify qald9_plus and qald10 datasets
 
 The qald9_plus is used as a training set for the qald10 dataset. Qald_X can refer to either the Qald9 or 10 dataset
