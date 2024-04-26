@@ -1,15 +1,19 @@
 # IFT6759
 
-# Install the conda environment
+## Installation
+
+### Install the conda environment
 conda create --name IFT6759_tests python=3.10
+
 conda activate IFT6759_tests
+
 pip install -r requirements.txt
 
 ### Install pytorch
 Follow the download instructions on the official pytorch download page: https://pytorch.org/get-started/locally/
 Note : Only used for the RAG part of the project.
 
-# Modify qald9_plus and qald10 datasets
+## Modify qald9_plus and qald10 datasets
 
 The qald9_plus is used as a training set for the qald10 dataset. Qald_X can refer to either the Qald9 or 10 dataset
 
@@ -29,7 +33,7 @@ The qald9_plus is used as a training set for the qald10 dataset. Qald_X can refe
 
 8_add_properties_and_relations_to_entities.py : Go through all the emtotoes in the qald_unique_entities_info folder and download all of their properties and relations (properties and relations (claims) directly attatched to the entities + external relations linking in (only the name of the relation). Add all this information to the already existing .json files in the folder.
 
-# Query LLM
+## Query LLM
 
 1_answer_question_no_added_info.py : Go through all questions in the given dataset and attempt to answer each question using only the LLM to answer it (no added info). Save the results to qald_X_train_solved_answers.json
 
@@ -41,6 +45,6 @@ The qald9_plus is used as a training set for the qald10 dataset. Qald_X can refe
 
 5_answer_entity_linking : Use the LLM to link every answer given in step 4 that is not a boolean, a number or a date to the corresponding entity in wikidata. Recalculate the f1 score by matching the found wikidata entity url on both sides, instead of doing an exact match on the labels and aliases of the answer entity.
 
-# Final
+## Final
 
 The final versions of all datasets is in the "datasets" folder.
