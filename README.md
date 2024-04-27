@@ -15,7 +15,15 @@ pip install -r requirements.txt
 Follow the download instructions on the official pytorch download page: https://pytorch.org/get-started/locally/
 Note : Only used for the RAG part of the project.
 
-## Run scripts for short example
+### OpenAI
+
+This project uses the openAI api to query either gpt3.5 or gpt4, an OpenAI account is thus required to use our system. To use the OpenAI API, create an environment variable called "OPENAI_API_KEY" containing your full API key.
+
+To choose which model to use, edit query_llm/oai_config.json and change the model field to either "gpt-3.5-turbo" or "gpt-4-turbo".
+
+## Run the system with a short example
+
+The following scripts can be run to test the system from end to end on the qald_10_train_short dataset. This contains the first 10 questions of the qald_10_train dataset.
 
 ### Create the dataset files
 
@@ -67,11 +75,11 @@ python .\4_answer_entity_linking.py qald_10_train_short True True
 
 python .\5_answer_entity_linking.py qald_10_train_short True True
 
-## datasets
+## Datasets
 
 The final versions of all datasets is in the "datasets" folder. By final, we mean that these files were created by running all the scripts in the previous create_qald_dataset folder.
 
-## Script explanations
+## Documentation
 
 ### Update the dataset files: create_qald_dataset folder
 
@@ -91,7 +99,7 @@ The final versions of all datasets is in the "datasets" folder. By final, we mea
 
 8_add_properties_and_relations_to_entities.py : Go through all the entities in the qald_unique_entities_info folder and download all of their properties and relations (properties and relations (claims) directly attatched to the entities + external relations linking in (only the name of the relation). Add all this information to the already existing .json files in the folder.
 
-## query_llm: Query the LLM to answer the dataset's questions
+## Query the LLM to answer the dataset's questions: query_llm folder
 
 1_answer_question_no_added_info.py : Go through all questions in the given dataset and attempt to answer each question using only the LLM to answer it (no added info). Save the results to <dataset_name>_solved_answers.json
 
