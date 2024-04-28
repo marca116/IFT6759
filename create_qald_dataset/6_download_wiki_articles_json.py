@@ -11,7 +11,7 @@ sys.path.insert(0, "../utils")
 from utils import download_article_json, get_filename
 
 skip_existing = True
-output_dir = 'qald_10_entities_articles' 
+output_dir = 'qald_entities_articles' 
 articles_filename = 'qald_unique_entities_with_urls'
 
 if not os.path.exists(output_dir):

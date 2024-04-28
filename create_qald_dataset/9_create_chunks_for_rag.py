@@ -1,28 +1,26 @@
 import numpy as np
 import pandas as pd
-import zipfile
+import os
 import json
 import re
 from spacy.lang.en import English
 
+path_qald10_entities = "qald_entities_articles"
 
-zip_file_path = 'qald_10_entities_wikidata.zip'
-with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
-    # Get a list of all file names in the ZIP archive
-    file_names = zip_ref.namelist()
+# geta list of all file names
+file_names = os.listdir(path_qald10_entities)
 
-
-file_names_= [i for i in file_names if ".json" in i]
+file_names= [i for i in file_names if ".json" in i]
 
 df = pd.DataFrame(columns=['id', "text", "title", 'url'])
-with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
-    for n,i in enumerate(file_names_):
-        with zip_ref.open(i) as json_file:
-            json_data = json.load(json_file)
-            df.loc[n,"id"] = json_data["wikidata_id"]
-            df.loc[n,"text"] = json_data["extract"]
-            df.loc[n,"title"] = json_data["title"]
-            df.loc[n,"url"] = json_data["wikipedia_url"]
+for i, json_file in enumerate(file_names):
+    with open(os.path.join(path_qald10_entities, json_file), 'r', encoding='utf-8') as file:
+        json_data = json.load(file)
+        
+    df.loc[i,"id"] = json_data["wikidata_id"]
+    df.loc[i,"text"] = json_data["extract"]
+    df.loc[i,"title"] = json_data["title"]
+    df.loc[i,"url"] = json_data["wikipedia_url"]
 
 df["text"] = df["text"].str.replace("==\n\n\n===","")
 df["text"] = df["text"].str.replace("===\n","")
@@ -195,4 +193,4 @@ concatenated_df.reset_index(drop=True, inplace=True)
 concatenated_df=concatenated_df.merge(df,on="id")
 concatenated_df.drop(labels=["text"],axis=1,inplace=True)
 concatenated_df.rename(columns={"sentence_chunk":"text"},inplace=True)
-concatenated_df.to_csv("q10_articles_chunks.csv",index=False,encoding='utf-32')
+concatenated_df.to_csv("qald_articles_chunks.csv",index=False,encoding='utf-32')

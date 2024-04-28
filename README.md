@@ -45,6 +45,8 @@ python .\7_query_unique_entities_info.py
 
 python .\8_add_properties_and_relations_to_entities.py
 
+python .\9_create_chunks_for_rag.py
+
 ### Query the LLM (baseline)
 
 cd ../query_llm
@@ -98,6 +100,8 @@ The final versions of all datasets is in the "datasets" folder. By final, we mea
 7_query_unique_entities_info.py : Go through all the entities in qald_unique_entities.txt and download all of the wikidata object's information (except the claims). Save each in json format in the qald_unique_entities_info folder.
 
 8_add_properties_and_relations_to_entities.py : Go through all the entities in the qald_unique_entities_info folder and download all of their properties and relations (properties and relations (claims) directly attatched to the entities + external relations linking in (only the name of the relation). Add all this information to the already existing .json files in the folder.
+
+9_create_chunks_for_rag : Creates the text qald_articles_chunks.csv which contains the chunked wikipedia articles which are used with RAG.
 
 ## Query the LLM to answer the dataset's questions: query_llm folder
 

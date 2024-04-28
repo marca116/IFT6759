@@ -26,7 +26,7 @@ from qa_utils import print_solved_question, sort_questions, process_question_wit
 
 #Get Nomic embeddings **************************
 
-df = pd.read_csv("q10_articles_chunks.csv",encoding='utf-32')
+df = pd.read_csv("../create_qald_dataset/qald_articles_chunks.csv",encoding='utf-32')
 from tqdm import tqdm
 
 list_nomic=[]

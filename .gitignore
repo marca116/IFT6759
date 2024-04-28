@@ -176,6 +176,7 @@ created_entity_subgraph/
 */prev_answers/
 */qald_unique_entities_info/
 qald_unique_entities_info/
+qald_10_entities_articles/
 */NER_results/
 */NER_results_using_wikidata/
 */tests/
@@ -200,6 +201,7 @@ qald_unique_entities_info_prev/
 */temp/
 qald_unique_entities_info_qald_9_plus_orig/
 qald_unique_entities_info_qald10/
+*/qald_articles_chunks.csv
 
 datasets/oai_embeddings/
 query_llm/results_with_rag_oai/
