@@ -13,7 +13,8 @@ pip install -r requirements.txt
 
 ### Install pytorch
 Follow the download instructions on the official pytorch download page: https://pytorch.org/get-started/locally/
-Note : Only used for the RAG part of the project.
+
+Note: Only used for the RAG part of the project.
 
 ### OpenAI
 
@@ -101,7 +102,7 @@ The final versions of all datasets is in the "datasets" folder. By final, we mea
 
 8_add_properties_and_relations_to_entities.py : Go through all the entities in the qald_unique_entities_info folder and download all of their properties and relations (properties and relations (claims) directly attatched to the entities + external relations linking in (only the name of the relation). Add all this information to the already existing .json files in the folder.
 
-9_create_chunks_for_rag : Creates the text qald_articles_chunks.csv which contains the chunked wikipedia articles which are used with RAG.
+9_create_chunks_for_rag : Creates the text qald_articles_chunks.csv which contains the chunked wikipedia articles, which are used for the RAG part of the project.
 
 ## Query the LLM to answer the dataset's questions: query_llm folder
 

@@ -176,7 +176,7 @@ created_entity_subgraph/
 */prev_answers/
 */qald_unique_entities_info/
 qald_unique_entities_info/
-qald_10_entities_articles/
+qald_entities_articles/
 */NER_results/
 */NER_results_using_wikidata/
 */tests/

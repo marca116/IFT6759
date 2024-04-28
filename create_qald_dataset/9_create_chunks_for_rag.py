@@ -96,99 +96,92 @@ smaller_chuncks1 = df_chunks.loc[df_chunks["chunk_word_count"]<=300,["id","sente
 #We keep working on splitting these ones:
 more_300 = df_chunks[df_chunks["chunk_word_count"]>300] 
 
-dict_300 = []
+has_chunks_more_than_300 = not more_300.empty
 
-for i in more_300.index.values:
-    dict_300.append({"id": more_300.loc[i ,"id" ], 
-                             "text": more_300.loc[i ,"sentence_chunk" ]})   
+if has_chunks_more_than_300:
+    dict_300 = []
+
+    for i in more_300.index.values:
+        dict_300.append({"id": more_300.loc[i ,"id" ], 
+                                "text": more_300.loc[i ,"sentence_chunk" ]})   
+
+    dict_300_2 = []
+
+    for item in dict_300:
+        item["sentences"] = list(nlp(item["text"]).sents)
+        item["sentences"] = [str(sentence) for sentence in item["sentences"]]
+        
+        #Count the sentences 
+        item["page_sentence_count_spacy"] = len(item["sentences"])
+
+        item["sentence_chunks"] = split_list(input_list=item["sentences"],slice_size = num_sentence_chunk_size)
+        item["num_chunks"] = len(item["sentence_chunks"])
+
+        # Split each chunk into its own item
+        for sentence_chunk in item["sentence_chunks"]:
+            chunk_dict = {}
+            chunk_dict["id"] = item["id"]
+            
+            # Join the sentences together into a paragraph-like structure, aka a chunk (so they are a single string)
+            joined_sentence_chunk = "".join(sentence_chunk).replace("  ", " ").strip()
+            joined_sentence_chunk = re.sub(r'\.([A-Z])', r'. \1', joined_sentence_chunk) # ".A" -> ". A" for any full-stop/capital letter combo 
+            chunk_dict["sentence_chunk"] = joined_sentence_chunk
+            # Get some stats on our chunks
+            
+            chunk_dict["chunk_word_count"] = len([word for word in joined_sentence_chunk.split(" ")])
+            
+            dict_300_2.append(chunk_dict)
+
+    pd.DataFrame(dict_300_2).describe()
+
+    df_chunks_2 = pd.DataFrame(dict_300_2)
 
 
+    #We still have chunks bigger than 300
+    #aAfter inspecting the remaining articles with bigger chunks, we proceed to split them \
+    # using the function split_text isntead of split_list as before 
+    smaller_chuncks2 = df_chunks_2.loc[df_chunks_2["chunk_word_count"]<=300,["id","sentence_chunk"]]
+    more_300_2 = df_chunks_2[df_chunks_2["chunk_word_count"]>300] 
 
-for item in dict_300:
-    item["sentences"] = list(nlp(item["text"]).sents)
-    item["sentences"] = [str(sentence) for sentence in item["sentences"]]
+    extracts_id_dict = []
+
+    for i in more_300_2.index.values:
+        extracts_id_dict.append({"id": more_300_2.loc[i ,"id" ], 
+                                "text": more_300_2.loc[i ,"sentence_chunk" ]})    
+
+    def split_text(input_text: str, 
+                slice_size: str) -> list[list[str]]:
     
-    #Count the sentences 
-    item["page_sentence_count_spacy"] = len(item["sentences"])
+        text_list = input_text.split(" ")
+        return [text_list[i:i + slice_size] for i in range(0, len(text_list), slice_size)]
 
-for item in dict_300:
-    item["sentence_chunks"] = split_list(input_list=item["sentences"],slice_size = num_sentence_chunk_size)
-    item["num_chunks"] = len(item["sentence_chunks"])
+    for item in extracts_id_dict:
+        item["sentences"] = split_text(item["text"],300)
 
-
-# Split each chunk into its own item
-dict_300_2 = []
-for item in dict_300:
-    for sentence_chunk in item["sentence_chunks"]:
-        chunk_dict = {}
-        chunk_dict["id"] = item["id"]
-        
-        # Join the sentences together into a paragraph-like structure, aka a chunk (so they are a single string)
-        joined_sentence_chunk = "".join(sentence_chunk).replace("  ", " ").strip()
-        joined_sentence_chunk = re.sub(r'\.([A-Z])', r'. \1', joined_sentence_chunk) # ".A" -> ". A" for any full-stop/capital letter combo 
-        chunk_dict["sentence_chunk"] = joined_sentence_chunk
-        # Get some stats on our chunks
-        
-        chunk_dict["chunk_word_count"] = len([word for word in joined_sentence_chunk.split(" ")])
-        
-        dict_300_2.append(chunk_dict)
+    extracts_id_dict1 = []
+    for item in extracts_id_dict:
+        for sentence_chunk in item["sentences"]:
+            chunk_dict = {}
+            chunk_dict["id"] = item["id"]
+            
+            # Join the sentences together into a paragraph-like structure, aka a chunk (so they are a single string)
+            joined_sentence_chunk = " ".join(sentence_chunk).replace("  ", " ").strip()
+            joined_sentence_chunk = re.sub(r'\.([A-Z])', r'. \1', joined_sentence_chunk) # ".A" -> ". A" for any full-stop/capital letter combo 
+            chunk_dict["sentence_chunk"] = joined_sentence_chunk
+            # Get some stats on our chunks
+            
+            chunk_dict["chunk_word_count"] = len([word for word in joined_sentence_chunk.split(" ")])
+            extracts_id_dict1.append(chunk_dict)
 
 
-pd.DataFrame(dict_300_2).describe()
+    smaller_chuncks3=pd.DataFrame(extracts_id_dict1)[["id","sentence_chunk"]]
 
-df_chunks_2 = pd.DataFrame(dict_300_2)
+    #Now concatenate all the chunks:
+    concatenated_df = pd.concat([smaller_chuncks1, smaller_chuncks2, smaller_chuncks3]) 
+else:
+    concatenated_df = smaller_chuncks1
 
-
-#We still have chunks bigger than 300
-#aAfter inspecting the remaining articles with bigger chunks, we proceed to split them \
-# using the function split_text isntead of split_list as before 
-smaller_chuncks2 = df_chunks_2.loc[df_chunks_2["chunk_word_count"]<=300,["id","sentence_chunk"]]
-more_300_2 = df_chunks_2[df_chunks_2["chunk_word_count"]>300] 
-
-extracts_id_dict = []
-
-for i in more_300_2.index.values:
-    extracts_id_dict.append({"id": more_300_2.loc[i ,"id" ], 
-                             "text": more_300_2.loc[i ,"sentence_chunk" ]})    
-
-def split_text(input_text: str, 
-               slice_size: str) -> list[list[str]]:
-  
-    text_list = input_text.split(" ")
-    return [text_list[i:i + slice_size] for i in range(0, len(text_list), slice_size)]
-
-for item in extracts_id_dict:
-    item["sentences"] = split_text(item["text"],300)
-       
-extracts_id_dict1 = []
-for item in extracts_id_dict:
-    for sentence_chunk in item["sentences"]:
-        chunk_dict = {}
-        chunk_dict["id"] = item["id"]
-
-extracts_id_dict1 = []
-for item in extracts_id_dict:
-    for sentence_chunk in item["sentences"]:
-        chunk_dict = {}
-        chunk_dict["id"] = item["id"]
-        
-        # Join the sentences together into a paragraph-like structure, aka a chunk (so they are a single string)
-        joined_sentence_chunk = " ".join(sentence_chunk).replace("  ", " ").strip()
-        joined_sentence_chunk = re.sub(r'\.([A-Z])', r'. \1', joined_sentence_chunk) # ".A" -> ". A" for any full-stop/capital letter combo 
-        chunk_dict["sentence_chunk"] = joined_sentence_chunk
-        # Get some stats on our chunks
-        
-        chunk_dict["chunk_word_count"] = len([word for word in joined_sentence_chunk.split(" ")])
-        extracts_id_dict1.append(chunk_dict)
-
-
-
-smaller_chuncks3=pd.DataFrame(extracts_id_dict1)[["id","sentence_chunk"]]
-
-#Now concatenate all the chunks:
-concatenated_df = pd.concat([smaller_chuncks1, smaller_chuncks2, smaller_chuncks3])
 concatenated_df.reset_index(drop=True, inplace=True)
-
 
 concatenated_df=concatenated_df.merge(df,on="id")
 concatenated_df.drop(labels=["text"],axis=1,inplace=True)
