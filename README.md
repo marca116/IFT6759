@@ -16,6 +16,9 @@ Follow the download instructions on the official pytorch download page: https://
 
 Note: Only used for the RAG part of the project.
 
+### Install Nomic
+Follow the download instructions specified at the official nomic repository page: https://github.com/nomic-ai/nomic
+
 ### OpenAI
 
 This project uses the openAI api to query either gpt3.5 or gpt4, an OpenAI account is thus required to use our system. To use the OpenAI API, create an environment variable called "OPENAI_API_KEY" containing your full API key.
@@ -77,6 +80,12 @@ python .\5_answer_entity_linking.py qald_10_train_short True False
 python .\4_answer_questions_with_ner_info.py qald_10_train_short True True
 
 python .\5_answer_entity_linking.py qald_10_train_short True True
+
+## Perform RAG:
+
+python .\rag_llm.py
+
+python .\rag_llm_nomic.py
 
 ## Datasets
 
