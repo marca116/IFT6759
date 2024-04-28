@@ -429,8 +429,8 @@ def process_property(main_property):
         for qualifier_property_id in main_property['qualifiers']:
             qualifier_property_instances = main_property['qualifiers'][qualifier_property_id]
 
-            if len(qualifier_property_instances) > 1:
-                print(f"Multiple qualifier instances for {qualifier_property_id}")
+            # if len(qualifier_property_instances) > 1:
+            #     print(f"Multiple qualifier instances for {qualifier_property_id}")
 
             for qualifier_property_instance in qualifier_property_instances:
                 qualifier_id, qualifier_value, qualifier_type = process_qualifier(qualifier_property_instance)
@@ -606,8 +606,8 @@ def format_entity_infos(entity_infos, cached_entity_labels_dict):
             existing_property = wikidata_properties_dict.get(property_id)
             property["label"] = existing_property["label"] if existing_property is not None else ""
 
-            if existing_property is None:
-                print(f"Missing property: {property_id}")
+            # if existing_property is None:
+            #     print(f"Missing property: {property_id}")
 
             property_instances = property["instances"]
 
