@@ -127,8 +127,8 @@ def format_gpt_answers(original_gpt_answers, question_uid, answers_datatype = No
         # Remove empty answers
         gpt_answers.append(formatted_answer)
 
-    if removed_parenthesis:
-        print(f"Removing parenthesis in question {question_uid}. Original answers: {original_gpt_answers}")
+    # if removed_parenthesis:
+    #     print(f"Removing parenthesis in question {question_uid}. Original answers: {original_gpt_answers}")
 
     return gpt_answers
 
@@ -368,8 +368,6 @@ def extract_choose_entity_response(result, question, react_info):
     }
     react_info[react_info_field_name] = react_info_property_obj
 
-    print(extracted_json)
-
     return information_requested, property_name, property_id
 
 def create_is_question_answered_convo_history(question, tentative_answer, info_messages):
@@ -396,8 +394,6 @@ def extract_is_question_answered(result, question, react_info):
     additional_details_required = extracted_json.get("additional_details_required", "")
    
     is_question_answered = answer_status == "correct"
-
-    print(extracted_json)
 
     react_info_question_is_answered_obj = {
         "answer_status": answer_status,

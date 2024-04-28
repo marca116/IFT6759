@@ -11,19 +11,19 @@ conda activate IFT6759_tests
 
 pip install -r requirements.txt
 
-### Install pytorch
-Follow the download instructions on the official pytorch download page: https://pytorch.org/get-started/locally/
-
-Note: Only used for the RAG part of the project.
-
-### Install Nomic
-Follow the download instructions specified at the official nomic repository page: https://github.com/nomic-ai/nomic
-
 ### OpenAI
 
 This project uses the openAI api to query either gpt3.5 or gpt4, an OpenAI account is thus required to use our system. To use the OpenAI API, create an environment variable called "OPENAI_API_KEY" containing your full API key.
 
 To choose which model to use, edit query_llm/oai_config.json and change the model field to either "gpt-3.5-turbo" or "gpt-4-turbo".
+
+## Installation (RAG part only)
+
+### Install pytorch
+Follow the download instructions on the official pytorch download page: https://pytorch.org/get-started/locally/
+
+### Install Nomic
+Follow the download instructions specified at the official nomic repository page: https://github.com/nomic-ai/nomic
 
 ## Run the system with a short example
 
