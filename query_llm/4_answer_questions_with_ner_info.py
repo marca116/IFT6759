@@ -58,7 +58,7 @@ output_solved_answers_filepath = results_text + "/" + current_time + "_" + outpu
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
 
-#questions = questions[:10] # First 10 questions only
+# questions = questions[:10] # First 10 questions only
     
 using_wikidata_text = "_using_wikidata" if directly_from_wikidata else ""
 ner_file = f"{dataset_name}_NER_both{using_wikidata_text}.json"
@@ -70,7 +70,10 @@ with open(ner_file, 'r', encoding='utf-8') as file:
 solved_questions = []
 total_token_count = 0
 total_questions_with_tokens = 0
-total_questions_react_failed = 0
+
+total_questions_using_kg_info = 0
+total_questions_baseline_fallback = 0
+total_questions_missing_entity_linking= 0
 
 info_messages_dir = "info_msg_with_token_count/" + current_time
 # Create dir if doesn't exist
@@ -80,7 +83,7 @@ if not os.path.exists(info_messages_dir):
 cached_entity_labels_dict = get_cached_entity_labels_dict()
 
 def process_question(question, use_fallback = False, react_info = None):
-    global total_token_count, total_questions_with_tokens, total_questions_react_failed
+    global total_token_count, total_questions_with_tokens, total_questions_using_kg_info, total_questions_baseline_fallback, total_questions_missing_entity_linking
 
     # find entity where question uid matches question_id
     ner_entity_info = next((entity for entity in both_entities_full_info if entity["question_id"] == question["uid"]), None)
@@ -88,9 +91,9 @@ def process_question(question, use_fallback = False, react_info = None):
 
     # Use guessed answers as fallback in case the entity linking failed
     if entity_id is None or (use_fallback and not add_properties_on_fallback):
-        #answers = ner_entity_info["guessed_answers"]
-        #reason = ner_entity_info["reason"]
-        #answers_datatype = extra_info = None
+        if not use_fallback:
+            total_questions_missing_entity_linking += 1
+
         default_solved_questions = question_answers_no_extra_info["solved_questions"]
         # Find the question in the solved questions
         default_solved_question = next((default_question for default_question in default_solved_questions if default_question["uid"] == question["uid"]), None)
@@ -107,15 +110,16 @@ def process_question(question, use_fallback = False, react_info = None):
             answers, original_answers, reason, answers_datatype, extra_info, token_count, react_info = process_question_with_entity_properties(question, ner_entity_info, info_messages_dir, directly_from_wikidata) # react_info = none in this case
 
         total_token_count += token_count
+        total_questions_with_tokens += 1
 
         # Use fallback if an issue occured while processing the question
         if answers is None:
             react_info["used_fallback"] = True
             process_question(question, True, react_info)
-            total_questions_react_failed += 1
+            total_questions_baseline_fallback += 1
             return
         else:
-            total_questions_with_tokens += 1
+            total_questions_using_kg_info += 1
 
     solved_question = calc_question_f1_score(question, answers, original_answers, reason, answers_datatype, extra_info, ner_entity_info, react_info = react_info)
     solved_questions.append(solved_question)
@@ -161,14 +165,18 @@ if len(solved_questions) == 0:
 # Total token count + average token count
 print(f"Total token count: {total_token_count}")
 print(f"Average token count: {(total_token_count / total_questions_with_tokens) if total_questions_with_tokens > 0 else 0}")
-print(f"Total questions with tokens: {total_questions_with_tokens}")
-print(f"Total questions react failed: {total_questions_react_failed}")
+print(f"Questions with tokens: {total_questions_with_tokens}")
+print("=====================================")
+print(f"Questions that used kg info: {total_questions_using_kg_info}")
+print(f"Questions baseline fallback: {total_questions_baseline_fallback}")
+print(f"Questions with missing entity linking: {total_questions_missing_entity_linking}")
+print(f"Total questions: {len(solved_questions)}")
 
 # calc macro f1
 macro_f1 = calc_question_macro_f1_score(solved_questions)
 print(f"Macro F1 score: {macro_f1}")
 
-solved_questions_obj = get_final_solved_questions_obj(solved_questions, macro_f1, total_token_count, total_questions_with_tokens, total_questions_react_failed)
+solved_questions_obj = get_final_solved_questions_obj(solved_questions, macro_f1, total_token_count, total_questions_with_tokens, total_questions_baseline_fallback)
 
 # Save to corresponding results folder
 with open(output_solved_answers_filepath, 'w', encoding='utf-8') as outfile:

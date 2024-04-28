@@ -123,7 +123,7 @@ def calc_question_macro_f1_score(solved_questions):
     macro_f1 = sum([x["f1"] for x in solved_questions]) / len(solved_questions)
     return macro_f1
 
-def get_final_solved_questions_obj(solved_questions, macro_f1_score, total_token_count = None, total_questions_with_tokens = None, total_questions_react_failed = None):
+def get_final_solved_questions_obj(solved_questions, macro_f1_score, total_token_count = None, total_questions_with_tokens = None, total_questions_baseline_fallback = None):
     question_obj = {
         "macro_f1_score": round(macro_f1_score, 4)
     }
@@ -133,8 +133,8 @@ def get_final_solved_questions_obj(solved_questions, macro_f1_score, total_token
         question_obj["average_token_count"] = round(total_token_count / total_questions_with_tokens, 2) if total_questions_with_tokens > 0 else 0
         question_obj["total_questions_with_tokens"] = total_questions_with_tokens
 
-    if total_questions_react_failed is not None:
-        question_obj["total_questions_react_failed"] = total_questions_react_failed
+    if total_questions_baseline_fallback is not None:
+        question_obj["total_questions_baseline_fallback"] = total_questions_baseline_fallback
 
     question_obj["solved_questions"] = solved_questions
     return question_obj
