@@ -83,9 +83,9 @@ python .\5_answer_entity_linking.py qald_10_train_short True True
 
 ### Perform RAG:
 
-python .\rag_llm.py
+python .\rag_llm.py qald_10_train_short
 
-python .\rag_llm_nomic.py
+python .\rag_llm_nomic.py qald_10_train_short
 
 ## Datasets
 

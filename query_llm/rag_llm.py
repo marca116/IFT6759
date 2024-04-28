@@ -17,6 +17,13 @@ from qa_utils import print_solved_question, sort_questions, process_question_wit
 import numpy as np
 from datasets import load_from_disk
 
+if len(sys.argv) != 2:
+    print("Usage: python rag_llm.py <dataset_name>")
+    sys.exit(1)
+
+dataset_name = sys.argv[1]
+# dataset_name = "qald_10_train"
+
 passages_path = os.path.join('..', 'rag', 'data', "wikipedia_kb_dataset.csv")
 embeddings_path = os.path.join('..', 'datasets/oai_embeddings')
 
@@ -98,8 +105,6 @@ else:
 kd_index = KDTree(embeddings)
 titles = dict(zip(range(len(df)), df.title))
 
-# qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
-dataset_name = "qald_10_train"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
 

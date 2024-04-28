@@ -17,13 +17,18 @@ from sklearn.neighbors import KDTree
 from evaluation import calc_question_f1_score, calc_question_macro_f1_score, get_final_solved_questions_obj,relaxed_f1_score
 from qa_utils import print_solved_question, sort_questions, process_question_with_entity_properties, process_question_with_rag_context
 
+sys.path.insert(0, "../utils")
+from utils import clean_number, is_date, format_date_iso_format
 
+if len(sys.argv) != 2:
+    print("Usage: python rag_llm_nomic.py <dataset_name>")
+    sys.exit(1)
+
+dataset_name = sys.argv[1]
+# dataset_name = "qald_10_train_short"
 
 #nomic login "ESPECIFY KEY"
-
-
 #os.environ['OPENAI_API_KEY'] = 
-
 #Get Nomic embeddings **************************
 
 df = pd.read_csv("../create_qald_dataset/qald_articles_chunks.csv",encoding='utf-32')
@@ -67,11 +72,8 @@ kd_index = KDTree(embeddings)
 
 titles = dict(zip(range(len(df)), df.title))
 
-sys.path.insert(0, "../utils")
-from utils import clean_number, is_date, format_date_iso_format
+# PROCESS QUESTIONS
 
-
-dataset_name = "qald_10_train"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json" #
 output_filename = f'{dataset_name}_solved_answers.json'
 
@@ -85,11 +87,6 @@ output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" 
 
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
-
-# # Need to take care better of answer format/type: DATES!
-# if dataset_name == "qald_10_train":
-#     questions[101]['solved_answer'] = ['1888']
-#     questions[101]['answer'] = ['1888']
 
 # Todo: save this to disk
 encoded_questions = dict()
@@ -135,9 +132,11 @@ def process_question_rag(question, model="nomic-embed-text-v1"):
 
 questions[0]['NNQT_question']
 
+print("Processing questions")
+
 for i, q in enumerate(questions):
     if i % 10 == 0:
-        print(i)
+        print(f"Processed {i}/{len(questions)} questions")
     process_question_rag(q, "nomic-embed-text-v1")
 
 sort_questions(solved_questions)
