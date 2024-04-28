@@ -22,16 +22,16 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 dataset_name = sys.argv[1]
-# dataset_name = "qald_10_train"
+# dataset_name = "qald_10_train_short"
 
-passages_path = os.path.join('..', 'rag', 'data', "wikipedia_kb_dataset.csv")
+passages_path = os.path.join('..', 'create_qald_dataset', "qald_articles_chunks.csv")
 embeddings_path = os.path.join('..', 'datasets/oai_embeddings')
 
 ##############################
 # LOAD DATASET ###############
 ##############################
 
-df = pn.read_csv(passages_path)
+df = pn.read_csv(passages_path,encoding='utf-32')
 
 #########################
 from openai import OpenAI
@@ -83,7 +83,8 @@ if compute_embedding_db:
     for i in range(10):
         # Can't save the whole matrix at once: too big
         print('saving', i)
-        io.savemat(os.path.join(embeddings_path, f'/emb_{i}'),
+
+        io.savemat(os.path.join(embeddings_path, f'emb_{i}'),
                            mdict={
                                'text_emb': embeddings[i*savebatch:(i+1)*savebatch],
                            },
