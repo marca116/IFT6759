@@ -106,6 +106,8 @@ else:
 kd_index = KDTree(embeddings)
 titles = dict(zip(range(len(df)), df.title))
 
+# qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
+dataset_name = "original_qald_9_plus_test"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
 
@@ -192,6 +194,7 @@ print(f"Macro F1 score: {macro_f1}")
 #########################################################
 # COMPUTE RELAXED F1 SCORE ##############################
 for q in solved_questions:
+    #q['f1'] = q['strict_f1']
     q['strict_f1'] = q['f1']
     q['f1'] = relaxed_f1_score(q)
 
