@@ -31,7 +31,7 @@ embeddings_path = os.path.join('..', 'datasets/oai_embeddings')
 # LOAD DATASET ###############
 ##############################
 
-df = pn.read_csv(passages_path,encoding='utf-32')
+df = pn.read_csv(passages_path, encoding='utf-32')
 
 #########################
 from openai import OpenAI
@@ -40,6 +40,8 @@ client = OpenAI()
 compute_embedding_db = not os.path.exists(embeddings_path)
 
 if compute_embedding_db:
+    # This section calls OpenAI embeddings API to generate embedding vectors for each chunk: takes time and storage
+
     oai_embeddings = dict()
 
     def get_embedding(obj, model="text-embedding-3-small"):
@@ -107,7 +109,7 @@ kd_index = KDTree(embeddings)
 titles = dict(zip(range(len(df)), df.title))
 
 # qald_9_plus_train, qald_9_plus_train_with_long_answer, qald_10_test
-dataset_name = "original_qald_9_plus_test"
+#dataset_name = "original_qald_9_plus_test"
 input_dataset_filename = "../datasets/" + dataset_name + "_final.json"
 output_filename = f'{dataset_name}_solved_answers.json'
 
@@ -122,11 +124,6 @@ output_solved_answers_filepath = root_results_folder + "/" + current_time + "_" 
 
 with open(input_dataset_filename, 'r', encoding='utf-8') as file:
     questions = json.load(file)
-
-# # Need to take care better of answer format/type: DATES!
-# if dataset_name == "qald_10_train":
-#     questions[101]['solved_answer'] = ['1888']
-#     questions[101]['answer'] = ['1888']
 
 # Todo: save this to disk
 encoded_questions = dict()

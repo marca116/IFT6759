@@ -20,8 +20,12 @@ from datasets import load_from_disk
 passages_path = os.path.join('..', 'rag', 'data', "wikipedia_kb_dataset.csv")
 embeddings_path = os.path.join('..', 'datasets/oai_embeddings')
 
+########################################################################################################################
+# THIS CODE ISN'T USED AS WE DISCARDED THIS APPROACH BECAUSE IT IS REDUNDANT
+# GIVEN THAT PLAIN RAG PERFORMS AS GOOD AS POSSIBLE WITHOUT KG HELP
+
 ##############################
-# LOAD DATASET AND INDEX #####
+# LOAD DATASET #####
 ##############################
 
 df = pn.read_csv(passages_path)
