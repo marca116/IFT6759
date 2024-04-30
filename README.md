@@ -83,6 +83,8 @@ python .\5_answer_entity_linking.py qald_10_train_short True True
 
 ### Perform RAG:
 
+python .\DPR_rag.py qald_10_train_short
+
 python .\rag_llm.py qald_10_train_short
 
 python .\rag_llm_nomic.py qald_10_train_short

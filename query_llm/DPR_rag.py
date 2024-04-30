@@ -30,7 +30,7 @@ from transformers import (
 )
 
 if len(sys.argv) != 2:
-    print("Usage: python rag_llm.py <dataset_name>")
+    print("Usage: python DPR_rag.py <dataset_name>")
     sys.exit(1)
 
 dataset_name = sys.argv[1]
@@ -89,6 +89,7 @@ if gen_dataset:
     os.makedirs(passages_path)
 
     dataset.save_to_disk(passages_path)
+    df = dataset.to_pandas()
 else:
     from datasets import load_from_disk
     dataset = load_from_disk(passages_path)  # to reload the dataset
