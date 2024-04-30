@@ -24,14 +24,15 @@ if len(sys.argv) != 2:
 dataset_name = sys.argv[1]
 # dataset_name = "qald_10_train_short"
 
-passages_path = os.path.join('..', 'create_qald_dataset', "qald_articles_chunks.csv")
-embeddings_path = os.path.join('..', 'datasets/oai_embeddings')
+passages_path = os.path.join('..', 'rag/data/wikipedia_short.csv')
+#passages_path = os.path.join('..', 'create_qald_dataset', "qald_articles_chunks.csv")
+embeddings_path = os.path.join('..', 'datasets/oai_embeddings_short')
 
 ##############################
 # LOAD DATASET ###############
 ##############################
 
-df = pn.read_csv(passages_path, encoding='utf-32')
+df = pn.read_csv(passages_path, encoding='utf-8')
 
 #########################
 from openai import OpenAI
@@ -42,6 +43,7 @@ compute_embedding_db = not os.path.exists(embeddings_path)
 if compute_embedding_db:
     # This section calls OpenAI embeddings API to generate embedding vectors for each chunk: takes time and storage
 
+    print('getting OAI embeddings.....')
     oai_embeddings = dict()
 
     def get_embedding(obj, model="text-embedding-3-small"):

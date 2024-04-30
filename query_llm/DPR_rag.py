@@ -11,7 +11,7 @@ import time
 from datetime import datetime
 from functools import partial
 
-from evaluation import calc_question_f1_score, calc_question_macro_f1_score, get_final_solved_questions_obj
+from evaluation import calc_question_f1_score, calc_question_macro_f1_score, get_final_solved_questions_obj, relaxed_f1_score
 from qa_utils import print_solved_question, sort_questions, process_question_with_entity_properties
 
 from sklearn.neighbors import KDTree
@@ -53,7 +53,8 @@ encoder_model_name = 'facebook/dpr-ctx_encoder-multiset-base'
 test_kb_dataset = 'data/wiki_articles_chunks_noh.csv'
 rag_model_name = 'facebook/rag-sequence-nq'
 
-passages_path = os.path.join('..', 'rag', 'data', "wikipedia_kb_dataset")
+passages_path = os.path.join('..', 'rag/data/wikipedia_kb_short')
+#passages_path = os.path.join('..', 'rag', 'data', "wikipedia_kb_dataset")
 #index_path = os.path.join('data', 'models', "wikipedia_kb_index.faiss")
 
 gen_dataset = not os.path.exists(passages_path)
@@ -217,6 +218,16 @@ print(f"Total questions with tokens: {total_questions_with_tokens}")
 macro_f1 = calc_question_macro_f1_score(solved_questions)
 
 print(f"Macro F1 score: {macro_f1}")
+
+#########################################################
+# COMPUTE RELAXED F1 SCORE ##############################
+for q in solved_questions:
+    #q['f1'] = q['strict_f1']
+    q['strict_f1'] = q['f1']
+    q['f1'] = relaxed_f1_score(q)
+
+macro_f1 = calc_question_macro_f1_score([t for t in solved_questions if t['f1'] is not None])
+print(f"Relaxed macro F1 score: {macro_f1}")
 
 solved_questions_obj = get_final_solved_questions_obj(solved_questions, macro_f1, total_token_count,
                                                       total_questions_with_tokens)

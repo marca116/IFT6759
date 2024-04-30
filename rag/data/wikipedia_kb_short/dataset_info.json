@@ -1,0 +1,35 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "url": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "embeddings": {
+      "feature": {
+        "dtype": "float32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "__index_level_0__": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
