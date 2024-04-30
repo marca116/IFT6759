@@ -20,7 +20,7 @@ To choose which model to use, edit query_llm/oai_config.json and change the mode
 ## Installation (RAG part only)
 
 ### Install pytorch
-Follow the download instructions on the official pytorch download page: https://pytorch.org/get-started/locally/
+Follow the download instructions on the official pytorch download page (version 2.3.0) : https://pytorch.org/get-started/locally/
 
 ### Install Nomic
 Follow the download instructions specified at the official nomic repository page: https://github.com/nomic-ai/nomic
